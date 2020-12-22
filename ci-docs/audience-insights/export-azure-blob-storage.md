@@ -1,0 +1,50 @@
+---
+title: Експорт даних Customer Insights до сховища BLOB-об'єктів Azure
+description: Дізнайтесь, як налаштувати підключення до сховища BLOB-об'єктів Azure.
+ms.date: 09/18/2020
+ms.reviewer: philk
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
+manager: shellyha
+ms.openlocfilehash: 925b53260e7c633e17d7f172d2dd2d581e982e10
+ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
+ms.translationtype: HT
+ms.contentlocale: uk-UA
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4667164"
+---
+# <a name="connector-for-azure-blob-storage-preview"></a><span data-ttu-id="dc745-103">З'єднувач для сховища BLOB-об'єктів Azure (попередній перегляд)</span><span class="sxs-lookup"><span data-stu-id="dc745-103">Connector for Azure Blob storage (preview)</span></span>
+
+<span data-ttu-id="dc745-104">Зберігайте дані Customer Insights у сховищі BLOB-об’єктів Azure або використовуйте його для передавання даних в інші програми.</span><span class="sxs-lookup"><span data-stu-id="dc745-104">Store your Customer Insights data in an Azure Blob storage or use it to transfer your data to other applications.</span></span>
+
+## <a name="configure-the-connector-for-azure-blob-storage"></a><span data-ttu-id="dc745-105">Налаштування з'єднувача для сховища BLOB-об'єктів Azure</span><span class="sxs-lookup"><span data-stu-id="dc745-105">Configure the connector for Azure Blob storage</span></span>
+
+1. <span data-ttu-id="dc745-106">У розділі «Аналіз аудиторії» виберіть **Адміністратор** > **Напрямки експорту**.</span><span class="sxs-lookup"><span data-stu-id="dc745-106">In audience insights, go to **Admin** > **Export destinations**.</span></span>
+
+1. <span data-ttu-id="dc745-107">У розділі **Сховище BLOB-об'єктів Azure** виберіть **Налаштувати**.</span><span class="sxs-lookup"><span data-stu-id="dc745-107">Under **Azure Blob Storage**, select **Set up**.</span></span>
+
+1. <span data-ttu-id="dc745-108">Введіть **Ім'я облікового запису**, **Ключ облікового запису** та **Контейнер** свого облікового запису сховища BLOB-об'єктів Azure.</span><span class="sxs-lookup"><span data-stu-id="dc745-108">Enter **Account name**, **Account key**, and **Container** for your Azure Blob storage account.</span></span>
+    - <span data-ttu-id="dc745-109">Докладніше про те, як знайти обліковий запис сховища BLOB-об’єктів Azure і ключ облікового запису, див. у розділі [Керування настройками облікового запису сховища на порталі Azure](https://docs.microsoft.com/azure/storage/common/storage-account-manage).</span><span class="sxs-lookup"><span data-stu-id="dc745-109">To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](https://docs.microsoft.com/azure/storage/common/storage-account-manage).</span></span>
+    - <span data-ttu-id="dc745-110">Щоб дізнатися, як створити контейнер, див. розділ [Створення контейнера ](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span><span class="sxs-lookup"><span data-stu-id="dc745-110">To learn how to create a container, see [Create a container](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span></span>
+
+1. <span data-ttu-id="dc745-111">Дайте своєму призначенню ім’я, яке легко впізнати, в полі **Коротке ім’я**.</span><span class="sxs-lookup"><span data-stu-id="dc745-111">Give your destination a recognizable name in the **Display name** field.</span></span>
+
+1. <span data-ttu-id="dc745-112">Виберіть **Далі**.</span><span class="sxs-lookup"><span data-stu-id="dc745-112">Select **Next**.</span></span>
+
+1. <span data-ttu-id="dc745-113">Установіть прапорець поруч із кожною із сутностей, які ви хочете експортувати до цього призначення.</span><span class="sxs-lookup"><span data-stu-id="dc745-113">Select the box next to each of the entities you want to export to this destination.</span></span>
+
+1. <span data-ttu-id="dc745-114">Виберіть **Зберегти**.</span><span class="sxs-lookup"><span data-stu-id="dc745-114">Select **Save**.</span></span>
+
+<span data-ttu-id="dc745-115">Експортовані дані зберігаються в налаштованому контейнері сховища BLOB-об'єктів Azure.</span><span class="sxs-lookup"><span data-stu-id="dc745-115">Exported data is stored in the Azure Blob storage container you configured.</span></span> <span data-ttu-id="dc745-116">У контейнері автоматично створюються наведені далі шляхи папок.</span><span class="sxs-lookup"><span data-stu-id="dc745-116">The following folder paths are automatically created in your container:</span></span>
+
+- <span data-ttu-id="dc745-117">Для сутностей джерел і сутностей, згенерованих у системі: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span><span class="sxs-lookup"><span data-stu-id="dc745-117">For source entities and entities generated by the system: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span></span>
+  - <span data-ttu-id="dc745-118">Приклад: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span><span class="sxs-lookup"><span data-stu-id="dc745-118">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span></span>
+- <span data-ttu-id="dc745-119">Файл model.json для експортованих сутностей буде розміщено на рівні %ExportDestinationName%</span><span class="sxs-lookup"><span data-stu-id="dc745-119">The model.json for the exported entities will reside at the %ExportDestinationName% level</span></span>
+  - <span data-ttu-id="dc745-120">Приклад: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span><span class="sxs-lookup"><span data-stu-id="dc745-120">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span></span>
+
+## <a name="export-the-data"></a><span data-ttu-id="dc745-121">Експорт даних</span><span class="sxs-lookup"><span data-stu-id="dc745-121">Export the data</span></span>
+
+<span data-ttu-id="dc745-122">Ви можете [експортувати дані вручну](/export-destinations.md#export-data-on-demand).</span><span class="sxs-lookup"><span data-stu-id="dc745-122">You can [export data on demand](/export-destinations.md#export-data-on-demand).</span></span> <span data-ttu-id="dc745-123">Експорт також запускатиметься під час кожного [запланованого оновлення](system.md#schedule-tab).</span><span class="sxs-lookup"><span data-stu-id="dc745-123">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>

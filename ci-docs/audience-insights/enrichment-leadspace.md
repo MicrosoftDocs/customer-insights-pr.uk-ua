@@ -1,0 +1,64 @@
+---
+title: Збагачення профілів компанії за допомогою стороннього збагачення Leadspace
+description: Загальні відомості про стороннє збагачення Leadspace.
+ms.date: 11/24/2020
+ms.reviewer: kishorem
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
+manager: shellyha
+ms.openlocfilehash: 1b5c6e46e8e424df83e855d81fc4dd7ecb394e3c
+ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.translationtype: HT
+ms.contentlocale: uk-UA
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668748"
+---
+# <a name="enrichment-of-company-profiles-with-leadspace-preview"></a><span data-ttu-id="a2ef2-103">Збагачення профілів компанії за допомогою Leadspace (підготовча версія)</span><span class="sxs-lookup"><span data-stu-id="a2ef2-103">Enrichment of company profiles with Leadspace (preview)</span></span>
+
+<span data-ttu-id="a2ef2-104">Leadspace — це компанія, яка займається наукою про дані та надає платформу даних для клієнтів B2B.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-104">Leadspace is a data science company that provides a B2B Customer Data Platform.</span></span> <span data-ttu-id="a2ef2-105">Вона дає змогу клієнтам з уніфікованими профілями клієнтів для компаній збагачувати свої дані.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-105">It enables customers with unified customer profiles for companies to enrich their data.</span></span> <span data-ttu-id="a2ef2-106">Збагачення містять додаткові атрибути, зокрема відомості про розміри компаній, їхні розташування, галузі тощо.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-106">Enrichments include additional attributes such as company size, location, industry, and more.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="a2ef2-107">Вимоги</span><span class="sxs-lookup"><span data-stu-id="a2ef2-107">Prerequisites</span></span>
+
+<span data-ttu-id="a2ef2-108">Для налаштування Leadspace повинні виконуватися нижчезазначені передумови.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-108">To configure Leadspace, the following prerequisites must be met:</span></span>
+
+- <span data-ttu-id="a2ef2-109">Ви маєте активну ліцензію Leadspace і «безтерміновий ключ» (що згадується як **Маркер Leadspace**).</span><span class="sxs-lookup"><span data-stu-id="a2ef2-109">You have an active Leadspace license and the “perpetual key” (referred to as **Leadspace token**).</span></span> <span data-ttu-id="a2ef2-110">Зв'яжіться безпосередньо з [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/), щоб дізнатися більше про їхній продукт.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-110">Contact directly [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) for details about their product.</span></span>
+- <span data-ttu-id="a2ef2-111">Ви маєте дозволи [Адміністратора](permissions.md#administrator).</span><span class="sxs-lookup"><span data-stu-id="a2ef2-111">You have [Administrator](permissions.md#administrator) permissions.</span></span>
+- <span data-ttu-id="a2ef2-112">У вас є [уніфіковані профілі клієнтів](customer-profiles.md) для компаній.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-112">You have [unified customer profiles](customer-profiles.md) for companies.</span></span>
+
+## <a name="configuration"></a><span data-ttu-id="a2ef2-113">Конфігурація</span><span class="sxs-lookup"><span data-stu-id="a2ef2-113">Configuration</span></span>
+
+1. <span data-ttu-id="a2ef2-114">У розділі «Аналіз аудиторії» виберіть **Дані** > **Збагачення**.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-114">In audience insights, go to **Data** > **Enrichment**.</span></span>
+
+1. <span data-ttu-id="a2ef2-115">Виберіть **Збагатити дані** на плитці Leadspace.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-115">Select **Enrich my data** on the Leadspace tile.</span></span>
+
+   :::image type="content" source="media/leadspace-tile.png" alt-text="Скріншот плитки Leadspace.":::
+
+1. <span data-ttu-id="a2ef2-117">Виберіть **Початок роботи**, а потім введіть активний **маркер Leadspace** (безтерміновий ключ).</span><span class="sxs-lookup"><span data-stu-id="a2ef2-117">Select **Get Started** and then enter an active **Leadspace token** (perpetual key).</span></span> <span data-ttu-id="a2ef2-118">Перегляньте та прийміть умови **конфіденційності й відповідності даних**, установивши прапорець **Приймаю**.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-118">Review and provide your consent for **Data privacy and compliance** by selecting the **I agree** checkbox.</span></span> <span data-ttu-id="a2ef2-119">Підтвердьте обидва введення, вибравши параметр **З'єднати з Leadspace**.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-119">Confirm both inputs by selecting **Connect to Leadspace**.</span></span>
+
+1. <span data-ttu-id="a2ef2-120">Виберіть **Зіставлення даних** і визначте, які поля з ваших уніфікованих профілів слід використовувати для пошуку відповідності даних компанії з Leadspace.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-120">Select **Map data** and define which fields from your unified profiles should be used to look for matching company data from Leadspace.</span></span> <span data-ttu-id="a2ef2-121">Поле **Назва компанії** є обов'язковим.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-121">The **Name of company** field is required.</span></span> <span data-ttu-id="a2ef2-122">Для більш високої точності зіставлення можна додати до двох інших полів, **Веб-сайт компанії** та **Місцезнаходження компанії**.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-122">For a higher match accuracy, up to two other fields, **Company website** and **Company location**, can be added.</span></span>
+
+   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Область зіставлення полів Leadspace.":::
+   
+1. <span data-ttu-id="a2ef2-124">Натисніть **Застосувати**, щоб заповнити поля, що зіставляються.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-124">Select **Apply** to complete the field mapping.</span></span>
+
+1. <span data-ttu-id="a2ef2-125">Виберіть команду **Виконати**, щоб збагатити профілі компанії.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-125">Select **Run** to enrich the company profiles.</span></span> <span data-ttu-id="a2ef2-126">Тривалість збагачення залежить від кількості уніфікованих профілів клієнтів.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-126">How long an enrichment takes depends on the number of unified customer profiles.</span></span>
+
+## <a name="enrichment-results"></a><span data-ttu-id="a2ef2-127">Результати збагачення</span><span class="sxs-lookup"><span data-stu-id="a2ef2-127">Enrichment results</span></span>
+
+<span data-ttu-id="a2ef2-128">Після оновлення збагачення ви можете переглянути нові збагачені дані компаній у розділі [Мої збагачення](enrichment-hub.md).</span><span class="sxs-lookup"><span data-stu-id="a2ef2-128">After refreshing the enrichment, you can review the newly enriched company data under [My enrichments](enrichment-hub.md).</span></span> <span data-ttu-id="a2ef2-129">Там також можна переглянути час останнього оновлення та кількість збагачених профілів.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-129">You can find the time of the last update and the number of enriched profiles.</span></span>
+
+<span data-ttu-id="a2ef2-130">Можна отримати доступ до докладного подання кожного збагаченого профілю, вибравши елемент **Переглянути збагачені дані**.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-130">You can access a detailed view of each enriched profile by selecting **View enriched data**.</span></span>
+
+<span data-ttu-id="a2ef2-131">Для отримання додаткових відомостей див. розділ [API Leadspace](https://support.leadspace.com/hc/en-us/sections/201997649-API).</span><span class="sxs-lookup"><span data-stu-id="a2ef2-131">For more information, see [Leadspace APIs](https://support.leadspace.com/hc/en-us/sections/201997649-API).</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="a2ef2-132">Наступні кроки</span><span class="sxs-lookup"><span data-stu-id="a2ef2-132">Next steps</span></span>
+
+<span data-ttu-id="a2ef2-133">Створюйте на основі збагачених даних клієнтів.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-133">Build on top of your enriched customer data.</span></span> <span data-ttu-id="a2ef2-134">Створіть [сегменти](segments.md), [міри](measures.md) та навіть [експортуйте дані](export-destinations.md), щоб надати клієнтам персоналізовані можливості.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-134">Create [segments](segments.md), [measures](measures.md), and even [export the data](export-destinations.md) to deliver personalized experiences to your customers.</span></span>
+
+## <a name="data-privacy-and-compliance"></a><span data-ttu-id="a2ef2-135">Конфіденційність і відповідність даних</span><span class="sxs-lookup"><span data-stu-id="a2ef2-135">Data privacy and compliance</span></span>
+
+<span data-ttu-id="a2ef2-136">Під час увімкнення Dynamics 365 Customer Insights для передавання даних до Leadspace можна перенести дані за межі нормативного регіону до Dynamics 365 Customer Insights, включно з потенційно конфіденційними даними, наприклад особистими даними.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-136">When you enable Dynamics 365 Customer Insights to transmit data to Leadspace, you allow transfer of data outside of the compliance boundary for Dynamics 365 Customer Insights, including potentially sensitive data such as Personal Data.</span></span> <span data-ttu-id="a2ef2-137">Корпорація Microsoft передаватиме ці дані відповідно до ваших указівок, але всю відповідальність за те, щоб компанія Leadspace відповідала будь-яким вашим вимогам щодо конфіденційності або безпеки, покладено на вас.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-137">Microsoft will transfer such data at your instruction, but you are responsible for ensuring that Leadspace meets any privacy or security obligations you may have.</span></span> <span data-ttu-id="a2ef2-138">Для отримання додаткових відомостей див. розділ [Декларація про конфіденційність Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).</span><span class="sxs-lookup"><span data-stu-id="a2ef2-138">For more information, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=396732).</span></span>
+<span data-ttu-id="a2ef2-139">Ваш адміністратор Dynamics 365 Customer Insights може видалити це збагачення в будь-який момент, щоб припинити користуватися цією функцією.</span><span class="sxs-lookup"><span data-stu-id="a2ef2-139">Your Dynamics 365 Customer Insights Administrator can remove this enrichment at any time to discontinue use of this functionality.</span></span>
