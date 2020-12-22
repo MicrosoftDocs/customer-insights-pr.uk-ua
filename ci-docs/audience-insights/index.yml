@@ -1,0 +1,79 @@
+### YamlMime:Landing
+title: Можливість аналізу аудиторії у програмі Dynamics 365 Customer Insights
+summary: Приймайте, уніфікуйте та впорядковуйте дані клієнтів із різних джерел. Створюйте профілі клієнтів і сегментацію в реальному часі та керуйте ними. Інтегруйте дані клієнтів із іншими системами, щоб зробити їх ще більш практичними.
+metadata:
+  title: Документація аналізу аудиторії
+  description: Довідковий центр із ключовими посиланнями для аналізу аудиторії.
+  ms.service: customer-insights
+  ms.subservice: audience-insights
+  ms.topic: landing-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.date: 10/16/2020
+  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: uk-UA
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4407268"
+landingContent:
+- title: Інформація про аналіз аудиторії
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Огляд продукту
+      url: overview.md
+    - text: Нові та оновлені функції
+      url: whats-new-audience-insights.md
+    - text: Місце спільноти
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+- title: Інтегруйте джерела даних
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Додавання джерел даних
+      url: data-sources.md
+    - text: Інкрементне оновлення
+      url: incremental-refresh-data-sources.md
+    - text: Зрозумійте сутності
+      url: entities.md
+- title: Об’єднуйте дані
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Зіставлення
+      url: map-entities.md
+    - text: Знайти відповідності
+      url: match-entities.md
+    - text: Злиття
+      url: merge-entities.md
+- title: Корегуйте профілі клієнтів
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Виконуйте настроювання зв’язків
+      url: relationships.md
+    - text: Створення списку справ клієнта
+      url: activities.md
+    - text: Приносьте власні моделі машинного навчання
+      url: custom-models.md
+- title: Експорт даних користувача
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Створення експортних напрямків
+      url: export-destinations.md
+    - text: Картки клієнта в програмах Dynamics 365
+      url: customer-card-add-in.md
+    - text: З’єднувач Power BI
+      url: export-power-bi.md
+- title: Адміністрування програми
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Налаштуйте систему
+      url: system.md
+    - text: Визначення дозволів користувачів
+      url: permissions.md
+    - text: Керування кількома середовищами
+      url: manage-environments.md
