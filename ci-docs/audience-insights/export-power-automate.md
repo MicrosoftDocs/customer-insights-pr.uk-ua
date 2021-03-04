@@ -1,49 +1,55 @@
 ---
 title: З’єднувач Power Automate | Microsoft Docs
 description: Створення циклів у Microsoft Power Automate із Dynamics 365 Customer Insights.
-ms.date: 08/03/2020
+ms.date: 01/20/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: philk
 manager: shellyha
-ms.openlocfilehash: ffe92414365b0b777691a4a2d585100e4fbea591
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: fb1df4e9ab1f78300b8ec1f8dfdfbfbac0e71447
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4407232"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268849"
 ---
-# <a name="power-automate-connector-preview"></a><span data-ttu-id="c6100-103">З’єднувач Power Automate (підготовча версія)</span><span class="sxs-lookup"><span data-stu-id="c6100-103">Power Automate connector (preview)</span></span>
+# <a name="power-automate-connector-preview"></a><span data-ttu-id="a4c46-103">З’єднувач Power Automate (підготовча версія)</span><span class="sxs-lookup"><span data-stu-id="a4c46-103">Power Automate connector (preview)</span></span>
 
-<span data-ttu-id="c6100-104">Ініціюйте автоматичний запуск певних подій під час змінення даних і керуйте складнішими потоками безпосередньо в [Power Automate](https://flow.microsoft.com/).</span><span class="sxs-lookup"><span data-stu-id="c6100-104">Trigger specific events to occur automatically when your data changes and manage more complex flows directly in [Power Automate](https://flow.microsoft.com/).</span></span>
+<span data-ttu-id="a4c46-104">Ініціюйте автоматичний запуск певних подій під час змінення даних і керуйте складнішими потоками безпосередньо в [Power Automate](https://flow.microsoft.com/).</span><span class="sxs-lookup"><span data-stu-id="a4c46-104">Trigger specific events to occur automatically when your data changes and manage more complex flows directly in [Power Automate](https://flow.microsoft.com/).</span></span>
 
-## <a name="power-automate-triggers"></a><span data-ttu-id="c6100-105">Тригери Power Automate</span><span class="sxs-lookup"><span data-stu-id="c6100-105">Power Automate triggers</span></span>
+## <a name="power-automate-triggers"></a><span data-ttu-id="a4c46-105">Тригери Power Automate</span><span class="sxs-lookup"><span data-stu-id="a4c46-105">Power Automate triggers</span></span>
 
-<span data-ttu-id="c6100-106">Ви можете використовувати різноманітні тригери, які дозволять створювати потоки для автоматизації повторюваних завдань, наприклад, сповіщень або інших додаткових дій.</span><span class="sxs-lookup"><span data-stu-id="c6100-106">You can use a variety of triggers that allow you to create flows to automate repetitive tasks, such as notifications or more advanced actions.</span></span> 
+<span data-ttu-id="a4c46-106">Використовуйте тригери для створення хмарних циклів та автоматизації повторюваних завдань, таких як сповіщення або більш складні дії.</span><span class="sxs-lookup"><span data-stu-id="a4c46-106">Use triggers to create cloud flows and automate repetitive tasks, such as notifications or more advanced actions.</span></span> 
 
-- <span data-ttu-id="c6100-107">Тригер на помилку під час оновлення джерела даних.</span><span class="sxs-lookup"><span data-stu-id="c6100-107">Trigger when a data source refresh fails.</span></span> 
-- <span data-ttu-id="c6100-108">Тригер на успішне оновлення джерела даних.</span><span class="sxs-lookup"><span data-stu-id="c6100-108">Trigger when a data source refresh succeeds.</span></span>
-- <span data-ttu-id="c6100-109">Тригер на перетин межі для граничного значення для сегмента.</span><span class="sxs-lookup"><span data-stu-id="c6100-109">Trigger when a threshold is crossed on a segment.</span></span> <span data-ttu-id="c6100-110">Тригер спрацьовує лише при перевищенні обмеження.</span><span class="sxs-lookup"><span data-stu-id="c6100-110">The trigger is limited to crossing above the threshold.</span></span>
-- <span data-ttu-id="c6100-111">Тригер на перетин межі для граничного значення для бізнес-показника.</span><span class="sxs-lookup"><span data-stu-id="c6100-111">Trigger when a threshold is crossed on a business measure.</span></span> <span data-ttu-id="c6100-112">Тригер спрацьовує лише при перевищенні обмеження.</span><span class="sxs-lookup"><span data-stu-id="c6100-112">The trigger is limited crossing above the threshold.</span></span>
-- <span data-ttu-id="c6100-113">Тригер після завершення повного оновлення (джерела даних, сегменти, показники,...).</span><span class="sxs-lookup"><span data-stu-id="c6100-113">Trigger when a full refresh of (data sources, segments, measures,...) is completed.</span></span>
-- <span data-ttu-id="c6100-114">Ініціюється, коли завершується оновлення процесу уніфікації (зіставлення, відповідність, злиття).</span><span class="sxs-lookup"><span data-stu-id="c6100-114">Trigger when a refresh of the unification process (map, match, merge) is completed.</span></span>
+- <span data-ttu-id="a4c46-107">Тригер на помилку під час оновлення джерела даних.</span><span class="sxs-lookup"><span data-stu-id="a4c46-107">Trigger when a data source refresh fails.</span></span> 
+- <span data-ttu-id="a4c46-108">Тригер на успішне оновлення джерела даних.</span><span class="sxs-lookup"><span data-stu-id="a4c46-108">Trigger when a data source refresh succeeds.</span></span>
+- <span data-ttu-id="a4c46-109">Тригер на перетин межі для граничного значення для сегмента.</span><span class="sxs-lookup"><span data-stu-id="a4c46-109">Trigger when a threshold is crossed on a segment.</span></span> <span data-ttu-id="a4c46-110">Тригер спрацьовує лише при перевищенні обмеження.</span><span class="sxs-lookup"><span data-stu-id="a4c46-110">The trigger is limited to crossing above the threshold.</span></span>
+- <span data-ttu-id="a4c46-111">Тригер на перетин межі для граничного значення для бізнес-показника.</span><span class="sxs-lookup"><span data-stu-id="a4c46-111">Trigger when a threshold is crossed on a business measure.</span></span> <span data-ttu-id="a4c46-112">Тригер спрацьовує лише при перевищенні обмеження.</span><span class="sxs-lookup"><span data-stu-id="a4c46-112">The trigger is limited crossing above the threshold.</span></span>
+- <span data-ttu-id="a4c46-113">Тригер після завершення повного оновлення (джерела даних, сегменти, показники,...).</span><span class="sxs-lookup"><span data-stu-id="a4c46-113">Trigger when a full refresh of (data sources, segments, measures,...) is completed.</span></span>
+- <span data-ttu-id="a4c46-114">Ініціюється, коли завершується оновлення процесу уніфікації (зіставлення, відповідність, злиття).</span><span class="sxs-lookup"><span data-stu-id="a4c46-114">Trigger when a refresh of the unification process (map, match, merge) is completed.</span></span>
 
-<span data-ttu-id="c6100-115">[Налаштування тригерів у Power Automate](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/).</span><span class="sxs-lookup"><span data-stu-id="c6100-115">[Configure your triggers in Power Automate](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/).</span></span>
+<span data-ttu-id="a4c46-115">[Налаштування тригерів у Power Automate](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/).</span><span class="sxs-lookup"><span data-stu-id="a4c46-115">[Configure your triggers in Power Automate](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/).</span></span>
 
-## <a name="power-automate-actions"></a><span data-ttu-id="c6100-116">Дії Power Automate</span><span class="sxs-lookup"><span data-stu-id="c6100-116">Power Automate actions</span></span>
-<span data-ttu-id="c6100-117">З'єднувач Power Automate, окрім тригерів, пропонує й інші дії.</span><span class="sxs-lookup"><span data-stu-id="c6100-117">The Power Automate connector provides other actions than the available triggers.</span></span> <span data-ttu-id="c6100-118">Додаткову інформацію наведено в посібнику[Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).</span><span class="sxs-lookup"><span data-stu-id="c6100-118">For more information, see the [Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).</span></span>
+## <a name="power-automate-actions"></a><span data-ttu-id="a4c46-116">Дії Power Automate</span><span class="sxs-lookup"><span data-stu-id="a4c46-116">Power Automate actions</span></span>
+<span data-ttu-id="a4c46-117">З'єднувач Power Automate, окрім тригерів, пропонує й інші дії.</span><span class="sxs-lookup"><span data-stu-id="a4c46-117">The Power Automate connector provides other actions than the available triggers.</span></span> <span data-ttu-id="a4c46-118">Додаткову інформацію наведено в посібнику[Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).</span><span class="sxs-lookup"><span data-stu-id="a4c46-118">For more information, see the [Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).</span></span>
 
-## <a name="create-a-power-automate-flow-in-audience-insights"></a><span data-ttu-id="c6100-119">Створення потоку Power Automate у аналізі аудиторій</span><span class="sxs-lookup"><span data-stu-id="c6100-119">Create a Power Automate flow in audience insights</span></span>
+## <a name="create-a-power-automate-flow"></a><span data-ttu-id="a4c46-119">Створіть цикл Power Automate</span><span class="sxs-lookup"><span data-stu-id="a4c46-119">Create a Power Automate flow</span></span>
 
-1. <span data-ttu-id="c6100-120">У розділі «Аналіз аудиторії» виберіть **Адміністратор** > **Система**.</span><span class="sxs-lookup"><span data-stu-id="c6100-120">In audience insights, go to **Admin** > **System**.</span></span>
+1. <span data-ttu-id="a4c46-120">У розділі «Аналіз аудиторії» виберіть **Адміністратор** > **Напрямки експорту**.</span><span class="sxs-lookup"><span data-stu-id="a4c46-120">In audience insights, go to **Admin** > **Export destinations**.</span></span>
 
-1. <span data-ttu-id="c6100-121">На сторінці **Система** перейдіть на вкладку **Стан**.</span><span class="sxs-lookup"><span data-stu-id="c6100-121">On the **System** page, select the **Status** tab.</span></span>
+1. <span data-ttu-id="a4c46-121">На плитці **Power Automate** виберіть **Налаштувати**.</span><span class="sxs-lookup"><span data-stu-id="a4c46-121">On the **Power Automate** tile, select **Set up**.</span></span>
 
-1. <span data-ttu-id="c6100-122">У розділі **Джерела даних** виберіть **Потоки**, а потім виберіть **Створити потік** із розкривного списку.</span><span class="sxs-lookup"><span data-stu-id="c6100-122">In the **Data Sources** section, select **Flows** and select **Create a flow** from the dropdown list.</span></span>
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="c6100-123">![З’єднувач Power Automate: дія "Створити цикл"](media/power-automate-connector-create-flow.png "З’єднувач Power Automate: дія "Створити цикл"")</span><span class="sxs-lookup"><span data-stu-id="c6100-123">![Power Automate connector showing Create a Flow action](media/power-automate-connector-create-flow.png "Power Automate connector showing Create a Flow action")</span></span>
+1. <span data-ttu-id="a4c46-122">Відкриється з’єднувач Customer Insights (підготовча версія) у Power Automate.</span><span class="sxs-lookup"><span data-stu-id="a4c46-122">The Customer Insights Connector (preview) in Power Automate opens.</span></span> <span data-ttu-id="a4c46-123">**Увійти до** Power Automate.</span><span class="sxs-lookup"><span data-stu-id="a4c46-123">**Sign in** to Power Automate.</span></span>
 
-1. <span data-ttu-id="c6100-124">У Power Automate виберіть один із доступних тригерів для створення потрібного потоку.</span><span class="sxs-lookup"><span data-stu-id="c6100-124">In Power Automate, select one of the available triggers to create your preferred flow.</span></span> <span data-ttu-id="c6100-125">Під час створення першого циклу спочатку потрібно буде пройти автентифікацію за допомогою з’єднувача Power Automate.</span><span class="sxs-lookup"><span data-stu-id="c6100-125">If you're creating your first flow, you'll need to authenticate with the Power Automate connector first.</span></span>
+1. <span data-ttu-id="a4c46-124">Виберіть один із доступних тригерів і додайте більше кроків до нового циклу.</span><span class="sxs-lookup"><span data-stu-id="a4c46-124">Choose one of the available triggers and add more steps to your new flow.</span></span> <span data-ttu-id="a4c46-125">Додаткові відомості: [Створення хмарних циклів у Power Automate](https://docs.microsoft.com/power-automate/get-started-logic-flow).</span><span class="sxs-lookup"><span data-stu-id="a4c46-125">For more information, see [Create a cloud flow in Power Automate](https://docs.microsoft.com/power-automate/get-started-logic-flow).</span></span>
+
+<span data-ttu-id="a4c46-126">Приклади використання циклів:</span><span class="sxs-lookup"><span data-stu-id="a4c46-126">Examples how to use flows:</span></span> 
+- <span data-ttu-id="a4c46-127">Надішліть повідомлення в канал Microsoft Teams, якщо оновлення джерела даних невдале.</span><span class="sxs-lookup"><span data-stu-id="a4c46-127">Post a message to a Microsoft Teams channel if a data source refresh fails.</span></span> 
+- <span data-ttu-id="a4c46-128">Надсилайте повідомлення електронної пошти власникам даних, коли буде досягнуто граничне значення для сегмента.</span><span class="sxs-lookup"><span data-stu-id="a4c46-128">Send an email to the data owners when a threshold on a segment is crossed.</span></span>
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
