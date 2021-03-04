@@ -4,16 +4,16 @@ description: Робота з настроюваними моделями з ма
 ms.date: 11/19/2020
 ms.reviewer: zacook
 ms.service: dynamics-365-ai
-ms.topic: article
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: ef248086b30b870359970529a7bfb37792be62d5
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668928"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267259"
 ---
 # <a name="custom-machine-learning-models"></a>Спеціальні моделі машинного навчання
 
@@ -46,15 +46,15 @@ ms.locfileid: "4668928"
 
 1. Виберіть веб-службу студії машинного навчання або воронку продажів машинного навчання Azure у розкривному меню **Веб-служби, що містять вашу модель**. Потім виберіть **Далі**.
    - Докладніше про [публікацію веб-служби в студії машинного навчання (класична версія)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - Докладніше про [публікацію воронки продажів у машинному навчанні Azure за допомогою конструктора](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) або [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). 
-     > [!NOTE]
-     > Ваша воронка продажів має бути опублікована в [кінцевій точці воронки продажів](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+   - Докладніше про [публікацію воронки продажів у машинному навчанні Azure за допомогою конструктора](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) або [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Ваша воронка продажів має бути опублікована в [кінцевій точці воронки продажів](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. Для кожного **Введення веб-служби** виберіть відповідну **Сутність** з аналізу аудиторії і натисніть **Далі**.
+   > [!NOTE]
+   > Робочий цикл настроюваної моделі застосовуватиме евристику для зіставлення полів вводу веб-служби із атрибутами сутності на основі імені та типу даних поля. З'явиться повідомлення про помилку, якщо поле веб-служби не вдасться зіставити із сутністю.
 
    > [!div class="mx-imgBorder"]
    > ![Налаштуйте робочий цикл](media/intelligence-screen2-updated.png "Налаштуйте робочий цикл")
-
+   
 1. В етапі **Параметри виводу моделі** встановіть такі властивості:
    - Студія машинного навчання (класична версія)
       1. Введіть вивід **Ім'я сутності**, до якого потрібно додати результати виводу веб-служби.
@@ -112,3 +112,6 @@ ms.locfileid: "4668928"
 1. Натисніть кнопку **Видалити** та підтвердьте видалення.
 
 Робочий цикл буде видалено. [Сутність](entities.md), створена під час створення робочого циклу, залишається, її можна переглянути на сторінці **Сутності**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

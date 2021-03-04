@@ -5,16 +5,16 @@ ms.date: 09/21/2020
 ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: d497ca779a337c512a7254524f597cff226bcb45
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 0607a4644ac7d7beb19e4faecf012efcd197d48c
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4407237"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477113"
 ---
 # <a name="connector-for-power-bi-preview"></a>З’єднувач для Power BI (підготовча версія)
 
@@ -31,7 +31,7 @@ ms.locfileid: "4407237"
 
 1. Клацніть **Більше** і виконайте пошук **Dynamics 365 Customer Insights**
 
-1. Виберіть відповідний результат і натисніть кнопку **З’єднати**.
+1. Виберіть **Підключити**.
 
 1. **Увійдіть** у систему за допомогою того самого облікового запису організації, що використовується для Customer Insights, і натисніть **З’єднати**.
    > [!NOTE]
@@ -52,3 +52,22 @@ ms.locfileid: "4407237"
 ### <a name="work-with-a-subset-of-data"></a>Робота з підмножиною даних
 
 Розглянемо роботу з підмножиною даних. Наприклад, можна створити [сегменти](segments.md) замість експортування всіх записів клієнтів до програми Power BI.
+
+## <a name="troubleshooting"></a>Виправлення неполадок
+
+### <a name="customer-insights-environment-doesnt-show-in-power-bi"></a>Середовище Customer Insights не відображається в Power BI
+
+Середовища, для яких визначено більше одного [зв’язка](relationships.md) між двома ідентичними сутностями в аналізі аудиторії, будуть недоступні в з’єднувачі Power BI.
+
+Можна визначити та видалити дублікати зв'язків.
+
+1. В аналізі аудиторії відкрийте **Дані** > **Зв’язки** у середовищі, що відсутнє у Power BI.
+2. Визначення дублікатів зв'язків:
+   - Перевірте, чи існує більше одного визначеного зв’язку між однаковими сутностями.
+   - Перевірте, чи є зв'язки між двома сутностями, що обидва беруть участь в процесі уніфікації. Існує неявний зв'язок, визначений між усіма сутностями, включеними до процесу об'єднання.
+3. Видаліть усі виявлені дублікати зв'язків.
+
+Після видалення дублікатів зв'язків спробуйте знову налаштувати з’єднувач Power BI. Тепер середовище має бути доступним.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
+

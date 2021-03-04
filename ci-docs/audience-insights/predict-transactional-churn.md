@@ -5,16 +5,16 @@ ms.date: 11/12/2020
 ms.reviewer: zacook
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f3cbbf99a6cecba2aab2cf85428d53e5df8346e4
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: af461d290c69687fb47bacfcff446a0c62978383
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644428"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268343"
 ---
 # <a name="transactional-churn-prediction-preview"></a>Прогнозування відтоку транзакцій (попередній огляд)
 
@@ -96,6 +96,8 @@ ms.locfileid: "4644428"
 1. Крім того, виберіть **Додати дані** для **Справ клієнтів**. Виберіть сутність, яка надає відомості про справу клієнта, як описано в необхідних компонентах.
 
 1. Зіставте семантичні поля з атрибутами в сутності «Справи клієнта» і натисніть **Далі**. Опис полів ви можете знайти у [попередніх умовах](#prerequisites).
+
+   :::image type="content" source="media/map-transaction-data-fields.png" alt-text="Зіставлення полів клієнта для транзакційних даних.":::
 
 1. Виберіть тип справи, який відповідає типу справи клієнта, що ви налаштовуєте. Натисніть **Створити новий** і виберіть доступний тип справи або створіть новий тип.
 
@@ -185,3 +187,6 @@ ms.locfileid: "4644428"
 1. Виберіть вертикальні три крапки поруч із прогнозом, який потрібно видалити.
 
 1. Виберіть **Видалити**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

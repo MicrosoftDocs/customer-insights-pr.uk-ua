@@ -1,20 +1,20 @@
 ---
 title: З’єднувач Power Automate | Microsoft Docs
 description: Створення циклів у Microsoft Power Automate із Dynamics 365 Customer Insights.
-ms.date: 08/03/2020
+ms.date: 01/20/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: philk
 manager: shellyha
-ms.openlocfilehash: ffe92414365b0b777691a4a2d585100e4fbea591
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: fb1df4e9ab1f78300b8ec1f8dfdfbfbac0e71447
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4407232"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268849"
 ---
 # <a name="power-automate-connector-preview"></a>З’єднувач Power Automate (підготовча версія)
 
@@ -22,7 +22,7 @@ ms.locfileid: "4407232"
 
 ## <a name="power-automate-triggers"></a>Тригери Power Automate
 
-Ви можете використовувати різноманітні тригери, які дозволять створювати потоки для автоматизації повторюваних завдань, наприклад, сповіщень або інших додаткових дій. 
+Використовуйте тригери для створення хмарних циклів та автоматизації повторюваних завдань, таких як сповіщення або більш складні дії. 
 
 - Тригер на помилку під час оновлення джерела даних. 
 - Тригер на успішне оновлення джерела даних.
@@ -36,14 +36,20 @@ ms.locfileid: "4407232"
 ## <a name="power-automate-actions"></a>Дії Power Automate
 З'єднувач Power Automate, окрім тригерів, пропонує й інші дії. Додаткову інформацію наведено в посібнику[Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).
 
-## <a name="create-a-power-automate-flow-in-audience-insights"></a>Створення потоку Power Automate у аналізі аудиторій
+## <a name="create-a-power-automate-flow"></a>Створіть цикл Power Automate
 
-1. У розділі «Аналіз аудиторії» виберіть **Адміністратор** > **Система**.
+1. У розділі «Аналіз аудиторії» виберіть **Адміністратор** > **Напрямки експорту**.
 
-1. На сторінці **Система** перейдіть на вкладку **Стан**.
+1. На плитці **Power Automate** виберіть **Налаштувати**.
 
-1. У розділі **Джерела даних** виберіть **Потоки**, а потім виберіть **Створити потік** із розкривного списку.
-   > [!div class="mx-imgBorder"]
-   > ![З’єднувач Power Automate: дія "Створити цикл"](media/power-automate-connector-create-flow.png "З’єднувач Power Automate: дія "Створити цикл"")
+1. Відкриється з’єднувач Customer Insights (підготовча версія) у Power Automate. **Увійти до** Power Automate.
 
-1. У Power Automate виберіть один із доступних тригерів для створення потрібного потоку. Під час створення першого циклу спочатку потрібно буде пройти автентифікацію за допомогою з’єднувача Power Automate.
+1. Виберіть один із доступних тригерів і додайте більше кроків до нового циклу. Додаткові відомості: [Створення хмарних циклів у Power Automate](https://docs.microsoft.com/power-automate/get-started-logic-flow).
+
+Приклади використання циклів: 
+- Надішліть повідомлення в канал Microsoft Teams, якщо оновлення джерела даних невдале. 
+- Надсилайте повідомлення електронної пошти власникам даних, коли буде досягнуто граничне значення для сегмента.
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

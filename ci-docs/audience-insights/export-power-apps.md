@@ -1,20 +1,20 @@
 ---
 title: З’єднувач Power Apps
 description: Підключення до Power Apps і Power Automate.
-ms.date: 08/21/2020
+ms.date: 01/19/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: b6ec103e29e218b2f27bfc1193300ea793a6b30b
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 5a8bbb9a09218d54228589d43c21c8894680b56e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4407234"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268941"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>З’єднувач Microsoft Power Apps (підготовча версія)
 
@@ -31,7 +31,7 @@ Customer Insights – це одне із багатьох [доступних д
 Після додавання Customer Insights як зв’язку даних можна вибрати зазначені нижче сутності в Power Apps.
 
 - Клієнт: для використання даних з [уніфікованого профілю клієнта](customer-profiles.md).
-- Уніфікована діяльність клієнта: для відображення в програмі [часової шкали дій](activities.md).
+- UnifiedActivity: для відображення [часової шкали справ](activities.md) для програми.
 
 ## <a name="limitations"></a>Обмеження
 
@@ -72,3 +72,6 @@ Customer Insights – це одне із багатьох [доступних д
 1. Щоб відобразити уніфіковану часову шкалу для клієнта, додайте елемент «Колекція», а потім додайте властивість «Items» **Filter('UnifiedActivity', CustomerId = {Customer_Id})**
 
     Приклад: Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

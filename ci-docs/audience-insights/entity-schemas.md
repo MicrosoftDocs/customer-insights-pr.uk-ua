@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 2cf01029ef6b64fe566022d09ce65bca3603189c
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 9e7a6e944d37d25f4c25846644278b39b3ddd08e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643933"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269309"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Схеми сутностей у Common Data Model
 
@@ -45,3 +45,6 @@ ms.locfileid: "4643933"
 Сутності можна переглянути в [Навігаторі сутності Common Data Model](https://microsoft.github.io/CDM/). Виберіть кнопку **Завантажити з GitHub!** і перейдіть до розділу **foundationCommon** > **crmCommon** > **рішення** > **customerInsights**, де можна знайти список сутностей Customer Insights та їхні визначення.
 > [!div class="mx-imgBorder"]
 > ![Засіб переходу між сутностями CDM, у якому відображається сутність CustomerActivity](media/CDM-entity-navigator.png "Засіб переходу між сутностями CDM, у якому відображається сутність CustomerActivity")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

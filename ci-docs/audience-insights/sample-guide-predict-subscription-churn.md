@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 2537cfb5dde0d1ce1af16f585f0bf91d15ea1870
-ms.sourcegitcommit: a6e7df90d61450e00886753eb5db116f2f35bb6c
+ms.openlocfilehash: 3f1019ace424f89320c5a0d5058e928f4cbc7e62
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654005"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269880"
 ---
 # <a name="subscription-churn-prediction-preview-sample-guide"></a>Зразок вказівок для прогнозу відтоку передплат (попередній перегляд)
 
@@ -46,10 +46,9 @@ Contoso — компанія, яка випускає високоякісну 
    - **DateOfBirth**: дата
    - **CreatedOn**: дата/час/зона
 
-   [!div class="mx-imgBorder"]
-   ![Змініть DoB на Date](media/ecommerce-dob-date.PNG "зміна дати народження на дату")
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Зміна дати народження на дату.":::
 
-1. У полі «Ім'я» в області праворуч перейменуйте джерело даних, **Запит** на **eCommerceContacts**
+1. У полі **Ім'я** в області праворуч перейменуйте джерело даних **Запит** на **eCommerceContacts**
 
 1. Збережіть джерело даних
 
@@ -67,7 +66,7 @@ Contoso — компанія, яка випускає високоякісну 
    - **RewardsPoints**: загальна кількість
    - **CreatedOn**: дата/час
 
-1. У полі «Ім'я» в області праворуч перейменуйте джерело даних, **Запит** на **loyCustomers**.
+1. У полі **Ім'я** в області праворуч перейменуйте джерело даних **Запит** на **loyCustomers**.
 
 1. Збережіть джерело даних
 
@@ -90,7 +89,7 @@ Contoso — компанія, яка випускає високоякісну 
    - **Is_auto_renew** : true/false
    - **RecurringFrequencyInMonths**: ціле число
 
-1. У полі «Ім'я» в області праворуч перейменуйте джерело даних, **Запит** на **SubscriptionHistory**.
+1. У полі **Ім'я** в області праворуч перейменуйте джерело даних **Запит** на **SubscriptionHistory**.
 
 1. Збережіть джерело даних
 
@@ -230,3 +229,6 @@ Contoso — компанія, яка випускає високоякісну 
 Тепер у вас є сегмент, який динамічно оновлюється, що визначає клієнтів з високою ймовірністю відтоку для цього бізнесу за передплатою.
 
 Додаткові відомості див. в розділі [Створення сегментів і керування ними](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

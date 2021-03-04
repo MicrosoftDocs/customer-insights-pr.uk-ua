@@ -6,16 +6,16 @@ metadata:
   description: Довідковий центр із ключовими посиланнями для аналізу аудиторії.
   ms.service: customer-insights
   ms.subservice: audience-insights
-  ms.topic: landing-page
+  ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.date: 10/16/2020
-  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
-  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.openlocfilehash: ba5229067c7c338b4f8d0503aaf80f25b6c4002c
+  ms.sourcegitcommit: a8f7d5d0008b2d7d0ff0daeb746126abfc82c253
   ms.translationtype: HT
   ms.contentlocale: uk-UA
-  ms.lasthandoff: 11/03/2020
-  ms.locfileid: "4407268"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "4745746"
 landingContent:
 - title: Інформація про аналіз аудиторії
   linkLists:
@@ -27,36 +27,36 @@ landingContent:
       url: whats-new-audience-insights.md
     - text: Місце спільноти
       url: https://go.microsoft.com/fwlink/?linkid=2073991
-- title: Інтегруйте джерела даних
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Додавання джерел даних
-      url: data-sources.md
-    - text: Інкрементне оновлення
-      url: incremental-refresh-data-sources.md
-    - text: Зрозумійте сутності
-      url: entities.md
 - title: Об’єднуйте дані
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Зіставлення
-      url: map-entities.md
-    - text: Знайти відповідності
-      url: match-entities.md
-    - text: Злиття
-      url: merge-entities.md
-- title: Корегуйте профілі клієнтів
+    - text: Огляд джерел даних
+      url: data-sources.md
+    - text: Огляд уніфікації
+      url: data-unification.md
+    - text: Зрозумійте сутності
+      url: entities.md
+- title: Збагачення та очищення даних
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Збагачуйте профілів клієнтів
+      url: enrichment-hub.md
     - text: Виконуйте настроювання зв’язків
       url: relationships.md
     - text: Створення списку справ клієнта
       url: activities.md
-    - text: Приносьте власні моделі машинного навчання
-      url: custom-models.md
+- title: Отримати аналітичні огляди
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Створення сегментів
+      url: segments.md
+    - text: Створення показників
+      url: measures.md
+    - text: Доповнення даних за допомогою прогнозів
+      url: predictions.md
 - title: Експорт даних користувача
   linkLists:
   - linkListType: how-to-guide

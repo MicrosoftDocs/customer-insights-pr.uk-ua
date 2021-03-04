@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 24321e9e11f9fd4e800526673726e5146ed33674
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 44f97696ec91dc488dd6a7528e186abb99c8288b
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4407240"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269677"
 ---
-# <a name="data-unification"></a>Уніфікація даних
+# <a name="data-unification-overview"></a>Загальні відомості про уніфікацію даних
 
 Після [налаштування джерела даних](data-sources.md) можна уніфікувати дані. Уніфікація даних складається з трьох кроків: **Зіставлення**, **Знаходження відповідностей** та **Злиття**.
 
@@ -31,3 +31,6 @@ ms.locfileid: "4407240"
 - [налаштувати зв’язки між сутностями](relationships.md), щоб створити складні сегменти
 - [збагатити дані](enrichment-hub.md), щоб отримувати ширший діапазон аналітичних оглядів про своїх клієнтів
 - [визначити справи](activities.md) з деяких переданих атрибутів
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

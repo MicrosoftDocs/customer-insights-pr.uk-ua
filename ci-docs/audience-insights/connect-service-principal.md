@@ -1,20 +1,20 @@
 ---
 title: Підключення до облікового запису Azure Data Lake Storage Gen2 за допомогою принципала служби
-description: Скористайтеся принципалом служби для аналізу аудиторій Azure, щоб підключитися до власного озера даних під час вкладення в аналіз аудиторії.
-ms.date: 11/24/2020
+description: Скористайтеся принципалом служби Azure для аналізу аудиторій, щоб підключитися до власного озера даних під час підключення його до аналізу аудиторії.
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2fae278d34fa02b9168ac70dfa8dd351653245e
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644113"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267747"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Для аналізу аудиторії підключіться до облікового запису Azure Data Lake Storage Gen2 за допомогою принципала служби Azure
 
@@ -22,7 +22,9 @@ ms.locfileid: "4644113"
 
 Принципал служби можна використовувати для того, щоб безпечно [додавати або редагувати папку Common Data Model як джерело даних](connect-common-data-model.md) або [створювати нове або оновлювати наявне середовище](manage-environments.md#create-an-environment-in-an-existing-organization).
 
-Для створення принципала служби потрібно мати дозвіл адміністратора для вашої підписки Azure.
+> [!IMPORTANT]
+> - Для облікового запису сховища Azure Data Lake Gen2, який має намір використовувати принципал служби, необхідно увімкнути [Ієрархічний простір імен (HNS)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - Для створення принципала служби потрібно мати дозвіл адміністратора для вашої підписки Azure.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>Створення принципала служби Azure для аналізу аудиторії.
 
@@ -83,7 +85,7 @@ ms.locfileid: "4644113"
 
 Виконайте наведені нижче кроки, щоб надати необхідну інформацію щодо вибраного підходу.
 
-### <a name="resounce-based-storage-account-connection"></a>Підключення облікового запису сховища на основі ресурсу
+### <a name="resource-based-storage-account-connection"></a>Підключення облікового запису сховища на основі ресурсу
 
 1. Відкрийте [портал адміністратора Azure](https://portal.azure.com), увійдіть у підписку та відкрийте обліковий запис сховища.
 
@@ -108,7 +110,8 @@ ms.locfileid: "4644113"
 1. Перевірте **Передплату**, **Групу ресурсів** і **Ім’я** облікового запису сховища, щоб перевірити, що ви вибрали правильні значення у аналізі аудиторії.
 
 1. У аналізі аудиторії виберіть значення або відповідні поля під час прикріплення облікового запису сховища.
-
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="Введіть інформацію про ідентифікатор ресурсу облікового запису сховища.":::
    
 1. Продовжуйте дії, які залишилися в аналізі аудиторії, щоб прикріпити обліковий запис сховища.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

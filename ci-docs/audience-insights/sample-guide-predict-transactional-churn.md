@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 055708ed3f9f468cad83ecf976a460814bf05199
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 81540ad2f490cf566f031233543b3cb6aa838033
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643618"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269815"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>Зразок вказівок для прогнозу відтоку транзакцій (попередній перегляд)
 
@@ -49,7 +49,7 @@ Contoso — компанія, яка випускає високоякісну 
    [!div class="mx-imgBorder"]
    ![Змініть DoB на Date](media/ecommerce-dob-date.PNG "зміна дати народження на дату")
 
-1. У полі «Ім'я» в області праворуч перейменуйте джерело даних, **Запит** на **eCommerceContacts**
+1. У полі **Ім'я** в області праворуч перейменуйте джерело даних **Запит** на **eCommerceContacts**
 
 1. Збережіть джерело даних
 
@@ -66,7 +66,7 @@ Contoso — компанія, яка випускає високоякісну 
    - **PurchasedOn**: дата/час
    - **TotalPrice**: грошова одиниця
    
-1. У полі «Ім'я» в області праворуч перейменуйте джерело даних, **Запит** на **eCommercePurchases**.
+1. У полі **Ім'я** в області праворуч перейменуйте джерело даних **Запит** на **eCommercePurchases**.
 
 1. Збережіть джерело даних
 
@@ -84,7 +84,7 @@ Contoso — компанія, яка випускає високоякісну 
    - **RewardsPoints**: загальна кількість
    - **CreatedOn**: дата/час
 
-1. У полі «Ім'я» в області праворуч перейменуйте джерело даних, **Запит** на **loyCustomers**.
+1. У полі **Ім'я** в області праворуч перейменуйте джерело даних **Запит** на **loyCustomers**.
 
 1. Збережіть джерело даних
 
@@ -166,7 +166,7 @@ Contoso — компанія, яка випускає високоякісну 
 
      :::image type="content" source="media/model-levers.PNG" alt-text="Виберіть важелі моделі «Вікно прогнозу й визначення відтоку.":::
 
-1. Натисніть **Журнал придбання (обов'язково)** і виберіть параметр **Додати дані** до журналу підписок.
+1. Виберіть **Журнал придбання (обов'язково)** і виберіть параметр **Додати дані** для журналу придбань.
 
 1. Додайте сутність **eCommercePurchases : eCommerce** і зіставте поля з eCommerce з відповідними полями, обов'язковими для моделі.
 
@@ -195,7 +195,7 @@ Contoso — компанія, яка випускає високоякісну 
    :::image type="content" source="media/segment-intelligence.PNG" alt-text="Створення сегмента з виходом моделі.":::
 
 1. Виберіть кінцеву точку **OOBSubscriptionChurnPrediction** і визначте сегмент: 
-   - Поле: ChurnScore
+   - Поле: Chünscore
    - Оператор: більше ніж
    - Значення: 0,6
    
@@ -204,3 +204,6 @@ Contoso — компанія, яка випускає високоякісну 
 Тепер у вас є сегмент, який динамічно оновлюється, що визначає клієнтів з високою ймовірністю відтоку для цього бізнесу за передплатою.
 
 Додаткові відомості див. в розділі [Створення сегментів і керування ними](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
