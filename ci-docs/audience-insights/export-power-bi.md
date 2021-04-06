@@ -2,19 +2,19 @@
 title: З’єднувач Power BI
 description: Дізнайтесь, як використовувати з’єднувач Dynamics 365 Customer Insights у Power BI.
 ms.date: 09/21/2020
-ms.reviewer: sthe
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 0607a4644ac7d7beb19e4faecf012efcd197d48c
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5477113"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596064"
 ---
 # <a name="connector-for-power-bi-preview"></a>З’єднувач для Power BI (підготовча версія)
 
@@ -23,7 +23,7 @@ ms.locfileid: "5477113"
 ## <a name="prerequisites"></a>Вимоги
 
 - Ви маєте уніфіковані профілів клієнта.
-- На комп'ютері інстальовано найновішу версію [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/). [Дізнайтеся більше про Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-what-is-desktop).
+- На комп’ютері інстальована остання версія [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/). [Дізнайтеся більше про Power BI Desktop](/power-bi/desktop-what-is-desktop).
 
 ## <a name="configure-the-connector-for-power-bi"></a>Настроювання з’єднувача для Power BI
 
@@ -47,7 +47,7 @@ ms.locfileid: "5477113"
 
 ## <a name="large-data-sets"></a>Великі набори даних
 
-З'єднувач Customer Insights для Power BI призначений для роботи з наборами даних, що містять до 1 000 000 профілів клієнтів. Імпортування більших наборів, скоріш за все, працюватиме, але потребуватиме багато часу. Крім того, процес може вичерпати час, відведений на виконання обмеженнями Power BI. Для отримання додаткових відомостей див. розділ [Power BI: рекомендації щодо великих наборів даних](https://docs.microsoft.com/power-bi/admin/service-premium-what-is#large-datasets). 
+З'єднувач Customer Insights для Power BI призначений для роботи з наборами даних, що містять до 1 000 000 профілів клієнтів. Імпортування більших наборів, скоріш за все, працюватиме, але потребуватиме багато часу. Крім того, процес може вичерпати час, відведений на виконання обмеженнями Power BI. Для отримання додаткових відомостей див. розділ [Power BI: рекомендації щодо великих наборів даних](/power-bi/admin/service-premium-what-is#large-datasets). 
 
 ### <a name="work-with-a-subset-of-data"></a>Робота з підмножиною даних
 
@@ -70,4 +70,3 @@ ms.locfileid: "5477113"
 Після видалення дублікатів зв'язків спробуйте знову налаштувати з’єднувач Power BI. Тепер середовище має бути доступним.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-

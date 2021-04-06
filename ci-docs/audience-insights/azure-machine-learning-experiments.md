@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
-ms.author: mhart
-ms.reviewer: m-hartmann
+ms.author: naravill
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c166015b92596da0c6097e3d25e89579a5186ce0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267931"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597444"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Використання моделей на основі машинного навчання Azure
 
@@ -29,9 +29,9 @@ ms.locfileid: "5267931"
 
 ## <a name="set-up-azure-machine-learning-workspace"></a>Налаштування робочої області машинного навчання Azure
 
-1. Див. розділ [Створення робочої області «Машинне навчання Azure»](https://docs.microsoft.com/azure/machine-learning/concept-workspace#-create-a-workspace) для різних параметрів створення робочої області. Для кращої продуктивності створіть робочу область в області Azure, яка географічно розташована в найближчому до вас середовищі Customer Insights.
+1. Див. розділ [Створення робочої області «Машинне навчання Azure»](/azure/machine-learning/concept-workspace#-create-a-workspace) для різних параметрів створення робочої області. Для кращої продуктивності створіть робочу область в області Azure, яка географічно розташована в найближчому до вас середовищі Customer Insights.
 
-1. Ввійдіть до робочої області через [Студію машинного навчання Azure](https://ml.azure.com/). Існує кілька [способів взаємодії](https://docs.microsoft.com/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) з робочою областю.
+1. Ввійдіть до робочої області через [Студію машинного навчання Azure](https://ml.azure.com/). Існує кілька [способів взаємодії](/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) з робочою областю.
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Робота з конструктором машинного навчання Azure
 
@@ -39,13 +39,13 @@ ms.locfileid: "5267931"
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Робота з SDK машинного навчання Azure
 
-Спеціалісти з обробки даних і розробники штучного інтелекту використовують [SDK машинного навчання Azure](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true), щоб створити робочі цикли машинного навчання. Наразі моделі, що навчаються за допомогою SDK, не можна інтегрувати безпосередньо з Customer Insights. Для інтеграції з Customer Insights потрібен конвеєр пакетного виводу, що використовує цю модель.
+Спеціалісти з обробки даних і розробники штучного інтелекту використовують [SDK машинного навчання Azure](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py), щоб створити робочі цикли машинного навчання. Наразі моделі, що навчаються за допомогою SDK, не можна інтегрувати безпосередньо з Customer Insights. Для інтеграції з Customer Insights потрібен конвеєр пакетного виводу, що використовує цю модель.
 
 ## <a name="batch-pipeline-requirements-to-integrate-with-customer-insights"></a>Вимоги пакетної воронки продажів для інтеграції з Customer Insights
 
 ### <a name="dataset-configuration"></a>Конфігурація набору даних
 
-Необхідно створити набори даних для використання даних сутності з Customer Insights до конвеєра пакетного виводу. Ці набори даних потрібно зареєструвати в робочій області. Наразі підтримуються лише [табличні набори даних](https://docs.microsoft.com/azure/machine-learning/how-to-create-register-datasets#tabulardataset) у форматі. csv. Набори даних, які відповідають даним сутності, потрібно парметризувати як параметр воронки продажів.
+Необхідно створити набори даних для використання даних сутності з Customer Insights до конвеєра пакетного виводу. Ці набори даних потрібно зареєструвати в робочій області. Наразі підтримуються лише [табличні набори даних](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) у форматі. csv. Набори даних, які відповідають даним сутності, потрібно парметризувати як параметр воронки продажів.
    
 * Параметри набору даних у конструкторі
    
@@ -76,7 +76,7 @@ ms.locfileid: "5267931"
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>Імпорт даних воронки продажів у Customer Insights
 
-* Дизайнер надає [модуль даних експорту](https://docs.microsoft.com/azure/machine-learning/algorithm-module-reference/export-data), що дає змогу експортувати воронку продажів до сховища даних Azure. Зараз модуль має використовувати тип сховища даних **Сховище BLOB-даних Azure** і парметризувати **Сховище даних** і пов’язаний **Перелік дій**. Customer Insights переписує обидва параметри під час виконання воронки продажів зі сховищем даних і переліком дій, доступних для продукту.
+* Дизайнер надає [модуль даних експорту](/azure/machine-learning/algorithm-module-reference/export-data), що дає змогу експортувати воронку продажів до сховища даних Azure. Зараз модуль має використовувати тип сховища даних **Сховище BLOB-даних Azure** і парметризувати **Сховище даних** і пов’язаний **Перелік дій**. Customer Insights переписує обидва параметри під час виконання воронки продажів зі сховищем даних і переліком дій, доступних для продукту.
    > [!div class="mx-imgBorder"]
    > ![Налаштування експортування модулю даних](media/intelligence-designer-importdata.png "Налаштування експортування модулю даних")
    

@@ -2,25 +2,25 @@
 title: Схеми сутностей Customer Insights у Common Data Model
 description: Робота з сутностями в Common Data Model.
 ms.date: 04/17/2020
-ms.reviewer: mukeshpo
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 9e7a6e944d37d25f4c25846644278b39b3ddd08e
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 6667e411a1b56e13105a6b59b7b5d249bc8141ea
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269309"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596386"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Схеми сутностей у Common Data Model
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-[Common Data Model](https://docs.microsoft.com/common-data-model/) — це декларативна специфікація, а також визначення стандартних сутностей, які представляють загальновживані концепції та справи в додатках для ведення бізнесу й підвищення продуктивності. Ця модель також поширюється на експериментальні та аналітичні дані. Common Data Model пропонує чітко визначені, модульні та розширювані бізнес-сутності, такі як Бізнес-партнер, Підрозділ, Інцидент, Контактна особа, Потенційний клієнт, Потенційна угода та Продукт, а також засоби взаємодії з постачальниками, працівниками та клієнтами, такі як справи та угоди про рівень послуг. Будь-які особи можуть використовувати визначення Common Data Model для їхнього розширення та як основу власних проектів, щоб збирати ідеї для конкретного бізнесу.
+[Common Data Model](/common-data-model/) — це декларативна специфікація, а також визначення стандартних сутностей, які представляють загальновживані концепції та справи в додатках для ведення бізнесу й підвищення продуктивності. Ця модель також поширюється на експериментальні та аналітичні дані. Common Data Model пропонує чітко визначені, модульні та розширювані бізнес-сутності, такі як Бізнес-партнер, Підрозділ, Інцидент, Контактна особа, Потенційний клієнт, Потенційна угода та Продукт, а також засоби взаємодії з постачальниками, працівниками та клієнтами, такі як справи та угоди про рівень послуг. Будь-які особи можуть використовувати визначення Common Data Model для їхнього розширення та як основу власних проектів, щоб збирати ідеї для конкретного бізнесу.
 
 Це спільна модель даних, яка дає змогу програмам та інтеграторами даних ефективніше співпрацювати, надаючи уніфіковане визначення даних. Common Data Model має багату систему метаданих зі стандартними сутностями, зв'язками, ієрархіями, рисами тощо. Вона походить з програм Dynamics 365 і має відкритий код на GitHub, а також включає понад 260 стандартних сутностей. Велика система внутрішніх і зовнішніх партнерів вносить специфічних для кожної галузі поняття в Common Data Model.
 
@@ -32,13 +32,13 @@ ms.locfileid: "5269309"
 
 | Сутність | Опис |
 |---------|---------|
-|[CustomerActivity](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customeractivity) | Дія, виконана користувачем, яка має експериментальну вартість для бізнесу. |
-|[CustomerProfile](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile) | Особа або організація, яка виконала справи або має потенціальну можливість взяти участь у справах. |
-|[MeasureDefinition](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/measuredefinition) | Визначення ключових показників ефективності, поділене на нуль або більше вимірів (наприклад, Щомісячні активні користувачі, Загальна сума витрат за клієнтом, Середня вартість придбання клієнта) |
-|[Сегмент](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segment) | Визначає групу учасників зі спільними рисами. |
-|[SegmentMembership](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segmentmembership) | Учасники, які беруть участь у тому або іншому сегменті. |
+|[CustomerActivity](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customeractivity) | Дія, виконана користувачем, яка має експериментальну вартість для бізнесу. |
+|[CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile) | Особа або організація, яка виконала справи або має потенціальну можливість взяти участь у справах. |
+|[MeasureDefinition](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/measuredefinition) | Визначення ключових показників ефективності, поділене на нуль або більше вимірів (наприклад, Щомісячні активні користувачі, Загальна сума витрат за клієнтом, Середня вартість придбання клієнта) |
+|[Сегмент](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segment) | Визначає групу учасників зі спільними рисами. |
+|[SegmentMembership](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/segmentmembership) | Учасники, які беруть участь у тому або іншому сегменті. |
 
-Для отримання додаткових відомостей див. документацію про [схеми сутностей Customer Insights у Common Data Model](https://docs.microsoft.com/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/overview).
+Для отримання додаткових відомостей див. документацію про [схеми сутностей Customer Insights у Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/overview).
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>Перегляд сутностей за допомогою засобу переходу між сутностями Common Data Model
 

@@ -2,19 +2,19 @@
 title: Загальні відомості про аналіз аудиторії для Dynamics 365 Customer Insights
 description: Загальні відомості про аналіз аудиторії для Dynamics 365 Customer Insights.
 ms.date: 01/18/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: overview
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 735aae12abebd2d6d9b6aedb5835164834f480c0
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: 146994b739748c615ca002add4e64216da6c1dea
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5477020"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598655"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Загальні відомості про аналіз аудиторії для Dynamics 365 Customer Insights
 
@@ -25,7 +25,7 @@ ms.locfileid: "5477020"
 - **Усунення ізоляції даних і уніфікація даних клієнтів**
 
   - Легко підключайте та об’єднуйте дані. Використовуйте заздалегідь підготовлені з’єднувачі для додавання транзакційних, поведінкових і емпіричних даних з [популярних джерел даних](data-sources.md).
-  - Зручно перетворюйте дані клієнтів. Створюйте уніфіковані профілів клієнтів, які відповідають [Common Data Model](https://docs.microsoft.com/common-data-model/). Вирішити тотожності клієнтів за допомогою рекомендацій на основі AI/ML.
+  - Зручно перетворюйте дані клієнтів. Створюйте уніфіковані профілів клієнтів, які відповідають [Common Data Model](/common-data-model/). Вирішити тотожності клієнтів за допомогою рекомендацій на основі AI/ML.
 
 - **Збагачуйте дані за допомогою аналітичних даних аудиторії, що міститься в Microsoft Graph**
 
@@ -42,7 +42,7 @@ ms.locfileid: "5477020"
 - **Аналітики даних/адміністратори:**
 
   - Доступ до багатої колекції з’єднувачів для додавання всіх даних клієнтів.
-  - Можливість уніфікувати дані клієнта та трансформувати їх у формат [Common Data Model](https://docs.microsoft.com/common-data-model/).
+  - Можливість уніфікувати дані клієнта та трансформувати їх у формат [Common Data Model](/common-data-model/).
   - Збагатіть інформацію про клієнтів за допомогою аналітичних оглядів аудиторії, що містяться в Microsoft Graph (наприклад, близькість брендів і інтереси).
   - Конфігурація «Клацання, а не кодування» та можливості налагодження допоможуть легко налаштувати аналіз аудиторії і визначити потенційні проблеми.
   - Очистьте і стандартизуйте дані клієнтів у різних джерелах за допомогою рекомендацій на платформі ШІ.  

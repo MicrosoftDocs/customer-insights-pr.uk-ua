@@ -2,19 +2,19 @@
 title: Прийом даних і обмеження в режимі реального часу
 description: Загальні відомості про можливості в режимі реального часу в розділі «Аналіз аудиторії».
 ms.date: 10/27/2020
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 7421ed9d2cb399d546815b2d1b0ea5ec51ca6b6d
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3c84cfe7441eb026c1fd45eda1f72421388d01d7
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270305"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598594"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Обробка даних у режимі реального часу (попередній перегляд)
 
@@ -54,7 +54,7 @@ API в режимі реального часу дає змогу публіку
 
 Існує два способи підключення до API в режимі реального часу.
 
-- [опосередковано](#connect-via-the-dynamics-365-customer-insights-connector) за допомогою [з’єднувача Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/)
+- [опосередковано](#connect-via-the-dynamics-365-customer-insights-connector) за допомогою [з’єднувача Dynamics 365 Customer Insights](/connectors/customerinsights/)
 - [безпосередньо](#connect-directly-to-the-real-time-api) з кодом
 
 Обидва способи мають наведені нижче передумови.
@@ -66,13 +66,13 @@ API в режимі реального часу дає змогу публіку
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>Підключення за допомогою з’єднувача Dynamics 365 Customer Insights
 
-API в режимі реального часу може інтегрувати дані зі спеціалізованого з’єднувача Power Platform, [з’єднувач Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/), без необхідності писати та розгортати будь-який код.    
-З’єднувач може виконувати ті самі дії в режимі реального часу, що й API. Для преміум-з’єднувачів потрібна дійсна ліцензія. Щоб отримати додаткові відомості, див. [Поширені запитання про ліцензування Power Apps і Power Automate](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
+API в режимі реального часу може інтегрувати дані зі спеціалізованого з’єднувача Power Platform, [з’єднувач Dynamics 365 Customer Insights](/connectors/customerinsights/), без необхідності писати та розгортати будь-який код.    
+З’єднувач може виконувати ті самі дії в режимі реального часу, що й API. Для преміум-з’єднувачів потрібна дійсна ліцензія. Щоб отримати додаткові відомості, див. [Поширені запитання про ліцензування Power Apps і Power Automate](/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps та/або Power Automate](https://docs.microsoft.com/connectors/)
-- Azure [Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
+- Power Platform [Power Apps та/або Power Automate](/connectors/)
+- Azure [Logic Apps](/azure/connectors/apis-list)
 
-Докладні відомості про створення потоків див. у [документації Power Automate](https://docs.microsoft.com/power-automate/).
+Докладні відомості про створення потоків див. у [документації Power Automate](/power-automate/).
 
 ## <a name="connect-directly-to-the-real-time-api"></a>Підключення безпосередньо до API в режимі реального часу
 

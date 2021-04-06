@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267747"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596524"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Для аналізу аудиторії підключіться до облікового запису Azure Data Lake Storage Gen2 за допомогою принципала служби Azure
 
@@ -23,7 +23,7 @@ ms.locfileid: "5267747"
 Принципал служби можна використовувати для того, щоб безпечно [додавати або редагувати папку Common Data Model як джерело даних](connect-common-data-model.md) або [створювати нове або оновлювати наявне середовище](manage-environments.md#create-an-environment-in-an-existing-organization).
 
 > [!IMPORTANT]
-> - Для облікового запису сховища Azure Data Lake Gen2, який має намір використовувати принципал служби, необхідно увімкнути [Ієрархічний простір імен (HNS)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - Для облікового запису сховища Azure Data Lake Gen2, який має намір використовувати принципал служби, необхідно увімкнути [Ієрархічний простір імен (HNS)](/azure/storage/blobs/data-lake-storage-namespace).
 > - Для створення принципала служби потрібно мати дозвіл адміністратора для вашої підписки Azure.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>Створення принципала служби Azure для аналізу аудиторії.
@@ -48,7 +48,7 @@ ms.locfileid: "5267747"
 
 ### <a name="create-a-new-service-principal"></a>Створення нового принципалу служби
 
-1. Інсталюйте найновішу версію **Azure Active Directory PowerShell для графа**. Для отримання додаткових відомостей див. розділ [Інсталяція Azure Active Directory PowerShell для графа](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+1. Інсталюйте найновішу версію **Azure Active Directory PowerShell для графа**. Для отримання додаткових відомостей див. розділ [Інсталяція Azure Active Directory PowerShell для графа](/powershell/azure/active-directory/install-adv2).
    - Натисніть клавішу Windows на клавіатурі комп’ютера і знайдіть **Windows PowerShell** і **Запустити як адміністратор**.
    
    - У вікні PowerShell, що відкриється, введіть `Install-Module AzureAD`.

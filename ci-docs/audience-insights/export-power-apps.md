@@ -2,19 +2,19 @@
 title: З’єднувач Power Apps
 description: Підключення до Power Apps і Power Automate.
 ms.date: 01/19/2021
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 5a8bbb9a09218d54228589d43c21c8894680b56e
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3fa91553fd50a22ab62b5a2b1e3f13b9483776a8
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268941"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598180"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>З’єднувач Microsoft Power Apps (підготовча версія)
 
@@ -22,9 +22,9 @@ ms.locfileid: "5268941"
 
 ## <a name="connect-power-apps-and-dynamics-365-customer-insights"></a>Підключення до Power Apps і Dynamics 365 Customer Insights
 
-Customer Insights – це одне із багатьох [доступних джерел даних у Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-data-sources).
+Customer Insights – це одне із багатьох [доступних джерел даних у Power Apps](/powerapps/maker/canvas-apps/working-with-data-sources).
 
-Див. документацію Power Apps, щоб дізнатися, як [додати зв’язок даних до програми](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-data-connection). Рекомендуємо також переглянути статтю про те, [як Power Apps використовує делегування для роботи із великими наборами даних у компонованих програмах](https://docs.microsoft.com/powerapps/maker/canvas-apps/delegation-overview).
+Див. документацію Power Apps, щоб дізнатися, як [додати зв’язок даних до програми](/powerapps/maker/canvas-apps/add-data-connection). Рекомендуємо також переглянути статтю про те, [як Power Apps використовує делегування для роботи із великими наборами даних у компонованих програмах](/powerapps/maker/canvas-apps/delegation-overview).
 
 ## <a name="available-entities"></a>Доступні сутності
 
@@ -47,11 +47,11 @@ Customer Insights – це одне із багатьох [доступних д
 
 - Делегування для **UnifiedActivity**: делегування для цієї сутності працює лише для полів **ActivityId** і **CustomerId**.  
 
-- Для отримання додаткових відомостей про делегування див. [Функції та операції Power Apps, які підлягають делегуванню](https://docs.microsoft.com/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps). 
+- Для отримання додаткових відомостей про делегування див. [Функції та операції Power Apps, які підлягають делегуванню](/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps). 
 
 ## <a name="example-gallery-control"></a>Приклад елемента керування «Галерея»
 
-Наприклад, можна додати профілі клієнтів до [елемента керування «галерея»](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-gallery).
+Наприклад, можна додати профілі клієнтів до [елемента керування «галерея»](/powerapps/maker/canvas-apps/add-gallery).
 
 1. Додайте елемент керування **«Галерея»** до програми, яку ви створюєте.
 
