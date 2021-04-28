@@ -1,7 +1,7 @@
 ---
 title: Використання джерел даних для прийому даних
 description: Дізнайтесь, як імпортувати дані з різних джерел.
-ms.date: 11/03/2020
+ms.date: 04/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 780dc61a82d6ed9856a37dc8f164fa946d982bbe
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
+ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595972"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5887919"
 ---
 # <a name="data-sources-overview"></a>Огляд джерел даних
 
@@ -32,8 +32,15 @@ ms.locfileid: "5595972"
 - [З папки Common Data Model](connect-common-data-model.md)
 - [З власного озера Common Data Service](connect-common-data-service-lake.md)
 
-> [!NOTE]
-> Поки що не можна додавати дані з локальний джерел даних.
+## <a name="add-data-from-on-premises-data-sources"></a>Додавайте дані з локальних джерел даних
+
+Використання даних із локальних джерел даних у Audience Insights підтримується на основі потоків даних Power Platform. Потоки даних можна увімкнути в Customer Insights способом [зазначення URL-адреси середовища Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) при налаштуванні цього середовища.
+
+Джерела даних, створені після прив’язування середовища Dataverse до Customer Insights, використовуватимуть [потоки даних Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) за промовчанням. Потоки даних підтримують локальне підключення за допомогою шлюзів даних. Видаліть і відтворіть джерела даних, які існували до прив’язування середовища Dataverse для використання локальних шлюзів даних.
+
+Шлюзи даних із наявного середовища Power BI або Power Apps будуть видимі, й ви можете повторно користуватися Customer Insights. На сторінці джерел даних відображаються посилання на середовище Power Platform, де ви можете переглядати й налаштовувати локальні шлюзи даних.
+
+:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="Знімок екрана сторінки джерел даних, на якій відображаються посилання на середовище Power Platform.":::
 
 ## <a name="review-ingested-data"></a>Перегляд отриманих даних
 
@@ -65,7 +72,7 @@ ms.locfileid: "5595972"
 
 2. Натисніть вертикальні три крапки поряд із джерелом даних, яке потрібно оновити, і натисніть **Оновити** в розкривному списку.
 
-3. Тепер джерело даних запускається для оновлення вручну. Оновлення джерела даних призведе до оновлення схеми сутності і даних для всіх сутностей, визначених у джерела даних.
+3. Тепер джерело даних запускається для оновлення вручну. При оновленні джерела даних виконається оновлення як схеми сутності, так і даних для всіх сутностей, зазначених у джерелі даних.
 
 4. Виберіть **Зупинити оновлення**, якщо потрібно скасувати наявне оновлення, і джерело даних повернеться до останнього стану оновлення.
 

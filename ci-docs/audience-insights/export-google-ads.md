@@ -1,67 +1,35 @@
 ---
 title: Експорт даних Customer Insights до Google Ads
-description: Дізнайтесь, як настроїти підключення до Google Ads.
-ms.date: 11/18/2020
-ms.reviewer: mhart
+description: Дізнайтеся, як налаштувати підключення та експорт до Google Ads.
+ms.date: 03/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: phkieffer
 ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6d9a25af3913e755cccec745c532b35aef3cccf9
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: f4c094e486577d00d8c0c64e8527829820b335f6
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598272"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759800"
 ---
-# <a name="connector-for-google-ads-preview"></a>З'єднувач для Google Ads (попередній перегляд)
+# <a name="export-segments-to-google-ads-preview"></a>Експорт сегментів до Google Ads (підготовча версія)
 
 Експорт сегментів уніфікованих профілів клієнтів до списків аудиторій Google Ads та використовуйте їх для рекламування у Google Search, Gmail, YouTube і Google Display Network. 
 
-## <a name="prerequisites"></a>Вимоги
+## <a name="prerequisites-for-connection"></a>Попередні вимоги для підключення
 
 -   Ви маєте [обліковий запис Google Ads](https://ads.google.com/) і відповідні облікові дані адміністратора.
+-   У вас є [затверджений маркер розробника Google Ads](https://developers.google.com/google-ads/api/docs/first-call/dev-token) 
+-   Ви відповідаєте вимогам [Політики заставлення клієнтів](https://support.google.com/adspolicy/answer/6299717)
+-   Ви відповідаєте вимогам щодо [розмірів списку ремаркетингу](https://support.google.com/google-ads/answer/7558048) 
+
 -   У Google Ads наявні аудиторії й відповідні ідентифікатори. Для отримання додаткових відомостей див. [Аудиторії Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
 -   Ви маєте [налаштовані сегменти](segments.md)
 -   Уніфіковані профілі клієнтів у експортованих сегментах містять поля, що представляють адресу електронної пошти, ім'я та прізвище
-
-## <a name="connect-to-google-ads"></a>Підключення до Google Ads
-
-1. Відкрийте **Адміністрування** > **Призначення експорту**.
-
-1. У розділі **Google Ads** виберіть **Налаштувати**.
-
-1. Задайте для свого призначення експорту ім’я, яке легко впізнати, в полі **Коротке ім’я**.
-
-1. Введіть свій **[ідентифікатор клієнта Google Ads](https://support.google.com/google-ads/answer/1704344)**.
-
-1. Введіть свій **[маркер, схвалений розробником Google Ads](https://developers.google.com/google-ads/api/docs/first-call/dev-token)**.
-
-1. Виберіть **Приймаю**, щоб підтвердити **Відповідність вимогам і конфіденційність даних**.
-
-1. Введіть **[ідентифікатор аудиторії Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** і виберіть **З'єднати**, щоб ініціалізувати підключення до Google Ads.
-
-1. Виберіть **Автентифікацію за допомогою Google Ads** і надайте облікові дані Google Ads.
-
-1. Виберіть **Додати себе як користувача експорту** та надайте облікові дані Customer Insights.
-
-   :::image type="content" source="media/export-segments-googleads.PNG" alt-text="Експорт скріншоту для підключення до Google Ads":::
-
-1. Натисніть **Далі**, щоб налаштувати експорт.
-
-## <a name="configure-the-connector"></a>Настроювання з’єднувача
-
-1. У розділі **Зіставлення даних** в полі **Електронна пошті**, виберіть поле в уніфікованому профілі клієнта, в якому відображено адресу електронної пошти клієнта. повторіть ці самі кроки для полів **Ім’я** і **Прізвище**.
-
-1. Виберіть сегменти, які потрібно експортувати. Загалом до Google Ads можна експортувати до 1 000 000 профілів клієнтів.
-
-1. Виберіть **Зберегти**.
-
-## <a name="export-the-data"></a>Експорт даних
-
-Ви можете [експортувати дані вручну](export-destinations.md). Експорт також запускатиметься під час кожного [запланованого оновлення](system.md#schedule-tab). Тепер в Google Ads можна знайти сегменти в розділі [Аудиторія Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en/).
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
@@ -69,6 +37,48 @@ ms.locfileid: "5598272"
 - Експорт до Google Ads обмежується сегментами.
 - Експортування сегментів загальною кількістю 1 000 000 профілів може тривати до 5 хвилин через обмеження з боку постачальника. 
 - Зіставлення в Google Ads може тривати до 48 годин.
+
+## <a name="set-up-connection-to-google-ads"></a>Налаштування підключення до Google Ads
+
+1. Відкрийте **Адміністрування** > **Підключення**.
+
+1. Виберіть **Додати підключення** та оберіть **Google Ads**, щоб налаштувати підключення.
+
+1. Надайте у полі **Коротке ім’я** для свого підключення змістовне ім'я, яке легко впізнати. Ім’я та тип підключення описують це підключення. Ми рекомендуємо вибирати ім’я, яке роз'яснює ціль і мету даного підключення.
+
+1. Виберіть користувачів, які зможуть використовувати це підключення. Якщо не вжити жодних дій, за замовчуванням це будуть Адміністратори. Докладніші відомості див. у розділі [Дозвольте співавторам використовувати підключення для експортів](connections.md#allow-contributors-to-use-a-connection-for-exports).
+
+1. Введіть свій **[ідентифікатор клієнта Google Ads](https://support.google.com/google-ads/answer/1704344)**.
+
+1. Введіть свій **[маркер, схвалений розробником Google Ads](https://developers.google.com/google-ads/api/docs/first-call/dev-token)**.
+
+1. Виберіть **Приймаю**, щоб підтвердити **Відповідність вимогам і конфіденційність даних**.
+
+1. Виберіть **Автентифікацію за допомогою Google Ads** і надайте облікові дані Google Ads.
+
+1. Виберіть **Додати себе як користувача експорту** та надайте облікові дані Customer Insights.
+
+1. Щоб завершити створення підключення, виберіть **Зберегти**. 
+
+## <a name="configure-an-export"></a>Налаштування експорту
+
+Ви можете налаштувати цей експорт, якщо у вас є доступ до підключень такого типу. Додаткові відомості: [Дозволи, необхідні для налаштування експорту](export-destinations.md#set-up-a-new-export).
+
+1. Відкрийте **Дані** > **Експорти**.
+
+1. Щоб створити новий експорт, виберіть **Додати призначення**.
+
+1. У полі **Підключення для експорту** виберіть підключення з розділу Google Ads. Якщо ім'я цього розділу не відображається, це означає, що для вас немає жодного доступного підключення цього типу.
+
+1. Введіть **[ідентифікатор аудиторії Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** і виберіть **З'єднати**, щоб ініціалізувати підключення до Google Ads.
+
+1. У розділі **Зіставлення даних** в полі **Електронна пошті**, виберіть поле в уніфікованому профілі клієнта, в якому відображено адресу електронної пошти клієнта. повторіть ці самі кроки для полів **Ім’я** і **Прізвище**.
+
+1. Виберіть сегменти, які потрібно експортувати. Загалом до Google Ads можна експортувати до 1 000 000 профілів клієнтів.
+
+При збереженні експорт не запуститься негайно.
+
+Експорт виконується під час кожного [запланованого оновлення](system.md#schedule-tab). Також можна [експортувати дані неавтоматично](export-destinations.md#run-exports-on-demand). 
 
 ## <a name="data-privacy-and-compliance"></a>Конфіденційність і відповідність даних
 

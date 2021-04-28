@@ -1,7 +1,7 @@
 ---
 title: Експорт даних Customer Insights до Dynamics 365 Marketing
-description: Дізнайтесь, як налаштувати підключення до Dynamics 365 Marketing.
-ms.date: 02/01/2021
+description: Дізнайтеся, як налаштувати підключення та експорт до Dynamics 365 Marketing.
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,33 +9,35 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 892aff643872f11307a2c43e5670edab657d7848
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a13f6f81f5e2570d3302d88c02755f1d86321a01
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597628"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759662"
 ---
-# <a name="connector-for-dynamics-365-marketing-preview"></a>З'єднувач для Dynamics 365 Marketing (попередній перегляд)
+# <a name="use-segments-in-dynamics-365-marketing-preview"></a>Використання сегментів у Dynamics 365 Marketing (підготовча версія)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Використовуйте [сегменти](segments.md), щоб формувати кампанії та специфічні групи клієнтів за допомогою Dynamics 365 Marketing. Для отримання додаткових відомостей див. [Використання сегментів з Dynamics 365 Customer Insights у Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
 
-## <a name="prerequisite"></a>Передумова
+## <a name="prerequisite-for-a-connection"></a>Попередня вимога для підключення
 
 - Записи контактних осіб мають бути присутніми в Dynamics 365 Marketing, щоб ви змогли експортувати сегмент з Customer Insights до Marketing. Дізнайтеся більше про те, як прийняти контактних осіб у [Dynamics 365 Marketing, використовуючи Common Data Services](connect-power-query.md).
 
   > [!NOTE]
   > Експортування сегментів з аналізу аудиторії до Marketing не призведе до створення нових записів контактних осіб в інсталяціях Marketing. Записи контактних осіб з Marketing повинні бути прийняті в аналізі аудиторії та мають використовуватися, як джерело даних. Їх також потрібно включити в уніфіковану сутність «Клієнт», щоб зіставити ідентифікатори клієнтів із ідентифікаторами контактних осіб, перш ніж можна буде експортувати сегменти.
 
-## <a name="configure-the-connector-for-marketing"></a>Налаштування з'єднувача для Marketing
+## <a name="set-up-connection-to-marketing"></a>Налаштування підключення до Marketing
 
-1. У розділі «Аналіз аудиторії» виберіть **Адміністратор** > **Напрямки експорту**.
+1. Відкрийте **Адміністрування** > **Підключення**.
 
-1. В області **Dynamics 365 Marketing** виберіть **Налаштувати**.
+1. Виберіть **Додати підключення** та оберіть **Dynamics 365 Marketing**, щоб налаштувати підключення.
 
-1. Задайте для свого призначення експорту ім’я, яке легко впізнати, в полі **Коротке ім’я**.
+1. Надайте у полі **Коротке ім’я** для свого підключення змістовне ім'я, яке легко впізнати. Ім’я та тип підключення описують це підключення. Ми рекомендуємо вибирати ім’я, яке роз'яснює ціль і мету даного підключення.
+
+1. Виберіть користувачів, які зможуть використовувати це підключення. Якщо не вжити жодних дій, за замовчуванням це будуть Адміністратори. Докладніші відомості див. у розділі [Дозвольте співавторам використовувати підключення для експортів](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Введіть URL-адресу Marketing вашої організації в полі **Адреса сервера**.
 
@@ -43,15 +45,24 @@ ms.locfileid: "5597628"
 
 1. Зіставте поле ІДЕНТИФІКАТОРА клієнта з ІДЕНТИФІКАТОРОМ контакту Dynamics 365.
 
-1. Виберіть **Далі**.
+1. Щоб завершити створення підключення, виберіть **Зберегти**. 
+
+## <a name="configure-an-export"></a>Налаштування експорту
+
+Ви можете налаштувати цей експорт, якщо у вас є доступ до підключень такого типу. Додаткові відомості: [Дозволи, необхідні для налаштування експорту](export-destinations.md#set-up-a-new-export).
+
+1. Відкрийте **Дані** > **Експорти**.
+
+1. Щоб створити новий експорт, виберіть **Додати призначення**.
+
+1. У полі **Підключення для експорту** виберіть підключення з розділу Dynamics 365 Marketing. Якщо ім'я цього розділу не відображається, це означає, що для вас немає жодного доступного підключення цього типу.
 
 1. Виберіть один або кілька сегментів.
 
 1. Виберіть **Зберегти**.
 
-## <a name="export-the-data"></a>Експорт даних
+При збереженні експорт не запуститься негайно.
 
-Ви можете [експортувати дані вручну](export-destinations.md). Експорт також запускатиметься під час кожного [запланованого оновлення](system.md#schedule-tab).
-
+Експорт виконується під час кожного [запланованого оновлення](system.md#schedule-tab). Також можна [експортувати дані неавтоматично](export-destinations.md#run-exports-on-demand). 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

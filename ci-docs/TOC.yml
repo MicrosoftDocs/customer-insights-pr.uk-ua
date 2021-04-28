@@ -65,7 +65,7 @@
         - name: Збагачуйте профілів клієнтів
           href: audience-insights/enrichment-hub.md
         - name: Близькі бренди й інтереси
-          href: audience-insights/enrichment-microsoft-graph.md
+          href: audience-insights/enrichment-microsoft.md
         - name: Збагачення за допомогою HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Збагачення за допомогою Leadspace
@@ -104,6 +104,8 @@
           href: audience-insights/predict-product-recommendation.md
         - name: Зразок вказівок для прогнозу рекомендації продуктів
           href: audience-insights/sample-guide-predict-product-recommendation.md
+        - name: Створення сегментів на основі прогнозів
+          href: audience-insights/prediction-based-segment.md
         - name: Впровадження користувацьких моделей машинного навчання
           href: audience-insights/custom-models.md
         - name: Експерименти з машинним навчанням Azure
@@ -112,58 +114,72 @@
           href: audience-insights/machine-learning-studio-experiments.md
     - name: Параметри експорту
       items:
-        - name: Огляд призначень експорту
-          href: audience-insights/export-destinations.md
-        - name: AdRoll
-          href: audience-insights/export-adroll.md
-        - name: Adobe Campaign Standard
-          href: audience-insights/export-adobe-campaign-standard.md
-        - name: Платформа Adobe Experience
-          href: audience-insights/export-adobe-experience-platform.md
-        - name: Autopilot
-          href: audience-insights/export-autopilot.md
-        - name: Сховище BLOB-об’єктів Azure
-          href: audience-insights/export-azure-blob-storage.md
-        - name: Azure Data Lake Storage Gen2
-          href: audience-insights/export-azure-data-lake-storage-gen2.md
-        - name: DotDigital
-          href: audience-insights/export-dotdigital.md
-        - name: Dynamics 365 Customer Service (надбудова)
-          href: audience-insights/customer-card-add-in.md
-        - name: Dynamics 365 Marketing
-          href: audience-insights/export-dynamics365-marketing.md
-        - name: Dynamics 365 for Sales
-          href: audience-insights/export-dynamics365-sales.md
-        - name: Центр збуту Dynamics 365 (надбудова)
-          href: audience-insights/customer-card-add-in.md
-        - name: Менеджер реклами Facebook
-          href: audience-insights/export-facebook.md
-        - name: Google Ads
-          href: audience-insights/export-google-ads.md
-        - name: LiveRamp
-          href: audience-insights/export-liveramp.md
-        - name: Mailchimp
-          href: audience-insights/export-mailchimp.md
-        - name: Microsoft Teams (бот)
-          href: audience-insights/export-teams-bot.md
-        - name: Marketo
-          href: audience-insights/export-marketo.md
-        - name: Power BI
-          href: audience-insights/export-power-bi.md
-        - name: Power Apps
-          href: audience-insights/export-power-apps.md
-        - name: Power Automate
-          href: audience-insights/export-power-automate.md
-        - name: SendGrid
-          href: audience-insights/export-sendgrid.md
-        - name: SFTP
-          href: audience-insights/export-sftp.md
+        - name: Експорт
+          items:
+            - name: Огляд експорту (підготовча версія)
+              href: audience-insights/export-destinations.md
+            - name: AdRoll
+              href: audience-insights/export-adroll.md
+            - name: Autopilot
+              href: audience-insights/export-autopilot.md
+            - name: Azure Blob Storage
+              href: audience-insights/export-azure-blob-storage.md
+            - name: Azure Data Lake Storage Gen2
+              href: audience-insights/export-azure-data-lake-storage-gen2.md
+            - name: Adobe Campaign Standard
+              href: audience-insights/export-adobe-campaign-standard.md
+            - name: Платформа Adobe Experience
+              href: audience-insights/export-adobe-experience-platform.md
+            - name: Campaign Monitor
+              href: audience-insights/export-campaign-monitor.md
+            - name: Constant Contact
+              href: audience-insights/export-constant-contact.md
+            - name: DotDigital
+              href: audience-insights/export-dotdigital.md
+            - name: Dynamics 365 Marketing
+              href: audience-insights/export-dynamics365-marketing.md
+            - name: Dynamics 365 Sales
+              href: audience-insights/export-dynamics365-sales.md
+            - name: Менеджер реклами Facebook
+              href: audience-insights/export-facebook.md
+            - name: Google Ads
+              href: audience-insights/export-google-ads.md
+            - name: LiveRamp
+              href: audience-insights/export-liveramp.md
+            - name: Mailchimp
+              href: audience-insights/export-mailchimp.md
+            - name: Marketo
+              href: audience-insights/export-marketo.md
+            - name: RollWorks
+              href: audience-insights/export-rollworks.md
+            - name: SendGrid
+              href: audience-insights/export-sendgrid.md
+            - name: Snapchat
+              href: audience-insights/export-snapchat.md
+            - name: SFTP
+              href: audience-insights/export-sftp.md
+        - name: Інше використання
+          items:
+            - name: Dynamics 365 Customer Service (надбудова)
+              href: audience-insights/customer-card-add-in.md
+            - name: Центр збуту Dynamics 365 (надбудова)
+              href: audience-insights/customer-card-add-in.md
+            - name: Microsoft Teams (бот)
+              href: audience-insights/export-teams-bot.md
+            - name: Power Apps
+              href: audience-insights/export-power-apps.md
+            - name: Power Automate
+              href: audience-insights/export-power-automate.md
+            - name: Power BI
+              href: audience-insights/export-power-bi.md
     - name: Адміністрування
       items:
         - name: Налаштування конфігурації системи
           href: audience-insights/system.md
         - name: Призначення дозволів користувачам
           href: audience-insights/permissions.md
+        - name: Огляд підключень (підготовча версія)
+          href: audience-insights/connections.md
         - name: Керування кількома середовищами
           href: audience-insights/manage-environments.md
         - name: Підключення до облікового запису сховища ADLS за допомогою принципала служби
@@ -212,11 +228,15 @@
       items:
         - name: Переглянути звіти
           href: engagement-insights/view-reports.md
-        - name: Створення звітів про клієнтів
+        - name: Створення настроюваних звітів
           href: engagement-insights/custom-reports.md
         - name: Створення звітів щодо уніфікованих профілів
           href: engagement-insights/profile-reports.md
-    - name: Ресурси розробника
+    - name: Аналіз шляхів
+      items:
+        - name: Створення звітів послідовностей і керування ними
+          href: engagement-insights/funnel-reports.md
+    - name: Ресурси для розробників
       items:
         - name: Огляд ресурсів для розробників
           href: engagement-insights/developer-resources.md

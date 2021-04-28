@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 737c593353878a5e322488d00de5dc5db5befda9
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 4ad06a0baf57e612fc0e0214dfd23d28e7d2b6be
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597858"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896536"
 ---
 # <a name="merge-entities"></a>Об'єднання сутностями
 
@@ -83,7 +83,7 @@ ms.locfileid: "5597858"
 
 ## <a name="next-step"></a>Наступний крок
 
-Налаштуйте [справи](activities.md), [збагачення](enrichment-microsoft-graph.md) або [зв’язки](relationships.md), щоб отримати більше аналітичних оглядів клієнтів.
+Налаштуйте [справи](activities.md), [збагачення](enrichment-hub.md) або [зв’язки](relationships.md), щоб отримати більше аналітичних оглядів клієнтів.
 
 Якщо ви вже налаштували справи, збагачення або зв'язки чи якщо ви визначили сегменти, вони автоматично обробляються з використанням найновіших даних клієнтів.
 
