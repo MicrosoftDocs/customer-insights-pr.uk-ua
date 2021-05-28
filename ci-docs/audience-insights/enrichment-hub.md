@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 10c338b89a6f9971912d05986c105cba1221b01b
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: c8e4a7247ccf575a62440038180010916b09d51b
+ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896030"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954512"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Збагачення для профілів клієнтів (підготовча версія)
 
@@ -29,6 +29,7 @@ ms.locfileid: "5896030"
 
 - [Бренди](enrichment-microsoft.md), надані Майкрософт
 - [Інтереси](enrichment-microsoft.md), надані Майкрософт
+- [Удосконалені адреси](enrichment-enhanced-addresses.md), надані корпорацією Microsoft
 - [Дані компанії](enrichment-leadspace.md) надаються Leadspace
 - [Демографічні дані](enrichment-experian.md) надаються Experian
 - [Дані про розташування ](enrichment-here.md), надані HERE Technologies

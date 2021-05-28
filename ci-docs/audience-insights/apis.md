@@ -1,7 +1,7 @@
 ---
 title: Робота з API
 description: Використання API пояснення обмежень.
-ms.date: 03/10/2021
+ms.date: 05/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 59161456914df84d7e72402ed1f5faf70a5119ba
-ms.sourcegitcommit: a39e00a50ad3eda820fd756c5611081f0ca04662
+ms.openlocfilehash: 4d41d7d328dfa6699b5f5e992d3a5bf3179490d8
+ms.sourcegitcommit: 33a8e21b3bf6521bdb8346f81f79fce88091ddfd
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "5873687"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016645"
 ---
 # <a name="work-with-customer-insights-apis"></a>Робота з Customer Insights APIs
 
@@ -90,19 +90,13 @@ Dynamics 365 Customer Insights забезпечує API для створенн�
 
 1. У реєстрації програми на порталі Azure виберіть **Дозволи API**.
 
-1. Виберіть **Додати дозвіл** та виберіть **Customer Insights** в бічній області.
+1. Виберіть **Додати дозвіл**. 
+
+1. Виберіть вкладку **API, які використовує моя організація**, і виберіть **ШІ Dynamics 365 для Customer Insights** у списку. 
 
 1. Для **Типу дозволів** натисніть **Дозволи програми** й виберіть дозвіл **CustomerInsights.Api.All**.
 
 1. Виберіть **Додати дозволи**.
-
-1. Щоб надати адміністратору згоду на дозвіл для цієї програми, необхідно додати основну послугу.
-
-   1. Інсталяція модуля Azure Active Directory (AD) PowerShell `Install-Module -Name AzureAD -AllowClobber -Scope AllUsers`
-   1. Підключення до облікового запису AD: `Connect-AzureAD -TenantId <your tenant id>`. Ідентифікатор клієнта можна знайти в розділі **Огляд** > **Azure Active Directory**.
-   1. Щоб додати основну послугу Azure AD, виконайте таку команду: `New-AzureADServicePrincipal -AppId "38c77d00-5fcb-4cce-9d93-af4738258e3c" -DisplayName "Microsoft Dynamics 365 Customer Insights"` параметр AppID відповідний до програми Customer Insights API.
-
-   :::image type="content" source="media/azureAD-service-principal.png" alt-text="Приклад основної служби":::
 
 1. Поверніться до **Дозволів API** для реєстрації вашої програми.
 

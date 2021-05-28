@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 3c0b4690e18285aa37eef481b3cfac951884ead6
+ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887919"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085555"
 ---
 # <a name="data-sources-overview"></a>Огляд джерел даних
 
@@ -36,11 +36,9 @@ ms.locfileid: "5887919"
 
 Використання даних із локальних джерел даних у Audience Insights підтримується на основі потоків даних Power Platform. Потоки даних можна увімкнути в Customer Insights способом [зазначення URL-адреси середовища Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) при налаштуванні цього середовища.
 
-Джерела даних, створені після прив’язування середовища Dataverse до Customer Insights, використовуватимуть [потоки даних Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) за промовчанням. Потоки даних підтримують локальне підключення за допомогою шлюзів даних. Видаліть і відтворіть джерела даних, які існували до прив’язування середовища Dataverse для використання локальних шлюзів даних.
+Джерела даних, створені після прив’язування середовища Dataverse до Customer Insights, використовуватимуть [потоки даних Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) за промовчанням. Потоки даних підтримують локальне підключення за допомогою шлюзу даних. Видаліть і відтворіть джерела даних, які існували до прив’язування середовища Dataverse для [використання локальних шлюзів даних](/powerapps/maker/data-platform/using-dataflows-with-on-premises-data.md).
 
 Шлюзи даних із наявного середовища Power BI або Power Apps будуть видимі, й ви можете повторно користуватися Customer Insights. На сторінці джерел даних відображаються посилання на середовище Power Platform, де ви можете переглядати й налаштовувати локальні шлюзи даних.
-
-:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="Знімок екрана сторінки джерел даних, на якій відображаються посилання на середовище Power Platform.":::
 
 ## <a name="review-ingested-data"></a>Перегляд отриманих даних
 

@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01290d5fae7af1737b73373d75e334ae1ed67d37
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b5a644e286bd44d4ebf7d1837255326c005b48d6
+ms.sourcegitcommit: 74cd4fa9cbb784d9dff174c0eec7b4dcb408d66b
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759846"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059341"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Експорт сегментів до Marketo (підготовча версія)
 
@@ -44,7 +44,7 @@ ms.locfileid: "5759846"
 
 1. Виберіть користувачів, які зможуть використовувати це підключення. Якщо не вжити жодних дій, за замовчуванням це будуть Адміністратори. Докладніші відомості див. у розділі [Дозвольте співавторам використовувати підключення для експортів](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Уведіть **[ідентифікатор клієнта Marketo, секретний ключ клієнта та Ім’я хоста кінцевої точки REST](https://developers.marketo.com/rest-api/authentication/)**.
+1. Уведіть **[ідентифікатор клієнта Marketo, секретний ключ клієнта та Ім’я хоста кінцевої точки REST](https://developers.marketo.com/rest-api/authentication/)**. Ім'я хоста кінцевої точки REST — це лише ім’я хоста, без `https://`. Приклад:`xyz-abc-123.mktorest.com` 
 
 1. Виберіть **Я погоджуюся**, щоб підтвердити **Конфіденційність даних і відповідність**, і натисніть **З'єднати**, щоб ініціалізувати підключення до Marketo.
 
@@ -62,7 +62,7 @@ ms.locfileid: "5759846"
 
 1. У полі **Підключення для експорту** виберіть підключення з розділу Marketo. Якщо ім'я цього розділу не відображається, це означає, що для вас немає жодного доступного підключення цього типу.
 
-1. Введіть **[ідентифікатор списку Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 
+1. Введіть **[ідентифікатор списку Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. Ідентифікатор списку — це тільки числове значення. Наприклад, якщо ваш ідентифікатор списку Marketo ST12345A7, видаліть символи до та після цифр і введіть `12345`. 
 
 1. У розділі **Зіставлення даних** в полі **Електронна пошті**, виберіть поле в уніфікованому профілі клієнта, в якому відображено адресу електронної пошти клієнта. 
 
@@ -74,7 +74,7 @@ ms.locfileid: "5759846"
 
 При збереженні експорт не запуститься негайно.
 
-Експорт виконується під час кожного [запланованого оновлення](system.md#schedule-tab). Також можна [експортувати дані неавтоматично](export-destinations.md#run-exports-on-demand). Тепер в Marketo можна знайти сегменти у [списку Marketo](ttps://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
+Експорт виконується під час кожного [запланованого оновлення](system.md#schedule-tab). Також можна [експортувати дані неавтоматично](export-destinations.md#run-exports-on-demand). Тепер в Marketo можна знайти сегменти у [списку Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
 
 
 ## <a name="data-privacy-and-compliance"></a>Конфіденційність і відповідність даних
