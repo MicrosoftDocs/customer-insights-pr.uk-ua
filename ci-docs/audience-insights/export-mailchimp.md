@@ -9,14 +9,14 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 35848998e738c7ecc1642f2b75912ff78d85f79e
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 7922a6a69f863caae5401549ed6f88a61aa77d39
+ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976180"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6124252"
 ---
-# <a name="export-segment-lists-to-mailchimp-preview"></a>Експорт списків сегментів до Mailchimp (підготовча версія)
+# <a name="export-segments-to-mailchimp-preview"></a>Експорт сегментів до Mailchimp (підготовча версія)
 
 Експорт сегментів уніфікованих профілів клієнтів до Mailchimp для створення інформаційних бюлетенів і кампаній електронної пошти.
 
