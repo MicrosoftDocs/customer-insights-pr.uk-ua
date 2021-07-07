@@ -9,12 +9,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 87bf8d7b9c23633ebdc929e15ac645c55cc21e4a
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 09d449e51a3a47ec916ab3d017419c9d9be1ffcf
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595405"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305735"
 ---
 # <a name="system-configuration"></a>Конфігурація системи
 
@@ -94,7 +94,7 @@ ms.locfileid: "5595405"
 
 ## <a name="api-usage-tab"></a>Вкладка «Використання API»
 
-Знайдіть докладні відомості про використання API в режимі реального часу та подивіться, які події відбулися протягом заданого часового проміжку. Часові рамки вказуються в розкривному меню **Виберіть часові рамки**. 
+Знайдіть докладні відомості про використання API в режимі реального часу та подивіться, які події відбулися протягом заданого часового проміжку. Ви можете вибрати часові рамки в розкривному меню **Виберіть часові рамки**. 
 
 **Використання API** містить три розділи: 
 - **Виклики API** — діаграма, на якій графічно відображається об’єднана кількість викликів API в межах вказаних часових рамок.

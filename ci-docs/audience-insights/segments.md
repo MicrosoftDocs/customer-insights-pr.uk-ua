@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6cb7bd62bf0f61e6dc5811b20e5011e4a086c743
-ms.sourcegitcommit: 84283d523a891298fca8aaf629d9f9ab2a1bc067
+ms.openlocfilehash: 336cab8619c0b80b7b8a38035cae99620baf2873
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111412"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306282"
 ---
 # <a name="segments-overview"></a>Огляд сегментів
 
@@ -38,7 +38,7 @@ ms.locfileid: "6111412"
 
 Кожен сегмент представлено рядком, який містить додаткові відомості про цей сегмент.
 
-:::image type="content" source="media/segments-selected-segment.png" alt-text="Вибраний сегмент з розкривним списком параметрів і доступними можливостями.":::
+:::image type="content" source="media/segments-selected-segment.png" alt-text="Вибраний сегмент із розкривним списком параметрів і доступними параметрами.":::
 
 У разі вибору сегмента можна виконати зазначені нижче дії.
 
@@ -68,7 +68,7 @@ ms.locfileid: "6111412"
 
 1. Виберіть **Показати ще [...]** для сегмента, який потрібно експортувати.
 
-1. Виберіть **Керування експортами** у розкривному списку дій.
+1. У розкривному списку справ виберіть пункт **Керування експортами**.
 
 1. Відкриється сторінка **Експорти (підготовча версія) для сегмента**. Ви побачите усі налаштовані експорти, згруповані за експортами, що містять поточний сегмент або не містять його.
 

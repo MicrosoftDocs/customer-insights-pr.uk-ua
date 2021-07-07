@@ -1,6 +1,6 @@
 ---
 title: Експортування даних Customer Insights до платформи Adobe Experience
-description: Дізнайтесь, як використовувати сегменти аналітичних оглядів аудиторії на платформі Adobe Experience.
+description: Дізнайтеся про те, як використовувати сегменти аналітичних оглядів аудиторії на платформі Adobe Experience.
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 884f4d30f354bed29909d57be84dce4c8e46965a
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760126"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305549"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Використовуйте сегменти Customer Insights на платформі Adobe Experience (підготовча версія)
 
-Як користувач аналітики аудиторії для Dynamics 365 Customer Insights, ви могли створювати сегменти, щоб зробити свої маркетингові кампанії більш ефективними завдяки націлюванню на відповідні аудиторії. Щоб використовувати сегмент з аналітики аудиторії на платформі Adobe Experience та в програмах, як-от Adobe Campaign Standard, потрібно виконати кілька кроків, наведених у цій статті.
+Як користувач аналітичних оглядів аудиторії в Dynamics 365 Customer Insights, ви могли створювати сегменти для підвищення ефективності своїх маркетингових кампаній способом націлювання рекламного матеріалу на доречні аудиторії. Щоб використовувати сегмент з аналітики аудиторії на платформі Adobe Experience та в програмах, як-от Adobe Campaign Standard, потрібно виконати кілька кроків, наведених у цій статті.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Схема процесів кроків, описаних у цій статті.":::
 
@@ -55,15 +55,15 @@ ms.locfileid: "5760126"
 
 1. Відкрийте **Адміністрування** > **Підключення**.
 
-1. Виберіть розділ **Додати підключення**, потім виберіть **Сховище BLOB-об’єктів Azure** або виберіть **Налаштувати** на плитці **Сховище BLOB-об’єктів Azure**,
+1. Виберіть розділ **Додати підключення**, потім виберіть **Сховище BLOB-об’єктів Azure** або виберіть **Налаштувати** на плитці **Сховище BLOB-об’єктів Azure**, щоб налаштувати підключення.
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Плитка конфігурації для сховища BLOB-об'єктів Azure."::: щоб налаштувати підключення.
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Плитка конфігурації для сховища BLOB-об'єктів Azure."::: 
 
 1. Надайте у полі **Коротке ім’я** для свого підключення змістовне ім'я, яке легко впізнати. Ім’я та тип підключення описують це підключення. Ми рекомендуємо вибирати ім’я, яке роз'яснює ціль і мету даного підключення.
 
 1. Виберіть користувачів, які зможуть використовувати це підключення. Якщо не вжити жодних дій, за замовчуванням це будуть Адміністратори. Докладніші відомості див. у розділі [Дозвольте співавторам використовувати підключення для експортів](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Введіть **Ім’я бізнес-партнера**, **Ключ бізнес-партнера** і **Контейнер** свого облікового запису сховища BLOB-об’єктів, до якого ви бажаєте експортувати сегмент.  
+1. Введіть **Ім’я бізнес-партнера**, **Ключ бізнес-партнера** та **Контейнер** для облікового запису сховища BLOB-об’єктів, до якого ви бажаєте експортувати сегмент.  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Знімок екрана із конфігураціями облікового запису сховища."::: 
    
@@ -80,7 +80,7 @@ ms.locfileid: "5760126"
 
 1. Щоб створити новий експорт, виберіть **Додати експорт**.
 
-1. У полі **Підключення для експорту** виберіть підключення з розділу «Сховище BLOB-об’єктів Azure». Якщо ім'я цього розділу не відображається, це означає, що для вас немає жодного доступного підключення цього типу.
+1. У полі **Підключення для експорту** виберіть підключення з розділу «Сховище BLOB-об’єктів Azure». Якщо ви не бачите імені цього розділу, це означає, що для вас не доступні будь-які підключення цього типу.
 
 1. Виберіть сегмент, який потрібно експортувати. У цьому прикладі це **ChurnProneCustomers**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "5760126"
 > [!NOTE]
 > Переконайтеся, що кількість записів у експортованому сегменті перебуває в межах дозволеного ліміту вашої ліцензії Adobe Campaign Standard.
 
-Експортовані дані зберігаються в контейнері сховища BLOB-об'єктів Azure, який було настроєно вище. У контейнері автоматично створюється такий перелік дій:
+Експортовані дані зберігаються в контейнері сховища BLOB-об'єктів Azure, який було налаштовано вище. У контейнері автоматично створюється такий перелік дій:
 
 *%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
 
@@ -121,9 +121,10 @@ ms.locfileid: "5760126"
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>Створення аудиторії у Adobe Campaign Standard
 
-Ми використовуватимемо Adobe Campaign Standard, щоб надіслати електронний лист до цієї кампанії. Після імпорту даних до платформи Adobe Experience потрібно [створити аудиторію](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) в Adobe Campaign Standard за допомогою даних на платформі Adobe Experience.
+Для надсилання повідомлення електронної пошти для цієї кампанії мі скористаємося засобом Adobe Campaign Standard. Після імпорту даних до платформи Adobe Experience потрібно [створити аудиторію](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) в Adobe Campaign Standard за допомогою даних на платформі Adobe Experience.
 
-Інформація про [використання конструктора сегменту](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html#building-a-segment) в Adobe Campaign Standard для визначення аудиторії на основі даних на платформі Adobe Experience Platform.
+
+Інформація про [використання конструктора сегменту](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) в Adobe Campaign Standard для визначення аудиторії на основі даних на платформі Adobe Experience Platform.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Створення та надсилання електронної пошти за допомогою Adobe Campaign Standard
 

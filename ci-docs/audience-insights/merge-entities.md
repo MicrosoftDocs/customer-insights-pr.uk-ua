@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2cab702509596dd87c0c9b9769d1af8ba8387f9d
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 86ab3cefa70e5fab4bdb27cde363adee26efee4c
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085601"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305683"
 ---
 # <a name="merge-entities"></a>Об'єднання сутностями
 
@@ -34,7 +34,7 @@ ms.locfileid: "6085601"
 
 Ви можете змінювати об’єднання атрибутів, виконане системними процесами для створення уніфікованого профілю клієнта. Виберіть **Показати більше** і оберіть елементи, які потрібно змінити.
 
-:::image type="content" source="media/manage-merged-attributes.png" alt-text="Параметри в розкривному меню «Показати більше» для керування об'єднаними атрибутами.":::
+:::image type="content" source="media/manage-merged-attributes.png" alt-text="Параметри в розкривному меню «Показати більше», щоб керувати об'єднаними атрибутами.":::
 
 Для отримання додаткових відомостей див. наступні розділи.
 

@@ -1,5 +1,5 @@
 ---
-title: Збагачення за допомогою стороннього збагачення HERE Technologies
+title: Збагачення за допомогою стороннього постачальника послуг збагачення HERE Technologies
 description: Загальні відомості про стороннє збагачення HERE Technologies.
 ms.date: 04/09/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 5d1f037377010153045c9255d2d01f98ebf1fdfd
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896076"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305319"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Збагачення профілів клієнтів за допомогою HERE Technologies (попередній перегляд)
 
@@ -24,9 +24,9 @@ HERE Technologies — це компанія платформи визначен
 
 Для настроювання збагачення HERE Technologies необхідно виконати зазначені нижче передумови.
 
-- Ви повинні мати активну передплату на HERE Technologies. Щоб отримати передплату, можна [зареєструватися тут](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) або [зв'язатися безпосередньо з HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you). [Дізнайтесь більше про збагачення даних про розташування HERE Technologies.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
+- Ви повинні мати активну передплату на HERE Technologies. Щоб отримати передплату, можна [зареєструватися тут](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) або [звернутися безпосередньо до HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you). [Дізнайтесь більше про збагачення даних про розташування HERE Technologies.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- Є доступне підключення [HERE](connections.md) *або* у вас є права [адміністратора](permissions.md#administrator)та ключ API HERE Technologies.
+- Ви повинні мати доступне [підключення HERE](connections.md) *або* у вас мають бути права [адміністратора](permissions.md#administrator) та ключ API HERE Technologies.
 
 ## <a name="configure-the-enrichment"></a>Налаштуйте збагачення
 
@@ -37,7 +37,7 @@ HERE Technologies — це компанія платформи визначен
    > [!div class="mx-imgBorder"]
    > ![Плитка HERE Technologies](media/HERE-tile.png "Плитка HERE Technologies")
 
-1. Виберіть [підключення](connections.md) з розкривного списку. Якщо жодне підключення недоступне, зверніться до адміністратора. Якщо ви є адміністратором, ви можете створити підключення, вибравши пункт **Додати підключення**. Із розкривного списку виберіть **HERE Technologies**. 
+1. Виберіть [підключення](connections.md) з розкривного списку. Якщо жодне підключення недоступне, зверніться до адміністратора. Якщо ви є адміністратором, ви можете створити підключення, вибравши пункт **Додати підключення**. Виберіть пункт **HERE Technologies** із розкривного списку. 
 
 1. Щоб підтвердити свій вибір, виберіть пункт **Підключитися до HERE Technologies**.
 
@@ -58,7 +58,7 @@ HERE Technologies — це компанія платформи визначен
 
 1. Виберіть пункт **Зберегти збагачення** після того, як переглянете доступні вам варіанти вибору.
 
-## <a name="configure-the-connection-for-here-technologies"></a>Налаштуйте підключення для HERE technologies 
+## <a name="configure-the-connection-for-here-technologies"></a>Налаштуйте підключення для HERE Technologies 
 
 Щоб налаштувати підключення ви маєте бути адміністратором. Виберіть **Додати підключення** під час налаштування збагачення *або* перейдіть до розділу **Адміністратор** > **Підключення** й виберіть пункт **Налаштувати** на плитці HERE Technologies.
 
@@ -66,13 +66,13 @@ HERE Technologies — це компанія платформи визначен
 
 1. Зазначте дійсний ключ API HERE Technologies.
 
-1. Перегляньте статтю **Конфіденційність даних і нормативно-правова відповідність** та надайте згоду способом установлення прапорця в полі **Погоджуюся**
+1. Перегляньте документ **Конфіденційність і відповідність даних** і надайте згоду з його вмістом способом вибору пункту **Погоджуюся**.
 
 1. Виберіть **Підтвердити**, щоб підтвердити конфігурацію.
 
 1. Після завершення перевірки виберіть **Зберегти**.
 
-> [!div class="mx-imgBorder"]
+   > [!div class="mx-imgBorder"]
    > ![Сторінка налаштування підключення HERE Technologies](media/enrichment-HERE-connection.png "Сторінка налаштування підключення HERE Technologies")
 
 ## <a name="enrichment-results"></a>Результати збагачення
@@ -85,12 +85,12 @@ HERE Technologies — це компанія платформи визначен
 
 ## <a name="next-steps"></a>Наступні кроки
 
-Створюйте на основі збагачених даних клієнтів. Створіть [сегменти](segments.md), [міри](measures.md) та навіть [експортуйте дані](export-destinations.md), щоб надати клієнтам персоналізовані можливості.
+Створюйте на основі збагачених даних клієнтів. Створюйте [сегменти](segments.md) та [міри](measures.md) й навіть [експортуйте дані](export-destinations.md), щоб забезпечувати персоналізовану взаємодію з клієнтами.
 
 ## <a name="data-privacy-and-compliance"></a>Конфіденційність і відповідність даних
 
 Під час увімкнення Dynamics 365 Customer Insights для передавання даних до HERE Technologies можна перенести дані за межі нормативного регіону до Dynamics 365 Customer Insights, включно з потенційно конфіденційними даними, наприклад особистими даними. Корпорація Microsoft передаватиме ці дані відповідно до ваших указівок, але всю відповідальність за те, щоб HERE Technologies відповідала будь-яким вашим вимогам щодо конфіденційності або безпеки, покладено на вас. Для отримання додаткових відомостей див. розділ [Декларація про конфіденційність Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Ваш адміністратор Dynamics 365 Customer Insights може видалити це збагачення в будь-який момент, щоб припинити користуватися цією функцією.
+Адміністратор Dynamics 365 Customer Insights може видалити це збагачення в будь-який момент, щоб припинити використання цієї функції.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
