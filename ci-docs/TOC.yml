@@ -136,6 +136,8 @@
           items:
             - name: Огляд експорту
               href: audience-insights/export-destinations.md
+            - name: Активна кампанія
+              href: audience-insights/export-active-campaign.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
             - name: Autopilot
@@ -178,8 +180,12 @@
               href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
+            - name: Хмара Salesforce Marketing
+              href: audience-insights/export-salesforce.md
             - name: SendGrid
               href: audience-insights/export-sendgrid.md
+            - name: SendInBlue
+              href: audience-insights/export-sendinblue.md
             - name: Snapchat
               href: audience-insights/export-snapchat.md
             - name: SFTP
@@ -240,15 +246,15 @@
           href: engagement-insights/get-started.md
         - name: Створіть робочу область
           href: engagement-insights/create-workspace.md
-        - name: Обладнайте свій веб-сайт
-          href: engagement-insights/instrument-website.md
+        - name: Записуйте події з веб-сайтів і програм для мобільних пристроїв
+          href: engagement-insights/developer-resources.md
         - name: Поняття та термінологія
           href: engagement-insights/glossary.md
     - name: Події
       items:
         - name: Створення та змінення подій
           href: engagement-insights/refined-events.md
-        - name: Експорт подій
+        - name: Експортувати події
           href: engagement-insights/export-events.md
     - name: Звіти
       items:
@@ -272,10 +278,18 @@
       items:
         - name: Огляд ресурсів для розробників
           href: engagement-insights/developer-resources.md
-        - name: Навчальний посібник з Web SDK
+        - name: Посібник із пакета SDK для вебу
           href: engagement-insights/advanced-SDK-implementation.md
         - name: Зразок Web SDK
           href: engagement-insights/websdk-sample.md
+        - name: Посібник із SDK Android
+          href: engagement-insights/get-started-android.md
+        - name: Зразок SDK Android
+          href: engagement-insights/androidsdk-sample.md
+        - name: Посібник з iOS SDK
+          href: engagement-insights/get-started-ios.md
+        - name: Зразок iOS SDK
+          href: engagement-insights/iossdk-sample.md
     - name: Адміністрування
       items:
         - name: Ролі й дозволи
