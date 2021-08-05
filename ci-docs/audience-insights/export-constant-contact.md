@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 29f4320c798db62609283e3c48f0b47a4f0b982f
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: b54659f028a141fe8f351645d96e933d47568a39
+ms.sourcegitcommit: adb9c43ddaba25e511535d78a4bcf8815f154a7b
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124298"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6362443"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>Експорт сегментів до Constant Contact (підготовча версія)
 
@@ -47,7 +47,7 @@ ms.locfileid: "6124298"
 
 1. Виберіть **Підключити**, щоб ініціалізувати підключення до Constant Contact.
 
-1. Виберіть **Автентифікація за допомогою AdRoll** і введіть облікові дані адміністратора для Constant Contact. 
+1. Натисніть **Автентифікація за допомогою Constant Contact** і вкажіть свої облікові дані адміністратора для Constant Contact. 
 
 1. Виберіть **Додати себе як користувача експорту** та надайте облікові дані Customer Insights.
 

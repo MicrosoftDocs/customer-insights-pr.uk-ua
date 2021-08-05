@@ -1,7 +1,7 @@
 ---
 title: Експорт даних Customer Insights до сховища BLOB-об'єктів Azure
 description: Дізнайтеся, як налаштувати підключення та експорт до сховища BLOB-об'єктів Azure.
-ms.date: 03/03/2021
+ms.date: 06/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3c19dc6d4956a33a5bd3cea706f8a154198d487f
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: e38fc06a948178fcbc62c08a4cf4816e1d030e79
+ms.sourcegitcommit: 656b1a6cdff37ba4f808311fd0327ab38e02ed13
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976206"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6318324"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Експортуйте список сегментів та інші дані до сховища BLOB-об'єктів Azure (підготовча версія)
 
@@ -40,11 +40,14 @@ ms.locfileid: "5976206"
 
 Ви можете налаштувати цей експорт, якщо у вас є доступ до підключень такого типу. Додаткові відомості: [Дозволи, необхідні для налаштування експорту](export-destinations.md#set-up-a-new-export).
 
+> [!IMPORTANT]
+> Якщо ввімкнути параметр видалення облікового запису сховища BLOB-об’єктів Azure, експорти завершаться помилкою. Щоб експортувати дані в BLOB-об'єктів, вимкніть видалення. Щоб отримати додаткові відомості, див. [Увімкнення видалення BLOB-об'єктів](/azure/storage/blobs/soft-delete-blob-enable.md)
+
 1. Відкрийте **Дані** > **Експорти**.
 
 1. Щоб створити новий експорт, виберіть **Додати призначення**.
 
-1. У полі **Підключення для експорту** виберіть підключення з розділу «Сховище BLOB-об’єктів Azure». Якщо ім'я цього розділу не відображається, це означає, що для вас немає жодного доступного підключення цього типу.
+1. У полі **Підключення для експорту** виберіть підключення з розділу «Сховище BLOB-об’єктів Azure». Якщо ви не бачите імені цього розділу, це означає, що для вас не доступні будь-які підключення цього типу.
 
 1. Установіть прапорець поруч із кожною із сутностей, які ви хочете експортувати до цього призначення.
 
@@ -53,13 +56,16 @@ ms.locfileid: "5976206"
 При збереженні експорт не запуститься негайно.
 
 Експорт виконується під час кожного [запланованого оновлення](system.md#schedule-tab).     
+
 Також можна [експортувати дані неавтоматично](export-destinations.md#run-exports-on-demand). 
 
 Експортовані дані зберігаються в контейнері сховища BLOB-об'єктів, який ви налаштували. У контейнері автоматично створюються наведені далі шляхи папок.
 
-- Для сутностей джерел і сутностей, згенерованих у системі: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`
+- Для сутностей джерел і сутностей, згенерованих у системі:   
+  `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`  
   - Приклад: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
-- Файл model.json для експортованих сутностей буде на рівні %ExportDestinationName%
+ 
+- Файл model.json для експортованих сутностей буде на рівні %ExportDestinationName%.  
   - Приклад: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

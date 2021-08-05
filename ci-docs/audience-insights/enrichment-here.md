@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 00be15367001a5f4342d60bb284726ef7154d05c
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305319"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555332"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Збагачення профілів клієнтів за допомогою HERE Technologies (попередній перегляд)
 
@@ -35,7 +35,7 @@ HERE Technologies — це компанія платформи визначен
 1. Виберіть **Збагачувати мої дані** на плитці HERE Technologies, потім виберіть **Почати**.
 
    > [!div class="mx-imgBorder"]
-   > ![Плитка HERE Technologies](media/HERE-tile.png "Плитка HERE Technologies")
+   > ![Плитка HERE Technologies.](media/HERE-tile.png "Плитка HERE Technologies")
 
 1. Виберіть [підключення](connections.md) з розкривного списку. Якщо жодне підключення недоступне, зверніться до адміністратора. Якщо ви є адміністратором, ви можете створити підключення, вибравши пункт **Додати підключення**. Виберіть пункт **HERE Technologies** із розкривного списку. 
 
@@ -50,7 +50,7 @@ HERE Technologies — це компанія платформи визначен
 1. Визначте, які поля з ваших уніфікованих профілів слід використовувати для пошуку відповідних даних щодо розташування у HERE Technologies. Поля **Вулиця 1** і **Поштовий індекс** необхідні для вибраних основної та додаткової адрес. Для підвищення точності зіставлення можна додати більше полів.
 
    > [!div class="mx-imgBorder"]
-   > ![Сторінка налаштування збагачення HERE Technologies](media/enrichment-HERE-configuration.png "Сторінка налаштування збагачення HERE Technologies")
+   > ![Сторінка налаштування збагачення HERE Technologies.](media/enrichment-HERE-configuration.png "Сторінка налаштування збагачення HERE Technologies")
 
 1. Виберіть **Далі**, щоб завершити зіставлення полів.
 
@@ -73,7 +73,7 @@ HERE Technologies — це компанія платформи визначен
 1. Після завершення перевірки виберіть **Зберегти**.
 
    > [!div class="mx-imgBorder"]
-   > ![Сторінка налаштування підключення HERE Technologies](media/enrichment-HERE-connection.png "Сторінка налаштування підключення HERE Technologies")
+   > ![Сторінка налаштування підключення HERE Technologies.](media/enrichment-HERE-connection.png "Сторінка налаштування підключення HERE Technologies")
 
 ## <a name="enrichment-results"></a>Результати збагачення
 

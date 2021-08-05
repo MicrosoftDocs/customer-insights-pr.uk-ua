@@ -9,12 +9,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 3fa91553fd50a22ab62b5a2b1e3f13b9483776a8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2ab5a9059991611a2959a19cc688d232ec782e1e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598180"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554138"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>З’єднувач Microsoft Power Apps (підготовча версія)
 
@@ -56,12 +56,12 @@ Customer Insights – це одне із багатьох [доступних д
 1. Додайте елемент керування **«Галерея»** до програми, яку ви створюєте.
 
 > [!div class="mx-imgBorder"]
-> ![Додавання елемента галереї](media/connector-powerapps9.png "Додавання елемента галереї")
+> ![Додавання елемента галереї.](media/connector-powerapps9.png "Додавання елемента галереї")
 
 1. Виберіть елемент **Клієнт** як джерело даних для елементів.
 
     > [!div class="mx-imgBorder"]
-    > ![Вибір джерела даних](media/choose-datasource-powerapps.png "Вибір джерела даних")
+    > ![Вибір джерела даних.](media/choose-datasource-powerapps.png "Вибір джерела даних")
 
 1. Панель даних можна змінити праворуч, щоб вибрати поле для сутності клієнта, яке відображатиметься в колекції.
 

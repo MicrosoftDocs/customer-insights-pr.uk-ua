@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9326f821f9970ba2254ab804814e369abb677eb0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: f98af8fb1c1d1ae050a5273286d35cf276d9fb17
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304767"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554506"
 ---
 # <a name="work-with-customer-insights-apis"></a>Робота з Customer Insights APIs
 
@@ -35,7 +35,7 @@ ms.locfileid: "6304767"
  
    Ввімкнення API створює первинний та вторинний ключ передплати для вашої інсталяції, які буд використано у запитах API. Ключі можна створити повторно, вибравши **Повторно створити первинний ключ** або **Повторно створити вторинний ключ** у меню **Адміністратор** > **Дозволи** > **API**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Ввімкнути Customer Insights APIs":::
+   :::image type="content" source="media/enable-apis.gif" alt-text="Ввімкнути Customer Insights APIs.":::
 
 1. Виберіть **Ознайомтеся щ нашими API**, щоб [випробувати API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -129,7 +129,7 @@ ms.locfileid: "6304767"
  
    Також цю команду можна виконати в **Консолі менеджера пакетів NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Додати пакет NuGet до проекту Visual Studio":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Додати пакет NuGet до проекту Visual Studio.":::
 
 #### <a name="use-the-c-client-library"></a>Використання клієнтської бібліотеки C#
 
@@ -141,7 +141,7 @@ ms.locfileid: "6304767"
 
 1. Передайте цей `HttpClient` в конструкцію клієнта `CustomerInsights`.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="Приклад httpclient":::
+   :::image type="content" source="media/httpclient-sample.png" alt-text="Приклад httpclient.":::
 
 1. Наприклад, можна робити виклики клієнта в «методах розширення» – наприклад, `GetAllInstancesAsync`. Якщо перевага надається основному `Microsoft.Rest.HttpOperationResponse`, використовуйте «http message methods» – наприклад, `GetAllInstancesWithHttpMessagesAsync`.
 

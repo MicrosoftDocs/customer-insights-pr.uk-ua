@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2856888d6ac64d5daabcc5a234f13bc6f88bb3df
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 0803be651662480ddf1fd22952f6a69ee1603001
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306099"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555010"
 ---
 # <a name="segment-insights-preview"></a>Аналітичні висновки для сегментів (підготовча версія)
 
@@ -44,7 +44,7 @@ ms.locfileid: "6306099"
 Після завершення аналізу знайдіть подробиці аналітичного висновку у розділі **Сегменти** > **Аналітичні висновки (підготовча версія)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-overlap.png" alt-text="Подробиці аналітичного висновку щодо перекриття сегментів":::
+> :::image type="content" source="media/segment-overlap.png" alt-text="Подробиці аналітичного висновку щодо перекриття сегментів.":::
 
 Виберіть аналітичний висновок, щоб переглянути результати аналізу.
 
@@ -77,7 +77,7 @@ ms.locfileid: "6306099"
 Після завершення аналізу знайдіть подробиці аналітичного висновку у розділі **Сегменти** > **Аналітичні висновки (підготовча версія)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-differentiators.png" alt-text="Подробиці аналітичного висновку щодо відмінностей сегментів":::
+> :::image type="content" source="media/segment-differentiators.png" alt-text="Подробиці аналітичного висновку щодо відмінностей сегментів.":::
 
 Виберіть аналітичний висновок, щоб переглянути результати аналізу. Аналіз відмінностей містить дві вкладки. На вкладці **Атрибути** перелічено атрибути профілю, що їх визначено як відмінності. На вкладці **Показники** перелічено відмінності. Кожна вкладка містить зазначені нижче відомості.
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 195bee789dc043057b47c12c8d93e6d53edb59cd
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: bd8189f8daee1a6aea75e75e116186f62a360ba4
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976825"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692506"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>Використання сегментів у Dynamics 365 Marketing (підготовча версія)
 
@@ -24,7 +24,7 @@ ms.locfileid: "5976825"
 
 ## <a name="prerequisite-for-a-connection"></a>Попередня вимога для підключення
 
-- Записи контактних осіб мають бути присутніми в Dynamics 365 Marketing, щоб ви змогли експортувати сегмент з Customer Insights до Marketing. Дізнайтеся більше про те, як прийняти контактних осіб у [Dynamics 365 Marketing, використовуючи Common Data Services](connect-power-query.md).
+- Записи контактних осіб мають бути присутніми в Dynamics 365 Marketing, щоб ви змогли експортувати сегмент з Customer Insights до Marketing. Дізнайтеся більше про те, як прийняти контактних осіб у [Dynamics 365 Marketing, використовуючи Microsoft Dataverse](connect-power-query.md).
 
   > [!NOTE]
   > Експортування сегментів з аналізу аудиторії до Marketing не призведе до створення нових записів контактних осіб в інсталяціях Marketing. Записи контактних осіб з Marketing повинні бути прийняті в аналізі аудиторії та мають використовуватися, як джерело даних. Їх також потрібно включити в уніфіковану сутність «Клієнт», щоб зіставити ідентифікатори клієнтів із ідентифікаторами контактних осіб, перш ніж можна буде експортувати сегменти.

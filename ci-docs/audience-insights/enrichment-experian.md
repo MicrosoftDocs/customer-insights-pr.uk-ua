@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 7c82fe92b3351a782a4fa6510300d870b742d042
-ms.sourcegitcommit: 42b3bce1e20e7cc707d232844dacfeed3d6fc096
+ms.openlocfilehash: abe9ee447745081e3c462d44e5901b6dac919adf
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "6309845"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555378"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Збагачуйте профілі клієнтів демографічними даними з Experian (підготовча версія)
 
@@ -39,7 +39,7 @@ Experian є глобальним лідером у сфері звітності
 1. Виберіть пункт **Збагатити мої дані** на плитці Experian.
 
    > [!div class="mx-imgBorder"]
-   > ![Плитка Experian](media/experian-tile.png "Плитка Experian")
+   > Плитка ![Experian](media/experian-tile.png "Плитка Experian")
    > 
 
 1. Виберіть [підключення](connections.md) з розкривного списку. Якщо жодне підключення недоступне, зверніться до адміністратора. Якщо ви адміністратор, ви можете створити підключення, якщо виберете пункт **Додати підключення**, а потім із розкривного списку виберете Experian. 

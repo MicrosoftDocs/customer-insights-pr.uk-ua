@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9c453c9b416bff0e6362a8ccf7ff534f4efa1e00
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e832fbbdfb59cb06d98715223edca438d2c3a7f2
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597536"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554388"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Запити прав суб'єкта даних (DSR) відповідно до GDPR
 
@@ -40,7 +40,7 @@ ms.locfileid: "5597536"
    2. Перевірте стан джерела даних в області **Стан**. Галочка у полі означає, що оновлення пройшло успішно. Попереджувальний трикутник означає, що сталася помилка. Якщо відображається попереджувальний трикутник, зверніться за адресою D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
-> ![Обробка запитів на видалення відповідно до GDPR для даних клієнтів](media/gdpr-data-sources.png "Обробка запитів на видалення відповідно до GDPR для даних клієнтів")
+> ![Обробка запитів на видалення відповідно до GDPR для даних клієнтів.](media/gdpr-data-sources.png "Обробка запитів на видалення відповідно до GDPR для даних клієнтів")
 
 #### <a name="manage-delete-requests-for-user-data"></a>Керування запитами на видалення для даних користувача
 
@@ -52,7 +52,7 @@ ms.locfileid: "5597536"
 4. Натисніть **Видалити**.
 
 > [!div class="mx-imgBorder"]
-> ![Обробка запитів GDPR на видалення даних користувача](media/gdpr-permissions.png "Обробка запитів GDPR на видалення для даних користувача")
+> ![Обробка запитів GDPR на видалення даних користувача.](media/gdpr-permissions.png "Обробка запитів GDPR на видалення для даних користувача")
 
 ## <a name="responding-to-gdpr-data-subject-export-requests"></a>Відповідь на запити на експорт суб’єкта даних GDPR
 

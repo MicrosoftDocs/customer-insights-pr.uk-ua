@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: c9adb4d7db74573d0512ae7a68a0e7ab51c994a0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304629"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554643"
 ---
 # <a name="customer-profiles"></a>Профілі клієнтів
 
@@ -23,11 +23,11 @@ ms.locfileid: "6304629"
 Клієнтами можуть бути фізичні особи або організації (попередній перегляд). Кожний профіль клієнта або організації представлений плиткою. Виберіть плитку для перегляду додаткових відомостей про певного клієнта або організацію. Скористайтеся елементами керування нумерацією сторінок в нижній частині сторінки, щоб переглянути додаткові записи.
 
 > [!div class="mx-imgBorder"] 
-> ![Профілі клієнта B2C](media/profiles-customers.png "Профілі клієнта B2C")
+> ![Профілі клієнта B2C.](media/profiles-customers.png "Профілі клієнта B2C")
 
 Організації (Попередній перегляд)
 > [!div class="mx-imgBorder"] 
-> ![Профілі клієнта B2B](media/profile-customers-b2b.png "Профілі клієнта B2B")
+> ![Профілі клієнта B2B.](media/profile-customers-b2b.png "Профілі клієнта B2B")
 
 > [!NOTE]
 > Якщо ці плитки не відображаються під час вибору **Клієнти** в області переходів, адміністратор має [визначити принаймні один атрибут для пошуку](search-filter-index.md) в **покажчику «Пошук і фільтрація»**.
@@ -47,7 +47,7 @@ ms.locfileid: "6304629"
 2. Установіть прапорці поруч із атрибутами, за якими потрібно відфільтрувати клієнтів.
 
    > [!div class="mx-imgBorder"] 
-   > ![Профілі клієнтів](media/profiles-customers3.png "Профілі клієнтів")
+   > ![Профілі клієнтів.](media/profiles-customers3.png "Профілі клієнтів")
 
 3. Видаліть фільтри, вибравши параметр **Очистити фільтри** на сторінці **Клієнти**.
 

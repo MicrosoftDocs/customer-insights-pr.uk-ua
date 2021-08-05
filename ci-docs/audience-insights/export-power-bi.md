@@ -1,7 +1,7 @@
 ---
 title: З’єднувач Power BI
 description: Дізнайтесь, як використовувати з’єднувач Dynamics 365 Customer Insights у Power BI.
-ms.date: 09/21/2020
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: faeb95bd7d2fe3cb220308cdee559b3347c5af54
+ms.sourcegitcommit: f98b6b2058f384365f222d1f9ba0cc9ce801f09d
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596064"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661127"
 ---
 # <a name="connector-for-power-bi-preview"></a>З’єднувач для Power BI (підготовча версія)
 
@@ -39,7 +39,7 @@ ms.locfileid: "5596064"
 
 1. У діалоговому вікні **Навігатор**. ви бачите список усіх середовищ, до яких є доступ. Розгорніть середовище та відкрийте будь-які папки (сутності, показники, сегменти, збагачення). Наприклад, відкрийте папку **Сутності**, щоб переглянути всі сутності, які можна імпортувати.
 
-   ![Power BI Connector Navigator](media/power-bi-navigator.png "Power BI Connector Navigator")
+   ![Power BI Connector Navigator.](media/power-bi-navigator.png "Power BI Connector Navigator")
 
 1. Установіть прапорці поруч із сутностями, які необхідно включити, і натисніть **Завантажити**. Можна вибрати кілька сутностей з кількох середовищ.
 
@@ -68,5 +68,11 @@ ms.locfileid: "5596064"
 3. Видаліть усі виявлені дублікати зв'язків.
 
 Після видалення дублікатів зв'язків спробуйте знову налаштувати з’єднувач Power BI. Тепер середовище має бути доступним.
+
+### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>Помилки у полях дат під час завантаження сутностей у Power BI Desktop
+
+Під час завантаження сутностей, які містять поля з форматом дати, наприклад MM/DD/YYYY, можуть виникнути помилки через невідповідність локальним шаблонам. Ця невідповідність трапляється, якщо файл Power BI Desktop налаштовано на іншу мову, ніж англійська (Сполучені Штати), оскільки поля дат в оглядах аудиторії зберігаються у форматі США.
+
+Файл Power BI Desktop має один параметр локальності, який застосовується під час отримання даних. Для правильного тлумачення полів даних установіть локаль для файлу .BPI на англійську (Сполучені Штати). [Навчіться змінювати регіональні параметри файлу Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

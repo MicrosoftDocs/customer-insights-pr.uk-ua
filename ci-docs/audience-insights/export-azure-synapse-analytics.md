@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 822082d661863e737ea3d3a749a6c878db766967
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 7ee57aa9e86ebf9bd1989d88750642f0b01bd4bf
+ms.sourcegitcommit: f18635c29bb25d9e424a3f5825dc2696278450cf
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5977402"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6327389"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Експортування даних до Azure Synapse Analytics (підготовча версія)
 
@@ -74,8 +74,10 @@ Azure Synapse– це служба аналізу, яка прискорює о�
 1. Укажіть пізнаване **Коротке ім'я** для експорту та **Ім'я бази даних**.
 
 1. Виберіть сутності, які потрібно експортувати до Azure Synapse Analytics.
+   > [!NOTE]
+   > Джерела даних на основі папки [Common Data Model](connect-common-data-model.md) не підтримуються.
 
-1. Виберіть **Зберегти**.
+2. Виберіть **Зберегти**.
 
 При збереженні експорт не запуститься негайно.
 

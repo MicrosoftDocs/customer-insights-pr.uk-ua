@@ -9,19 +9,19 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: b6cc0ad1a47a6c00e3bf220271f42870fc53621b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a6131d4dddce48b0fba153bcefe5631e0d22d808
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597168"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554046"
 ---
 # <a name="customer-profiles-search--filter-index"></a>Профілі клієнтів: покажчик «Пошук і фільтрація»
 
 Результатом об’єднання даних клієнтів є сутність профілю клієнта, яка надає уніфіковане подання в загальну базу клієнтів. Щоб швидко [знаходити інформацію про певного клієнта або групу клієнтів](customer-profiles.md), можна налаштувати можливості **Пошук** та **Фільтрувати** на сторінці **Клієнти**. Читайте розділ далі, щоб дізнатися про те, як адміністратори можуть редагувати ці атрибути на сторінці **Покажчик «Пошук і фільтрація»**, які доступні користувачам для пошуку та фільтрації.
 
 > [!div class="mx-imgBorder"]
-> ![Фільтр пошуку](media/search-filter.png "Фільтр пошуку")
+> ![Фільтр пошуку.](media/search-filter.png "Фільтр пошуку")
 
 ## <a name="add-fields-and-specify-attributes"></a>Додавання полів і визначення атрибутів
 

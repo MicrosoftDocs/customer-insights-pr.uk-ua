@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 7922a6a69f863caae5401549ed6f88a61aa77d39
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: ac6642c0ce02f1a92458a16250fd3b4cdef5fd1c
+ms.sourcegitcommit: adb9c43ddaba25e511535d78a4bcf8815f154a7b
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124252"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6362534"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>Експорт сегментів до Mailchimp (підготовча версія)
 
@@ -38,7 +38,7 @@ ms.locfileid: "6124252"
 
 1. Відкрийте **Адміністрування** > **Підключення**.
 
-1. Виберіть **Додати підключення** та оберіть **Mailchimp**, щоб налаштувати підключення.
+1. Виберіть розділ **Додати підключення**, потім виберіть **Mailchimp**, щоб налаштувати підключення.
 
 1. Надайте у полі **Коротке ім’я** для свого підключення змістовне ім'я, яке легко впізнати. Ім’я та тип підключення описують це підключення. Ми рекомендуємо вибирати ім’я, яке роз'яснює ціль і мету даного підключення.
 

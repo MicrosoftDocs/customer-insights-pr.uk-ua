@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6667e411a1b56e13105a6b59b7b5d249bc8141ea
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596386"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692330"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Схеми сутностей у Common Data Model
 
@@ -24,7 +24,7 @@ ms.locfileid: "5596386"
 
 Це спільна модель даних, яка дає змогу програмам та інтеграторами даних ефективніше співпрацювати, надаючи уніфіковане визначення даних. Common Data Model має багату систему метаданих зі стандартними сутностями, зв'язками, ієрархіями, рисами тощо. Вона походить з програм Dynamics 365 і має відкритий код на GitHub, а також включає понад 260 стандартних сутностей. Велика система внутрішніх і зовнішніх партнерів вносить специфічних для кожної галузі поняття в Common Data Model.
 
-Багато систем і платформ реалізують модель Common Data Model, зокрема потоки даних Power BI та служби даних Azure. Вона вже підтримується в Common Data Service, Dynamics 365, Power Apps, Power BI і службах даних Azure, що невдовзі вийдуть, безпосередньо забезпечуючи додану вартість у рамках [Open Data Initiative](https://www.microsoft.com/open-data-initiative).
+Сьогодні Common Data Model запроваджено в багатьох системах і платформах, включно з потоками даних Power BI і службами даних Azure. Вона уже підтримується в Microsoft Dataverse, Dynamics 365, Power Apps, Power BI і майбутніх службах даних Azure, безпосередньо накопичуючи значення для [Open Data Initiative](https://www.microsoft.com/open-data-initiative).
 
 ## <a name="customer-insights-entity-schemas"></a>Схеми сутностей Customer Insights
 
@@ -44,7 +44,7 @@ ms.locfileid: "5596386"
 
 Сутності можна переглянути в [Навігаторі сутності Common Data Model](https://microsoft.github.io/CDM/). Виберіть кнопку **Завантажити з GitHub!** і перейдіть до розділу **foundationCommon** > **crmCommon** > **рішення** > **customerInsights**, де можна знайти список сутностей Customer Insights та їхні визначення.
 > [!div class="mx-imgBorder"]
-> ![Засіб переходу між сутностями CDM, у якому відображається сутність CustomerActivity](media/CDM-entity-navigator.png "Засіб переходу між сутностями CDM, у якому відображається сутність CustomerActivity")
+> ![Засіб переходу між сутностями CDM, у якому відображається сутність CustomerActivity.](media/CDM-entity-navigator.png "Засіб переходу між сутностями CDM, у якому відображається сутність CustomerActivity")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

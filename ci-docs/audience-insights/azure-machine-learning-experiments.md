@@ -9,12 +9,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 3f97e22687ae4f5536d492bac83bdf9c711e2c94
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597444"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554460"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Використання моделей на основі машинного навчання Azure
 
@@ -52,7 +52,7 @@ ms.locfileid: "5597444"
      У конструкторі відкрийте параметр **Вибрати стовпці в наборі даних** і натисніть **Встановити як параметр воронки продажів** , де потрібно надати ім’я параметру.
 
      > [!div class="mx-imgBorder"]
-     > ![Параметризація набору даних у конструкторі](media/intelligence-designer-dataset-parameters.png "Параметризація набору даних у конструкторі")
+     > ![Параметризація набору даних у конструкторі.](media/intelligence-designer-dataset-parameters.png "Параметризація набору даних у конструкторі")
    
 * Параметр набору даних у SDK (Python)
    
@@ -78,7 +78,7 @@ ms.locfileid: "5597444"
 
 * Дизайнер надає [модуль даних експорту](/azure/machine-learning/algorithm-module-reference/export-data), що дає змогу експортувати воронку продажів до сховища даних Azure. Зараз модуль має використовувати тип сховища даних **Сховище BLOB-даних Azure** і парметризувати **Сховище даних** і пов’язаний **Перелік дій**. Customer Insights переписує обидва параметри під час виконання воронки продажів зі сховищем даних і переліком дій, доступних для продукту.
    > [!div class="mx-imgBorder"]
-   > ![Налаштування експортування модулю даних](media/intelligence-designer-importdata.png "Налаштування експортування модулю даних")
+   > ![Налаштування експортування модулю даних.](media/intelligence-designer-importdata.png "Налаштування експортування модулю даних")
    
 * Під час написання виведення з використанням коду ви можете завантажити виведення до переліку дій у *зареєстрованому сховищі даних* робочої області. Якщо перелік даних і сховище даних параметризовані у воронці продажів, Customer insights зможе зчитати та імпортувати виведення. Наразі підтримується єдиний табличний вивід у форматі csv. Перелік дій має містити каталог і ім'я файлу.
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 3b10fb23cca03ed918aa7fd46478b568d5ebbf1a
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305181"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555516"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Збагачення профілів клієнтів близькими брендами й інтересами (попередній перегляд)
 
@@ -27,7 +27,7 @@ ms.locfileid: "6305181"
 Щоб налаштувати збагачення на основі близьких інтересів, перейдіть на вкладку **Виявлення** і виберіть **Збагатити мої дані** на плитці **Інтереси**.
 
    > [!div class="mx-imgBorder"]
-   > ![Плитки брендів та інтересів](media/BrandsInterest-tile-Hub.png "Плитки брендів та інтересів")
+   > ![Плитки брендів та інтересів.](media/BrandsInterest-tile-Hub.png "Плитки брендів та інтересів")
 
 ## <a name="how-we-determine-affinities"></a>Як ми визначаємо уподобання
 
@@ -123,7 +123,7 @@ ms.locfileid: "6305181"
 
 Після запуску процесу збагачення перейдіть на сторінку **Мої збагачення**, щоб переглянути загальну кількість збагачених клієнтів і структуру брендів або інтересів у збагачених профілях клієнтів.
 
-:::image type="content" source="media/my-enrichments.png" alt-text="Зразок результатів для попереднього перегляду після збагачення":::
+:::image type="content" source="media/my-enrichments.png" alt-text="Зразок результатів для попереднього перегляду після збагачення.":::
 
 Перегляньте збагачені дані, вибравши **Переглянути збагачені дані** на діаграмі. Збагачені дані для брендів містяться в сутності **BrandAffinityFromMicrosoft**. Дані для інтересів – у сутності **InterestAffinityFromMicrosoft**. Ви також знайдете ці сутності в списку групи **Збагачення**, розташованої тут: **Дані** > **Сутності**.
 
@@ -131,7 +131,7 @@ ms.locfileid: "6305181"
 
 Інформацію про близькість до брендів та інтересів також можна переглядати на окремих картках клієнтів. Перейдіть до розділу **Клієнти** та виберіть профіль клієнта. У картці клієнта ви знайдете діаграми брендів або інтересів, які є близькими клієнтові згідно до його демографічного профілю.
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="Картка клієнта зі збагаченими даними":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="Картка клієнта зі збагаченими даними.":::
 
 ## <a name="next-steps"></a>Наступні кроки
 

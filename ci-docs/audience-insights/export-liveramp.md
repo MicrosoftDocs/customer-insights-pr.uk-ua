@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 987457966fe1fc034d9e3cd2a1ce33902c7a84f4
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b377a3500c5d91962e59d46fbc259db5cc8fa7d0
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760352"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555470"
 ---
 # <a name="export-segments-to-liverampreg-preview"></a>Експорт сегментів до LiveRamp&reg; (підготовча версія)
 
@@ -56,7 +56,7 @@ ms.locfileid: "5760352"
 
 1. У полі **Виберіть ідентифікатор ключа** виберіть один із варіантів, як-от **Адреса електронної пошти**, **Ім’я та адреса** або **Номер телефону**, який буде відправлено до LiveRamp для ідентифікації особистості.
    > [!div class="mx-imgBorder"]
-   > ![З’єднувач LiveRamp із зіставленням атрибутів](media/export-liveramp-segments.png "З’єднувач LiveRamp із зіставленням атрибутів")
+   > ![З’єднувач LiveRamp із зіставленням атрибутів.](media/export-liveramp-segments.png "З’єднувач LiveRamp із зіставленням атрибутів")
 
 1. Зіставте відповідні атрибути з об’єднаної сутності клієнта для вибраного ідентифікатора ключа.
 

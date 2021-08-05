@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596524"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692138"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Для аналізу аудиторії підключіться до облікового запису Azure Data Lake Storage Gen2 за допомогою принципала служби Azure
 
 Для автоматичних інструментів, які використовують служби Azure, завжди мають обмежені дозволи. Замість того, щоб входити в програму як привілейований користувач, Azure пропонує принципали служби. Ознайомтеся, щоб дізнатися, як підключити аналізи аудиторі з обліковим записом Azure Data Lake Storage Gen2 за допомогою принципала служби Azure, а не ключів облікового запису сховища. 
 
-Принципал служби можна використовувати для того, щоб безпечно [додавати або редагувати папку Common Data Model як джерело даних](connect-common-data-model.md) або [створювати нове або оновлювати наявне середовище](manage-environments.md#create-an-environment-in-an-existing-organization).
+Принципал служби можна використовувати для того, щоб безпечно [додавати або редагувати папку Common Data Model як джерело даних](connect-common-data-model.md) або [створювати нове або оновлювати наявне середовище](get-started-paid.md).
 
 > [!IMPORTANT]
 > - Для облікового запису сховища Azure Data Lake Gen2, який має намір використовувати принципал служби, необхідно увімкнути [Ієрархічний простір імен (HNS)](/azure/storage/blobs/data-lake-storage-namespace).
@@ -81,7 +81,7 @@ ms.locfileid: "5596524"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>Введіть ідентифікатор ресурсу Azure або деталі підписки Azure у вкладенні облікового запису сховища до аналізу аудиторії.
 
-Прикріпіть обліковий запис сховища Azure Data Lake у аналізі аудиторії до [store output data](manage-environments.md) або [використовуйте його як джерело даних](connect-common-data-service-lake.md). Вибір параметра Azure Data Lake дає змогу вибирати між підходом на основі ресурсу та підходом на основі передплати.
+Прикріпіть обліковий запис сховища Azure Data Lake у аналізі аудиторії до [store output data](manage-environments.md) або [використовуйте його як джерело даних](connect-dataverse-managed-lake.md). Вибір параметра Azure Data Lake дає змогу вибирати між підходом на основі ресурсу та підходом на основі передплати.
 
 Виконайте наведені нижче кроки, щоб надати необхідну інформацію щодо вибраного підходу.
 
