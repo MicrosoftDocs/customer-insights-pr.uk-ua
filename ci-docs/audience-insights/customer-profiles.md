@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 87323d15c44ef82ae8bc3cc971be6c36356121571cb9a9630be699ac2d157bf6
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554643"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032829"
 ---
 # <a name="customer-profiles"></a>Профілі клієнтів
 
@@ -69,7 +69,7 @@ ms.locfileid: "6554643"
 
 ## <a name="next-steps"></a>Наступні кроки
 
-[Додайте інші джерела даних](data-sources.md) або [створіть сегменти клієнта](segments.md).
+[Додайте інші джерела даних](data-sources.md), [збагатіть єдині профілі](enrichment-hub.md) або [створіть сегменти](segments.md) для роботи з єдиними профілями в інших програмах.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

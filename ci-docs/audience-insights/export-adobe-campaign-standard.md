@@ -1,5 +1,5 @@
 ---
-title: Експортування даних Customer Insights до Adobe Campaign Standard
+title: Експорт даних Customer Insights до Adobe Campaign Standard
 description: Дізнайтесь, як використовувати сегменти аналітичних оглядів аудиторії у Adobe Campaign Standard.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 917ab9559416f3ee0ffd66e471e590e8da3faffc
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: d301b4f0cb875303fb3d373b77177acd1c1f5219cd6f23c2a1d29ce67a222eab
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305411"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032188"
 ---
-# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Використовуйте сегменти Customer Insights у Adobe Campaign Standard (підготовча версія)
+# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Використання сегментів Customer Insights у Adobe Campaign Standard (підготовча версія)
 
-Як користувач аналітичних оглядів аудиторії в Dynamics 365 Customer Insights, ви могли створювати сегменти для підвищення ефективності своїх маркетингових кампаній способом націлювання рекламного матеріалу на доречні аудиторії. Щоб використовувати сегмент з аналітики аудиторії на платформі Adobe Experience та в програмах, як-от Adobe Campaign Standard, потрібно виконати кілька кроків, наведених у цій статті.
+Як користувач аналітичних оглядів аудиторії в Dynamics 365 Customer Insights, ви могли створювати сегменти для підвищення ефективності своїх маркетингових кампаній способом націлювання рекламного матеріалу на доречні аудиторії. Щоб скористатися сегментом з аналітичних оглядів аудиторії в Adobe Experience Platform та програмах на кшталт Adobe Campaign Standard, слід виконати кілька кроків, описаних у цій статті.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="Схема процесів кроків, описаних у цій статті.":::
 
@@ -30,11 +30,11 @@ ms.locfileid: "6305411"
 
 ## <a name="campaign-overview"></a>Огляд кампанії
 
-Щоб краще зрозуміти, як можна використовувати сегменти з аналітики аудиторії на платформі Adobe Experience, перегляньте вигадані приклади кампаній.
+Щоб краще зрозуміти, як можна використовувати сегменти з аналітичних оглядів аудиторії в Adobe Experience Platform, розгляньмо вигаданий приклад кампанії.
 
-Припустімо, що ваша компанія пропонує клієнтам щомісячну передплату на послуги в Сполучених Штатах Америки. Вам потрібно визначити клієнтів, передплати яких мають бути продовжені впродовж наступних 8 днів, але які ще не продовжили їх. Щоб зберегти цих клієнтів, ви хочете надіслати їм акційну пропозицію електронною поштою за допомогою Adobe Campaign Standard.
+Припустімо, що ваша компанія пропонує клієнтам щомісячну передплату на послуги в Сполучених Штатах Америки. Вам потрібно визначити клієнтів, передплати яких мають бути продовжені впродовж наступних 8 днів, але які ще не продовжили їх. Щоб зберегти цих клієнтів, варто надіслати їм акційну пропозицію електронною поштою за допомогою Adobe Campaign Standard.
 
-У цьому прикладі ми хочемо запустити рекламну кампанію електронною поштою один раз. У цій статті не розглядається варіант використання багатократного запуску кампанії. Проте аналітичні огляди аудиторій і Adobe Campaign Standard можна настроювати також для роботи з повторюваним сценарієм кампанії.
+У цьому прикладі ми хочемо запустити рекламну кампанію електронною поштою один раз. У цій статті не розглядається варіант використання багатократного запуску кампанії. Проте, аналітичні огляди аудиторії та Adobe Campaign Standard також можна налаштувати для роботи з повторюваним сценарієм кампанії.
 
 ## <a name="identify-your-target-audience"></a>Визначте цільову аудиторію
 
@@ -54,9 +54,9 @@ ms.locfileid: "6305411"
 
 1. У аналітиці аудиторії перейдіть до розділу **Адміністратор** > **Підключення**.
 
-1. Виберіть розділ **Додати підключення**, потім виберіть **Кампанія Adobe**, щоб налаштувати підключення, або виберіть пункт **Налаштувати** на плитці **Кампанія Adobe**.
+1. Натисніть **Додати підключення** та виберіть **Adobe Campaign**, щоб налаштувати підключення, або натисніть **Налаштувати** на плитці **Adobe Campaign**.
 
-   :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Плитка «Конфігурація» для Adobe Campaign Standard.":::
+   :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Плитка налаштування для Adobe Campaign Standard.":::
 
 1. Надайте у полі **Коротке ім’я** для свого підключення змістовне ім'я, яке легко впізнати. Ім’я та тип підключення описують це підключення. Ми рекомендуємо вибирати ім’я, яке роз'яснює ціль і мету даного підключення.
 
@@ -80,7 +80,7 @@ ms.locfileid: "6305411"
 
 1. Щоб створити новий експорт, виберіть **Додати експорт**.
 
-1. У полі **Підключення для експорту** виберіть підключення з розділу «Кампанія Adobe». Якщо ви не бачите імені цього розділу, це означає, що для вас не доступні будь-які підключення цього типу.
+1. У полі **Підключення для експорту**, виберіть підключення з розділу Adobe Campaign. Якщо ви не бачите імені цього розділу, це означає, що для вас не доступні будь-які підключення цього типу.
 
 1. Виберіть сегмент, який потрібно експортувати. У цьому прикладі це **ChurnProneCustomers**.
 
@@ -88,14 +88,14 @@ ms.locfileid: "6305411"
 
 1. Виберіть **Далі**.
 
-1. Тепер ми зіставляємо поля **Джерело** з сегменту аналітичних оглядів аудиторії з іменами поля **Ціль** у схемі профілю Adobe Campaign Standard.
+1. Тепер ми зіставимо **вихідні** поля із сегменту аналітичного оглядів аудиторії з іменами **кінцевих** полів у схемі профілю Adobe Campaign Standard.
 
-   :::image type="content" source="media/ACS-field-mapping.png" alt-text="Зіставлення полів для стандартного з'єднувача Adobe Campaign Standard.":::
+   :::image type="content" source="media/ACS-field-mapping.png" alt-text="Зіставлення полів для з'єднувача Adobe Campaign Standard.":::
 
-   Щоб додати більше атрибутів, виберіть **Додати атрибут**. Кінцеве ім'я може відрізнятися від вихідного імені поля, м=тому ви все одно можете зіставити вивід сегмента х аналітичних оглядів аудиторії з Adobe Campaign Standard, якщо поля не мають однакового імені в двох системах.
+   Щоб додати більше атрибутів, виберіть **Додати атрибут**. Кінцеве ім'я може відрізнятися від імені вихідного поля, щоб можна було зіставити результати сегмента з аналітичних оглядів аудиторії та Adobe Campaign Standard, навіть якщо поля в системах мають різні імена.
 
    > [!NOTE]
-   > Адреса електронної пошти використовується як поле посвідчення, але можна використовувати будь-який інший ідентифікатор з профілю клієнта аналітичних оглядів аудиторії, щоб зіставити дані в Adobe Campaign Standard.
+   > Адреса електронної пошти використовується як поле ідентифікації, але можна використовувати будь-який інший ідентифікатор з профілю клієнта аналітичних оглядів аудиторії для зіставлення даних з Adobe Campaign Standard.
 
 1. Виберіть **Зберегти**.
 
@@ -104,7 +104,7 @@ ms.locfileid: "6305411"
 Тепер сегмент [можна експортувати неавтоматично](export-destinations.md#run-exports-on-demand). Експорт також запускатиметься під час кожного [запланованого оновлення](system.md).
 
 > [!NOTE]
-> Переконайтеся, що кількість записів у експортованому сегменті перебуває в межах дозволеного ліміту вашої ліцензії Adobe Campaign Standard.
+> Переконайтеся, що кількість записів у експортованому сегменті не перевищує граничне значення ліцензії Adobe Campaign Standard.
 
 Експортовані дані зберігаються в контейнері сховища BLOB-об'єктів Azure, який було налаштовано вище. У контейнері автоматично створюється такий перелік дій:
 
@@ -116,28 +116,28 @@ ms.locfileid: "6305411"
 
 У разі експортування сегмента аналітичного огляду аудиторії він містить стовпці, вибрані під час визначення призначення експорту в попередньому кроці. Ці дані можна використовувати для [створення профілів у Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/about-profiles.html#managing-profiles).
 
-Для використання сегменту в Adobe Campaign Standard, потрібно розширити схему профілю в Adobe Campaign Standard , щоб додати два додаткові поля. Навчіться [розширювати ресурс профілю](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) за допомогою нових полів у Adobe Campaign Standard.
+Щоб скористатися сегментом у Adobe Campaign Standard, необхідно розширити схему профілю в Adobe Campaign Standard, додавши ще два поля. Дізнайтесь, як [розширити ресурс профілю](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) новими полями у Adobe Campaign Standard.
 
 У цьому прикладі такими полями є: *«Назва сегмента» та «Дата сегмента» (необов'язково)*.
 
-Ці поля використовуватимуться для визначення профілів у Adobe Campaign Standard, визначених для цієї кампанії.
+Ми використаємо ці поля для розпізнавання потрібних для цієї кампанії кінцевих профілів у Adobe Campaign Standard.
 
-Якщо в Adobe Campaign Standard немає інших записів, що відрізняються від тих, які ви хочете імпортувати, ви можете пропустити цей крок.
+Якщо в Adobe Campaign Standard немає інших записів, крім тих, які ви збираєтесь імпортувати, цей крок можна пропустити.
 
 ## <a name="import-data-into-adobe-campaign-standard"></a>Імпортування даних до Adobe Campaign Standard
 
-Тепер, коли все готово, необхідно імпортувати підготовлені дані про аудиторію аналітичних оглядів аудиторії до Adobe Campaign Standard, щоб створити профілі. Дізнайтеся [як імпортувати профілі в Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) за допомогою робочого циклу.
+Тепер, коли все на місці, потрібно імпортувати підготовлені дані аудиторії з аналітичних оглядів аудиторії в Adobe Campaign Standard, щоб створити профілі. Дізнайтесь, як [імпортувати профілі в Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) за допомогою робочого циклу.
 
-Робочий цикл імпорту на наведеному нижче зображенні налаштовано для запуску кожні вісім годин, коли цей цикл виконуватиме пошук експортованих сегментів аналітичних оглядів аудиторії (файлу .csv у Сховищі BLOB-об’єктів Azure). Робочий цикл отримує вміст .csv-файлу у вказаному порядку стовпців. Цей робочий цикл створено для виконання базової обробки помилок і забезпечення того, щоб кожен запис мав адресу електронної пошти перед зливом даних у Adobe Campaign Standard. Цей робочий цикл також видобуває ім’я сегмента з імені файлу до його вставляння в дані стандартного профілю кампанії Adobe.
+Робочий цикл імпорту на наведеному нижче зображенні налаштовано для запуску кожні вісім годин, коли цей цикл виконуватиме пошук експортованих сегментів аналітичних оглядів аудиторії (файлу .csv у Сховищі BLOB-об’єктів Azure). Робочий цикл отримує вміст .csv-файлу у вказаному порядку стовпців. Цей робочий цикл створено для виконання базової обробки помилок і перевірки наявності адреси електронної пошти в кожному записі має перед заповненням даних у Adobe Campaign Standard. Цей робочий цикл також витягає ім'я сегмента з імені файлу перед його вставленням в дані профілю Adobe Campaign Standard.
 
 :::image type="content" source="media/ACS-import-workflow.png" alt-text="Знімок екрана: робочий цикл імпорту в інтерфейсі користувача Adobe Campaign Standard.":::
 
-## <a name="retrieve-the-audience-in-adobe-campaign-standard"></a>Отримання аудиторії у Adobe Campaign Standard
+## <a name="retrieve-the-audience-in-adobe-campaign-standard"></a>Отримання аудиторії в Adobe Campaign Standard
 
-Після імпорту даних у Adobe Campaign Standard [можна створити робочий цикл](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-general-operation/building-a-workflow.html#managing-processes-and-data) і [запит](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/targeting-activities/query.html#managing-processes-and-data) клієнтів на основі *Імені сегмента* і *Дати сегменту* для вибору профілів, визначених для нашого прикладу кампанії.
+Після імпорту даних до Adobe Campaign Standard, можна [створити робочий цикл](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-general-operation/building-a-workflow.html#managing-processes-and-data) ввести [запит](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/targeting-activities/query.html#managing-processes-and-data) до клієнтів на основі *Імені сегмента* та *Дати сегмента*, щоб вибрати профілі, розпізнані для нашого зразку кампанії.
 
-## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Створення та надсилання електронної пошти за допомогою Adobe Campaign Standard
+## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Створення та надсилання повідомлення електронної пошти за допомогою Adobe Campaign Standard
 
 Створіть вміст електронної пошти, а потім [перевірте та надішліть](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) повідомлення електронної пошти.
 
-:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Зразок повідомлення електронної пошти із пропозицією оновлення за допомогою Adobe Campaign Standard.":::
+:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Зразок повідомлення електронної пошти з пропозицією поновлення від Adobe Campaign Standard.":::
