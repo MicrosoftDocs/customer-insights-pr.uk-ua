@@ -150,7 +150,7 @@
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
-            - name: Платформа Adobe Experience
+            - name: Adobe Experience Platform
               href: audience-insights/export-adobe-experience-platform.md
             - name: Campaign Monitor
               href: audience-insights/export-campaign-monitor.md
@@ -166,6 +166,8 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Klaviyo
+              href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
               href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
@@ -310,5 +312,13 @@
       href: engagement-insights/regional-availability.md
     - name: Обмеження послуг
       href: engagement-insights/quotas.md
-- name: Звернутися до служби підтримки
-  href: 'https://admin.powerplatform.microsoft.com/support'
+- name: Інтеграція аналітичних оглядів аудиторії та взаємодії
+  items:
+    - name: Зв’язування аналітичних оглядів аудиторії та взаємодії
+      href: engagement-insights/integrate-audience-insights-engagement-insights.md
+    - name: Використання сегментів аналітичних оглядів аудиторії в звітах аналітичних оглядів взаємодії
+      href: engagement-insights/integrate-audience-insights-segments.md
+    - name: Використання демографічних вимірів для розділення поведінкових даних
+      href: engagement-insights/curate-dimensions.md
+- name: Отримати підтримку
+  href: 'https://dynamics.microsoft.com/en-us/support/'

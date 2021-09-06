@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 1af2e4c42dc5890556c90bb3e5ef1aeb0621fda0
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
+ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554184"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7377859"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Інкрементне оновлення для джерел даних на основі Power Query
 
@@ -44,8 +44,7 @@ ms.locfileid: "6554184"
 
 1. У **Параметрах інкрементного оновлення** можна налаштувати інкрементне оновлення для всіх сутностей, вибраних під час створення джерела даних.
 
-   > [!div class="mx-imgBorder"]
-   > ![Налаштування сутностей у джерелі даних для інкрементного оновлення.](media/incremental-refresh-settings.png "Налаштування сутностей у джерелі даних для інкрементного оновлення")
+   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="Налаштування сутностей у джерелі даних для інкрементного оновлення.":::
 
 1. Виберіть сутність, а потім укажіть зазначені нижче дані.
 
