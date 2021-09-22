@@ -1,0 +1,86 @@
+### YamlMime:Landing
+title: Можливості засобу "Аналітика взаємодії" (підготовча версія) в Dynamics 365 Customer Insights
+summary: Збирайте дані для своїх веб-сайтів. Інтерактивно аналізуйте взаємодії із клієнтами на ваших сайтах та використання сайтів ними. Використовуйте глибоку інтеграцію між аналітикою взаємодії та аналізом аудиторії для збагачення вашого аналізу поведінки в реальному часі за допомогою звітів про профілі клієнтів. Збагачуйте профілі клієнтів за допомогою дій на веб-сторінках, щоб отримувати дані про поведінку в реальному часі разом із відповідними даними клієнтів. Трансформуйте свій бізнес і отримайте безпосередній дохід від даних клієнтів.
+metadata:
+  title: Документація засобу "Аналітика взаємодії" (підготовча версія)
+  description: Довідковий центр із основними посиланнями, пов’язаними з аналітичними висновками щодо взаємодії.
+  ms.service: customer-insights
+  ms.subservice: engagement-insights
+  ms.topic: hub-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.reviewer: mhart
+  ms.date: 07/30/2021
+  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.translationtype: HT
+  ms.contentlocale: uk-UA
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7036263"
+landingContent:
+- title: Інформація
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Огляд наявних можливостей
+      url: overview.md
+    - text: Умови та положення
+      url: glossary.md
+    - text: Знайомство з аналітичними оглядами взаємодії
+      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+- title: Ознайомлення
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Почати
+      url: get-started.md
+    - text: Створіть робочу область
+      url: create-workspace.md
+    - text: Обладнайте свій веб-сайт
+      url: instrument-website.md
+- title: Звіти
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Переглянути звіти
+      url: view-reports.md
+    - text: Створення настроюваних звітів
+      url: custom-reports.md
+    - text: Перегляд звіту уніфікованих профілів
+      url: profile-reports.md
+    - text: Створення послідовних звітів
+      url: funnel-reports.md
+- title: Події
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Створити уточнені події
+      url: refined-events.md
+    - text: Експортувати події
+      url: export-events.md
+    - text: Видалення та експорт особистих даних
+      url: delete-export-personal-data.md
+- title: Ресурси для розробників
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Ресурси для розробників
+      url: developer-resources.md
+    - text: Зразок WebSDK
+      url: websdk-sample.md
+    - text: Розширені сценарії SDK для вебу
+      url: advanced-SDK-implementation.md
+    - text: Зразок SDK Android
+      url: get-started-android.md
+    - text: Зразок iOS SDK
+      url: get-started-ios.md
+- title: Адміністрування
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Керування середовищами та робочими областями
+      url: manage-environments-workspaces.md
+    - text: Підключення до аналізу аудиторії
+      url: configure-connections.md
+    - text: Керування файлами cookie та згодою користувача
+      url: user-consent-storage.md
