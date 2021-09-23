@@ -6,7 +6,7 @@
   href: audience-insights/get-started-trial.md
 - name: Доступ до середовища
   href: 'https://home.ci.ai.dynamics.com/'
-- name: Audience insights
+- name: Аналіз аудиторії
   items:
     - name: Довідковий центр
       href: audience-insights/index.yml
@@ -14,8 +14,14 @@
       href: audience-insights/overview.md
     - name: Нові та оновлені функції
       href: audience-insights/whats-new-audience-insights.md
-    - name: Створити нове середовище
-      href: audience-insights/get-started-paid.md
+    - name: Почати
+      items:
+        - name: Посібник зі швидкого початку роботи
+          href: audience-insights/get-started.md
+        - name: Створити нове середовище
+          href: audience-insights/get-started-paid.md
+        - name: Ознайомлення з аналізом аудиторії
+          href: audience-insights/home.md
     - name: Навчальні модулі
       items:
         - name: Отримання даних
@@ -68,6 +74,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Розширені адреси
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Збагачення за допомогою Azure Maps
+          href: audience-insights/enrichment-azure-maps.md
         - name: Збагачення за допомогою HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Збагачення за допомогою Leadspace
@@ -230,21 +238,15 @@
           href: audience-insights/apis.md
         - name: Посилання API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-    - name: Обмеження послуг
-      href: audience-insights/service-limits.md
-    - name: Запити прав суб'єкта даних (DSR) відповідно до GDPR
-      href: audience-insights/gdpr.md
-- name: Аналітика взаємодії (підготовча версія)
+- name: Engagement insights (підготовча версія)
   items:
     - name: Довідковий центр
       href: engagement-insights/index.yml
     - name: Огляд наявних можливостей
       href: engagement-insights/overview.md
-    - name: Безкоштовна ознайомлювальна версія
-      href: 'https://pi.dynamics.com/'
     - name: Почати
       items:
-        - name: Почати
+        - name: Посібник зі швидкого початку роботи
           href: engagement-insights/get-started.md
         - name: Створіть робочу область
           href: engagement-insights/create-workspace.md
@@ -300,18 +302,10 @@
           href: engagement-insights/user-roles.md
         - name: Керування середовищами та робочими областями
           href: engagement-insights/manage-environments-workspaces.md
-        - name: Налаштування підключень
-          href: engagement-insights/configure-connections.md
         - name: Керування файлами cookie та згодою користувача
           href: engagement-insights/user-consent-storage.md
-    - name: GDPR
-      items:
-        - name: Видалення та експорт особистих даних
-          href: engagement-insights/delete-export-personal-data.md
     - name: Регіональна доступність
       href: engagement-insights/regional-availability.md
-    - name: Обмеження послуг
-      href: engagement-insights/quotas.md
 - name: Інтеграція аналітичних оглядів аудиторії та взаємодії
   items:
     - name: Зв’язування аналітичних оглядів аудиторії та взаємодії
@@ -320,5 +314,9 @@
       href: engagement-insights/integrate-audience-insights-segments.md
     - name: Використання демографічних вимірів для розділення поведінкових даних
       href: engagement-insights/curate-dimensions.md
+- name: Обмеження послуг
+  href: service-limits.md
+- name: Права та запити DSR
+  href: dsr-rights-requests.md
 - name: Отримати підтримку
-  href: 'https://dynamics.microsoft.com/en-us/support/'
+  href: 'https://dynamics.microsoft.com/support/'

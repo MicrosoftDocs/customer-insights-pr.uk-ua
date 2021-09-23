@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Можливості засобу "Аналітика взаємодії" (підготовча версія) в Dynamics 365 Customer Insights
+title: Можливість «Аналітика взаємодії» у Dynamics 365 Customer Insights (підготовча версія)
 summary: Збирайте дані для своїх веб-сайтів. Інтерактивно аналізуйте взаємодії із клієнтами на ваших сайтах та використання сайтів ними. Використовуйте глибоку інтеграцію між аналітикою взаємодії та аналізом аудиторії для збагачення вашого аналізу поведінки в реальному часі за допомогою звітів про профілі клієнтів. Збагачуйте профілі клієнтів за допомогою дій на веб-сторінках, щоб отримувати дані про поведінку в реальному часі разом із відповідними даними клієнтів. Трансформуйте свій бізнес і отримайте безпосередній дохід від даних клієнтів.
 metadata:
-  title: Документація засобу "Аналітика взаємодії" (підготовча версія)
+  title: Документація засобу «Аналітика взаємодії» (підготовча версія)
   description: Довідковий центр із основними посиланнями, пов’язаними з аналітичними висновками щодо взаємодії.
   ms.service: customer-insights
   ms.subservice: engagement-insights
@@ -10,24 +10,24 @@ metadata:
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
-  ms.date: 07/30/2021
-  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
-  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.date: 09/15/2021
+  ms.openlocfilehash: bf2e40b1ca304e7b26687eaff298d2e70615cd2b
+  ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
   ms.translationtype: HT
   ms.contentlocale: uk-UA
-  ms.lasthandoff: 08/10/2021
-  ms.locfileid: "7036263"
+  ms.lasthandoff: 09/15/2021
+  ms.locfileid: "7494209"
 landingContent:
 - title: Інформація
   linkLists:
   - linkListType: overview
     links:
-    - text: Огляд наявних можливостей
+    - text: Переваги використання можливості
       url: overview.md
-    - text: Умови та положення
+    - text: Глосарій термінів
       url: glossary.md
-    - text: Знайомство з аналітичними оглядами взаємодії
-      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+    - text: Нові та оновлені функції
+      url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 - title: Ознайомлення
   linkLists:
   - linkListType: how-to-guide
@@ -38,28 +38,30 @@ landingContent:
       url: create-workspace.md
     - text: Обладнайте свій веб-сайт
       url: instrument-website.md
-- title: Звіти
+- title: Перегляд і фільтрування звітів
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Переглянути звіти
       url: view-reports.md
-    - text: Створення настроюваних звітів
-      url: custom-reports.md
     - text: Перегляд звіту уніфікованих профілів
       url: profile-reports.md
-    - text: Створення послідовних звітів
-      url: funnel-reports.md
-- title: Події
+    - text: Використання сегментів аудиторії для фільтрації звітів
+      url: integrate-audience-insights-segments.md
+- title: Аналіз
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Створення послідовних звітів
+      url: funnel-reports.md
+    - text: Аналіз поведінкових даних
+      url: curate-dimensions.md
+    - text: Створення настроюваних звітів
+      url: custom-reports.md
     - text: Створити уточнені події
       url: refined-events.md
     - text: Експортувати події
       url: export-events.md
-    - text: Видалення та експорт особистих даних
-      url: delete-export-personal-data.md
 - title: Ресурси для розробників
   linkLists:
   - linkListType: reference
@@ -81,6 +83,10 @@ landingContent:
     - text: Керування середовищами та робочими областями
       url: manage-environments-workspaces.md
     - text: Підключення до аналізу аудиторії
-      url: configure-connections.md
+      url: integrate-audience-insights-engagement-insights.md
     - text: Керування файлами cookie та згодою користувача
       url: user-consent-storage.md
+    - text: Видалення та експорт особистих даних
+      url: delete-export-personal-data.md
+    - text: Обмеження послуг
+      url: ../service-limits.md

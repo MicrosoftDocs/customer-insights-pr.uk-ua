@@ -10,12 +10,12 @@ author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 15cc495359af1faefe32225ae490fd7e7b6b08cc7a411e0a9804da6ec704099c
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 925cb5c2ccb4279ae5db2eb927a356708d310360
+ms.sourcegitcommit: 048d65bded22abadcbbad1e22f15b05828bb977b
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034385"
+ms.lasthandoff: 09/06/2021
+ms.locfileid: "7474082"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Загальні відомості про аналіз аудиторії для Dynamics 365 Customer Insights
 
@@ -57,11 +57,5 @@ ms.locfileid: "7034385"
 
   - Створюйте настроювані профілі, визначайте показники, виділяйте сегменти та користуйтеся засобами аналізу передбачень, щоб отримувати комплексне бачення клієнта, налаштоване для потреб вашої організації.  
   - Для обробки аналітичних оглядів використовуйте стандартні з'єднувачі для кількох програм Microsoft і сторонніх виробників або API.
-
-## <a name="pricing-and-licensing"></a>Ціноутворення та ліцензування
-
-Customer Insights ліцензується на кожного клієнта і включає в собі багато можливостей. До стандартної виробничої спроможності входить набір профілів, щоденне оновлення системи, запити Power Platform та два середовища. Щоб збільшити квоту за замовчуванням, можна придбати додаткову виробничу спроможність та ліцензію. 
-- Докладний огляд виробничої спроможності та обсягів обслуговування: [Посібник з ліцензування Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544)
-- Огляд ціноутворення: [Ціноутворення в Dynamics 365](https://dynamics.microsoft.com/pricing/#CustomerDataPlatform)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

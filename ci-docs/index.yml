@@ -7,12 +7,12 @@ metadata:
   ms.date: 07/30/2021
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: 1446a2bcb24739187a37b2024c9a6070ab008989d722ebf84ef5259ec2ee4d5c
-  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.openlocfilehash: e6a658f43b382934ee9b9b55c54fc1dff3f4df72
+  ms.sourcegitcommit: 3bafa27adae113948636b30c7462e0af060c7131
   ms.translationtype: HT
   ms.contentlocale: uk-UA
-  ms.lasthandoff: 08/10/2021
-  ms.locfileid: "7036582"
+  ms.lasthandoff: 09/17/2021
+  ms.locfileid: "7498622"
 title: Документація Dynamics 365 Customer Insights
 summary: Знайдіть корисні ресурси для початку роботу та ознайомлення з функціями та можливостями Customer Insights.
 landingContent:
@@ -26,16 +26,16 @@ landingContent:
       url: /dynamics365-release-plan/
     - text: Знайомство з CDP
       url: https://dynamics.microsoft.com/ai/customer-insights/
-- title: Початок роботи з аналізом аудиторії
+- title: Початок роботи з Customer Insights
   linkLists:
   - linkListType: get-started
     links:
     - text: Реєстрація для отримання ознайомлювальної версії
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: Що нового
+    - text: Що нового в аналізі аудиторії
       url: audience-insights/whats-new-audience-insights.md
-    - text: Документація аналізу аудиторії
-      url: audience-insights/index.yml
+    - text: Що нового в аналітиці взаємодії
+      url: https://docs.microsoft.com/dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 - title: Зв’язатися
   linkLists:
   - linkListType: overview
@@ -46,16 +46,16 @@ landingContent:
       url: https://go.microsoft.com/fwlink/?linkid=2074172
     - text: Повідомити про проблему
       url: https://go.microsoft.com/fwlink/?linkid=2079641
-- title: Навчальні посібники з аналізу аудиторії
+- title: Спільне використання даних різними функціями
   linkLists:
-  - linkListType: tutorial
+  - linkListType: how-to-guide
     links:
-    - text: Створити нове середовище
-      url: audience-insights/home.md
-    - text: Створення уніфікованого профілю клієнта
-      url: /learn/modules/unified-customer-profile/
-    - text: Робота з програмою
-      url: /learn/modules/working-with-customer-insights/
+    - text: Створення зв'язку між можливостями
+      url: engagement-insights/integrate-audience-insights-engagement-insights.md
+    - text: Створення сегментів для використання у звітах
+      url: engagement-insights/integrate-audience-insights-segments.md
+    - text: Використання властивостей профілю для інтерактивного аналізу
+      url: engagement-insights/curate-dimensions.md
 - title: Експорт даних з аналізу аудиторії
   linkLists:
   - linkListType: how-to-guide

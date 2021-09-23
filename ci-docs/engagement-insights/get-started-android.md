@@ -4,17 +4,17 @@ description: Дізнайтеся про те, як персоналізуват
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 77e63929bbcc7ecff34a3839af525b76ec3c7f21173ddc5f8f2d69f11c25c441
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a060ac60db71a7b0fb8c0d7a3b0e266004fbee6a
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036943"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494300"
 ---
 # <a name="get-started-with-the-android-sdk"></a>Почати роботу з SDK Android
 
@@ -35,17 +35,38 @@ ms.locfileid: "7036943"
 
 - Ключ обробки (див. нижче інструкцію щодо того, як його отримати)
 
-## <a name="step-1-integrate-the-sdk-into-your-application"></a>Крок 1. Інтегруйте SDK до своєї програми
+## <a name="integrate-the-sdk-into-your-application"></a>Інтегруйте SDK до своєї програми
 Процес слід почати так: виберіть робочу область, виберіть мобільну платформу Android, потім завантажте SDK Android.
 
 - Скористайтеся перемикачем робочої області, розташованим у області ліворуч, щоб вибрати потрібну робочу область.
 
 - Якщо у вас немає наявної робочої області, виберіть пункт **Створити робочу область**, потім дотримуйтеся відповідних кроків, для створення [нової робочої області](create-workspace.md).
 
-## <a name="step-2-configure-the-sdk"></a>Крок 2. Налаштуйте SDK
+- Після створення робочої області перейдіть до розділу **Адміністратор** > **Робоча область**, потім виберіть **Посібник з інсталяції**. 
 
-1. Після створення робочої області перейдіть до розділу **Адміністратор** > **Робоча область**, потім виберіть **Посібник з інсталяції**. 
+## <a name="configure-the-sdk"></a>Налаштуйте SDK
 
+Після завантаження пакета SDK можна працювати з ним у Android Studio, щоб вмикати та визначати події. Існує два способи зробити це.
+### <a name="option-1-using-jitpack-recommended"></a>Варіант 1: використання JitPack (рекомендовано)
+1. Додайте репозиторій JitPack до кореня `build.gradle`:
+    ```gradle
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+    ```
+
+1. Додайте залежність:
+    ```gradle
+    dependencies {
+        implementation 'com.github.microsoft:engagementinsights-sdk-android:1.0.0'
+        api 'com.google.code.gson:gson:2.8.1'
+    }
+    ```
+
+### <a name="option-2-using-download-link"></a>Варіант 2: використання посилання для завантаження
 1. Завантажте [SDK аналітичних висновків щодо взаємодії Android](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip), потім помістіть файл `eiandroidsdk-debug.aar` у папку `libs`.
 
 1. Відкрийте файл рівня проекту `build.gradle` й додайте наведені далі фрагменти.
@@ -62,7 +83,17 @@ ms.locfileid: "7036943"
     }
     ```
 
-1. Задайте конфігурацію SDK аналітичних висновків щодо взаємодії за допомогою файлу `AndroidManifest.xml`, розташованого в папці `manifests`. 
+1. Додайте дозвіл на доступ до мережі та Інтернету у файлі `AndroidManifest.xml`, розташованому в папці `manifests`. 
+    ```xml
+    <manifest>
+        ...
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    ```
+    
+1. Задайте конфігурацію SDK аналітики взаємодії за допомогою файлу `AndroidManifest.xml`. 
+
+## <a name="enable-auto-instrumentation"></a>Увімкніть автоматичне оснащення інструментами
 1. Скопіюйте фрагмент XML із **Посібника з інсталяції**. `Your-Ingestion-Key` заповнюються автоматично.
 
    > [!NOTE]
@@ -85,7 +116,7 @@ ms.locfileid: "7036943"
    </application>
    ```
 
-1. Ви можете увімкнути або вимкнути автоматичне записування подій `View` способом налаштування для поля `autoCapture` значення `true` або `false`.
+1. Ви можете увімкнути або вимкнути автоматичне записування подій `View` способом налаштування для поля `autoCapture` значення `true` або `false`. Наразі події `Action` потрібно додавати вручну.
 
 1. (Необов'язково) Інші конфігурації включають настроювання URL-адреси з’єднувача кінцевої точки. Їх можна додати в метадані ключа обробки в `AndroidManifest.xml`.
     ```xml
@@ -94,9 +125,9 @@ ms.locfileid: "7036943"
             android:value="https://some-endpoint-url.com" />
     ```
 
-## <a name="step-3-initialize-the-sdk-from-mainactivity"></a>Крок 3. Ініціалізуйте SDK з MainActivity 
+## <a name="implement-custom-events"></a>Виконайте імплементацію настроюваних подій
 
-Після ініціалізації SDK ви можете працювати з подіями та їхніми властивостями в середовищі MainActivity.
+Після ініціалізації SDK ви можете працювати з подіями та їхніми властивостями в середовищі `MainActivity`.
 
     
 Java:
@@ -147,7 +178,7 @@ event.setProperty("ad_shown", true)
 analytics.trackEvent(event)
 ```
 
-### <a name="set-user-details-for-your-event-optional"></a>Налаштуйте відомості користувача для своєї події (необов’язково)
+## <a name="set-user-details-for-your-event-optional"></a>Налаштуйте відомості користувача для своєї події (необов’язково)
 
 SDK дозволяє вам визначити відомості про користувача, які можуть надсилатися з кожною подією. Ви можете задати інформацію користувача способом виклику API `setUser(user: User)` на рівні `Analytics` level.
 

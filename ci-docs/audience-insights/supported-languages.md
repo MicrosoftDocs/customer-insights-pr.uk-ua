@@ -1,24 +1,23 @@
 ---
-title: Підтримувані мови для аналізу аудиторій
+title: Підтримувані мови для Dynamics 365 Customer Insights
 description: Ознайомлення із підтримкою мов та пов’язані налаштування.
-ms.date: 02/26/2021
+ms.date: 09/01/2021
 ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: e9161ebbfdf3ae6c48c12cdf7515b77ca49ae8055ae9a69f9ec314bc1247aeaf
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f80c3019df9b5d82273842ca6f6f18bef0239687
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035164"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483367"
 ---
-# <a name="supported-languages-for-audience-insights-capability"></a>Підтримувані мови для функціоналу аналізу аудиторій
+# <a name="supported-languages-for-dynamics-365-customer-insights"></a>Підтримувані мови для Dynamics 365 Customer Insights
 
-Аналітичні огляди аудиторії для Dynamics 365 Customer Insights перекладені багатьма мовами. У наведеному нижче списку містяться доступні мови та відомості про переклад. Крім того, можна дізнатися більше про змінення мовних настройок. 
+Dynamics 365 Customer Insights перекладено багатьма мовами. У наведеному нижче списку містяться доступні мови та відомості про переклад. Крім того, можна дізнатися більше про змінення мовних настройок. 
 
 ## <a name="languages"></a>Мови
 
@@ -69,7 +68,7 @@ ms.locfileid: "7035164"
 
 ## <a name="whats-translated"></a>Що перекладається
 
-Програма використовує мовні параметри для відображення таких елементів, як меню, текст підписів і повідомлення, вашою основною мовою.
+Customer Insights використовує мовні параметри для відображення таких елементів, як меню, текст підписів і системні повідомлення, вашою основною мовою.
 
 Оскільки в основі більшості функцій лежать дані, деякі елементи залишаються мовою оригіналу. Наприклад:
 
