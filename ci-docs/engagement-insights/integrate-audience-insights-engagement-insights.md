@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fdbc93292291814b2e1a62fee2c5ff796ae14e2
-ms.sourcegitcommit: 4e5b7ec50c7612765a9ec2c8673e0cc43b357abb
+ms.openlocfilehash: 8d93a49a29c29103e189a6d4a42294c18dc28abd
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7487132"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7559043"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>Створення зв'язку між аналітичними оглядами аудиторії та аналітичними оглядами взаємодії
 
@@ -54,6 +54,9 @@ ms.locfileid: "7487132"
 ## <a name="enable-audience-insights-unified-profiles-attributes-and-segments"></a>Увімкнення атрибутів та сегментів єдиних профілів аналітичних оглядів аудиторії
 
 Зв'язавши середовища, можна вибрати додаткові функції для зв'язаних середовищ. Ці функції дозволяють використовувати атрибути та сегменти єдиного профілю з аналітичних оглядів аудиторії для інтерактивного аналізу даних клієнтів.
+
+> [!IMPORTANT]
+> Щоб сегменти аналітичних оглядів аудиторії з'являлись в аналітичних оглядах взаємодії, слід спочатку [виконати злиття та низхідні процеси](../audience-insights/merge-entities.md). Низхідні процеси важливі, оскільки вони створюють унікальну таблицю, яка готує сегменти аналітичних оглядів аудиторії до передачі аналітичним оглядам взаємодії. (Якщо заплановано оновлення системи, воно автоматично включатиме вниз низхідні процеси.)
 
 **Для аналізу веб-даних в аналітичних оглядах взаємодії**
 

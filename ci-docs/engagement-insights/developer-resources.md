@@ -4,27 +4,27 @@ description: Знаходьте відомості про пакети SDK та 
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 5880e9507cc192424989c7fc9c2733ac5d770a7be8a2b42a446ffd8681fa7612
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 2e2df207802f8de501661d247bd80d6cc792636f
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036308"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7558771"
 ---
 # <a name="developer-resources-overview"></a>Огляд ресурсів для розробників
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-У цій статті наведено всі доступні фрагменти коду та зразки для швидкого доступу. Отримайте код для відправника подій для вашої платформи та виконайте інструкції. 
+У цій статті перелічені всі доступні фрагменти коду засобів розробки програмного забезпечення (SDK) та зразки для розробників для обміну даними з Dynamics 365 Customer Insights. Отримайте код для подій, характерних для вашої платформи, дотримуючись указівок.
 
 ## <a name="capture-events-from-websites"></a>Записуйте події з веб-сайтів
 
-- [Як додати фрагмент коду на веб-сайт](instrument-website.md)
+- [Додавання інструментів до веб-сайту](instrument-website.md)
 - [Зразок Web SDK](websdk-sample.md)
 - [Додавання інструментів на веб-сайт за допомогою розширеного SDK для вебу](advanced-SDK-implementation.md)
 

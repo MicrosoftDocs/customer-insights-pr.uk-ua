@@ -242,13 +242,13 @@
   items:
     - name: Довідковий центр
       href: engagement-insights/index.yml
-    - name: Огляд наявних можливостей
+    - name: Відомості про Аналітику взаємодії
       href: engagement-insights/overview.md
     - name: Почати
       items:
         - name: Посібник зі швидкого початку роботи
           href: engagement-insights/get-started.md
-        - name: Створіть робочу область
+        - name: Створення робочої області
           href: engagement-insights/create-workspace.md
         - name: Записуйте події з веб-сайтів і програм для мобільних пристроїв
           href: engagement-insights/developer-resources.md
@@ -306,7 +306,7 @@
           href: engagement-insights/user-consent-storage.md
     - name: Регіональна доступність
       href: engagement-insights/regional-availability.md
-- name: Інтеграція аналітичних оглядів аудиторії та взаємодії
+- name: Спільне використання даних різними функціями
   items:
     - name: Зв’язування аналітичних оглядів аудиторії та взаємодії
       href: engagement-insights/integrate-audience-insights-engagement-insights.md
@@ -318,5 +318,3 @@
   href: service-limits.md
 - name: Права та запити DSR
   href: dsr-rights-requests.md
-- name: Отримати підтримку
-  href: 'https://dynamics.microsoft.com/support/'

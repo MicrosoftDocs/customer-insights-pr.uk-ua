@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: f038dedd369ac9e623146b66528efa87c47a8c23769037d8709fa9b804a0b723
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3a235e924395a606b9332de3d205289288a597a9
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035440"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7558851"
 ---
 # <a name="set-up-a-trial-environment"></a>Налаштування ознайомлювального середовища 
 
@@ -95,7 +95,7 @@ ms.locfileid: "7035440"
 
 - За замовчуванням ознайомлювальні версії активні протягом 30 днів. Однак під час входу в ознайомлювальну версію їх можна продовжити після 23-го дня.
 - Ви не можете використовувати свій власний обліковий запис Azure Data Lake storage, щоб зберігати вихідні дані під час ознайомлювальних версій. Проте можна передавати дані з облікового запису Data Lake storage.
-- Дані обсягом до 3 ГБ можна зберігати в середовищі Dataverse, яке автоматично ініціалізується під час запуску ознайомлювальної версії Customer Insights.
+- Ви можете зберігати до 3 ГБ даних у середовищі Dataverse, підготовка якого виконується автоматично, коли ви починаєте використовувати ознайомлювальну версію Customer Insights.
 
 ## <a name="copy-data-from-a-trial-to-a-paid-subscription"></a>Копіювання даних із ознайомлювальної версії до платної передплаченої версії
 
