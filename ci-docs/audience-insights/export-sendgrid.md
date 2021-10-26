@@ -1,7 +1,7 @@
 ---
 title: Експорт даних Customer Insights до SendGrid
 description: Дізнайтеся, як налаштувати підключення та експорт до SendGrid.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 03df2ab5fce1da1f4f662e1975533f2b538b47dbdd5cf96aae4f1007163e3729
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: da3da5ea68d178deab3b9ab31dd810dee610f607
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036126"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617856"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>Експорт сегментів до SendGrid (підготовча версія)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7036126"
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
-- До 100 000 профілів в цілому до SendGrid.
+- Загалом до 100 000 профілів клієнтів до SendGrid.
 - Експорт до SendGrid обмежується сегментами.
-- Експортування до 100 000 профілів до SendGrid може тривати кілька годин. 
-- Кількість профілів, які можна експортувати до SendGrid, залежить від сервісного договору з SendGrid.
+- Експортування до 100 000 профілів клієнтів до SendGrid може тривати кілька годин. 
+- Кількість профілів клієнтів, які можна експортувати в SendGrid, визначається та обмежується умовами вашого сервісного договору з SendGrid.
 
 ## <a name="set-up-connection-to-sendgrid"></a>Налаштування підключення до SendGrid
 
@@ -66,7 +66,7 @@ ms.locfileid: "7036126"
 
 1. Введіть **[ідентифікатор списку SendGrid](https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#manage-contacts)**.
 
-1. У розділі **Зіставлення даних** в полі **Електронна пошті**, виберіть поле в уніфікованому профілі клієнта, в якому відображено адресу електронної пошти клієнта. Повторіть ці самі кроки для інших необов'язкових полів, таких як **Ім'я**, **Прізвище**, **Країна або регіон**, **Штат**, **Місто** і **Поштовий індекс**.
+1. У розділі **Зіставлення даних** у полі **Електронна пошта** виберіть поле, яке відповідає адресі електронної пошти клієнта. Повторіть ці самі кроки для інших необов'язкових полів, таких як **Ім'я**, **Прізвище**, **Країна або регіон**, **Штат**, **Місто** і **Поштовий індекс**.
 
 1. Виберіть сегменти, які потрібно експортувати. Ми настійно **рекомендуємо не експортувати більше 100 000 профілів клієнтів в цілому** до SendGrid. 
 

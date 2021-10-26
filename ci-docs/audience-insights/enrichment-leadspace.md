@@ -1,32 +1,32 @@
 ---
 title: Збагачення профілів компанії за допомогою стороннього збагачення Leadspace
 description: Загальні відомості про стороннє збагачення Leadspace.
-ms.date: 04/09/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: kishorem-MS
-ms.author: kishorem
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 34b73b37670ed45e2c31ea164c0788b793bee433829ce21317c83903f3fca1fe
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c57eb0ceb50e3b778acac72a4bbfd733a5b0c401
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031728"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617479"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Збагачення профілів компанії за допомогою Leadspace (підготовча версія)
 
-Leadspace — це компанія, яка займається наукою про дані та надає платформу даних для клієнтів B2B. Вона дає змогу клієнтам з уніфікованими профілями клієнтів для компаній збагачувати свої дані. Збагачення включають більше атрибутів, таких як розмір, розташування й галузь компанії, а також набагато більше.
+Leadspace — це компанія, яка займається наукою про дані та надає платформу даних для клієнтів B2B. Це дозволяє використовувати для збагачення даних уніфіковані профілі клієнтів на основі бізнес-партнерів у середовищах. Збагачуйте *Профілі клієнтів*, використовуючи такі атрибути, як, наприклад, розмір компанії, розташування або галузь. Збагачуйте *Профілі контактних осіб* за допомогою таких атрибутів, як, наприклад заголовок, портрет або перевірка із використанням електронної пошти.
 
-## <a name="prerequisites"></a>Вимоги
+## <a name="prerequisites"></a>вимоги
 
 Для налаштування Leadspace повинні виконуватися нижчезазначені передумови.
 
 - У вас є активна ліцензія на Leadspace.
-- У вас є [уніфіковані профілі клієнтів](customer-profiles.md) для компаній.
-- Підключення Leadspace вже налаштоване адміністратором, або у вас є права [адміністратора](permissions.md#administrator) та «постійний ключ» (який також називають **Маркером Leadspace**). Щоб отримати докладніші відомості про продукт [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/), звертайтеся безпосередньо до компанії Leadspace.
+- Ви маєте [уніфіковані профілі клієнтів](customer-profiles.md), основані на бізнес-партнерах.
+- Підключення Leadspace вже налаштоване адміністратором, або у вас є права [адміністратора](permissions.md#administrator) та «постійний ключ» (який також називають **Маркером Leadspace**). Щоб отримати докладніші відомості про продукт [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/), звертайтеся безпосередньо до компанії Leadspace.
 
 ## <a name="configure-the-enrichment"></a>Налаштуйте збагачення
 
@@ -50,6 +50,10 @@ Leadspace — це компанія, яка займається наукою п
 
 1. Виберіть **Далі**, щоб завершити зіставлення полів.
 
+1. Установіть прапорець, якщо маєте *профілі контактних осіб*, які потрібно збагатити. Аналіз аудиторії автоматично зіставить обов'язкові поля.
+
+   :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Збагачення записів контактних осіб у Leadspace.":::
+ 
 1. Зазначте ім’я вибраного вами збагачення, потім виберіть **Зберегти збагачення** після перегляду вибраних вами варіантів.
 
 
@@ -81,7 +85,8 @@ Leadspace — це компанія, яка займається наукою п
 
 ## <a name="next-steps"></a>Наступні кроки
 
-Створюйте на основі збагачених даних клієнтів. Створюйте [сегменти](segments.md) та [міри](measures.md) й навіть [експортуйте дані](export-destinations.md), щоб забезпечувати персоналізовану взаємодію з клієнтами.
+
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>Конфіденційність і відповідність даних
 

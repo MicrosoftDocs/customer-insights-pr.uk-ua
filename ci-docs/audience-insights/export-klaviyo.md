@@ -1,7 +1,7 @@
 ---
 title: Експорт даних Customer Insights до Klaviyo
 description: Дізнайтеся про те, як налаштувати підключення та експортувати дані до Klaviyo.
-ms.date: 08/13/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 7c1297fd5381c00c07d6501186c51fe4798773d1
-ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
+ms.openlocfilehash: 5f7c91afed8eeb1f767f1efc58dceb7782c37bb4
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7385813"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619098"
 ---
 # <a name="export-segment-lists-to-klaviyo-preview"></a>Експорт списків сегментів до Klaviyo (підготовча версія)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7385813"
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
-- Експортувати до Klaviyo можна до 100 000 профілів за раз.
+- В межах одного експорту до Klaviyo можна експортувати до 100 000 профілів клієнтів.
 - Експорт до Klaviyo обмежується сегментами.
-- Експорт до 1 мільйона профілів до Klaviyo може тривати до 20 хвилин. 
-- Кількість профілів, які ви можете експортувати до Klaviyo, залежить від та обмежується сервісним договором з Klaviyo.
+- Експортування до 1 мільйона профілів клієнтів до Klaviyo може тривати до 20 хвилин. 
+- Кількість профілів клієнтів, які можна експортувати в Klaviyo, визначається та обмежується умовами вашого сервісного договору з Klaviyo.
 
 ## <a name="set-up-connection-to-klaviyo"></a>Налаштування підключення до Klaviyo
 
@@ -67,7 +67,7 @@ ms.locfileid: "7385813"
 
 1. Введіть [**ідентифікатор списку Klaviyo**](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID).     
 
-3. У розділі **Зіставлення даних** в полі **Електронна пошті**, виберіть поле в уніфікованому профілі клієнта, в якому відображено адресу електронної пошти клієнта. Це необхідно для експорту сегментів до Klaviyo.
+3. У розділі **Зіставлення даних** у полі **Електронна пошта** виберіть поле, яке відповідає адресі електронної пошти клієнта. Це необхідно для експорту сегментів до Klaviyo.
 
 1. Виберіть **Зберегти**.
 

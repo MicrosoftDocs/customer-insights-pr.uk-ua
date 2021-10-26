@@ -1,7 +1,7 @@
 ---
 title: Експорт даних Customer Insights до Mailchimp
 description: Дізнайтеся, як налаштувати підключення та експорт до Mailchimp.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a6bdf43bb40345b868bf2e7d2c91de169c8ba841ba77f732f455f4c4d496a7f5
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 94a9fead56ce8c40b35d4eb41ebdc0d672798dce
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033564"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618640"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>Експорт сегментів до Mailchimp (підготовча версія)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033564"
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
-- До 1 000 000 профілів на експорт до Mailchimp.
+- До 1 мільйона профілів клієнтів в кожному експорті в Mailchimp.
 - Експорт до Mailchimp обмежується сегментами.
-- Експорт сегментів з 1 мільйоном профілів може тривати до трьох годин. 
-- Кількість профілів, які можна експортувати до Mailchimp, залежить від сервісного договору з Mailchimp.
+- Експортування сегментів із 1 мільйоном профілів клієнтів може тривати до трьох годин. 
+- Кількість профілів клієнтів, які можна експортувати в Mailchimp, визначається та обмежується умовами вашого сервісного договору з Mailchimp.
 
 ## <a name="set-up-connection-to-mailchimp"></a>Налаштування підключення до Mailchimp
 
@@ -66,7 +66,7 @@ ms.locfileid: "7033564"
 
 1. Уведіть свій **[Ідентифікатор аудиторії Mailchimp](https://mailchimp.com/help/find-audience-id/)**
 
-3. У розділі **Зіставлення даних** в полі **Електронна пошті**, виберіть поле в уніфікованому профілі клієнта, в якому відображено адресу електронної пошти клієнта. 
+1. У розділі **Зіставлення даних** у полі **Електронна пошта** виберіть поле, яке відповідає адресі електронної пошти клієнта. 
 
 1. За бажанням ви можете експортувати **Ім'я** та **Прізвище**, щоб створювати більш персоналізовані електронні листи. Виберіть **Додати атрибут**, щоб зіставити ці поля.
 

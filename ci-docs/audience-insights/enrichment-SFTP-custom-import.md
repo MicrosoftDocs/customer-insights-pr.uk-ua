@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b67aa7477033222b0bc9512a962a1580edd973b4882ce925620ff5ec14f83fe3
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fa1d4ffd9f77e128b5d804e4562e964561f4684f
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032737"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618730"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Збагачення профілів клієнтів з настроюваними даними (попередній перегляд)
 
@@ -44,6 +44,8 @@ ms.locfileid: "7032737"
 1.  Виберіть пункт **Далі**, потім введіть **Шлях** та **Ім’я файлу** даних, який ви бажаєте імпортувати.
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Знімок екрану введення розташування даних.":::
+
+1. Натисніть **Далі** та виберіть набір даних клієнтів. Це можуть усі бути профілі клієнтів або який-небудь сегмент.
 
 1. Виберіть **Далі**, потім введіть ім’я збагачення та ім'я вихідної сутності. 
 
@@ -123,6 +125,6 @@ ms.locfileid: "7032737"
 
 ## <a name="next-steps"></a>Наступні кроки
 
-Створюйте на основі збагачених даних клієнтів. Створюйте [сегменти](segments.md) й [міри](measures.md), а також [експортуйте дані](export-destinations.md) задля забезпечення індивідуальної взаємодії для своїх клієнтів.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

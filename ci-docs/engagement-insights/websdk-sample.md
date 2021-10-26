@@ -4,17 +4,17 @@ description: Дізнайтеся, як персоналізувати та за
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 10/30/2020
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 97e50a51231bcf05f3e381397f0cf41e49afc10e3c3674d7c709c8f521979e12
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 545f4a7e9660e339dee1070ad727d5d398eb6254
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036628"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7606288"
 ---
 # <a name="run-the-web-sdk-sample-for-dynamics-365-customer-insights-engagement-insights-capability"></a>Запуск зразка SDK для вебу для засобу аналітичних висновків щодо взаємодії Dynamics 365 Customer Insights
 
@@ -26,7 +26,7 @@ ms.locfileid: "7036628"
 
 - Інсталюйте [код Visual Studio](https://code.visualstudio.com/).
 - [Інсталюйте розширення Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) у код Visual Studio та ознайомтеся з тим, як запустити Live Server.
-- Ви повинні мати [ключ прийому](instrument-website.md).
+- Потрібно мати [робочу область «Статистика взаємодії»](create-workspace.md)
 
 ## <a name="run-sample"></a>Запуск зразку
 
@@ -36,7 +36,11 @@ ms.locfileid: "7036628"
 
 1. Відкрийте розпаковану папку в коді Visual Studio.
 
-1. У файлі `ei_websdk_sample.html` замініть рядок “INGESTION_KEY” своїм ключем прийому з порталу засобу аналітичних висновків щодо взаємодії і рядок “NAME” з глобальним іменем, з яким потрібно створити SDK. Переконайтеся, що ви замінили всі входження.
+1. Перейдіть на портал «Аналітика взаємодії» для робочої області. Виберіть **Адміністратор** > **Робоча область** і потім натисніть **Посібник із установлення**. Дотримуйтеся першого параметра та виберіть **«Копіювати код»** для копіювання фрагменту коду JavaScript.
+
+1. У цьому файлі `ei_websdk_sample.html` вставте фрагмент коду, щойно скопійований у цьому рядку.
+
+   - < – ВСТАВТЕ ФРАГМЕНТ КОДУ JAVASCRIPT З ПОРТАЛУ АНАЛІТИКИ ВЗАЄМОДІЇ НИЖЧЕ ЦЬОГО РЯДКА – >
 
 1. Відкрийте файл `ei_websdk_sample.html` за допомогою Live Server у коді Visual Studio, вибравши елемент **Активувати** з рядку стану.
 

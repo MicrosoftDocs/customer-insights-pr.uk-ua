@@ -9,16 +9,18 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 3be417845a41c8f25c71bfc0823f42571157759b224e46d5e114037ee3df8329
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: ab6edc3f33ebacb81f55c0882a78c5827b4384ed
+ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033289"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7643519"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Підключення до джерела даних Power Query
 
 Power Query пропонує широкий набір з’єднувачів для отримання даних. Dynamics 365 Customer Insights підтримує більшість із цих з’єднувачів. Додавання джерел даних на основі з’єднувачів Power Query в цілому виконується за кроками, окресленими у наступному розділі. Однак можуть знадобитися різні відомості, залежно від використовуваного з'єднувача. Для отримання додаткових відомостей див. документацію для окремих з’єднувачів у [Довіднику зі з’єднувачів Power Query](/power-query/connectors/).
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
 
 ## <a name="create-a-new-data-source"></a>Створення нового джерела даних
 

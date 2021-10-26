@@ -1,7 +1,7 @@
 ---
 title: Експортуйте дані Customer Insights до Sendinblue
 description: Дізнайтеся про те, як налаштувати підключення та експортувати дані до Sendinblue.
-ms.date: 06/29/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: be52554763b57e1c1ef2f960d52bbae79ac9827913c97ac73b429f66bbf4db37
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b5924b2d4e7f0b11ce6478a31015fcbaaf44ff93
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036080"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617810"
 ---
 # <a name="export-segments-to-sendinblue-preview"></a>Експортуйте сегменти до Sendinblue (підготовча версія)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7036080"
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
-- До Sendinblue можна експортувати до одного мільйона профілів.
+- До 1 мільйона профілів клієнтів в кожному експорті в Sendinblue.
 - Експорт до Sendinblue обмежується сегментами.
-- Процедура експортування сегментів із одним мільйоном профілів може займати до 90 хвилин часу. 
-- Кількість профілів, які ви можете експортувати до Sendinblue, визначається й обмежується сервісним договором із Sendinblue.
+- Експортування сегментів потужністю в 1 мільйон профілів клієнтів може тривати до 90 хвилин. 
+- Кількість профілів клієнтів, які можна експортувати в Sendinblue, визначається та обмежується умовами вашого сервісного договору з Sendinblue.
 
 ## <a name="set-up-connection-to-sendinblue"></a>Налаштуйте підключення до Sendinblue
 
@@ -64,7 +64,7 @@ ms.locfileid: "7036080"
 
 1. Введіть **Ідентифікатор списку Sendinblue** 
 
-1. У розділі **Зіставлення даних** в полі **Електронна пошті**, виберіть поле в уніфікованому профілі клієнта, в якому відображено адресу електронної пошти клієнта. 
+1. У розділі **Зіставлення даних** у полі **Електронна пошта** виберіть поле, яке відповідає адресі електронної пошти клієнта. 
 
 1. Додатково ви можете експортувати **Ім’я**, **Прізвище** й **Телефон**, щоб створювати персоналізовані повідомлення електронної пошти. Виберіть **Додати атрибут**, щоб зіставити ці поля.
 

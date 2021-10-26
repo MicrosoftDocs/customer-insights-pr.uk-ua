@@ -1,7 +1,7 @@
 ---
 title: Експортування даних Customer Insights до Snapchat
 description: Дізнайтеся, як налаштувати підключення та експорт до Snapchat.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 421dcd5ba5421597cf9dea71a9f9f25c7972a4f26fb49d4b042f8667a317ab5d
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b7a929d65a730b60e77ae111b458c68d3cce2020
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033427"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618708"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>Експорт сегментів до Snapchat (підготовча версія)
 
@@ -29,7 +29,7 @@ ms.locfileid: "7033427"
 ## <a name="known-limitations"></a>Відомі обмеження
 
 - Експортувати в Snapchat можна тільки сегменти.
-- Експортування до 1 мільйона профілів до Snapchat може тривати до 15 хвилин. 
+- Експортування до 1 мільйона профілів клієнтів до Snapchat може тривати до 15 хвилин. 
 
 ## <a name="set-up-connection-to-snapchat"></a>Налаштування підключення до Snapchat
 
@@ -63,7 +63,7 @@ ms.locfileid: "7033427"
 
 1. Введіть [**ідентифікатор аудиторії Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences).
 
-1. У розділі **Зіставлення даних** в полі **Електронна пошті**, виберіть поле в уніфікованому профілі клієнта, в якому відображено адресу електронної пошти клієнта. Це необхідно для експорту сегментів до Snapchat.
+1. У розділі **Зіставлення даних** у полі **Електронна пошта** виберіть поле, яке відповідає адресі електронної пошти клієнта. Це необхідно для експорту сегментів до Snapchat.
 
 1. Виберіть сегменти, які потрібно експортувати. 
 

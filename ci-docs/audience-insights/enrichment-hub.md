@@ -1,7 +1,7 @@
 ---
 title: Збагачення уніфікованих профілів клієнта
 description: Скористайтеся можливостями для збагачення даних клієнтів.
-ms.date: 08/31/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7470051"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617580"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Збагачення для профілів клієнтів (підготовча версія)
 
@@ -27,16 +27,26 @@ ms.locfileid: "7470051"
 
 Щоб створити або змінити збагачення, потрібно мати дозволи співавтора або адміністратора. Додаткові відомості див. в розділі [Дозволи](permissions.md).
 
-На вкладці **Виявлення** можна знайти перелічені нижче збагачення.
+На вкладці **Виявлення** ви знайдете усі можливості для збагачення, що підтримуються.
 
-- [Azure Maps](enrichment-azure-maps.md) надаються Microsoft
+# <a name="individual-customers-b2c"></a>[Індивідуальні клієнти (B2C)](#tab/b2c)
+
 - [Бренди](enrichment-microsoft.md), надані Майкрософт
 - [Інтереси](enrichment-microsoft.md), надані Майкрософт
-- [Удосконалені адреси](enrichment-enhanced-addresses.md), надані корпорацією Microsoft
-- [Дані компанії](enrichment-leadspace.md) надаються Leadspace
+- [Удосконалені адреси](enrichment-enhanced-addresses.md), надані корпорацією Microsoft 
 - [Демографічні дані](enrichment-experian.md), що надаються Experian
-- [Дані про розташування ](enrichment-here.md), надані HERE Technologies
-- [Настроювані дані](enrichment-SFTP-custom-import.md) через протокол Secure File Transfer Protocol (SFTP)
+- [Настроювані дані](enrichment-SFTP-custom-import.md) через протокол Secure File Transfer Protocol (SFTP) 
+- [Azure Maps](enrichment-azure-maps.md) надаються Microsoft
+
+# <a name="business-accounts-b2b"></a>[Ділові бізнес-партнери (B2B)](#tab/b2b)
+
+- [Дані компанії](enrichment-leadspace.md) надаються Leadspace
+- [Удосконалені адреси](enrichment-enhanced-addresses.md), надані корпорацією Microsoft 
+- [Дані про розташування ](enrichment-here.md), надані HERE Technologies 
+- [Настроювані дані](enrichment-SFTP-custom-import.md) через протокол Secure File Transfer Protocol (SFTP) 
+- [Azure Maps](enrichment-azure-maps.md) надаються Microsoft
+
+---
 
 На вкладці **Мої збагачення** можна переглянути збагачення, які ви налаштували, і змінити їхні властивості.
 
@@ -58,7 +68,7 @@ ms.locfileid: "7470051"
 
 ## <a name="enrichments-and-connections"></a>Збагачення та підключення
 
-Сторонні збагачення налаштовуються за допомогою [підключень](connections.md), які за допомогою облікових даних налаштовує адміністратор, який потім надає згоду на передавання даних. Таке підключення можуть використовувати адміністратори та автори для налаштування збагачень.  
+Сторонні збагачення налаштовуються за допомогою [підключень](connections.md), які за допомогою облікових даних налаштовує адміністратор, який потім надає згоду на передавання даних. Ці підключення можуть використовувати адміністратори та автори для налаштування збагачень.  
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>Кілька збагачень одного й того самого типу
 

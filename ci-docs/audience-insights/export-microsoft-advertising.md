@@ -1,7 +1,7 @@
 ---
 title: Експорт даних Customer Insights до Microsoft Advertising
 description: Дізнайтеся, як налаштувати підключення та експорт до Microsoft Advertising.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8f8a4cbb9590f9c5311789154319283530e0a10343cccbe9c7aec99765b4fbf2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 12fd221acb7c0eed443c9b860aca42dcb2b3788c
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031497"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618086"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>Експорт сегментів до Microsoft Advertising (підготовча версія)
 
@@ -29,9 +29,9 @@ ms.locfileid: "7031497"
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
-- У кожному експорті до Microsoft Advertising можна експортувати до 500 000 профілів.
+- В межах одного експорту до Microsoft Advertising можна експортувати до 500 000 профілів клієнтів.
 - Експортувати в Microsoft Advertising можна тільки сегменти.
-- Експортування до 500 000 профілів до Microsoft Advertising може тривати до 10 хвилин. 
+- Експортування до 500 000 профілів клієнтів до Microsoft Advertising може тривати до 10 хвилин. 
 
 
 ## <a name="set-up-the-connection-to-microsoft-advertising"></a>Настройка підключення до Microsoft Advertising
@@ -68,7 +68,7 @@ ms.locfileid: "7031497"
 
 1. Уведіть **ідентифікатор клієнта та ідентифікатор облікового запису Microsoft Advertising**. Ви можете знайти ідентифікатор клієнта (`cid`) та ідентифікатор облікового запису (`aid`) у параметрах URL-адреси після виконання входу до Microsoft Advertising.
 
-1. У розділі **Зіставлення даних** у полі **Електронна пошта** виберіть поле в уніфікованому профілі клієнта, що містить адресу електронної пошти клієнта. Це необхідно для експорту сегментів до Microsoft Advertising.
+1. У розділі **Зіставлення даних** у полі **Електронна пошта** виберіть поле, що містить адресу електронної пошти клієнта. Це необхідно для експорту сегментів до Microsoft Advertising.
 
 1. Виберіть **Зберегти**.
 

@@ -10,12 +10,12 @@ ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: aaaf1848df175469d8af07754ac153b777781ffb
-ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
+ms.openlocfilehash: 5e8545bc9bf0d953150248fa859c6ca71a12f9cf
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466602"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645289"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-audience-insights-capability"></a>Початок роботи з можливостями аналізу аудиторії Dynamics 365 Customer Insights
 
@@ -23,7 +23,7 @@ ms.locfileid: "7466602"
 
 ## <a name="step-1-create-an-environment"></a>Крок 1: створення середовища
 
-Щоб почати, перш за все потрібно створити середовище для роботи. Якщо організація вже придбала ліцензію, див. [Початок роботи з оплаченою передплатою](get-started-paid.md). Щоб розпочати ознайомлення із аналізом аудиторії, див. [Налаштування ознайомлювального середовища](get-started-trial.md). 
+Щоб почати, перш за все потрібно створити середовище для роботи. Якщо організація вже придбала ліцензію, див. [Створення середовища](create-environment.md). Щоб розпочати ознайомлення із аналізом аудиторії, див. [Налаштування ознайомлювального середовища](../trial-signup.md). 
 
 ## <a name="step-2-explore-audience-insights"></a>Крок 2: ознайомлення з аналізом аудиторії
 

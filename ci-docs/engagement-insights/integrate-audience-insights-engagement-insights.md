@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8d93a49a29c29103e189a6d4a42294c18dc28abd
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: db38778c0da862e119f9b374e07c82ead0d3a4f2
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7559043"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645607"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>Створення зв'язку між аналітичними оглядами аудиторії та аналітичними оглядами взаємодії
 
@@ -26,7 +26,7 @@ ms.locfileid: "7559043"
 ## <a name="prerequisites"></a>Вимоги
 
 - Профілі аналітичних оглядів аудиторії мають зберігатися в обліковому записі Azure Data Lake Storage, за який ви відповідаєте, або в data lake, керованому [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;. 
-- Ваше середовище аналізу аудиторії повинно мати пов'язане середовище Dataverse. А якщо це середовище також використовує Dataverse для зберігання даних, переконайтеся, що в аналізі аудиторії вибрано параметр **Дозволити спільний доступ до даних**. Додаткові відомості: [Створення та налаштування платного середовища в аналізі аудиторії](../audience-insights/get-started-paid.md).
+- Ваше середовище аналізу аудиторії повинно мати пов'язане середовище Dataverse. А якщо це середовище також використовує Dataverse для зберігання даних, переконайтеся, що в аналізі аудиторії вибрано параметр **Дозволити спільний доступ до даних**. Для отримання додаткових відомостей див. [Створення та налаштування середовища в аналізі аудиторії](../audience-insights/create-environment.md).
 - Вам необхідні дозволи адміністратора для середовищ аналітичних оглядів як аудиторії, так і взаємодії.
 - Зв'язані середовища мають знаходитись в тому самому географічному регіоні.
 

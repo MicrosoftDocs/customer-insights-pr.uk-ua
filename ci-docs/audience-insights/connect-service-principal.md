@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b96c7f580b4067e059e00a9cdb4e872e9acd4a5c
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483550"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645197"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Підключення до облікового запису Azure Data Lake Storage за допомогою принципала служби Azure
 
 Для автоматичних інструментів, які використовують служби Azure, завжди мають обмежені дозволи. Замість того, щоб входити в програму як привілейований користувач, Azure пропонує принципали служби. Дізнайтеся, як підключитися до Dynamics 365 Customer Insights з обліковим записом Azure Data Lake Storage за допомогою принципала служби Azure, а не ключів облікового запису сховища. 
 
-За допомогою принципала служби можна безпечно [додавати або редагувати папку Common Data Model в якості джерела даних](connect-common-data-model.md), або [створювати чи оновлювати середовище](get-started-paid.md).
+За допомогою принципала служби можна безпечно [додавати або редагувати папку Common Data Model в якості джерела даних](connect-common-data-model.md), або [створювати чи оновлювати середовище](create-environment.md).
 
 > [!IMPORTANT]
 > - Обліковий запис сховища Data Lake Storage, який використовуватиме принципал служби, повинен використовувати [ієрархічний простір імен](/azure/storage/blobs/data-lake-storage-namespace).

@@ -1,7 +1,7 @@
 ---
 title: Експорт даних Customer Insights до Azure Data Lake Storage Gen2
 description: Дізнайтесь, як налаштувати підключення до Azure Data Lake Storage Gen2.
-ms.date: 03/03/2021
+ms.date: 10/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,24 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: c4408e52550b6648e2a001041dc0acdb5063d6a6ef1b8e4bba3321bf25fefcfc
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 934c396559d4c4be8e640917d2265805753eb62d
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032004"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605928"
 ---
-# <a name="set-up-the-connection-to-azure-data-lake-storage-gen2-preview"></a>Налаштуйте підключення до Azure Data Lake Storage Gen2 (підготовча версія)
+# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Експортування списку сегментів та інших даних до Azure Data Lake Storage Gen2 (підготовча версія)
+
+Зберігайте дані Customer Insights в обліковому записі сховища Azure Data Lake Storage Gen2 або використовуйте його для передавання даних в інші програми.
+
+## <a name="known-limitations"></a>Відомі обмеження
+
+1. Для Azure Data Lake Storage Gen2 під час створення облікового запису сховища для зберігання даних можна обрати між [рівнями ефективності «Стандартна продуктивність» і «Преміум-продуктивність»](/azure/storage/blobs/create-data-lake-storage-account). Якщо вибрано рівень «Преміум-продуктивність», виберіть в якості типу облікового запису blob-об'єкти із преміум-блоками. 
+
+
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Налаштування підключення до Azure Data Lake Storage Gen2 
+
 
 1. Відкрийте **Адміністрування** > **Підключення**.
 

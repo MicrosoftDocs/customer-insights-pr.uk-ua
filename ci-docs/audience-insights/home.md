@@ -1,7 +1,7 @@
 ---
 title: Головна сторінка в аналізі аудиторії
 description: Розпочніть знайомство з програмою на головній сторінці.
-ms.date: 08/26/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 55c0313d1dbf7fb6774c058a6784cf02821d9133
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 4ab5497024cb15b103e96b0fc9a2e0739fd4691c
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7470050"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617722"
 ---
 # <a name="explore-audience-insights"></a>Ознайомлення з аналізом аудиторії
 
@@ -23,7 +23,7 @@ ms.locfileid: "7470050"
 
 :::image type="content" source="media/home-page.png" alt-text="Знімок екрана: основний екран із зразками статистики.":::
 
-1 — переключайтеся між можливостями Customer Insights 2 — скористайтеся областю ліворуч для переходу між різними областями 3 — з'ясуйте, з яким середовищем ви працюєте, і керуйте ними, як адміністратор 4 — укажіть особисті параметри для Customer Insights
+1. Переключайтеся між можливостями Customer Insights 2. Скористайтеся областю ліворуч для переходу між різними областями та виберіть основну цільову аудиторію 3. З'ясуйте, з яким середовищем ви працюєте, і керуйте середовищами як адміністратор. 4. Вкажіть особисті параметри для Customer Insights
 
 В області **Нещодавні сегменти** відображаються групи клієнтів, залежно від визначених вами демографічних, поведінкових або транзакційних атрибутів. [Створення сегментів](segments.md) допомагає групувати клієнтську базу та точніше спрямовувати ваші бізнес-заходи.
 
