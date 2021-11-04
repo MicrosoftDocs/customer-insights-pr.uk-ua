@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617467"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673873"
 ---
 # <a name="segments-overview"></a>Огляд сегментів
 
@@ -26,7 +26,7 @@ ms.locfileid: "7617467"
 
 Існує кілька способів створити новий сегмент. 
 
-# <a name="individual-customers-b2c"></a>[Індивідуальні клієнти (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Окремі споживачі (B-to-C)](#tab/b2c)
 
 - Складний сегмент за допомогою конструктора сегментів: [Створіть власний](segment-builder.md#create-a-new-segment) 
 - Прості сегменти за допомогою одного оператора: [Швидкий сегмент](segment-builder.md#quick-segments) 
@@ -34,7 +34,7 @@ ms.locfileid: "7617467"
 - Пропозиції на основі ШІ залежно від показників або атрибутів: [Пропоновані сегменти для покращення показників](suggested-segments.md) 
 - Пропозиції на основі справ: [Пропоновані сегменти на основі справ клієнта](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b2b"></a>[Ділові бізнес-партнери (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Бізнес-партнери (B-to-B)](#tab/b2b)
 
 - Складний сегмент за допомогою конструктора сегментів: [Створіть власний](segment-builder.md#create-a-new-segment)
 
