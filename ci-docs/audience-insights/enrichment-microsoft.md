@@ -1,7 +1,7 @@
 ---
 title: Збагачуйте профілі клієнтів за рахунок даних Майкрософт
 description: Використовуйте фірмові дані Майкрософт для збагачення даних клієнтів за рахунок їхнього доповнення брендами та уподобаннями в області інтересів.
-ms.date: 06/14/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 51b150cbf5d9cfb3a5df42e680bcfa57ec5496cb
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: c25dbb7a877da2d3fccc1a4e5b219b9792bc6402
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617917"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732567"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Збагачення профілів клієнтів близькими брендами й інтересами (попередній перегляд)
 
@@ -116,8 +116,7 @@ ms.locfileid: "7617917"
 
 Завершення процесу збагачення може тривати кілька хвилин, залежно від розміру даних клієнта.
 
-> [!TIP]
-> Існує [шість типів станів](system.md#status-types) для завдань/процесів. Крім того, більшість процесів [залежать від інших низхідних процесів](system.md#refresh-policies). Можна вибрати стан процесу, щоб переглянути докладні відомості про перебіг виконання всієї роботи. Після вибору пункту **Див. докладні відомості** для одного із робочих завдань ви побачите наведені далі докладні відомості: час обробки, дата останньої обробки, помилки та попередження, пов’язані із завданням.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="enrichment-results"></a>Результати збагачення
 

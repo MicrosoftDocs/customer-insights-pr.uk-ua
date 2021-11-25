@@ -1,7 +1,7 @@
 ---
 title: Збагачення уніфікованих профілів клієнта
 description: Скористайтеся можливостями для збагачення даних клієнтів.
-ms.date: 09/30/2021
+ms.date: 11/05/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: de27da92118b83dafa0742b6a1e10ee315750c61
+ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673024"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7770149"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Збагачення для профілів клієнтів (підготовча версія)
 
@@ -34,7 +34,7 @@ ms.locfileid: "7673024"
 - [Бренди](enrichment-microsoft.md), надані Майкрософт
 - [Інтереси](enrichment-microsoft.md), надані Майкрософт
 - [Удосконалені адреси](enrichment-enhanced-addresses.md), надані корпорацією Microsoft 
-- [Демографічні дані](enrichment-experian.md), що надаються Experian
+- [Демографічні дані](enrichment-experian.md) надаються Experian
 - [Настроювані дані](enrichment-SFTP-custom-import.md) через протокол Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) надаються Microsoft
 
@@ -42,7 +42,8 @@ ms.locfileid: "7673024"
 
 - [Дані компанії](enrichment-leadspace.md) надаються Leadspace
 - [Удосконалені адреси](enrichment-enhanced-addresses.md), надані корпорацією Microsoft 
-- [Дані про розташування ](enrichment-here.md), надані HERE Technologies 
+- [Розширені дані про](enrichment-enhanced-company-data.md) компанію, надані корпорацією Майкрософт
+- [Дані про розташування](enrichment-here.md), надані HERE Technologies 
 - [Настроювані дані](enrichment-SFTP-custom-import.md) через протокол Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) надаються Microsoft
 
@@ -76,7 +77,7 @@ ms.locfileid: "7673024"
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>Перегляд перебігу процесу збагачення
 
-Ви можете знайти докладнішу інформацію про обробку збагачення пакета, зокрема його стан і можливі проблеми в процесі оновлення або після завершення оновлення. З'ясуйте, які процеси беруть участь у оновленні збагачень і скільки триває виконання цих процесів. Стан збагачення підтримується для Experian, Leadspace, HERE Technologies, SFTP-імпорту та Azure Maps.
+Ви можете знайти докладнішу інформацію про обробку збагачення пакета, зокрема його стан і можливі проблеми в процесі оновлення або після завершення оновлення. З'ясуйте, які процеси беруть участь у оновленні збагачень і скільки триває виконання цих процесів. Стан збагачення підтримується для Experian, Leadspace, HERE технології, SFTP імпорту та Azure Maps.
 
 Перегляд стану збагачень
 

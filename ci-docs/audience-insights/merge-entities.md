@@ -1,7 +1,7 @@
 ---
 title: Злиття сутностей в уніфікації даних
 description: Злиття сутностей для створення уніфікованих профілів клієнтів.
-ms.date: 10/10/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-merge
-ms.openlocfilehash: 6b3002b21ea043315e50724ec103aef8a3ced98e
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
-ms.translationtype: HT
+ms.openlocfilehash: c218f9c1a1b7711ee48419470bf6c352450ffc0c
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648279"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732797"
 ---
 # <a name="merge-entities"></a>Об'єднання сутностями
 
@@ -187,10 +187,9 @@ ms.locfileid: "7648279"
 
 Щоб внести інші зміни та повторно виконати цей крок, ви можете скасувати усі злиття, що виконуються. Виберіть **Оновлення...** й натисніть **Скасувати завдання** в бічній області, що відображається.
 
-> [!TIP]
-> Після виконання процесу злиття виберіть стан процесу, щоб відкрити область **Відомості про завдання**. У ньому можна дізнатися про час обробки, дату останньої обробки, а також про всі помилки та попередження, пов'язані з завданням. Виберіть елемент **Докладно** для перегляду сутностей, які беруть участь у процесі зіставлення, успіху вирішення конфліктів, а також чи були оновлення успішно опубліковані.  
-> Існує [шість типів станів](system.md#status-types) для завдань/процесів. Крім того, більшість процесів [залежать від інших низхідних процесів](system.md#refresh-policies).  
-> :::image type="content" source="media/process-detail-path.png" alt-text="Шлях до деталізації для отримання відомостей про процес за посиланням на стан завдання.":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+:::image type="content" source="media/process-detail-path.png" alt-text="Шлях до деталізації для отримання відомостей про процес за посиланням на стан завдання.":::
 
 ## <a name="next-step"></a>Наступний крок
 

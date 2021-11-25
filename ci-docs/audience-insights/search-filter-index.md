@@ -1,7 +1,7 @@
 ---
 title: Пошук та фільтрування профілів клієнтів
 description: Швидко знаходьте відомості про уніфіковані профілі клієнтів та фільтруйте за вказаними атрибутами.
-ms.date: 01/19/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,19 +9,20 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 9eaeb0c93481283324f21122c9528ff5896b9866
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
-ms.translationtype: HT
+ms.openlocfilehash: e17d745974958b73683f1f9406c5ae95f2cbcb3c
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7470052"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732059"
 ---
 # <a name="customer-profiles-search--filter-index"></a>Профілі клієнтів: покажчик «Пошук і фільтрація»
 
 Результатом об’єднання даних клієнтів є сутність профілю клієнта, яка надає уніфіковане подання в загальну базу клієнтів. Щоб швидко [знаходити інформацію про певного клієнта або групу клієнтів](customer-profiles.md), можна налаштувати можливості **Пошук** та **Фільтрувати** на сторінці **Клієнти**. Читайте розділ далі, щоб дізнатися про те, як адміністратори можуть редагувати ці атрибути на сторінці **Покажчик «Пошук і фільтрація»**, які доступні користувачам для пошуку та фільтрації.
 
-> [!div class="mx-imgBorder"]
-> ![Фільтр пошуку.](media/search-filter.png "Фільтр пошуку")
+   :::image type="content" source="media/search-filter.png" alt-text="Фільтр пошуку":::
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="add-fields-and-specify-attributes"></a>Додавання полів і визначення атрибутів
 

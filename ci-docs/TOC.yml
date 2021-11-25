@@ -48,7 +48,7 @@
           href: audience-insights/connect-power-query.md
         - name: Додавання папки Common Data Model в якості джерела даних
           href: audience-insights/connect-common-data-model.md
-        - name: Додавання керованого озера даних Dataverse
+        - name: Додавання Dataverse керованого озера даних
           href: audience-insights/connect-dataverse-managed-lake.md
         - name: Інкрементне оновлення джерел даних
           href: audience-insights/incremental-refresh-data-sources.md
@@ -84,13 +84,15 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Розширені адреси
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Покращення даних компанії
+          href: audience-insights/enrichment-enhanced-company-data.md
         - name: Збагачення за допомогою Azure Maps
           href: audience-insights/enrichment-azure-maps.md
         - name: Збагачення за допомогою HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Збагачення за допомогою Leadspace
           href: audience-insights/enrichment-leadspace.md
-        - name: Збагачувати Experian
+        - name: Збагатити Experian
           href: audience-insights/enrichment-experian.md
         - name: Збагачення за допомогою настроюваного імпорту SFTP
           href: audience-insights/enrichment-SFTP-custom-import.md
@@ -164,11 +166,11 @@
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage Gen2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: Azure Synapse Analytics
+            - name: Azure Synapse Аналітика
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
-            - name: Adobe Experience Platform
+            - name: Платформа Adobe Experience
               href: audience-insights/export-adobe-experience-platform.md
             - name: Campaign Monitor
               href: audience-insights/export-campaign-monitor.md
@@ -180,7 +182,7 @@
               href: audience-insights/export-dynamics365-marketing.md
             - name: Dynamics 365 Sales
               href: audience-insights/export-dynamics365-sales.md
-            - name: Менеджер реклами Facebook
+            - name: Менеджер Facebook оголошень
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
@@ -244,12 +246,46 @@
           href: audience-insights/integrate-engagement-insights.md
         - name: Перегляд схем сутностей у Common Data Model
           href: audience-insights/entity-schemas.md
-        - name: Дані Customer Insights у Dataverse
+        - name: Дані статистики клієнтів у Dataverse
           href: audience-insights/customer-insights-dataverse.md
         - name: Робота з API
           href: audience-insights/apis.md
         - name: Посилання API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+- name: Керування згодою (попередній перегляд)
+  items:
+    - name: Довідковий центр
+      href: consent-management/index.yml
+    - name: Огляд наявних можливостей
+      href: consent-management/overview.md
+    - name: Почати
+      items:
+        - name: Почати
+          href: consent-management/get-started.md
+        - name: Поняття та термінологія
+          href: consent-management/glossary.md
+    - name: Імпортувати дані згоди
+      items:
+        - name: Імпортувати дані згоди
+          href: consent-management/import-consent-data.md
+        - name: Установлення даних про згоду та застосування параметрів згоди
+          href: consent-management/set-consent-rules.md
+    - name: Керування даними про згоду
+      items:
+        - name: Як увімкнути правила згоди в аналітичних оглядах аудиторії
+          href: audience-insights/activate-consent.md
+        - name: Керування правилами згоди за умовчанням у сегментах статистики аудиторії
+          href: audience-insights/change-default-consent-rules.md
+    - name: Керування настройками та користувачами
+      items:
+        - name: Настроювання параметрів системи
+          href: consent-management/system-settings.md
+        - name: Керування користувачами та дозволами
+          href: consent-management/manage-users.md
+    - name: Використання даних про згоду
+      items:
+        - name: Створення прогнозів із даними згоди
+          href: consent-management/predictions-consent-data.md
 - name: Engagement insights (підготовча версія)
   items:
     - name: Довідковий центр
@@ -302,9 +338,9 @@
           href: engagement-insights/advanced-SDK-implementation.md
         - name: Зразок Web SDK
           href: engagement-insights/websdk-sample.md
-        - name: Посібник із SDK Android
+        - name: Посібник з Android SDK
           href: engagement-insights/get-started-android.md
-        - name: Зразок SDK Android
+        - name: Android зразок SDK
           href: engagement-insights/androidsdk-sample.md
         - name: Посібник з iOS SDK
           href: engagement-insights/get-started-ios.md

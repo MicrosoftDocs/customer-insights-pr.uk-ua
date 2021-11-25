@@ -1,7 +1,7 @@
 ---
 title: Семантичні зіставлення (підготовча версія)
 description: Знайомство із семантичними зіставленнями та способами їх використання.
-ms.date: 09/28/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: b0884b8b6a2c5abe4b3967d1b57d11a3a6d65c5b
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
-ms.translationtype: HT
+ms.openlocfilehash: f23c622572ff9f967eca07de7898419d1ffc18b0
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622961"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731968"
 ---
 # <a name="semantic-mappings"></a>Семантичні зіставлення
 
@@ -75,8 +75,7 @@ ms.locfileid: "7622961"
 
 1. Щоб виконати семантичне пізніше, виберіть семантичне зіставлення, а тоді виберіть **Оновити**.
 
-> [!TIP]
-> Існує [шість типів станів](system.md#status-types) для завдань/процесів. Крім того, більшість процесів [залежать від інших низхідних процесів](system.md#refresh-policies). Можна вибрати стан процесу, щоб переглянути докладні відомості про перебіг виконання всієї роботи. Після вибору **Переглянути відомості** для однієї з робіт завдання ви побачите додаткові відомості: час обробки, дата останньої обробки, а також усі помилки та попередження, пов'язані з завданням.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-semantic-mappings"></a>Керування наявними семантичними зіставленнями
 
@@ -91,5 +90,6 @@ ms.locfileid: "7622961"
 - **Перейменувати**: відкриває діалогове вікно, в якому можна вказати інше ім'я для вибраного семантичного зіставлення. Натисніть кнопку **Зберегти**, щоб застосувати зміни.
 
 - **Видалити**: відкриває діалогове вікно для підтвердження видалення вибраного семантичного зіставлення. Можна також видалити кілька семантичних зіставлень одночасно, вибравши семантичні зіставлення та піктограму видалення. Виберіть **Видалити**, щоб підтвердити видалення.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

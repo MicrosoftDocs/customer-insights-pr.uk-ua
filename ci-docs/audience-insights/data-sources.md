@@ -1,7 +1,7 @@
 ---
 title: Використання джерел даних для прийому даних
 description: Дізнайтесь, як імпортувати дані з різних джерел.
-ms.date: 04/12/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,18 +10,18 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: de31e1f25c08d0bcb5341c5f465b1999de48acf3
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645380"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732192"
 ---
 # <a name="data-sources-overview"></a>Огляд джерел даних
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Можливість аналізу аудиторій у Dynamics 365 Customer Insights підключається до даних з широкого набору джерел. Підключення до джерела даних часто називається процесом *отримання даних*. Після того як дані буде отримано, ви можете [уніфікувати](data-unification.md) їх та виконувати із ними дії.
+Можливості статистики аудиторії в Dynamics 365 Customer Insights з'єднуються з даними з широкого набору джерел. Підключення до джерела даних часто називається процесом *отримання даних*. Після того як дані буде отримано, ви можете [уніфікувати](data-unification.md) їх та виконувати із ними дії.
 
 ## <a name="add-a-data-source"></a>Додати джерело даних
 
@@ -31,15 +31,15 @@ ms.locfileid: "7645380"
 
 - [Використовуючи десятки з’єднувачів Power Query](connect-power-query.md)
 - [З папки Common Data Model](connect-common-data-model.md)
-- [З власного озера Microsoft Dataverse](connect-dataverse-managed-lake.md)
+- [З власного Microsoft Dataverse озера](connect-dataverse-managed-lake.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Додавайте дані з локальних джерел даних
 
-Використання даних із локальних джерел даних у Audience Insights підтримується на основі потоків даних Microsoft Power Platform. Потоки даних можна увімкнути в Customer Insights способом [зазначення URL-адреси середовища Microsoft Dataverse](create-environment.md) при налаштуванні цього середовища.
+Поширювання даних із локальний джерел даних у статистику аудиторії підтримується на основі Microsoft Power Platform потоків даних. Потоки даних можна ввімкнути в Аналітичних даних клієнтів, [надавши URL-адресу Microsoft Dataverse середовища](create-environment.md) під час настроювання середовища.
 
-Джерела даних, створені після прив’язування середовища Dataverse до Customer Insights, використовуватимуть [потоки даних Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) за промовчанням. Потоки даних підтримують локальне підключення за допомогою шлюзу даних. Видаліть і відтворіть джерела даних, які існували до прив’язування середовища Dataverse для [використання локальних шлюзів даних](/data-integration/gateway/service-gateway-app).
+Джерела даних, створені після зв'язування Dataverse середовища зі статистикою клієнтів, за промовчанням використовуватимуть [Power Platform потоки](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) даних. Потоки даних підтримують локальне підключення за допомогою шлюзу даних. Видаліть і повторно створіть джерела даних, які існували до того, як Dataverse середовище було пов'язано [з використанням шлюзів даних локальний](/data-integration/gateway/service-gateway-app).
 
-Шлюзи даних із наявного середовища Power BI або Power Apps будуть видимі, й ви можете повторно користуватися Customer Insights. На сторінці джерел даних відображено посилання для переходу до середовища Microsoft Power Platform, де ви можете переглянути та налаштувати локальні шлюзи даних.
+Шлюзи даних з наявного Power BI або Power Apps середовища відображатимуться, і ви можете повторно використовувати їх у Службі статистики клієнтів. На сторінці джерел даних відображаються посилання для доступу до Microsoft Power Platform середовища, де можна переглядати та настроювати локальний шлюзи даних.
 
 ## <a name="review-ingested-data"></a>Перегляд отриманих даних
 
@@ -48,14 +48,7 @@ ms.locfileid: "7645380"
 > [!div class="mx-imgBorder"]
 > ![Додане джерело даних.](media/configure-data-datasource-added.png "Додане джерело даних")
 
-|Статус  |Опис  |
-|---------|---------|
-|Успішно   |Якщо в стовпці **Оновлено** вказано час, джерело даних було успішно прийнято.
-|Не розпочато   |Джерело даних ще не має прийнятих даних або все ще працює в режимі чернетки.         |
-|Оновлення    |Триває обробка даних. Цю операцію можна скасувати, вибравши команду **Зупинити оновлення** в стовпці **Дії**. Якщо зупинити оновлення джерела даних, його буде повернуто до останнього стану оновлення.       |
-|Не пройдено     |Виникли помилки під час додавання даних.         |
-
-Щоб переглянути додаткові відомості, виберіть значення у стовпці **Стан** для будь-якого джерела даних. В області **Відомості про перебіг виконання** розгорніть елемент **Джерела даних**. Виберіть **Переглянути відомості**, щоб отримати більше відомостей про стан оновлення, зокрема відомості про помилку та оновлення низхідного процесу.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 Завантаження даних може тривати значний час. Після успішного оновлення, додані дані можна переглянути на сторінці **Сутності**. Додаткові відомості див. в розділі [Сутності](entities.md).
 

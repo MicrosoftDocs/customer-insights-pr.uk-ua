@@ -1,5 +1,5 @@
 ---
-title: Ліміти послуг у Dynamics 365 Customer Insights
+title: Обмеження на обслуговування в Dynamics 365 Customer Insights
 description: Дізнайтеся про граничні значення й обмеження.
 ms.date: 09/03/2021
 ms.service: customer-insights
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
-ms.translationtype: HT
+ms.openlocfilehash: eb25e050b8aa768e6e1d8d4c5adce6095cccc346
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483719"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7792005"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>Обмеження послуг в можливостях Customer Insights
 
@@ -22,11 +22,11 @@ ms.locfileid: "7483719"
 
 ## <a name="audience-insights"></a>Аналіз аудиторії
 
-### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>Обмеження послуг для функціоналу аналізу аудиторій у Dynamics 365 Customer Insights
+### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>Обмеження сервісу в можливості статистики Dynamics 365 Customer Insights аудиторії
 
 | Область  | Обмеження  | Примітки |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Сегменти та показники | 100 сегментів або показників. | Загальна кількість активних [сегментів](audience-insights/segments.md) і [показників](audience-insights/measures.md) сумарно не може перевищувати 100.  |
+| Сегменти, заходи та прогнози | 300  | Загальна кількість [...](audience-insights/segments.md) сегментів, мір і [...](audience-insights/measures.md)[прогнозів разом](audience-insights/predictions.md) узятих не може перевищувати 300.  |
 | Зв'язки | 20 рівнів глибини зв'язків у шляхах сутностей. | Під час створення [сегментів](audience-insights/segments.md) або [вимірювань](audience-insights/measures.md) за допомогою інтерфейсу конструктора шляхи сутності можуть мати до 20 зав'язків між початковою сутністю та кінцевою.  |
 
 

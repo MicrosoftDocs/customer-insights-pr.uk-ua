@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 8404515a20529c00708d84813f3a022ad98c45362a2f1e68d7aa890d085071a9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033610"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732289"
 ---
 # <a name="work-with-customer-insights-apis"></a>Робота з Customer Insights APIs
 
-Програма Dynamics 365 Customer Insights забезпечує API для розробки власних програм на основі даних у Customer Insights.
+Dynamics 365 Customer Insights надає API для створення власних програм на основі ваших даних у Службі статистики клієнтів.
 
 > [!IMPORTANT]
 > Відомості про ці API наведено в [Довіднику Customer Insights API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Вони містять додаткові відомості про операції, параметри та відповіді.
@@ -117,25 +117,25 @@ ms.locfileid: "7033610"
 
 ### <a name="c-nuget"></a>C# NuGet
 
-Дізнайтесь, як почати роботу з використанням клієнтської бібліотеки C# із програми NuGet.org. Для отримання додаткових відомостей про пакет NuGet див. розділ [Microsoft.Dynamics.CustomerInsights.Api](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). На даний момент цей пакунок націлений на структури netstandard2.0 і netcoreapp2.0
+Дізнайтеся, як почати користуватися клієнтськими бібліотеками C# з NuGet.org. Для отримання додаткових відомостей про NuGet пакет [див](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). На даний момент цей пакунок націлений на структури netstandard2.0 і netcoreapp2.0
 
 #### <a name="add-the-c-client-library-to-a-c-project"></a>Додавання клієнтської бібліотеки C# до проекту C#
 
-1. У програмі Visual Studio відкрийте **Диспетчер пакетів NuGet** для вашого проекту.
+1. У Visual Studio відкрийте **менеджер пакетів NuGet** для свого проекту.
 
 1. Знайдіть **Microsoft.Dynamics.CustomerInsights.Api**.
 
 1. Виберіть **Інсталювати**, щоб додати пакет до проекту.
  
-   Також цю команду можна виконати в **Консолі менеджера пакетів NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
+   Крім того, запустіть цю команду в **консолі диспетчера пакетів NuGet** :`Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Додати пакет NuGet до проекту Visual Studio.":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Додайте пакет NuGet до проекту Visual Studio.":::
 
 #### <a name="use-the-c-client-library"></a>Використання клієнтської бібліотеки C#
 
 1. Використовуйте [бібліотеку автентифікації Microsoft (MSAL)](/azure/active-directory/develop/msal-overview), щоб отримати `AccessToken` з використанням [реєстрації наявної програми Azure](#create-a-new-app-registration-in-the-azure-portal).
 
-1. Після успішної автентифікації і отримання маркера, створіть новий або використайте наявний `HttpClient` з додатковим **DefaultRequestHeaders "Authorization"** встановлено на **Пред’явник<access token>** і **Ocp-Apim-Subscription-Key** встановленим на [**Ключ передплати** з вашого середовища Customer Insights](#get-started-trying-the-customer-insights-apis).   
+1. Після успішної автентифікації та придбання маркера створіть новий або скористайтеся існуючим `HttpClient` з додатковим **defaultRequestHeaders "Авторизація",** встановленими на **"маркер доступу" Bearer** та **Ocp-Apim-Subscription-Key,** встановлених на ключ [**·** підписки з вашого середовища Customer Insights](#get-started-trying-the-customer-insights-apis).   
  
    У разі потреби можна скинути заголовок **Авторизація**. Наприклад, коли термін дії маркера минув.
 

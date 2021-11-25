@@ -1,7 +1,7 @@
 ---
 title: Експорт даних з Customer Insights
 description: Керування експортом для надання спільного доступу до даних.
-ms.date: 10/08/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: pkieffer
 ms.author: philk
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 61e95e47489495e367498547687b0065169519e6
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: bff0486fdb3a02ecb0aa86e81abe1c506e234bc5
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673348"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732197"
 ---
 # <a name="exports-preview-overview"></a>Огляд експорту (підготовча версія)
 
@@ -97,7 +97,9 @@ ms.locfileid: "7673348"
 
 Для кожного експорту, який ви налаштовані, має розклад оновлення. При оновлення система шукає нові або оновлені дані, які слід включити до експорту. За замовчуванням експорти виконуються під час кожного [запланованого в системі оновлення](system.md#schedule-tab). Можна настроїти розклад оновлень або вимкнути його і запускати експорти вручну.
 
-Розклади експортів залежать від стану середовища. Якщо триває оновлення [залежностей](system.md#refresh-policies), але при цьому за розкладом має запускатися експорт, система спочатку завершить оновлення, а потім запустить експорт. Ви можете побачити, коли востаннє оновлювався експорт, у стовпці **Оновлено**.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+Розклади експортів залежать від стану середовища. Якщо триває оновлення [залежностей](system.md#refresh-processes), але при цьому за розкладом має запускатися експорт, система спочатку завершить оновлення, а потім запустить експорт. Ви можете побачити, коли востаннє оновлювався експорт, у стовпці **Оновлено**.
 
 ### <a name="schedule-exports"></a>Планування експортів
 

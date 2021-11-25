@@ -1,7 +1,7 @@
 ---
 title: Сутності та набори даних
 description: Перегляд даних на сторінці «Сутності».
-ms.date: 04/16/2020
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 137de726b243b501491fcbe7866820aaee26097fcf379270c423c277374ae9a4
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: 2a207a3dcad4bf192efb6ee1554195f10b19670b
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033840"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732106"
 ---
 # <a name="entities-in-audience-insights"></a>Сутності в аналізі аудиторії
 
-Після [налаштування джерел даних](data-sources.md) перейдіть на сторінку **Сутності**, щоб оцінити якість доданих даних. Сутності вважаються наборами даних. На основі цих сутностей створені численні можливості Dynamics 365 Customer Insights. Їх докладний перегляд допоможе перевірити вихідні дані цих можливостей.
+Після [налаштування джерел даних](data-sources.md) перейдіть на сторінку [Сутності](data-sources.md), щоб оцінити якість доданих даних. Сутності вважаються наборами даних. Навколо цих сутностей побудовано кілька можливостей Dynamics 365 Customer Insights. Їх докладний перегляд допоможе перевірити вихідні дані цих можливостей.
 
 На сторінці **Сутності** відображаються сутності та містяться кілька стовпців:
 
@@ -26,9 +26,10 @@ ms.locfileid: "7033840"
 - **Джерело**: тип джерела даних, яке додало сутність
 - **Автор**: ім’я особи, яка створила сутність
 - **Створено**: дата й час створення сутності
-- **Автор оновлення**: ім’я особи, яка оновила сутність
-- **Дата останнього оновлення**: дата й час останнього оновлення сутності
-- **Останнє оновлення**: дата й час останнього оновлення даних
+- **Оновлено:** ім'я особи, яка оновила сутність
+- **Стан** : Відомості про останнє оновлення сутності
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="explore-a-specific-entitys-data"></a>Ознайомлення з даними певної сутності
 

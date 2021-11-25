@@ -1,7 +1,7 @@
 ---
 title: Сегменти в аналізі аудиторії
 description: Огляд сегментів, способи їх створення та керування ними.
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: 56978c984a91e85e86956e7eac1d59609c349b6a
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673873"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732613"
 ---
 # <a name="segments-overview"></a>Огляд сегментів
 
@@ -65,8 +65,7 @@ ms.locfileid: "7673873"
 
 Можна оновити всі сегменти одночасно, вибравши **Оновити все** на сторінці **Сегменти**, або оновити один або кілька сегментів, якщо вибрати їх, а потім вибрати **Оновити** в параметрах. Крім того, можна настроїти повторюване оновлення в розділі **Адміністратор** > **Система** > **Розклад**.
 
-> [!TIP]
-> Існує [шість типів станів](system.md#status-types) для завдань/процесів. Крім того, більшість процесів [залежать від інших низхідних процесів](system.md#refresh-policies). Можна вибрати стан процесу, щоб переглянути докладні відомості про перебіг виконання всієї роботи. Після вибору **Переглянути відомості** для однієї з робіт завдання ви побачите додаткові відомості: час обробки, дата останньої обробки, а також усі помилки та попередження, пов'язані з завданням.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="export-segments"></a>Експорт сегментів
 
@@ -105,5 +104,6 @@ ms.locfileid: "7673873"
 > Поля, що відображаються в цьому списку, базуються на атрибутах сутностей вашого сегмента.
 >
 >Список — це попередній перегляд відповідних учасників сегмента. Він показує перші 100 записів вашого сегмента. Це дає змогу швидко оцінити його та за потреби переглянути його визначення. Щоб переглянути всі відповідні записи, потрібно [експортувати цей сегмент](export-destinations.md).
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)] 

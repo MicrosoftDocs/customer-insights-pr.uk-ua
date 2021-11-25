@@ -1,7 +1,7 @@
 ---
 title: Створення показників і керування ними
 description: Визначте показники для аналізу та відображення ефективності діяльності компанії.
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: f6be11bd97be71bc0c3a58eaee4d8ed45f535877
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673528"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732751"
 ---
 # <a name="define-and-manage-measures"></a>Визначення показників і керування ними
 
@@ -238,8 +238,7 @@ ms.locfileid: "7673528"
 - **Видаліть** показник.
 - **Активуйте** або **Вимкніть**. Неактивні показники не оновлюватимуться під час [оновлення за розкладом](system.md#schedule-tab).
 
-> [!TIP]
-> Існує [шість типів станів](system.md#status-types) для завдань/процесів. Крім того, більшість процесів [залежать від інших низхідних процесів](system.md#refresh-policies). Можна вибрати стан процесу, щоб переглянути докладні відомості про перебіг виконання всієї роботи. Після вибору пункту **Див. докладні відомості** для одного із робочих завдань ви побачите наведені далі докладні відомості: час обробки, дата останньої обробки, помилки та попередження, пов’язані із завданням.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="next-step"></a>Наступний крок
 

@@ -9,16 +9,18 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 409dfce02c41d7c52295409912880b9224469908805e199066faeb2b7a4f1f9d
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: f9397729d2f79d079b4dea2ee92d0823b6d987e4
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035348"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799752"
 ---
 # <a name="subscription-churn-prediction-preview"></a>Прогнозування відмови від передплати (попередній перегляд)
 
 Прогнозування відмови від передплати допоможе спрогнозувати, чи є загроза того, що клієнт більше не користуватиметься продуктами чи послугами вашої компанії, які надаються на умовах передплати. Новий прогноз стосовно відмови від передплати ви можете створити на сторінці **Аналітика** > **Прогнози**. Виберіть **Мої прогнози**, щоб переглянути інші прогнози, які ви створили.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOKNQ]
 
 > [!TIP]
 > Спробуйте підручник для прогнозу відтоку передплат, використовуючи приклади даних: [Зразок вказівок для прогнозу відтоку передплат](sample-guide-predict-subscription-churn.md).

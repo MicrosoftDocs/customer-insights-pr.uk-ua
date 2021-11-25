@@ -1,7 +1,7 @@
 ---
 title: Активності клієнта
 description: Визначте справи клієнтів і переглядайте їх на часової шкалі в профілях клієнтів.
-ms.date: 09/27/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: c99ec2e7d5e4bf32a509bbe4c0c53999129b2305
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673163"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732485"
 ---
 # <a name="customer-activities"></a>Активності клієнта
 
-Об'єднайте справи клієнтів [із різних джерел даних](data-sources.md) у Dynamics 365 Customer Insights, щоб створити часову шкалу, яка має список справ у хронологічному порядку. Додайте часову шкалу до програм Dynamics 365 за [допомогою рішення надбудови Customer Card ](customer-card-add-in.md) або в приладній дошці Power BI.
+Об'єднайте дії клієнтів з [різних джерел даних у](data-sources.md) Dynamics 365 Customer Insights, щоб створити часову шкалу, яка містить хронологічну список справ. Додайте часову шкалу до програм Dynamics 365 за допомогою [рішення надбудови Картка клієнта](customer-card-add-in.md) або до приладної дошки Power BI.
 
 ## <a name="define-an-activity"></a>Визначення справи
 
@@ -82,9 +82,7 @@ ms.locfileid: "7673163"
 
 1. На сторінці **Справи** виберіть **Запустити**, щоб виконати обробку справи. 
 
-> [!TIP]
-> Існує [шість типів станів](system.md#status-types) для завдань/процесів. Крім того, більшість процесів [залежать від інших низхідних процесів](system.md#refresh-policies). Можна вибрати стан процесу, щоб переглянути докладні відомості про перебіг виконання всієї роботи. Після вибору **Переглянути відомості** для однієї з робіт завдання ви побачите додаткові відомості: час обробки, дата останньої обробки, а також усі помилки та попередження, пов'язані з завданням.
-
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-activities"></a>Керування наявними справами
 
