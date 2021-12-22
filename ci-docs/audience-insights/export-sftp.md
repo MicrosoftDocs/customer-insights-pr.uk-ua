@@ -1,5 +1,5 @@
 ---
-title: Експорт даних Customer Insights до SFTP hosts
+title: Експорт даних статистики клієнтів до хостів SFTP (відео)
 description: Дізнайтеся, як налаштувати підключення та експорт до розташування SFTP.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a54025588945e4db6ab800dca034520b5f08d49b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 568e5826175417175bd09435d697031f0ab64223
+ms.sourcegitcommit: e141a6a34a985cca68f03082a700ed27f2f3c0c1
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673941"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927628"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>Експорт сегментів та інших даних до SFTP (попередній перегляд)
 
@@ -28,6 +28,7 @@ ms.locfileid: "7673941"
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
+- SFTP напрямки за брандмауерами в даний Вий час не підтримуються. 
 - Час виконання експорту залежатиме від швидкодії системи. Рекомендуємо використовувати два ядра ЦП і 1 Гб пам'яті в якості мінімальної конфігурації сервера. 
 - Експортування сутностей, що містять до 100 мільйонів профілів клієнтів, може тривати до 90 хвилин при використанні мінімальної конфігурації із двома ядрами ЦП та 1 Гб пам'яті. 
 

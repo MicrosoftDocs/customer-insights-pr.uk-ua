@@ -1,7 +1,7 @@
 ---
 title: Покрокове оновлення для джерел даних на основі Power Query
 description: Оновлюйте нові й оновлені дані для великих джерел даних на основі Power Query.
-ms.date: 09/28/2020
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,16 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
-ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
-ms.translationtype: HT
+ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7377859"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900310"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Інкрементне оновлення для джерел даних на основі Power Query
+
+У цій статті описано, як настроїти інкрементне оновлення для джерел даних на основі Power Query.
 
 Інкрементне оновлення для джерел даних забезпечує зазначені нижче переваги.
 
@@ -30,9 +32,9 @@ ms.locfileid: "7377859"
 
 1. [Створення нового джерела даних на основі Power Query](connect-power-query.md).
 
-1. Уведіть ім’я джерела даних.
+1. Укажіть **ім**'я джерело даних.
 
-1. Виберіть джерело даних, що підтримує інкрементне оновлення, наприклад базу даних SQL Azure.
+1. Виберіть джерело даних, який підтримує інкрементне оновлення, [наприклад, базу даних SQL Azure](/power-query/connectors/azuresqldatabase).
 
 1. Виберіть сутності або таблиці для обробки.
 

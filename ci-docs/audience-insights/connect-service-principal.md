@@ -1,7 +1,7 @@
 ---
 title: Підключення до облікового запису Azure Data Lake Storage за допомогою принципала служби
 description: Використайте принципала служби Azure, щоб підключатися до власного data lake.
-ms.date: 09/08/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,26 +9,26 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645197"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900314"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Підключення до облікового запису Azure Data Lake Storage за допомогою принципала служби Azure
 
-Для автоматичних інструментів, які використовують служби Azure, завжди мають обмежені дозволи. Замість того, щоб входити в програму як привілейований користувач, Azure пропонує принципали служби. Дізнайтеся, як підключитися до Dynamics 365 Customer Insights з обліковим записом Azure Data Lake Storage за допомогою принципала служби Azure, а не ключів облікового запису сховища. 
+У цій статті описано, як підключитися до Dynamics 365 Customer Insights Azure Data Lake Storage облікового запису за допомогою служби Azure принципал замість ключів облікового запису сховища. 
 
-За допомогою принципала служби можна безпечно [додавати або редагувати папку Common Data Model в якості джерела даних](connect-common-data-model.md), або [створювати чи оновлювати середовище](create-environment.md).
+Для автоматичних інструментів, які використовують служби Azure, завжди мають обмежені дозволи. Замість того, щоб входити в програму як привілейований користувач, Azure пропонує принципали служби. За допомогою принципалів служб можна безпечно [додавати або редагувати спільну модель даних як джерело даних](connect-common-data-model.md) або створювати або оновлювати [середовище](create-environment.md).
 
 > [!IMPORTANT]
 > - Обліковий запис сховища Data Lake Storage, який використовуватиме принципал служби, повинен використовувати [ієрархічний простір імен](/azure/storage/blobs/data-lake-storage-namespace).
-> - Для створення принципала служби потрібно мати дозвіл адміністратора для вашої підписки Azure.
+> - Для створення принципала служби потрібні дозволи адміністратора для передплати Azure.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Створення принципала служби Azure для Customer Insights
 
-Перш ніж створити нового принципала служби для аналітичних оглядів аудиторії чи взаємодії, перевірте, чи не існує він уже в організації.
+Перш ніж створювати новий принципал обслуговування для статистики клієнтів, перевірте, чи вона вже існує у вашій організації.
 
 ### <a name="look-for-an-existing-service-principal"></a>Знайдіть наявний принципал служби
 

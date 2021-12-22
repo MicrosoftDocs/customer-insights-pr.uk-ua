@@ -1,7 +1,7 @@
 ---
 title: Експерименти машинного навчання Azure
 description: Використання моделей на основі машинного навчання Azure у Dynamics 365 Customer Insights.
-ms.date: 11/30/2020
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,16 +9,16 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4c04a1d08aba152ce91d452ae2300c1ce0fc79e5d6980ac506dc40d9914c9fca
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: e37eec503c9df83ef72497e22afa1266296e642c
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033197"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881763"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Використання моделей на основі машинного навчання Azure
 
-Уніфіковані дані у програмі Dynamics 365 Customer Insights є джерелом для створення моделей машинного навчання, які можуть створювати додаткові аналітичні огляди бізнес-компаній. Customer Insights інтегрується з Machine Learning Studio (classic) і машинним навчанням Azure для використання власних користувацьких моделей. Ознайомтеся з [експериментами студії машинного навчання (класична версія)](machine-learning-studio-experiments.md), де наведено експерименти, створені у студії машинного навчання (класичний варіант). 
+Уніфіковані дані у програмі Dynamics 365 Customer Insights є джерелом для створення моделей машинного навчання, які можуть створювати додаткові аналітичні огляди бізнес-компаній. Customer Insights інтегровано зі службами машинного навчання Azure для можливості використання власних настроюваних моделей.
 
 ## <a name="prerequisites"></a>Вимоги
 
@@ -35,7 +35,7 @@ ms.locfileid: "7033197"
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Робота з конструктором машинного навчання Azure
 
-Конструктор машинного навчання надає наочне полотно, в якому можна перетягувати набори даних і модулі, так само як у студії машинного навчання Azure (класична версія). Пакетна воронка продажів, створена в конструкторі, може бути інтегрована у Customer Insights у разі відповідного налаштування. 
+Azure машинне навчання designer надає візуальне полотно, де можна перетягувати набори даних і модулі. Пакетна воронка продажів, створена в конструкторі, може бути інтегрована у Customer Insights у разі відповідного налаштування. 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Робота з SDK машинного навчання Azure
 
