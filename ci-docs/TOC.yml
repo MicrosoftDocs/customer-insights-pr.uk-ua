@@ -44,7 +44,7 @@
       items:
         - name: Огляд джерел даних
           href: audience-insights/data-sources.md
-        - name: Додавання джерел даних за допомогою з'єднувачів Power Query
+        - name: Додавання джерел даних за допомогою Power Query з'єднувачів
           href: audience-insights/connect-power-query.md
         - name: Додавання папки Common Data Model в якості джерела даних
           href: audience-insights/connect-common-data-model.md
@@ -80,7 +80,7 @@
       items:
         - name: Збагачуйте профілів клієнтів
           href: audience-insights/enrichment-hub.md
-        - name: Близькі бренди й інтереси
+        - name: Бренди та інтереси
           href: audience-insights/enrichment-microsoft.md
         - name: Розширені адреси
           href: audience-insights/enrichment-enhanced-addresses.md
@@ -130,6 +130,8 @@
               href: audience-insights/predict-subscription-churn.md
             - name: Прогноз відтоку транзакцій
               href: audience-insights/predict-transactional-churn.md
+            - name: Аналіз настроїв у відгуках клієнтів
+              href: audience-insights/sentiment-analysis.md
             - name: Використання настроюваних моделей від машинного навчання Azure
               href: audience-insights/custom-models.md
             - name: Доповнення частково відсутніх даних

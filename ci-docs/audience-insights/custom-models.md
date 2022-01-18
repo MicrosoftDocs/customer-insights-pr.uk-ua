@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+ms.openlocfilehash: 8ca30193ae4f4ef3ed9c60f2d694cd11fad46c76
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881809"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967680"
 ---
 # <a name="custom-machine-learning-models"></a>Спеціальні моделі машинного навчання
 
@@ -40,6 +40,8 @@ ms.locfileid: "7881809"
 
    > [!NOTE]
    > Дані передаються між екземплярами Customer Insights і вибраними веб-службами або воронками продажів Azure в робочому циклі. Під час передавання даних до служби Azure переконайтеся, що служба налаштована на обробку даних з урахуванням способу й розташування, необхідних для забезпечення відповідності юридичним або нормативним вимогам для цих даних для організації.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
 
 ## <a name="add-a-new-workflow"></a>Додати новий робочий цикл
 

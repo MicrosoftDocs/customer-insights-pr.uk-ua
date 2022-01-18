@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b8e63a738abaf4fbb902e3edbf83f5a815978478
-ms.sourcegitcommit: 8e89575fe2acb4b289fc157fa7c4c29caf9be967
-ms.translationtype: HT
+ms.openlocfilehash: 2c673c432f308efa289625a159de608d07f8d2b3
+ms.sourcegitcommit: f988114ac7a288ccadf2db35b02dbef5cacea4d9
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417230"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7975149"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>Використання сегментів у Dynamics 365 Marketing (підготовча версія)
 
@@ -45,7 +45,7 @@ ms.locfileid: "7417230"
 
 1. У розділі **Обліковий запис адміністратора сервера** виберіть **Увійти** і оберіть обліковий запис Dynamics 365 Marketing.
 
-1. Зіставте поле ІДЕНТИФІКАТОРА клієнта з ІДЕНТИФІКАТОРОМ контакту Dynamics 365.
+1. Зіставте поле Ідентифікатор контакту в сутності Клієнта з ідентифікатором контакту Dynamics 365.
 
 1. Щоб завершити створення підключення, виберіть **Зберегти**. 
 
