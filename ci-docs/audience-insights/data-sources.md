@@ -1,6 +1,6 @@
 ---
 title: Використання джерел даних для прийому даних
-description: Дізнайтесь, як імпортувати дані з різних джерел.
+description: 'Дізнайтесь, як імпортувати дані з різних джерел.'
 ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,11 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 78379c827e132b3b172aa7381f4c5ef2c70b9771
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
-ms.translationtype: MT
-ms.contentlocale: uk-UA
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977854"
 ---
+
 # <a name="data-sources-overview"></a>Огляд джерел даних
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Можливість аналізу аудиторій у Dynamics 365 Customer Insights підключається до даних з широкого набору джерел. Підключення до джерела даних часто називається процесом *отримання даних*. Після того як дані буде отримано, ви можете [уніфікувати](data-unification.md) їх та виконувати із ними дії.
 
@@ -33,13 +28,13 @@ ms.locfileid: "7977854"
 - [Microsoft Dataverse озеро](connect-dataverse-managed-lake.md)
 
 > [!NOTE]
-> Якщо використовується ознайомлювальна версія, розділ методи імпорту містить **параметр бібліотеки даних Customer Insights.** Виберіть цей параметр, щоб вибрати зразок набору даних, доступний для різних галузей. Для отримання додаткових відомостей [Dynamics 365 Customer Insights див](../trial-signup.md).
+> Якщо використовується ознайомлювальна версія, розділ методи імпорту містить **параметр бібліотеки** даних Customer Insights. Виберіть цей параметр, щоб вибрати зразок набору даних, доступний для різних галузей. Для отримання додаткових відомостей див [Dynamics 365 Customer Insights](../trial-signup.md).
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Додавайте дані з локальних джерел даних
 
-Використання даних із локальних джерел даних у Audience Insights підтримується на основі потоків даних Microsoft Power Platform. Ви можете ввімкнути потік даних у статистику клієнтів, [надаючи Microsoft Dataverse URL-адресу середовища](create-environment.md) під час настроювання середовища.
+Використання даних із локальних джерел даних у Audience Insights підтримується на основі потоків даних Microsoft Power Platform. Ви можете ввімкнути потік даних у статистику клієнтів, надаючи [Microsoft Dataverse URL-адресу](create-environment.md) середовища під час настроювання середовища.
 
-Джерела даних, створені після зв'язування Dataverse середовища з Customer Insights, за промовчанням використовують [Power Platform потоки](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) даних. Потоки даних підтримують локальне підключення за допомогою шлюзу даних. Можна видалити та відтворити джерела даних, які існували до того, як Dataverse середовище було пов'язано [за допомогою шлюзів даних локальний](/data-integration/gateway/service-gateway-app).
+Джерела даних, створені після зв'язування Dataverse середовища з Customer Insights, за промовчанням використовують [Power Platform потоки](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) даних. Потоки даних підтримують локальне підключення за допомогою шлюзу даних. Можна видалити та відтворити джерела даних, які існували до того, Dataverse як середовище було пов'язано [за допомогою шлюзів](/data-integration/gateway/service-gateway-app) локальний даних.
 
 Шлюзи даних із наявного середовища Power BI або Power Apps будуть видимі, й ви можете повторно користуватися Customer Insights. На сторінці джерел даних відображено посилання для переходу до середовища Microsoft Power Platform, де ви можете переглянути та налаштувати локальні шлюзи даних.
 

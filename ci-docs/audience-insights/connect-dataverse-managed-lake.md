@@ -9,25 +9,20 @@ author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: fecf3e33b5bc1eec17006fc196004be902c03b40
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: MT
-ms.contentlocale: uk-UA
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900176"
 ---
+
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Підключення до даних в озері з керованим даними Microsoft Dataverse
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-У цій статті наведено відомості про те, як Dataverse користувачі можуть швидко підключатися до аналітичних сутностей у Microsoft Dataverse керованому озері. 
+
+У цій статті наведено відомості про те, як Dataverse користувачі можуть швидко підключатися до аналітичних сутностей у керованому Microsoft Dataverse озері. 
 
 > [!NOTE]
-> Щоб Dataverse продовжити та переглянути список сутностей, доступних у керованому озері, потрібно бути адміністратором організації.
+> Щоб продовжити та переглянути список сутностей, доступних у керованому озері, потрібно бути адміністратором Dataverse організації.
 
 ## <a name="important-considerations"></a>Важливі міркування
 
-Дані, що зберігаються в онлайнових службах, наприклад, Azure Data Lake Storage, можуть зберігатися в розташуванні, відмінному від того, в якому дані обробляються або зберігаються в Dynamics 365 Customer Insights.Імпортуючи або підключаючись до даних, що зберігаються в онлайнових службах, ви погоджуєтеся з тим, що дані можна передавати та зберігати за допомогою Dynamics 365 Customer Insights програми .  [Дізнайтеся більше в Центрі безпеки та конфіденційності Microsoft](https://www.microsoft.com/trust-center).
+Дані, що зберігаються в онлайнових службах, наприклад, Azure Data Lake Storage, можуть зберігатися в розташуванні, відмінному від того, в якому дані обробляються або зберігаються в Dynamics 365 Customer Insights.Імпортуючи або підключаючись до даних, що зберігаються в онлайнових службах, ви погоджуєтеся з тим, що дані можна передавати та зберігати за допомогою Dynamics 365 Customer Insights програми . [Дізнайтеся більше в Центрі безпеки та конфіденційності Microsoft](https://www.microsoft.com/trust-center).
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Підключення до керованого озера Dataverse
 

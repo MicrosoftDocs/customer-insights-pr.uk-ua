@@ -1,6 +1,6 @@
 ---
 title: Створення середовищ і керування ними
-description: Дізнайтесь, як зареєструватися на послугу та як керувати середовищами.
+description: 'Дізнайтесь, як зареєструватися на послугу та як керувати середовищами.'
 ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,11 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 309b2a900e50727ffa655fc6b5fe728ea55ba5bf
-ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
-ms.translationtype: MT
-ms.contentlocale: uk-UA
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892409"
 ---
+
 # <a name="manage-environments"></a>Керування середовищами
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 ## <a name="switch-environments"></a>Переключення середовищ
 

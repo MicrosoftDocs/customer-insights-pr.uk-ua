@@ -9,16 +9,11 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 66d846c3e9404ca7993cae742ea6e16833233fba
-ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
-ms.translationtype: HT
-ms.contentlocale: uk-UA
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7380768"
 ---
+
 # <a name="entity-schemas-in-common-data-model"></a>Схеми сутностей у Common Data Model
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 [Common Data Model](/common-data-model/) — це декларативна специфікація, а також визначення стандартних сутностей, які представляють загальновживані концепції та справи в додатках для ведення бізнесу й підвищення продуктивності. Ця модель також поширюється на експериментальні та аналітичні дані. Common Data Model пропонує чітко визначені, модульні та розширювані бізнес-сутності, такі як Бізнес-партнер, Підрозділ, Інцидент, Контактна особа, Потенційний клієнт, Потенційна угода та Продукт, а також засоби взаємодії з постачальниками, працівниками та клієнтами, такі як справи та угоди про рівень послуг. Будь-які особи можуть використовувати визначення Common Data Model для їхнього розширення та як основу власних проектів, щоб збирати ідеї для конкретного бізнесу.
 
