@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
-ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
-ms.translationtype: MT
+ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892363"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088138"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Створення середовища в аналізі аудиторії
 
@@ -28,7 +28,7 @@ ms.locfileid: "7892363"
 
 ## <a name="create-a-new-environment"></a>Створити нове середовище
 
-Після придбання ліцензії на передплату для Customer Insights глобальний адміністратор клієнта Microsoft 365 отримує повідомлення електронної пошти, яке запрошує їх створити середовище. Щоб почати, перейдіть до [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start). 
+Придбавши ліцензію на передплату для Customer Insights, глобальний адміністратор Microsoft 365 клієнта отримує електронний лист із запрошенням створити середовище. Щоб почати, перейдіть до [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start). 
 
 Інтерфейс із підказками допоможе виконати кроки, необхідні для збирання усіх потрібних для нового середовища відомостей. Для створення середовищ та керування ними потрібні [дозволи адміністратора](permissions.md).
 
@@ -64,7 +64,7 @@ ms.locfileid: "7892363"
 > Наразі служба Customer Insights підтримує наведені нижче послуги.
 > - Сутності, отримані з циклів даних Power BI, що зберігаються в озері даних Data Lake, яке керується з Microsoft Dataverse.  
 > - Облікові записи Azure Data Lake Storage з того ж регіону Azure, який було вибрано під час створення середовища.
-> - Облікові записи Azure Data Lake Storage, для яких увімкнуто *ієрархічний простір імен*.
+> - Azure Data Lake Storage облікові записи, які є Gen2 і мають *ієрархічний простір імен* увімкнуто. Облікові записи сховища озера Даних Azure Gen1 не підтримуються.
 
 Автентифікацію для Azure Data Lake Storage можна вибирати з двох різних параметрів: параметра на основі ресурсу й параметра на основі передплати. Додаткові відомості див. в розділі [Підключення до облікового запису Azure Data Lake Storage за допомогою принципала служби Azure](connect-service-principal.md). Ім'я **Контейнера** буде `customerinsights`, і змінити його не можна.
 

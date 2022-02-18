@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
-ms.translationtype: MT
+ms.openlocfilehash: 413746e1896928d2c648ba59d67d4247a173da57
+ms.sourcegitcommit: 21854bb66ffa53948f659886f2e131236539ae88
+ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732289"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8100165"
 ---
 # <a name="work-with-customer-insights-apis"></a>Робота з Customer Insights APIs
 
-Dynamics 365 Customer Insights надає API для створення власних програм на основі ваших даних у Службі статистики клієнтів.
+Програма Dynamics 365 Customer Insights забезпечує API для розробки власних програм на основі даних у Customer Insights.
 
 > [!IMPORTANT]
 > Відомості про ці API наведено в [Довіднику Customer Insights API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Вони містять додаткові відомості про операції, параметри та відповіді.
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights надає API для створення влас
  
    Ввімкнення API створює первинний та вторинний ключ передплати для вашої інсталяції, які буд використано у запитах API. Ключі можна створити повторно, вибравши **Повторно створити первинний ключ** або **Повторно створити вторинний ключ** у меню **Адміністратор** > **Дозволи** > **API**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Ввімкнути Customer Insights APIs.":::
+<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
 1. Виберіть **Ознайомтеся щ нашими API**, щоб [випробувати API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -49,7 +49,7 @@ Dynamics 365 Customer Insights надає API для створення влас
 
 Відповідь HTTP скоро з'явиться нижче.
 
-   :::image type="content" source="media/try-apis.gif" alt-text="Як тестувати API.":::
+<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>Створення нової програми для реєстрації на порталі Azure
 
@@ -65,7 +65,7 @@ Dynamics 365 Customer Insights надає API для створення влас
 
 1. У новій реєстрації програми виберіть **дозволи API**.
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="Як задати дозволи API при реєстрації програми.":::
+<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
 
 1. Виберіть **Додати дозвіл** та виберіть **Customer Insights** в бічній області.
 
@@ -77,7 +77,7 @@ Dynamics 365 Customer Insights надає API для створення влас
 
 Для реєстрації цієї програми з Microsoft Authentication Library (MSAL) можна використати ідентифікатор програми/клієнта для отримання маркера на пред’явника, щоб надіслати з вашим запитом до API.
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="Як надати згоду адміністратора.":::
+<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 Для отримання додаткових відомостей про MSAL див. [Огляд бібліотеки автентифікації Microsoft (MSAL)](/azure/active-directory/develop/msal-overview).
 
@@ -103,7 +103,7 @@ Dynamics 365 Customer Insights надає API для створення влас
 
 1. Виберіть **Згода адміністратора для…**, щоб заповнити реєстрацію програми.
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="Як надати згоду адміністратора.":::
+ <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 1. Щоб завершити, необхідно додати назву реєстрації програми як користувача в Customer Insights.  
    
@@ -117,31 +117,31 @@ Dynamics 365 Customer Insights надає API для створення влас
 
 ### <a name="c-nuget"></a>C# NuGet
 
-Дізнайтеся, як почати користуватися клієнтськими бібліотеками C# з NuGet.org. Для отримання додаткових відомостей про NuGet пакет [див](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). На даний момент цей пакунок націлений на структури netstandard2.0 і netcoreapp2.0
+Дізнайтесь, як почати роботу з використанням клієнтської бібліотеки C# із програми NuGet.org. Для отримання додаткових відомостей про пакет NuGet див. розділ [Microsoft.Dynamics.CustomerInsights.Api](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). На даний момент цей пакунок націлений на структури netstandard2.0 і netcoreapp2.0
 
 #### <a name="add-the-c-client-library-to-a-c-project"></a>Додавання клієнтської бібліотеки C# до проекту C#
 
-1. У Visual Studio відкрийте **менеджер пакетів NuGet** для свого проекту.
+1. У програмі Visual Studio відкрийте **Диспетчер пакетів NuGet** для вашого проекту.
 
 1. Знайдіть **Microsoft.Dynamics.CustomerInsights.Api**.
 
 1. Виберіть **Інсталювати**, щоб додати пакет до проекту.
  
-   Крім того, запустіть цю команду в **консолі диспетчера пакетів NuGet** :`Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
+   Також цю команду можна виконати в **Консолі менеджера пакетів NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Додайте пакет NuGet до проекту Visual Studio.":::
+ <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### <a name="use-the-c-client-library"></a>Використання клієнтської бібліотеки C#
 
 1. Використовуйте [бібліотеку автентифікації Microsoft (MSAL)](/azure/active-directory/develop/msal-overview), щоб отримати `AccessToken` з використанням [реєстрації наявної програми Azure](#create-a-new-app-registration-in-the-azure-portal).
 
-1. Після успішної автентифікації та придбання маркера створіть новий або скористайтеся існуючим `HttpClient` з додатковим **defaultRequestHeaders "Авторизація",** встановленими на **"маркер доступу" Bearer** та **Ocp-Apim-Subscription-Key,** встановлених на ключ [**·** підписки з вашого середовища Customer Insights](#get-started-trying-the-customer-insights-apis).   
+1. Після успішної автентифікації та придбання маркера створіть новий або скористайтеся існуючим `HttpClient` з додатковим **defaultRequestHeaders "Авторизація"**, встановленими на **"маркер доступу"** Bearer та **Ocp-Apim-Subscription-Key, встановлених** на [**ключ** підписки з вашого середовища](#get-started-trying-the-customer-insights-apis) Customer Insights.   
  
    У разі потреби можна скинути заголовок **Авторизація**. Наприклад, коли термін дії маркера минув.
 
 1. Передайте цей `HttpClient` в конструкцію клієнта `CustomerInsights`.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="Приклад httpclient.":::
+<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
 1. Наприклад, можна робити виклики клієнта в «методах розширення» – наприклад, `GetAllInstancesAsync`. Якщо перевага надається основному `Microsoft.Rest.HttpOperationResponse`, використовуйте «http message methods» – наприклад, `GetAllInstancesWithHttpMessagesAsync`.
 
