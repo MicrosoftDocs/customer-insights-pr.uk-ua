@@ -1,6 +1,6 @@
 ---
 title: Аналіз настроїв для зворотного зв'язку з клієнтами
-description: 'Дізнайтеся, як використовувати модель аналізу настроїв для відгуків клієнтів у програми Dynamics 365 Customer Insights.'
+description: Дізнайтеся, як використовувати модель аналізу настроїв для відгуків клієнтів у програми Dynamics 365 Customer Insights.
 ms.date: 12/23/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,8 +9,13 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
+ms.openlocfilehash: 8a4473c1c395bbcf8efa2bfa24cddb82e1784279
+ms.sourcegitcommit: 15ec8c5f54242feda9489e7665726ec5e0983dc9
+ms.translationtype: HT
+ms.contentlocale: uk-UA
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8008790"
 ---
-
 # <a name="analyze-sentiment-in-customer-feedback-preview"></a>Аналіз настроїв у відгуках клієнтів (Попередній перегляд)
 
 Клієнти очікують високої якості продуктів, послуг і досвіду в ці дні. Особливо клієнти, які діляться своїми відгуками. Організаціям дуже складно аналізувати зростаючий обсяг даних без зниження точності і більш високих витрат на робочу силу. Dynamics 365 Customer Insights пропонує модель аналізу настроїв для зворотного зв'язку з клієнтами, яка дозволяє організаціям аналізувати свої дані більш точно і за нижчою ціною.

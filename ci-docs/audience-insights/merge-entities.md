@@ -10,9 +10,14 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-  - ci-merge
+- ci-merge
+ms.openlocfilehash: eb08ab38d23bf22a17896b63c93e6821431b002a
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.translationtype: HT
+ms.contentlocale: uk-UA
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046648"
 ---
-
 # <a name="merge-entities"></a>Об'єднання сутностями
 
 Фаза злиття — це остання фаза в процесі уніфікації даних. Її мета — узгодження суперечливих даних. Приклади суперечливих даних можуть містити ім’я клієнта, знайдене в двох наборах даних, яке відображається в кожному наборі по-різному (Grant Marshall і Grant Marshal) або номер телефону, який відрізняється форматом (617-803-091X і 617803091X). Злиття цих конфліктуючих точок даних виконується на основі методу «атрибут за атрибутом».

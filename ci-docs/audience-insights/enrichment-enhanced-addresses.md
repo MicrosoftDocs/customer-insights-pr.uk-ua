@@ -1,6 +1,6 @@
 ---
 title: Адреса покращення збагачення (містить відео)
-description: 'Збагачуйте та нормалізуйте відомості про адресу у профілях клієнтів, використовуючи моделі Microsoft.'
+description: Збагачуйте та нормалізуйте відомості про адресу у профілях клієнтів, використовуючи моделі Microsoft.
 ms.date: 01/19/2022
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,8 +9,13 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
+ms.openlocfilehash: ba43d24ac5ae8846da87f0d41234d8616c2f8070
+ms.sourcegitcommit: 4c9db6c124d7244e7e8bb2f8bfdc697523781c31
+ms.translationtype: HT
+ms.contentlocale: uk-UA
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8010934"
 ---
-
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>Збагачення профілів клієнтів вдосконаленими адресами
 
 Адреси в даних можуть бути неструктуровані, неповні або неправильні. Використовуйте моделі Microsoft, щоб нормалізувати та збагатити адреси, привівши їх до [формату Common Data Model](/common-data-model/schema/core/applicationcommon/address) для забезпечення вищої точності та якості аналітичних висновків.

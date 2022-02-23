@@ -9,8 +9,13 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
+ms.openlocfilehash: 693e2f410a77cbf2e87ff0132ce963aab7e8e3e4
+ms.sourcegitcommit: 4c9db6c124d7244e7e8bb2f8bfdc697523781c31
+ms.translationtype: HT
+ms.contentlocale: uk-UA
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8010954"
 ---
-
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>Збагачення профілів компаній з розширеними даними компанії
 
 Використовуйте моделі Microsoft і скомпільовані дані компанії, щоб виправляти, доповнювати та стандартизувати профілі компанії. Ми будемо використовувати [формат](/common-data-model/schema/core/applicationcommon/account) Загальної моделі даних для кращої точності та статистики.
