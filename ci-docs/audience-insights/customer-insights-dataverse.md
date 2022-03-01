@@ -1,7 +1,7 @@
 ---
-title: Дані статистики клієнтів у Microsoft Dataverse
-description: Використовуйте сутності Статистики клієнтів як таблиці в Microsoft Dataverse.
-ms.date: 11/25/2021
+title: Дані Customer Insights у Microsoft Dataverse
+description: Використовуйте сутності Customer Insights як таблиці у Microsoft Dataverse.
+ms.date: 10/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,35 +9,35 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 6f74559b34a95ed976a4e353c2dbabe59e1a8839
-ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
+ms.openlocfilehash: 9855ff6908001dd18bc19a286fc56620d0a127e5
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7866959"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645243"
 ---
-# <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Робота з даними статистики клієнтів у Microsoft Dataverse
+# <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Робота із даними Customer Insights у Microsoft Dataverse
 
-Статистика клієнтів надає можливість зробити сутності виводу доступними в [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md). Ця інтеграція дає змогу легко використовувати дані спільно і розробляти користувацькі рішення, майже не застосовуючи кодування даних або й зовсім без написання коду. Сутності виводу будуть доступні як таблиці в Dataverse. Ці таблиці дозволяють сценарії, такі як [автоматизовані робочі цикли, за допомогою](/power-automate/getting-started) Power Automate, [програм на основі моделі та програм на](/powerapps/maker/model-driven-apps/)[полотні через](/powerapps/maker/canvas-apps/) Power Apps. Дані можна використовувати для будь-якої іншої програми, заснованої на Dataverse таблицях. Поточна реалізація підтримує здебільшого підстановки, в яких можна отримувати дані для певного ідентифікатора клієнта з наявних сутностей аналізу аудиторії.
+Customer Insights дозволяє зробити вихідні сутності доступними в [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md). Ця інтеграція дає змогу легко використовувати дані спільно і розробляти користувацькі рішення, майже не застосовуючи кодування даних або й зовсім без написання коду. Вихідні сутності будуть доступні як таблиці в Dataverse. Ці таблиці дозволяють використовувати такі сценарії, як [автоматизація робочих циклів за допомогою Power Automate](/power-automate/getting-started), а також [модельні програми](/powerapps/maker/model-driven-apps/) та [компоновані програми](/powerapps/maker/canvas-apps/) із використанням Power Apps. Дані можна використовувати для будь-якої іншої програми, основаній на таблицях Dataverse. Поточна реалізація підтримує здебільшого підстановки, в яких можна отримувати дані для певного ідентифікатора клієнта з наявних сутностей аналізу аудиторії.
 
-## <a name="attach-a-dataverse-environment-to-customer-insights"></a>Вкласти Dataverse середовище до статистики клієнтів
+## <a name="attach-a-dataverse-environment-to-customer-insights"></a>прикріплення середовища Dataverse до Customer Insights
 
-**Організації з наявними Dataverse середовищами**
+**Організації з наявними середовищами Dataverse**
 
-Організації, які вже використовують Dataverse, можуть [використовувати одне з наявних Dataverse середовищ,](create-environment.md) коли адміністратор налаштовує статистику аудиторії. Надаючи URL-адресу Dataverse середовищі, вона додається до нового середовища статистики аудиторії. Щоб забезпечити найкращу продуктивність, у тому самому регіоні має бути розміщено статистику клієнтів і Dataverse середовища.
+Організації, які вже використовують Dataverse, можуть [використовувати одне зі своїх наявних середовищ Dataverse](create-environment.md), якщо адміністратор настроїть аналіз аудиторій. Якщо вказати URL-адресу у середовищі Dataverse, його можна прикріпити до нового середовища аналізу аудиторії. Для того, щоб продуктивність була якомога вищою, потрібно розміщувати Customer Insights та Dataverse в одному регіоні.
 
 **Нова організація**
 
-Якщо під час настроювання статистики клієнтів створюється нова організація, ви автоматично отримаєте нове Dataverse середовище.
+Якщо під час настройки Customer Insights створюється нова організація, ви автоматично отримуєте нове середовище Dataverse.
 
 > [!NOTE]
-> Якщо організації вже використовують Dataverse у своєму клієнті, важливо пам'ятати, що [створення Dataverse середовища контролюється адміністратором.](/power-platform/admin/control-environment-creation.md) Наприклад, якщо ви налаштовуєте нове середовище статистики аудиторії за допомогою облікового запису організації, а адміністратор вимкнув створення Dataverse ознайомлювального середовища для всіх, крім адміністраторів, створити нове ознайомлювальну середовище не можна.
+> Якщо організації вже використовують Dataverse у клієнті, важливо пам'ятати, що [створенням середовищ Dataverse керує адміністратор](/power-platform/admin/control-environment-creation.md). Наприклад, якщо ви налаштовуєте нове середовище статистики аудиторії, використовуючи обліковий запис вашої організації, а адміністратор вимкнув створення ознайомлювальних середовищ Dataverse для всіх, крім адміністраторів, ви не зможете створити нове ознайомлювальне середовище.
 > 
-> Ознайомлювальну Dataverse середовища, створену в Customer Insights, має 3 ГБ пам'яті, що не враховуватимуть загальну ємність, що має право на клієнта. Платні підписки отримують Dataverse права 15 ГБ для бази даних і 20 ГБ для зберігання файлів.
+> Ознайомлювальні середовища Dataverse, створені в Customer Insights, мають 3 ГБ сховища, які не враховуються в загальній виробничій спроможності, гарантованій клієнту. Платні версії отримують для Dataverse право на використання обсягу 15 ГБ для бази даних і 20 ГБ для сховища файлів.
 
 ## <a name="output-entities"></a>Вихідні сутності
 
-Деякі сутності виводу зі статистики аудиторії доступні як таблиці в Dataverse. У розділах нижче описано очікувану схему таких таблиць.
+Деякі вихідні сутності статистики аудиторії доступні в Dataverse як таблиці. У розділах нижче описано очікувану схему таких таблиць.
 
 - [CustomerProfile](#customerprofile)
 - [AlternateKey](#alternatekey)
@@ -45,7 +45,6 @@ ms.locfileid: "7866959"
 - [CustomerMeasure](#customermeasure)
 - [Збагачення](#enrichment)
 - [Прогноз](#prediction)
-- [Членство в сегменті](#segment-membership)
 
 
 ### <a name="customerprofile"></a>CustomerProfile
@@ -61,7 +60,7 @@ ms.locfileid: "7866959"
 |DataSourceName    |String         | Ім'я джерела даних. Наприклад: `datasource5`        |
 |EntityName        | String        | Ім'я сутності в аналізі аудиторії. Наприклад: `contact1`        |
 |AlternateValue    |String         |Альтернативний ідентифікатор, зіставлений з ідентифікатором клієнта. Приклад: `cntid_1078`         |
-|KeyRing           | Багаторядковий текст        | Значення JSON  </br> Зразок: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"ключі":[" cntid_1078"]}]       |
+|KeyRing           | Багаторядковий текст        | Значення JSON  </br> Зразок: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
 |Ідентифікатор клієнта         | String        | Ідентифікатор уніфікованого профілю клієнта.         |
 |AlternateKeyId     | GUID         |  Визначальний ідентифікатор GUID AlternateKey на основі msdynci_identifier       |
 |msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Зразок: `testdatasource|contact1|cntid_1078`    |
@@ -122,16 +121,3 @@ ms.locfileid: "7866959"
 | Значення               | Рядок JSON | Список атрибутів, створених моделлю |
 | msdynci_predictionid | GUID        | Визначальний ідентифікатор GUID, створений на основі msdynci_identifier | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
-
-### <a name="segment-membership"></a>Членство в сегменті
-
-Ця таблиця містить відомості про членство в сегменті профілів клієнтів.
-
-| Column        | Ввести | Опис                        |
-|--------------------|--------------|-----------------------------|
-| Ідентифікатор клієнта        | String       | Ідентифікатор профілю клієнта        |
-| SegmentProvider      | String       | Додаток, який публікує сегменти. За замовчуванням: статистика аудиторії         |
-| Тип сегмента | String       | Тип клієнта цей запис членства в сегменті. Підтримує кілька типів, наприклад Клієнт, Контактна особа або Бізнес-партнер. За замовчуванням: клієнт  |
-| Сегменти       | Рядок JSON  | Список унікальних сегментів, членом яких є профіль клієнта      |
-| msdynci_identifier  | String   | Унікальний ідентифікатор запису членства в сегменті. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
-| msdynci_segmentmembershipid | GUID      | Детермінований GUID, створений з`msdynci_identifier`          |

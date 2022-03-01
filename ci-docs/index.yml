@@ -4,17 +4,17 @@ metadata:
   author: m-hartmann
   description: Знайдіть відповідні статті, щоб почати з вмісту довідки.
   ms.author: mhart
-  ms.date: 03/02/2022
+  ms.date: 10/29/2020
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: e154b37f57bb2765f48a9f6b38f86dffcb05f403
-  ms.sourcegitcommit: a371fc1e75b2321e45d3f972a3ac84c725f8cc38
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
   ms.translationtype: HT
   ms.contentlocale: uk-UA
-  ms.lasthandoff: 02/10/2022
-  ms.locfileid: "8107224"
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4407285"
 title: Документація Dynamics 365 Customer Insights
-summary: Знайдіть корисні ресурси для початку роботу та ознайомлення з функціями та можливостями Customer Insights.
+summary: Знайдіть корисні ресурси для початку роботи та дізнайтесь про функції та можливості Customer Insights.
 landingContent:
 - title: Познайомтеся з Customer Insights
   linkLists:
@@ -23,41 +23,19 @@ landingContent:
     - text: Огляд Customer Insights
       url: overview.md
     - text: Плани випусків
-      url: /dynamics365/release-plans/
-    - text: Знайомство з CDP
-      url: https://dynamics.microsoft.com/ai/customer-insights/
-  - linkListType: learn
-    links:
-    - text: Навчальний шлях для статистики клієнтів
-      url: /learn/paths/build-customer-insights/
-- title: Початок роботи з Customer Insights
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: Доступ до середовища
+      url: https://home.ci.ai.dynamics.com/
+- title: Початок роботи з аналізом аудиторії
   linkLists:
   - linkListType: get-started
     links:
     - text: Реєстрація для отримання ознайомлювальної версії
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: Що нового в аналізі аудиторії
+    - text: Що нового
       url: audience-insights/whats-new-audience-insights.md
-    - text: Посібник зі швидкого початку роботи
-      url: audience-insights/get-started.md
-  - linkListType: learn
-    links:
-    - text: Почати
-      url: /learn/modules/get-started-customer-data-platform/
-- title: Керування аналізом аудиторії
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Налаштуйте систему
-      url: audience-insights/system.md
-    - text: Визначення дозволів користувачів
-      url: audience-insights/permissions.md
-    - text: Керування кількома середовищами
-      url: audience-insights/manage-environments.md
-  - linkListType: learn
-    links:
-    - text: Адмініструйте Customer Insights
-      url: /learn/modules/administer-customer-data-platform/
+    - text: Документація аналізу аудиторії
+      url: audience-insights/index.yml
 - title: Зв’язатися
   linkLists:
   - linkListType: overview
@@ -68,16 +46,16 @@ landingContent:
       url: https://go.microsoft.com/fwlink/?linkid=2074172
     - text: Повідомити про проблему
       url: https://go.microsoft.com/fwlink/?linkid=2079641
-- title: Спільне використання даних різними функціями
+- title: Навчальні посібники з аналізу аудиторії
   linkLists:
-  - linkListType: how-to-guide
+  - linkListType: tutorial
     links:
-    - text: Створення зв'язку між можливостями
-      url: engagement-insights/integrate-audience-insights-engagement-insights.md
-    - text: Створення сегментів для використання у звітах
-      url: engagement-insights/integrate-audience-insights-segments.md
-    - text: Використання властивостей профілю для інтерактивного аналізу
-      url: engagement-insights/curate-dimensions.md
+    - text: Створити нове середовище
+      url: audience-insights/home.md
+    - text: Створення уніфікованого профілю клієнта
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - text: Робота з програмою
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
 - title: Експорт даних з аналізу аудиторії
   linkLists:
   - linkListType: how-to-guide
@@ -88,6 +66,16 @@ landingContent:
       url: audience-insights/customer-card-add-in.md
     - text: З’єднувач Power BI
       url: audience-insights/export-power-bi.md
+- title: Керування аналізом аудиторії
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Налаштуйте систему
+      url: audience-insights/system.md
+    - text: Визначення дозволів користувачів
+      url: audience-insights/permissions.md
+    - text: Керування кількома середовищами
+      url: audience-insights/manage-environments.md
 - title: Інформація про аналіз сценаріїв (попередній перегляд)
   linkLists:
   - linkListType: overview

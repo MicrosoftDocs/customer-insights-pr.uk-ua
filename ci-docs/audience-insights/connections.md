@@ -5,16 +5,16 @@ ms.date: 04/09/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: e78e18b75ee9797b5fc76486615992e301e4c650
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977762"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304997"
 ---
 # <a name="connections-preview-overview"></a>Огляд підключень (підготовча версія)
 
@@ -47,7 +47,6 @@ ms.locfileid: "7977762"
 1. У області **Налаштування підключення** введіть необхідні докладні відомості. 
    1. Поля **Коротке ім’я** та тип підключення описують підключення. Ми рекомендуємо вибирати ім’я, яке роз’яснює ціль і мету даного підключення.
    1. Якими саме будуть поля залежить від того, до якої служби ви підключаєтеся. Докладніше про певний тип з'єднання можна дізнатися в статті про цільову службу.
-   1. Якщо ви зберігаєте секрети, використовуючи [власне сховище ключів Key Vault](use-azure-key-vault.md), активуйте **Використовувати Key Vault** та виберіть секрет зі списку.
 
 1. Щоб створити підключення, виберіть **Зберегти**.
 
@@ -94,6 +93,3 @@ ms.locfileid: "7977762"
 
 1. Щоб підтвердити видалення, виберіть **Видалити**.
 
-## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>Настроювання підключень із секретами, якими керує власне сховище Key Vault
-
-Для деяких підключень потрібні секрети, наприклад ключі API або паролі. Деякі підключення підтримують секрети, збережені у власному сховищі ключів Key Vault. Докладніше про підтримувані підключення та налаштування [власного сховища ключів Key Vault для аналізу аудиторій](use-azure-key-vault.md).

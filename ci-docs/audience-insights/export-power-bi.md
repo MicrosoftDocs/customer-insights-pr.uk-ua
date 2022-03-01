@@ -1,20 +1,20 @@
 ---
 title: З’єднувач Power BI
 description: Дізнайтесь, як використовувати з’єднувач Dynamics 365 Customer Insights у Power BI.
-ms.date: 07/23/2021
-ms.reviewer: mhart
+ms.date: 09/21/2020
+ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: a0ca431dbea839fe271cf3a512cd3a5dde6d920d396056e91b33bcf7ed84272a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: d497ca779a337c512a7254524f597cff226bcb45
+ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035532"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4407237"
 ---
 # <a name="connector-for-power-bi-preview"></a>З’єднувач для Power BI (підготовча версія)
 
@@ -23,7 +23,7 @@ ms.locfileid: "7035532"
 ## <a name="prerequisites"></a>Вимоги
 
 - Ви маєте уніфіковані профілів клієнта.
-- На комп’ютері інстальована остання версія [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/). [Дізнайтеся більше про Power BI Desktop](/power-bi/desktop-what-is-desktop).
+- На комп'ютері інстальовано найновішу версію [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/). [Дізнайтеся більше про Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-what-is-desktop).
 
 ## <a name="configure-the-connector-for-power-bi"></a>Настроювання з’єднувача для Power BI
 
@@ -31,7 +31,7 @@ ms.locfileid: "7035532"
 
 1. Клацніть **Більше** і виконайте пошук **Dynamics 365 Customer Insights**
 
-1. Виберіть **Підключити**.
+1. Виберіть відповідний результат і натисніть кнопку **З’єднати**.
 
 1. **Увійдіть** у систему за допомогою того самого облікового запису організації, що використовується для Customer Insights, і натисніть **З’єднати**.
    > [!NOTE]
@@ -39,7 +39,7 @@ ms.locfileid: "7035532"
 
 1. У діалоговому вікні **Навігатор**. ви бачите список усіх середовищ, до яких є доступ. Розгорніть середовище та відкрийте будь-які папки (сутності, показники, сегменти, збагачення). Наприклад, відкрийте папку **Сутності**, щоб переглянути всі сутності, які можна імпортувати.
 
-   ![Power BI Connector Navigator.](media/power-bi-navigator.png "Power BI Connector Navigator")
+   ![Power BI Connector Navigator](media/power-bi-navigator.png "Power BI Connector Navigator")
 
 1. Установіть прапорці поруч із сутностями, які необхідно включити, і натисніть **Завантажити**. Можна вибрати кілька сутностей з кількох середовищ.
 
@@ -47,32 +47,8 @@ ms.locfileid: "7035532"
 
 ## <a name="large-data-sets"></a>Великі набори даних
 
-З'єднувач Customer Insights для Power BI призначений для роботи з наборами даних, що містять до 1 000 000 профілів клієнтів. Імпортування більших наборів, скоріш за все, працюватиме, але потребуватиме багато часу. Крім того, процес може вичерпати час, відведений на виконання обмеженнями Power BI. Для отримання додаткових відомостей див. розділ [Power BI: рекомендації щодо великих наборів даних](/power-bi/admin/service-premium-what-is#large-datasets). 
+З'єднувач Customer Insights для Power BI призначений для роботи з наборами даних, що містять до 1 000 000 профілів клієнтів. Імпортування більших наборів, скоріш за все, працюватиме, але потребуватиме багато часу. Крім того, процес може вичерпати час, відведений на виконання обмеженнями Power BI. Для отримання додаткових відомостей див. розділ [Power BI: рекомендації щодо великих наборів даних](https://docs.microsoft.com/power-bi/admin/service-premium-what-is#large-datasets). 
 
 ### <a name="work-with-a-subset-of-data"></a>Робота з підмножиною даних
 
 Розглянемо роботу з підмножиною даних. Наприклад, можна створити [сегменти](segments.md) замість експортування всіх записів клієнтів до програми Power BI.
-
-## <a name="troubleshooting"></a>Виправлення неполадок
-
-### <a name="customer-insights-environment-doesnt-show-in-power-bi"></a>Середовище Customer Insights не відображається в Power BI
-
-Середовища, для яких визначено більше одного [зв’язка](relationships.md) між двома ідентичними сутностями в аналізі аудиторії, будуть недоступні в з’єднувачі Power BI.
-
-Можна визначити та видалити дублікати зв'язків.
-
-1. В аналізі аудиторії відкрийте **Дані** > **Зв’язки** у середовищі, що відсутнє у Power BI.
-2. Визначення дублікатів зв'язків:
-   - Перевірте, чи існує більше одного визначеного зв’язку між однаковими сутностями.
-   - Перевірте, чи є зв'язки між двома сутностями, що обидва беруть участь в процесі уніфікації. Існує неявний зв'язок, визначений між усіма сутностями, включеними до процесу об'єднання.
-3. Видаліть усі виявлені дублікати зв'язків.
-
-Після видалення дублікатів зв'язків спробуйте знову налаштувати з’єднувач Power BI. Тепер середовище має бути доступним.
-
-### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>Помилки у полях дат під час завантаження сутностей у Power BI Desktop
-
-Під час завантаження сутностей, які містять поля з форматом дати, наприклад MM/DD/YYYY, можуть виникнути помилки через невідповідність локальним шаблонам. Ця невідповідність трапляється, якщо файл Power BI Desktop налаштовано на іншу мову, ніж англійська (Сполучені Штати), оскільки поля дат в оглядах аудиторії зберігаються у форматі США.
-
-Файл Power BI Desktop має один параметр локальності, який застосовується під час отримання даних. Для правильного тлумачення полів даних установіть локаль для файлу .BPI на англійську (Сполучені Штати). [Навчіться змінювати регіональні параметри файлу Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

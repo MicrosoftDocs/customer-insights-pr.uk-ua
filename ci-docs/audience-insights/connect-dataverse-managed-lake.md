@@ -1,7 +1,7 @@
 ---
 title: Підключення до таблиць у Microsoft Dataverse
 description: Імпорт даних із керованого озера даних Microsoft Dataverse.
-ms.date: 12/06/2021
+ms.date: 07/23/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,25 +9,22 @@ author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: 436345d8932820eb4c517a9e9164b1377c1f62d3
-ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.openlocfilehash: f92d64723e6a4d2fcebdbb3758519d4bfd4aeaf4
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8046450"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692599"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Підключення до даних в озері з керованим даними Microsoft Dataverse
 
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-
-У цій статті наведено відомості про те, як Dataverse користувачі можуть швидко підключатися до аналітичних сутностей у керованому Microsoft Dataverse озері. 
-
-> [!NOTE]
-> Щоб продовжити та переглянути список сутностей, доступних у керованому озері, потрібно бути адміністратором Dataverse організації.
+У цій статті наведено інформацію про те, як користувачі Dataverse можуть швидко підключатися до своїх аналітичних сутностей у керованому озері Dataverse. Для продовження та перегляду списку сутностей, доступних у керованому озері, ви повинні бути адміністратором організації Dataverse.
 
 ## <a name="important-considerations"></a>Важливі міркування
 
-Дані, що зберігаються в онлайнових службах, наприклад, Azure Data Lake Storage, можуть зберігатися в розташуванні, відмінному від того, в якому дані обробляються або зберігаються в Dynamics 365 Customer Insights.Імпортуючи або підключаючись до даних, що зберігаються в онлайнових службах, ви погоджуєтеся з тим, що дані можна передавати та зберігати за допомогою Dynamics 365 Customer Insights програми . [Дізнайтеся більше в Центрі безпеки та конфіденційності Microsoft](https://www.microsoft.com/trust-center).
+Дані, що зберігаються в онлайнових службах, наприклад, Azure Data Lake Storage, можуть зберігатися в розташуванні, відмінному від того, в якому дані обробляються або зберігаються в Dynamics 365 Customer Insights.Імпортуючи дані, що зберігаються в онлайнових службах, або встановлюючи підключення до таких даних, ви надаєте згоду, що дані можуть передаватися до Dynamics 365 Customer Insights і зберігатися в цій службі.  [Дізнайтесь більше в Центрі безпеки та конфіденційності Microsoft.](https://www.microsoft.com/trust-center)
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Підключення до керованого озера Dataverse
 
@@ -35,9 +32,12 @@ ms.locfileid: "8046450"
 
 2. Виберіть **Додати джерело даних**.
 
-3. Виберіть **Microsoft Dataverse** і натисніть кнопку **Далі**.
+3. Натисніть **Підключитися до керованого озера Microsoft Dataverse** і виберіть **Далі**.
 
-4. Введіть **Ім’я** джерела даних, потім виберіть **Далі**. 
+4. Введіть **Ім’я** джерела даних, потім виберіть **Далі**. Рекомендації щодо імен: 
+   - Починайте з букви.
+   - Використовуйте лише букви та цифри. Не можна використовувати спеціальні символи та пробіли.
+   - Використовуйте від 3 до 64 символів.
 
 5. Укажіть **Адресу сервера** для організації Dataverse і виберіть **Увійти в систему**.
 

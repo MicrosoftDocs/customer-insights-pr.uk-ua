@@ -1,6 +1,6 @@
 ---
 title: Запити прав суб’єкта даних (DSR) відповідно до GDPR | Microsoft Docs
-description: Відповідайте на запити суб'єкта даних для Dynamics 365 Customer Insights можливостей статистики аудиторії.
+description: Відповідь на запити суб'єкта прав для можливості аналізу аудиторії в Dynamics 365 Customer Insights.
 ms.date: 08/11/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: c116f7ce208c0288851a4b2230e27784ba3a5337
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 6faaeb6a1ee34c3e5c8e7d465b37cee589bc920c
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732705"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483718"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Запити прав суб'єкта даних (DSR) відповідно до GDPR
 
@@ -24,7 +24,7 @@ ms.locfileid: "7732705"
 
 ## <a name="audience-insights"></a>Аналіз аудиторії
 
-### <a name="responding-to-gdpr-data-subject-delete-requests-for-dynamics-365-customer-insights-audience-insights-capability"></a>Відповідь на запити суб'єкта даних GDPR на отримання можливостей статистики Dynamics 365 Customer Insights аудиторії
+### <a name="responding-to-gdpr-data-subject-delete-requests-for-dynamics-365-customer-insights-audience-insights-capability"></a>Відповідь на запити про видалення суб'єкта прав GDPR для можливості аналізу аудиторії в Dynamics 365 Customer Insights.
 
 «Право на видалення» шляхом видалення персональних даних з даних клієнтів організації є ключовим в Генеральному регламенті із захисту персональних даних (GDPR). Видалення особистих даних передбачає видалення всіх особистих даних і журналів, створених системою, за винятком відомостей журналу відстеження.
 
@@ -39,7 +39,7 @@ ms.locfileid: "7732705"
 
 Адміністратор Customer Insights може виконати зазначені нижче кроки, щоб видалити дані про клієнта, що були видалені у джерелі даних.
 
-1. увійдіть до Dynamics 365 Customer Insights.
+1. Увійти до Dynamics 365 Customer Insights.
 2. У розділі «Аналіз аудиторії» виберіть **Дані** > **Джерела даних**.
 3. Для кожного джерела даних у списку, що містить видалені дані про клієнта, виконайте зазначені нижче дії.
    1. Виберіть (...), а потім виберіть **Оновити**.
@@ -52,7 +52,7 @@ ms.locfileid: "7732705"
 
 Адміністратор Customer Insights може виконати ці кроки, щоб видалити дані користувача Customer Insights.
 
-1. увійдіть до Dynamics 365 Customer Insights.
+1. Увійти до Dynamics 365 Customer Insights.
 2. У розділі «Аналіз аудиторії» виберіть **Адміністратор** > **Дозволи**.
 3. Установіть прапорець навпроти користувача, якого потрібно видалити.
 4. Натисніть **Видалити**.
@@ -79,14 +79,7 @@ ms.locfileid: "7732705"
 2. Отримати підтвердження експорту даних для користувача, щодо якого створено запит.
 3. Отримати експортовані дані на адресу електронної пошти адміністратора клієнта.
 
-## <a name="consent-management-preview"></a>Керування згодою (попередній перегляд)
-
-Можливість керування згодою не збирає дані користувача безпосередньо. Він імпортує та обробляє дані згоди, які надаються користувачами в інших програмах.
-
-Щоб видалити дані про згоду щодо певних користувачів, видаліть їх у джерелах даних, які поширилися на можливість керування згодою. Після оновлення джерело даних видалені дані також буде видалено в Центрі згоди. Застосунки, які використовують сутність згоди, також видалятимуть дані, видалені з джерела після [оновлення](audience-insights/system.md#refresh-processes). Ми рекомендуємо швидко оновлювати джерела даних після відповіді на запит суб'єкта даних, щоб видалити дані користувача з усіх інших процесів і програм.
-
-
-## <a name="engagement-insights-preview"></a>Engagement insights (підготовча версія)
+## <a name="engagement-insights"></a>Аналітика взаємодії
 
 ### <a name="deleting-and-exporting-event-data-containing-end-user-identifiable-information"></a>Видалення та експорт даних про події, що містять персональні дані кінцевого користувача
 

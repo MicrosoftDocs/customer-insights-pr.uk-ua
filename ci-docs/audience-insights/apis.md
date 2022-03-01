@@ -1,29 +1,29 @@
 ---
 title: Робота з API
 description: Використання API пояснення обмежень.
-ms.date: 05/10/2021
+ms.date: 12/04/2020
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: wimohabb
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 413746e1896928d2c648ba59d67d4247a173da57
-ms.sourcegitcommit: 21854bb66ffa53948f659886f2e131236539ae88
+ms.openlocfilehash: 5a03e916676800afdd8692da865a1060952d5c4f
+ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "8100165"
+ms.lasthandoff: 12/06/2020
+ms.locfileid: "4689155"
 ---
 # <a name="work-with-customer-insights-apis"></a>Робота з Customer Insights APIs
 
-Програма Dynamics 365 Customer Insights забезпечує API для розробки власних програм на основі даних у Customer Insights.
+Dynamics 365 Customer Insights забезпечує API для створення власних програм на основі даних у Customer Insights.
 
 > [!IMPORTANT]
 > Відомості про ці API наведено в [Довіднику Customer Insights API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Вони містять додаткові відомості про операції, параметри та відповіді.
 
-У цій статті описано API Customer Insights, створення реєстрації в програмі Azure та початок із використанням доступних клієнтських бібліотек.
+У цій статті наведено відомості про доступ до Customer Insights API, створення реєстрації програми Azure та надання допомоги для початку роботи з наявними клієнтськими бібліотеками.
 
 ## <a name="get-started-trying-the-customer-insights-apis"></a>Почати роботу з Customer Insights API
 
@@ -32,16 +32,15 @@ ms.locfileid: "8100165"
 1. Щоб увімкнути API в Customer Insights, виберіть **Адміністратор** > **Дозволи**. Для цього потрібно мати дозвіл адміністратора.
 
 1. Перейдіть на вкладку **API** та натисніть кнопку **Ввімкнути**.    
- 
    Ввімкнення API створює первинний та вторинний ключ передплати для вашої інсталяції, які буд використано у запитах API. Ключі можна створити повторно, вибравши **Повторно створити первинний ключ** або **Повторно створити вторинний ключ** у меню **Адміністратор** > **Дозволи** > **API**.
 
-<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
+   :::image type="content" source="media/enable-apis.gif" alt-text="Ввімкнути Customer Insights APIs":::
 
-1. Виберіть **Ознайомтеся щ нашими API**, щоб [випробувати API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
+1. Виберіть **Ознайомтеся з нашими API**, щоб випробувати API.
 
 1. Виберіть операцію API та натисніть кнопку **Спробувати**.
 
-1. На бічній панелі в розкривному меню **Авторизація** задайте значення **неявна**. У заголовку `Authorization` додається маркер на пред’явника. Ключ передплати буде автоматично заповнено.
+1. У бічній області установіть для параметру в розкривному меню **Авторизація** значення **Неявна**. Верхній колонтитул `Authorization` отримає доданий маркер на пред’явника. Ключ передплати буде автоматично заповнено.
   
 1. Крім того, можна додати всі необхідні параметри запиту.
 
@@ -49,27 +48,22 @@ ms.locfileid: "8100165"
 
 Відповідь HTTP скоро з'явиться нижче.
 
-<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
-
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>Створення нової програми для реєстрації на порталі Azure
 
-Ці кроки допоможуть почати користуватися API Customer Insights у програмі Azure з використанням делегованих дозволів. Спочатку обов’язково заповніть розділ [Почати](#get-started-trying-the-customer-insights-apis).
+Ці кроки допоможуть розпочати використання Customer Insights API у програмі Azure, використовуючи делеговані дозволи. Перевірте, щоб спочатку був заповнений [розділ «Початок роботи»](#get-started-trying-the-customer-insights-apis).
 
 1. Увійдіть до [порталу Azure](https://portal.azure.com) з обліковим записом, який може отримати доступ до даних Customer Insights.
 
 1. На лівій панелі виберіть пункт **Реєстрації програми**.
 
-1. Виберіть пункт **Нова реєстрація**, зазначте ім’я програми та виберіть тип бізнес-партнера.
- 
+1. Виберіть пункт **Нова реєстрація**, надайте ім'я програми та виберіть тип бізнес-партнера.
    Крім того, можна додати URL для переспрямування. http://localhost є достатнім для розробки програми на локальному комп'ютері.
 
 1. У новій реєстрації програми виберіть **дозволи API**.
 
-<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
-
 1. Виберіть **Додати дозвіл** та виберіть **Customer Insights** в бічній області.
 
-1. Для параметра **Тип дозволу** виберіть **Делеговані дозволи**, потім виберіть дозвіл **user_impersonation**.
+1. Для **Типу дозволів** виберіть параметр **Делеговані дозволи** й виберіть досвід **Уособлення користувача**.
 
 1. Виберіть **Додати дозволи**. Якщо потрібно отримати доступ до API без входу користувача, перегляньте розділ [Міжсерверні дозволи програм](#server-to-server-application-permissions).
 
@@ -77,13 +71,11 @@ ms.locfileid: "8100165"
 
 Для реєстрації цієї програми з Microsoft Authentication Library (MSAL) можна використати ідентифікатор програми/клієнта для отримання маркера на пред’явника, щоб надіслати з вашим запитом до API.
 
-<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
+Для отримання додаткових відомостей про MSAL див. [Огляд бібліотеки автентифікації Microsoft (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
 
-Для отримання додаткових відомостей про MSAL див. [Огляд бібліотеки автентифікації Microsoft (MSAL)](/azure/active-directory/develop/msal-overview).
+Для отримання додаткових відомостей про реєстрацію програми в Azure див. [Реєстрація нової програми на порталі Azure](https://docs.microsoft.com/azure/active-directory/develop/app-registration-portal-training-guide).
 
-Докладніше про реєстрацію програми в Azure див. у розділі [Реєстрація програми](/azure/active-directory/develop/quickstart-register-app.md#register-an-application).
-
-Відомості про використання API у клієнтських бібліотеках див. у розділі [«Клієнтські бібліотеки Customer Insights»](#customer-insights-client-libraries).
+Для отримання інформації про використання бібліотек наших клієнтів API див. [Бібліотеки клієнтів Customer Insights](#customer-insights-client-libraries).
 
 ### <a name="server-to-server-application-permissions"></a>Міжсерверні дозволи програм
 
@@ -91,29 +83,32 @@ ms.locfileid: "8100165"
 
 1. У реєстрації програми на порталі Azure виберіть **Дозволи API**.
 
-1. Виберіть **Додати дозвіл**. 
+1. Виберіть **Додати дозвіл** та виберіть **Customer Insights** в бічній області.
 
-1. Виберіть вкладку **API, які використовує моя організація**, і виберіть **ШІ Dynamics 365 для Customer Insights** у списку. 
-
-1. Для параметра **Тип дозволу** виберіть **Дозволи програм**, потім виберіть дозвіл **CustomerInsights.Api.All**.
+1. Для **Типу дозволів** натисніть **Дозволи програми** й виберіть дозвіл **CustomerInsights.Api.All**.
 
 1. Виберіть **Додати дозволи**.
+
+1. Щоб надати адміністратору згоду на дозвіл для цієї програми, необхідно додати основну послугу.
+
+   1. Інсталяція модуля Azure Active Directory (AD) PowerShell `Install-Module -Name AzureAD -AllowClobber -Scope AllUsers`
+   1. Підключення до облікового запису AD: `Connect-AzureAD -TenantId <your tenant id>`. Ідентифікатор клієнта можна знайти в розділі **Огляд** > **Azure Active Directory**.
+   1. Щоб додати основну послугу Azure AD, виконайте таку команду: `New-AzureADServicePrincipal -AppId "38c77d00-5fcb-4cce-9d93-af4738258e3c" -DisplayName "Microsoft Dynamics 365 Customer Insights"` параметр AppID відповідний до програми Customer Insights API.
+
+   :::image type="content" source="media/azureAD-service-principal.png" alt-text="Приклад основної служби":::
 
 1. Поверніться до **Дозволів API** для реєстрації вашої програми.
 
 1. Виберіть **Згода адміністратора для…**, щоб заповнити реєстрацію програми.
 
- <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
-
-1. Щоб завершити, необхідно додати назву реєстрації програми як користувача в Customer Insights.  
-   
+1. Щоб завершити, необхідно додати назву реєстрації програми як користувача в Customer Insights.    
    Відкрийте Customer Insights, перейдіть до меню **Адміністратор** > **Дозволи** і натисніть **Додати користувача**.
 
 1. Знайдіть ім'я реєстрації програми, виберіть його в результатах пошуку, а потім натисніть **Зберегти**.
 
 ## <a name="customer-insights-client-libraries"></a>Бібліотеки клієнтів Customer Insights
 
-Інформація цього розділу допоможе почати роботу з використанням клієнтських бібліотек, доступних для Customer Insights API. Усі вихідні коди бібліотек і зразки програм можна знайти на сторінці [Customer Insights GitHub](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries). 
+Інформація цього розділу допоможе почати роботу з використанням клієнтських бібліотек, доступних для Customer Insights API.
 
 ### <a name="c-nuget"></a>C# NuGet
 
@@ -126,35 +121,22 @@ ms.locfileid: "8100165"
 1. Знайдіть **Microsoft.Dynamics.CustomerInsights.Api**.
 
 1. Виберіть **Інсталювати**, щоб додати пакет до проекту.
- 
    Також цю команду можна виконати в **Консолі менеджера пакетів NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
- <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Додати пакет NuGet до проекту Visual Studio":::
 
 #### <a name="use-the-c-client-library"></a>Використання клієнтської бібліотеки C#
 
-1. Використовуйте [бібліотеку автентифікації Microsoft (MSAL)](/azure/active-directory/develop/msal-overview), щоб отримати `AccessToken` з використанням [реєстрації наявної програми Azure](#create-a-new-app-registration-in-the-azure-portal).
+1. Використовуйте [бібліотеку автентифікації Microsoft (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview), щоб отримати `AccessToken` з використанням [реєстрації наявної програми Azure](#create-a-new-app-registration-in-the-azure-portal).
 
-1. Після успішної автентифікації та придбання маркера створіть новий або скористайтеся існуючим `HttpClient` з додатковим **defaultRequestHeaders "Авторизація"**, встановленими на **"маркер доступу"** Bearer та **Ocp-Apim-Subscription-Key, встановлених** на [**ключ** підписки з вашого середовища](#get-started-trying-the-customer-insights-apis) Customer Insights.   
- 
+1. Після успішної автентифікації і отримання маркера, створіть новий або використайте наявний `HttpClient` з додатковим **DefaultRequestHeaders "Authorization"** встановлено на **Пред’явник<access token>** і **Ocp-Apim-Subscription-Key** встановленим на [**Ключ передплати** з вашого середовища Customer Insights](#get-started-trying-the-customer-insights-apis).    
    У разі потреби можна скинути заголовок **Авторизація**. Наприклад, коли термін дії маркера минув.
 
 1. Передайте цей `HttpClient` в конструкцію клієнта `CustomerInsights`.
 
-<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
+   :::image type="content" source="media/httpclient-sample.png" alt-text="Приклад httpclient":::
 
-1. Наприклад, можна робити виклики клієнта в «методах розширення» – наприклад, `GetAllInstancesAsync`. Якщо перевага надається основному `Microsoft.Rest.HttpOperationResponse`, використовуйте «http message methods» – наприклад, `GetAllInstancesWithHttpMessagesAsync`.
+1. Наприклад, можна дзвонити з клієнтом в «методах розширення» `GetAllInstancesAsync`. Якщо перевага надається доступу до основної `Microsoft.Rest.HttpOperationResponse`, слід використовувати «методи http-повідомлення» `GetAllInstancesWithHttpMessagesAsync`.
 
 1. Ймовірно, відповідь буде типом `object`, оскільки метод може повертати кілька типів (наприклад, `IList<InstanceInfo>` і `ApiErrorResult`). Щоб перевірити тип повернення, можна спокійно перетворювати об'єкти до типів відповідей, указаних на [сторінці відомостей API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) для цієї операції.    
-   
    Якщо потрібно отримати більше інформації про запит, скористайтеся **методами http message** для доступу до об'єкта відповіді на запит.
-
-### <a name="nodejs-package"></a>Пакет NodeJS
-
-Скористайтеся клієнтськими бібліотеками NodeJS, доступними в NPM: https://www.npmjs.com/package/@microsoft/customerinsights
-
-### <a name="python-package"></a>Пакет Python
-
-Скористайтеся клієнтськими бібліотеками Python, доступними в PyPi: https://pypi.org/project/customerinsights/
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

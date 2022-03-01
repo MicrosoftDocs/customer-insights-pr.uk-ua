@@ -4,26 +4,26 @@ description: Дізнайтеся більше про регіони та гео
 author: mkisel11
 ms.reviewer: mhart
 ms.author: mkisel
-ms.date: 09/28/2021
+ms.date: 09/01/2021
 ms.service: customer-insights
 ms.topic: article
 ms.manager: shellyha
-ms.openlocfilehash: 82591919b44eaac8a251d7fdb148253d5cac23c3
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: c89637cbbe6626f95bcadb1f69831a1647f448a4
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645426"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483322"
 ---
 # <a name="regional-availability-for-dynamics-365-customer-insights"></a>Регіональна доступність для Dynamics 365 Customer Insights
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Аналітика взаємодії, можливість Dynamics 365 Customer Insights, поступово дозволяє клієнтам зберігати дані у все більшій кількості регіонів. Адміністратори можуть вибирати регіон, коли [створюють нове середовище](create-new-environment.md). 
+Аналітика взаємодії, можливість Dynamics 365 Customer Insights, поступово дозволяє клієнтам зберігати дані у все більшій кількості регіонів. Адміністратори можуть вибирати регіон, коли [створюють нове середовище](manage-environments-workspaces.md#create-an-environment). 
 
-При настроюванні аналітики взаємодії вперше ви можете вибрати регіон під час [керованого першого запуску](quickstart.md). Потім кожне нове середовище дає змогу вибрати регіон, в якому зберігатимуться дані.
+При настроюванні аналітики взаємодії вперше ви можете вибрати регіон під час [керованого першого запуску](quickstart.md). Потім кожне нове середовище дає змогу вибрати регіон, в якому зберігатимуться відповідні дані.
 
-Наразі ми підтримуємо географічні регіони США та Європи. Користувачі можуть вибирати між такими регіонами: Захід США, Схід США, Північна Європа та Західна Європа.
+Наразі існує дві географічні області: США та Європа. Користувачі можуть вибирати між західним регіоном США та регіоном Північної Європи
 
 Організація може підтримувати середовища в різних регіонах. Наприклад, середовище А зберігає дані на заході США, а середовище В — в Північній Європі.
 

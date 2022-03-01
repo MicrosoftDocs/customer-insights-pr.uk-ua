@@ -1,20 +1,20 @@
 ---
 title: З’єднувач Power Apps
 description: Підключення до Power Apps і Power Automate.
-ms.date: 10/01/2021
-ms.reviewer: mhart
+ms.date: 08/21/2020
+ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: Nils-2m
-ms.author: nikeller
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 985e6c85795fba8ca3063cdffc7f9012e798856a
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: b6ec103e29e218b2f27bfc1193300ea793a6b30b
+ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623248"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4407234"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>З’єднувач Microsoft Power Apps (підготовча версія)
 
@@ -22,55 +22,53 @@ ms.locfileid: "7623248"
 
 ## <a name="connect-power-apps-and-dynamics-365-customer-insights"></a>Підключення до Power Apps і Dynamics 365 Customer Insights
 
-Customer Insights – це одне із багатьох [доступних джерел даних у Power Apps](/powerapps/maker/canvas-apps/working-with-data-sources).
+Customer Insights – це одне із багатьох [доступних джерел даних у Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-data-sources).
 
-Див. документацію Power Apps, щоб дізнатися, як [додати зв’язок даних до програми](/powerapps/maker/canvas-apps/add-data-connection). Рекомендуємо також переглянути статтю про те, [як Power Apps використовує делегування для роботи із великими наборами даних у компонованих програмах](/powerapps/maker/canvas-apps/delegation-overview).
+Див. документацію Power Apps, щоб дізнатися, як [додати зв’язок даних до програми](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-data-connection). Рекомендуємо також переглянути статтю про те, [як Power Apps використовує делегування для роботи із великими наборами даних у компонованих програмах](https://docs.microsoft.com/powerapps/maker/canvas-apps/delegation-overview).
 
 ## <a name="available-entities"></a>Доступні сутності
 
 Після додавання Customer Insights як зв’язку даних можна вибрати зазначені нижче сутності в Power Apps.
 
-- **Клієнт**: для використання даних з [уніфікованого профілю клієнта](customer-profiles.md).
-- **UnifiedActivity**: для відображення [часової шкали справи](activities.md) в програмі.
-- **ContactProfile**: для відображення контактних осіб клієнта. Ця сутність доступна лише в середовищах аналізу аудиторії для ділових бізнес-партнерів.
+- Клієнт: для використання даних з [уніфікованого профілю клієнта](customer-profiles.md).
+- Уніфікована діяльність клієнта: для відображення в програмі [часової шкали дій](activities.md).
 
 ## <a name="limitations"></a>Обмеження
 
 ### <a name="retrievable-entities"></a>Сутності, які можна отримувати
 
-За допомогою з'єднувача Power Apps можна отримувати лише сутності **Клієнт**, **UnifiedActivity** (уніфікована справа), **Сегменти** і **ContactProfile** (профіль клієнта) ContactProfile доступна лише в інсталяції аналізу аудиторії для ділових бізнес-партнерів. Інші сутності відображаються, оскільки з’єднувач, що лежить в основі, підтримує їх за допомогою тригерів у Power Automate.
+За допомогою з'єднувача Power Apps можна отримувати лише сутності **Клієнт**, **UnifiedActivity** і **Сегменти**. Інші сутності відображаються, оскільки з’єднувач, що лежить в основі, підтримує їх за допомогою тригерів у Power Automate.  
 
 ### <a name="delegation"></a>Делегування
 
-Делегація працює для сутності **Клієнт** та сутності **UnifiedActivity**. 
+Делегація працює для сутності клієнта та об'єкта UnifiedActivity. 
 
 - Делегування сутності **Клієнт**: щоб використати делегування для цієї сутності, поля потрібно проіндексувати в розділі [Покажчик фільтра & пошуку](search-filter-index.md).  
-- Делегування для **UnifiedActivity**: делегування для цієї сутності працює лише для полів **ActivityId** і **CustomerId**.  
-- Делегування для **ContactProfile**: делегування для цієї сутності працює лише для полів **ContactId** і **CustomerId**. ContactProfile доступна лише в середовищах аналізу аудиторії для ділових бізнес-партнерів.
 
-Для отримання додаткових відомостей про делегування див. [Функції та операції Power Apps, які можна делегувати](/powerapps/maker/canvas-apps/delegation-overview). 
+- Делегування для **UnifiedActivity**: делегування для цієї сутності працює лише для полів **ActivityId** і **CustomerId**.  
+
+- Для отримання додаткових відомостей про делегування див. [Функції та операції Power Apps, які підлягають делегуванню](https://docs.microsoft.com/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps). 
 
 ## <a name="example-gallery-control"></a>Приклад елемента керування «Галерея»
 
-Профілі клієнтів можна додати до [елемента керування «галерея»](/powerapps/maker/canvas-apps/add-gallery).
+Наприклад, можна додати профілі клієнтів до [елемента керування «галерея»](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-gallery).
 
-1. Додайте елемент керування **галерея** до програми, яку ви створюєте.
+1. Додайте елемент керування **«Галерея»** до програми, яку ви створюєте.
+
+> [!div class="mx-imgBorder"]
+> ![Додавання елемента галереї](media/connector-powerapps9.png "Додавання елемента галереї")
+
+1. Виберіть елемент **Клієнт** як джерело даних для елементів.
 
     > [!div class="mx-imgBorder"]
-    > ![Додавання елемента галереї.](media/connector-powerapps9.png "Додайте елемент галереї.")
+    > ![Вибір джерела даних](media/choose-datasource-powerapps.png "Вибір джерела даних")
 
-2. Виберіть елемент **Клієнт** як джерело даних для елементів.
+1. Панель даних можна змінити праворуч, щоб вибрати поле для сутності клієнта, яке відображатиметься в колекції.
 
-    > [!div class="mx-imgBorder"]
-    > ![Вибір джерела даних.](media/choose-datasource-powerapps.png "Виберіть джерело даних.")
+1. Якщо потрібно відобразити будь-яке поле з вибраного клієнта в колекції, введіть у властивості тексту підпис: **{Name_of_the_gallery}.Вибрано.{property_name}**
 
-3. Панель даних можна змінити праворуч, щоб вибрати поле для сутності клієнта, яке відображатиметься в колекції.
+    Приклад: Gallery1.Вибрано.address1_city
 
-4. Якщо потрібно відобразити будь-яке поле вибраного клієнта в галереї, введіть у властивості **Text** підпису так: **{Name_of_the_gallery}.Selected.{property_name}**  
-    - Наприклад: _Gallery1.Selected.address1_city_
+1. Щоб відобразити уніфіковану часову шкалу для клієнта, додайте елемент «Колекція», а потім додайте властивість «Items» **Filter('UnifiedActivity', CustomerId = {Customer_Id})**
 
-5. Щоб відобразити уніфіковану часову шкалу для клієнта, додайте елемент «галерея», а потім додайте властивість **Items**, використовуючи **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
-    - Наприклад: _Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+    Приклад: Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)

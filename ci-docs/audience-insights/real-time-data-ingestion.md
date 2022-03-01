@@ -2,19 +2,19 @@
 title: Прийом даних і обмеження в режимі реального часу
 description: Загальні відомості про можливості в режимі реального часу в розділі «Аналіз аудиторії».
 ms.date: 10/27/2020
-ms.reviewer: mhart
+ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: Nils-2m
-ms.author: nikeller
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 897c876306a39cd9d5842487b96cb2f0a8df7e656de0fb7f10fe8c7f53e2db6b
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b00a72e6a67e33c8e70ccc6139c5e62020f9d3e1
+ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035302"
+ms.lasthandoff: 12/06/2020
+ms.locfileid: "4689200"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Обробка даних у режимі реального часу (попередній перегляд)
 
@@ -54,7 +54,7 @@ API в режимі реального часу дає змогу публіку
 
 Існує два способи підключення до API в режимі реального часу.
 
-- [опосередковано](#connect-via-the-dynamics-365-customer-insights-connector) за допомогою [з’єднувача Dynamics 365 Customer Insights](/connectors/customerinsights/)
+- [опосередковано](#connect-via-the-dynamics-365-customer-insights-connector) за допомогою [з’єднувача Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/)
 - [безпосередньо](#connect-directly-to-the-real-time-api) з кодом
 
 Обидва способи мають наведені нижче передумови.
@@ -66,13 +66,13 @@ API в режимі реального часу дає змогу публіку
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>Підключення за допомогою з’єднувача Dynamics 365 Customer Insights
 
-API в режимі реального часу може інтегрувати дані зі спеціалізованого з’єднувача Power Platform, [з’єднувач Dynamics 365 Customer Insights](/connectors/customerinsights/), без необхідності писати та розгортати будь-який код.    
-З’єднувач може виконувати ті самі дії в режимі реального часу, що й API. Для преміум-з’єднувачів потрібна дійсна ліцензія. Щоб отримати додаткові відомості, див. [Поширені запитання про ліцензування Power Apps і Power Automate](/power-platform/admin/powerapps-flow-licensing-faq).
+API в режимі реального часу може інтегрувати дані зі спеціалізованого з’єднувача Power Platform, [з’єднувач Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/), без необхідності писати та розгортати будь-який код.    
+З’єднувач може виконувати ті самі дії в режимі реального часу, що й API. Для преміум-з’єднувачів потрібна дійсна ліцензія. Щоб отримати додаткові відомості, див. [Поширені запитання про ліцензування Power Apps і Power Automate](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps та/або Power Automate](/connectors/)
-- Azure [Logic Apps](/azure/connectors/apis-list)
+- Power Platform [Power Apps та/або Power Automate](https://docs.microsoft.com/connectors/)
+- Azure [Logic Apps](https://docs.microsoft.com/azure/connectors/apis-list)
 
-Докладні відомості про створення потоків див. у [документації Power Automate](/power-automate/).
+Докладні відомості про створення потоків див. у [документації Power Automate](https://docs.microsoft.com/power-automate/).
 
 ## <a name="connect-directly-to-the-real-time-api"></a>Підключення безпосередньо до API в режимі реального часу
 
@@ -83,7 +83,6 @@ API в режимі реального часу може інтегрувати 
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>Ознайомтеся із навантаженням у режимі реального часу, використовуючи телеметрію.
 
-Отримайте огляд обсягу запитів до API в режимі реального часу та інформацію про проблеми, які можуть виникнути в системі. Ви можете [бачити дані телеметрії в режимі реального часу](system.md#api-usage-tab). 
+Отримайте огляд обсягу запитів до API в режимі реального часу та інформацію про проблеми, які можуть виникнути в системі. Ви можете [отримати доступ до телеметрії в режимі реального часу](system.md#api-usage-tab), якщо відкриєте **Адміністрування** > **Система** > **Використання API**. У таблиці **Операції** рядки для операцій API, які використовують методи в режимі реального часу, містять кнопку для перегляду використання API в режимі реального часу. Кнопка візуалізується символом бінокулярного символу. Натисніть кнопку, щоб відкрити бічну область, що містить відомості про використання для використання API в режимі реального часу в поточному середовищі.
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Використовуйте засіб вибору **Групувати за**, щоб вказати, як найкращим чином представити взаємодії у режимі реального часу на часовій шкалі, починаючи з останніх 24 годин і до останніх 30 днів. Можна групувати дані за методом API, кваліфікованим іменем сутності (отримана сутність), створювачем (джерело події), результатом (успіх або помилка) або кодами помилок. Дані доступні у вигляді діаграми та таблиці.

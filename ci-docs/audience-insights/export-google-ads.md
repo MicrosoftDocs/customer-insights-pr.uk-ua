@@ -1,7 +1,7 @@
 ---
 title: Експорт даних Customer Insights до Google Ads
 description: Дізнайтеся, як налаштувати підключення та експорт до Google Ads.
-ms.date: 09/27/2021
+ms.date: 03/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,19 +9,16 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ce9579f3d31207e666665237fd8935bb86889f8d
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: c16967bf8ea1fd02b3f991d7b7d3715a71fa8681
+ms.sourcegitcommit: 9a99e48e96dfb3d895db428f37c30ae55eea66b7
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617948"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6604302"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Експорт сегментів до Google Ads (підготовча версія)
 
 Експортуйте сегменти єдиних профілів клієнтів до списку аудиторій Google Ads і використовуйте їх для реклами в Пошуку Google, Gmail, YouTube і медійній мережі Google. 
-
-> [!IMPORTANT]
-> Наразі можна створити нове підключення та експортувати дані в Google Ads, лише якщо ви вже затвердили маркер розробника Google Ads. У зв’язку зі змінами політики ми скоро оновимо експорт Google Ads і надамо варіант експорту, який не вимагає маркера розробника для забезпечення безперервності роботи та спрощення експорту в Google Ads. Рекомендуємо не налаштовувати більше підключень до Google Ads, щоб спростити перехід на новий варіант експорту.
 
 ## <a name="prerequisites-for-connection"></a>Попередні вимоги для підключення
 
@@ -35,9 +32,9 @@ ms.locfileid: "7617948"
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
-- До 1 мільйона профілів клієнтів в кожному експорті в Google Ads.
+- До 1 000 000 профілів на експорт до Google Ads.
 - Експорт до Google Ads обмежується сегментами.
-- Експортування сегментів потужністю в 1 мільйон профілів клієнтів може тривати до 5 хвилин через обмеження на стороні постачальника. 
+- Експортування сегментів загальною кількістю 1 000 000 профілів може тривати до 5 хвилин через обмеження з боку постачальника. 
 - Зіставлення в Google Ads може тривати до 48 годин.
 
 ## <a name="set-up-connection-to-google-ads"></a>Налаштування підключення до Google Ads
@@ -74,7 +71,7 @@ ms.locfileid: "7617948"
 
 1. Введіть **[ідентифікатор аудиторії Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** і виберіть **З'єднати**, щоб ініціалізувати підключення до Google Ads.
 
-1. У розділі **Зіставлення даних** у полі **Електронна пошта** виберіть поле, яке відповідає адресі електронної пошти клієнта.
+1. У розділі **Зіставлення даних** в полі **Електронна пошті**, виберіть поле в уніфікованому профілі клієнта, в якому відображено адресу електронної пошти клієнта.
 
 1. Виберіть сегменти, які потрібно експортувати. Загалом до Google Ads можна експортувати до 1 000 000 профілів клієнтів.
 
