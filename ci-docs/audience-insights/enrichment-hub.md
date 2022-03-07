@@ -1,21 +1,25 @@
 ---
 title: Збагачення уніфікованих профілів клієнта
 description: Скористайтеся можливостями для збагачення даних клієнтів.
-ms.date: 09/30/2021
+ms.date: 02/18/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+searchScope:
+- ci-enrichments
+- ci-enrichment-details
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
+ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673024"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8372744"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Збагачення для профілів клієнтів (підготовча версія)
 
@@ -37,14 +41,18 @@ ms.locfileid: "7673024"
 - [Демографічні дані](enrichment-experian.md), що надаються Experian
 - [Настроювані дані](enrichment-SFTP-custom-import.md) через протокол Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) надаються Microsoft
+- [Дані про розташування ](enrichment-here.md), надані HERE Technologies 
+- [Ідентичність](enrichment-liveramp.md), надана LiveRamp AbiliTec
 
 # <a name="business-accounts-b-to-b"></a>[Бізнес-партнери (B-to-B)](#tab/b2b)
 
 - [Дані компанії](enrichment-leadspace.md) надаються Leadspace
 - [Удосконалені адреси](enrichment-enhanced-addresses.md), надані корпорацією Microsoft 
+- [Розширені дані](enrichment-enhanced-company-data.md) про компанію, надані корпорацією Майкрософт
 - [Дані про розташування ](enrichment-here.md), надані HERE Technologies 
 - [Настроювані дані](enrichment-SFTP-custom-import.md) через протокол Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) надаються Microsoft
+- [Дані про](enrichment-office.md) взаємодію з обліковим записом, надані корпорацією Майкрософт
 
 ---
 
@@ -73,6 +81,10 @@ ms.locfileid: "7673024"
 ## <a name="multiple-enrichments-of-the-same-type"></a>Кілька збагачень одного й того самого типу
 
 Сутність, яка підлягає збагаченню, зазначається під час налаштування збагачення. Це дозволяє збагачувати лише підгрупу профілів. Наприклад, виконайте збагачення даних лише для конкретного сегменту. Ви можете налаштувати кілька збагачень одного типу та повторно скористатися одним і тим самим підключенням. Деякі збагачення будуть мати обмеження кількості збагачень одного й того самого типу, які можна створити. На сторінці **Збагачення** можна побачити ці обмеження та поточні обсяги використання.
+
+## <a name="enrich-data-sources-before-unification"></a>Збагачення джерел даних перед об'єднанням
+
+Ви можете збагатити дані клієнтів перед об'єднанням даних, щоб підвищити якість зіставлення даних. Для отримання додаткової інформації джерело даних [див](data-sources-enrichment.md).
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>Перегляд перебігу процесу збагачення
 

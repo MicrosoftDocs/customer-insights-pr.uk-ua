@@ -3,25 +3,27 @@ title: Спеціальні моделі машинного навчання | M
 description: Робота з настроюваними моделями з машинного навчання Azure у Dynamics 365 Customer Insights.
 ms.date: 12/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
-ms.translationtype: HT
+searchScope:
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 460b68e1e65b3033af0a03d1bcc27e718c79d7aa
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881809"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355111"
 ---
 # <a name="custom-machine-learning-models"></a>Спеціальні моделі машинного навчання
 
 > [!NOTE]
-> Підтримка машинне навчання Студії (класична) завершиться 31 серпня 2024 року. Ми рекомендуємо перейти до Azure машинне навчання до [цієї](/azure/machine-learning/overview-what-is-azure-machine-learning) дати.
+> Підтримка машинне навчання Studio (класична) завершиться 31 серпня 2024 року. Ми рекомендуємо перейти до Azure машинне навчання [до](/azure/machine-learning/overview-what-is-azure-machine-learning) цієї дати.
 >
-> З 1 грудня 2021 року ви не зможете створювати нові машинне навчання студійні (класичні) ресурси. До 31 серпня 2024 року можна продовжувати використовувати наявні машинне навчання Studio (класичні) ресурси. Для отримання додаткових відомостей [машинне навчання див](/azure/machine-learning/migrate-overview).
+> З 1 грудня 2021 року ви не зможете створювати нові машинне навчання студійні (класичні) ресурси. До 31 серпня 2024 року можна продовжувати використовувати наявні машинне навчання Studio (класичні) ресурси. Для отримання додаткових відомостей машинне навчання [див](/azure/machine-learning/migrate-overview).
 
 
 **Аналітика** > **Спеціальні моделі** дає вам змогу керувати робочими циклами на основі моделей Azure Machine Learning. Робочі цикли допомагають вибрати дані, для яких потрібно створити аналітичні огляди та зіставити результати з уніфікованими даними про клієнта. Для отримання додаткових відомостей про створення настроюваних моделей ML див. розділ [Використання моделей на основі машинного навчання Azure](azure-machine-learning-experiments.md).
@@ -41,6 +43,8 @@ ms.locfileid: "7881809"
    > [!NOTE]
    > Дані передаються між екземплярами Customer Insights і вибраними веб-службами або воронками продажів Azure в робочому циклі. Під час передавання даних до служби Azure переконайтеся, що служба налаштована на обробку даних з урахуванням способу й розташування, необхідних для забезпечення відповідності юридичним або нормативним вимогам для цих даних для організації.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
+
 ## <a name="add-a-new-workflow"></a>Додати новий робочий цикл
 
 1. Перейдіть до розділу **Аналітика** > **Спеціальні моделі** та виберіть елемент **Новий робочий цикл**.
@@ -56,7 +60,7 @@ ms.locfileid: "7881809"
 
 1. Виберіть **Робочі області**, зв'язані з веб-службою. 
 
-1. Виберіть Azure машинне навчання каналу у **веб-службі, яка містить модель** розкривного списку. Потім виберіть **Далі**.    
+1. Виберіть Azure машинне навчання канал у веб-службі **, яка містить модель** розкривного списку. Потім виберіть **Далі**.    
    Докладніше про [публікацію воронки продажів у машинному навчанні Azure за допомогою конструктора](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) або [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Ваша воронка продажів має бути опублікована в [кінцевій точці воронки продажів](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. Для кожного **Введення веб-служби** виберіть відповідну **Сутність** з аналізу аудиторії і натисніть **Далі**.

@@ -1,24 +1,26 @@
 ---
-title: Покрокове оновлення для джерел даних на основі Power Query
-description: Оновлюйте нові й оновлені дані для великих джерел даних на основі Power Query.
+title: Інкрементне оновлення для Power Query джерел даних на основі
+description: Оновлення нових і оновлених даних для великих джерел даних на основі програми Power Query.
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: HT
+searchScope:
+- ci-system-schedule
+- customerInsights
+ms.openlocfilehash: 62632efda3c0c7e53fcdd8864b053ba93e2918bc
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900310"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353730"
 ---
-# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Інкрементне оновлення для джерел даних на основі Power Query
+# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Інкрементне оновлення джерел даних на основі Power Query
 
-У цій статті описано, як настроїти інкрементне оновлення для джерел даних на основі Power Query.
+У цій статті описано настроювання додаткового оновлення для джерел даних на основі програми Power Query.
 
 Інкрементне оновлення для джерел даних забезпечує зазначені нижче переваги.
 
@@ -28,13 +30,13 @@ ms.locfileid: "7900310"
 
 ## <a name="configure-incremental-refresh"></a>Налаштування інкрементного оновлення
 
-Аналіз аудиторії дає змогу покроково оновити джерела даних, імпортовані за допомогою Power Query, які підтримують покрокове передавання. Наприклад, бази даних Azure SQL з полями дати та часу, які вказують, коли записи даних було оновлено останній раз.
+Статистика аудиторії дає змогу поступово оновлювати джерела даних, імпортовані за допомогою Power Query цього додаткового вжитку. Наприклад, бази даних Azure SQL з полями дати та часу, які вказують, коли записи даних було оновлено останній раз.
 
-1. [Створення нового джерела даних на основі Power Query](connect-power-query.md).
+1. [Створіть нову джерело даних на основі Power Query](connect-power-query.md).
 
-1. Укажіть **ім**'я джерело даних.
+1. Укажіть ім'я **для** джерело даних.
 
-1. Виберіть джерело даних, який підтримує інкрементне оновлення, [наприклад, базу даних SQL Azure](/power-query/connectors/azuresqldatabase).
+1. Виберіть джерело даних, який підтримує інкрементне оновлення, наприклад [, базу даних](/power-query/connectors/azuresqldatabase) SQL Azure.
 
 1. Виберіть сутності або таблиці для обробки.
 

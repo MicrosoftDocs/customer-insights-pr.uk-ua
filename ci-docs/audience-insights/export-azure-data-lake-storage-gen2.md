@@ -1,43 +1,64 @@
 ---
 title: Експорт даних Customer Insights до Azure Data Lake Storage Gen2
 description: Дізнайтесь, як налаштувати підключення до Azure Data Lake Storage Gen2.
-ms.date: 02/04/2021
-ms.reviewer: sthe
-ms.service: customer-insights
+ms.date: 10/06/2021
+ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: b00c3d6178150cbc93fe800779f094809d4dc67b
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
-ms.translationtype: HT
+ms.openlocfilehash: cc0b3aac11a33facc366e9c57071d1fb8be4ecc4
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5477204"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231699"
 ---
-# <a name="connector-for-azure-data-lake-storage-gen2-preview"></a>З'єднувач для Azure Data Lake Storage Gen2 (підготовча версія)
+# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Експортування списку сегментів та інших даних до Azure Data Lake Storage Gen2 (підготовча версія)
 
-Зберігайте дані Customer Insights у Azure Data Lake Storage Gen2 або використовуйте його для передавання даних в інші програми.
+Зберігайте дані Customer Insights в обліковому записі сховища Azure Data Lake Storage Gen2 або використовуйте його для передавання даних в інші програми.
 
-## <a name="configure-the-connector-for-azure-data-lake-storage-gen2"></a>Налаштування з’єднувача Azure Data Lake Storage Gen2
+## <a name="known-limitations"></a>Відомі обмеження
 
-1. У розділі «Аналіз аудиторії» виберіть **Адміністратор** > **Напрямки експорту**.
+1. Для Azure Data Lake Storage Gen2 під час створення облікового запису сховища для зберігання даних можна обрати між [рівнями ефективності «Стандартна продуктивність» і «Преміум-продуктивність»](/azure/storage/blobs/create-data-lake-storage-account). Якщо вибрано рівень «Преміум-продуктивність», виберіть в якості типу облікового запису blob-об'єкти із преміум-блоками. 
 
-1. У розділі **Azure Data Lake Storage Gen2** виберіть **Налаштувати**.
 
-1. Дайте своєму призначенню ім’я, яке легко впізнати, в полі **Коротке ім’я**.
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Налаштування підключення до Azure Data Lake Storage Gen2 
+
+
+1. Відкрийте **Адміністрування** > **Підключення**.
+
+1. Виберіть **Додати підключення**, потім виберіть **Azure Data Lake Gen 2**, щоб налаштувати підключення.
+
+1. Надайте у полі **Коротке ім’я** для свого підключення змістовне ім'я, яке легко впізнати. Ім’я та тип підключення описують це підключення. Ми рекомендуємо вибирати ім’я, яке роз'яснює ціль і мету даного підключення.
+
+1. Виберіть користувачів, які зможуть використовувати це підключення. Якщо не вжити жодних дій, за замовчуванням це будуть Адміністратори. Докладніші відомості див. у розділі [Дозвольте співавторам використовувати підключення для експортів](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Введіть **Ім’я облікового запису**, **Ключ облікового запису** і **Контейнер** для Azure Data Lake Storage Gen2.
-    - Щоб дізнатися, як створити обліковий запис сховища для використання з Azure Data Lake Storage Gen2, див. [Створення облікового запису сховища](https://docs.microsoft.com/azure/storage/blobs/create-data-lake-storage-account). 
-    - Докладніше про те, як знайти ім'я облікового запису й ключ облікового запису сховища Azure Data Lake Gen2, див. тут: [Керування параметрами облікового запису сховища на порталі Azure](https://docs.microsoft.com/azure/storage/common/storage-account-manage).
+    - Щоб дізнатися, як створити обліковий запис сховища для використання з Azure Data Lake Storage Gen2, див. [Створення облікового запису сховища](/azure/storage/blobs/create-data-lake-storage-account). 
+    - Щоб отримати докладніші відомості про те, як знайти ім’я облікового запису сховища Azure Data Lake Gen2, див. розділ [Керуйте налаштуваннями облікового запису сховища на порталі Azure](/azure/storage/common/storage-account-manage).
 
-1. Виберіть **Далі**.
+1. Щоб завершити створення підключення, виберіть **Зберегти**. 
+
+## <a name="configure-an-export"></a>Налаштування експорту
+
+Ви можете налаштувати цей експорт, якщо у вас є доступ до підключень такого типу. Додаткові відомості: [Дозволи, необхідні для налаштування експорту](export-destinations.md#set-up-a-new-export).
+
+1. Відкрийте **Дані** > **Експорти**.
+
+1. Щоб створити новий експорт, виберіть **Додати експорт**.
+
+1. У полі **Підключення для експорту** виберіть підключення з розділу **Azure Data Lake**. Якщо ім'я цього розділу не відображається, це означає, що для вас немає жодного доступного підключення цього типу.
 
 1. Установіть прапорець поруч із кожною із сутностей, які ви хочете експортувати до цього призначення.
 
 1. Виберіть **Зберегти**.
 
-## <a name="export-the-data"></a>Експорт даних
+При збереженні експорт не запуститься негайно.
 
-Ви можете [експортувати дані вручну](export-destinations.md#export-data-on-demand). Експорт також запускатиметься під час кожного [запланованого оновлення](system.md#schedule-tab).
+Експорт виконується під час кожного [запланованого оновлення](system.md#schedule-tab). Також можна [експортувати дані неавтоматично](export-destinations.md#run-exports-on-demand). 
+
+Експортовані дані зберігаються в контейнері сховища Azure Data Lake Gen 2, який ви налаштували. 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

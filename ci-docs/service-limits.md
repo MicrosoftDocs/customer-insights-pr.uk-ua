@@ -2,47 +2,44 @@
 title: Ліміти послуг у Dynamics 365 Customer Insights
 description: Дізнайтеся про граничні значення й обмеження.
 ms.date: 09/03/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
-ms.translationtype: HT
+ms.openlocfilehash: 9bf8f03b785fb3035e3fc979a3304d4e98fd8d28
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483719"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350432"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>Обмеження послуг в можливостях Customer Insights
 
 У цій статті описуються вбудовані обмеження служби Customer Insights, які призначені для забезпечення надійності та стабільності обслуговування. Будь-які запити щодо внесення змін можна зробити за допомогою [Форуму для ідей](https://go.microsoft.com/fwlink/?linkid=2074172). 
 
-## <a name="audience-insights"></a>Аналіз аудиторії
-
-### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>Обмеження послуг для функціоналу аналізу аудиторій у Dynamics 365 Customer Insights
+## <a name="audience-insights"></a>Audience insights
 
 | Область  | Обмеження  | Примітки |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Сегменти та показники | 100 сегментів або показників. | Загальна кількість активних [сегментів](audience-insights/segments.md) і [показників](audience-insights/measures.md) сумарно не може перевищувати 100.  |
+| Сегменти, заходи та прогнози | 300  | Загальна кількість [сегментів](audience-insights/segments.md), [заходів](audience-insights/measures.md) і [прогнозів разом узятих](audience-insights/predictions.md) не може перевищувати 300.  |
 | Зв'язки | 20 рівнів глибини зв'язків у шляхах сутностей. | Під час створення [сегментів](audience-insights/segments.md) або [вимірювань](audience-insights/measures.md) за допомогою інтерфейсу конструктора шляхи сутності можуть мати до 20 зав'язків між початковою сутністю та кінцевою.  |
 
+<!--
+## Engagement insights
 
-## <a name="engagement-insights"></a>Аналітика взаємодії
+### Workspace and event quotas
 
-### <a name="workspace-and-event-quotas"></a>Квоти робочої області та подій
+Engagement insights is a highly scalable application that can support millions of events per second. During public preview, events have a volume threshold. There's also a limit to the number of workspaces in an organization.
 
-Аналітичні висновки щодо взаємодії — це високомасштабована програма, яка може підтримувати мільйони подій за секунду. Під час використання загальнодоступної підготовчої версії події мають обмеження на об’єм. Існує також обмеження на кількість робочих областей в організації.
+### Engagement insights limits
 
-### <a name="engagement-insights-limits"></a>Обмеження аналітичних висновків щодо взаємодії
+- Maximum event volume per workspace  = 100 events per second
 
-- Максимальний об’єм подій на робочу область = 100 подій за секунду
+- Maximum number of workspaces per organization = 100
 
-- Максимальна кількість робочих областей на організацію = 100
-
-Перевищення максимальної кількості подій може призвести до втрати даних у звітах, створених на основі цих подій. Ви можете [звернутися до служби підтримки](https://go.microsoft.com/fwlink/?linkid=2145734) із запитом на збільшення об’єма до того, як ви перевищите обмеження. Ми допоможемо вам визначити потребу в збільшенні об’єму та надамо підтримку вашому запиту.
-
+When events exceed the threshold, it can lead to loss of data in reports based on those events. You can [contact support](https://go.microsoft.com/fwlink/?linkid=2145734) to request a volume increase before you exceed limits. We'll work with you to determine your need for a volume increase and support your request.
+-->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

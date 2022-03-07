@@ -1,32 +1,37 @@
 ---
 title: Сегменти в аналізі аудиторії
 description: Огляд сегментів, способи їх створення та керування ними.
-ms.date: 09/30/2021
-ms.service: customer-insights
+ms.date: 11/01/2021
 ms.subservice: audience-insights
-ms.topic: how-to
+ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
-ms.translationtype: HT
+searchScope:
+- ci-customers-page
+- ci-enrichment-details
+- ci-segments
+- ci-segment-details
+- customerInsights
+ms.openlocfilehash: c58f79c2beda1083d19bd36d94549ff1a46b096e
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617467"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8356008"
 ---
 # <a name="segments-overview"></a>Огляд сегментів
 
 Сегменти дають змогу групувати клієнтів згідно з демографічними та поведінковими атрибутами, а також за особливостями транзакцій. За допомогою сегментів можна використовувати цільові рекламні кампанії, торгівельну діяльність та дії з підтримки клієнтів для досягнення своїх бізнес-цілей.
 
-Профілі клієнтів, які відповідають фільтрам визначення сегмента, називаються *учасниками* сегмента. Застосовуються деякі [ліміти послуг](service-limits.md).
+Профілі клієнтів, які відповідають фільтрам визначення сегмента, називаються *учасниками* сегмента. Застосовуються деякі [ліміти послуг](/dynamics365/customer-insights/service-limits).
 
 ## <a name="create-a-new-segment"></a>Створення нового сегмента
 
 Існує кілька способів створити новий сегмент. 
 
-# <a name="individual-customers-b2c"></a>[Індивідуальні клієнти (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Окремі споживачі (B-to-C)](#tab/b2c)
 
 - Складний сегмент за допомогою конструктора сегментів: [Створіть власний](segment-builder.md#create-a-new-segment) 
 - Прості сегменти за допомогою одного оператора: [Швидкий сегмент](segment-builder.md#quick-segments) 
@@ -34,7 +39,7 @@ ms.locfileid: "7617467"
 - Пропозиції на основі ШІ залежно від показників або атрибутів: [Пропоновані сегменти для покращення показників](suggested-segments.md) 
 - Пропозиції на основі справ: [Пропоновані сегменти на основі справ клієнта](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b2b"></a>[Ділові бізнес-партнери (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Бізнес-партнери (B-to-B)](#tab/b2b)
 
 - Складний сегмент за допомогою конструктора сегментів: [Створіть власний](segment-builder.md#create-a-new-segment)
 
@@ -65,8 +70,7 @@ ms.locfileid: "7617467"
 
 Можна оновити всі сегменти одночасно, вибравши **Оновити все** на сторінці **Сегменти**, або оновити один або кілька сегментів, якщо вибрати їх, а потім вибрати **Оновити** в параметрах. Крім того, можна настроїти повторюване оновлення в розділі **Адміністратор** > **Система** > **Розклад**.
 
-> [!TIP]
-> Існує [шість типів станів](system.md#status-types) для завдань/процесів. Крім того, більшість процесів [залежать від інших низхідних процесів](system.md#refresh-policies). Можна вибрати стан процесу, щоб переглянути докладні відомості про перебіг виконання всієї роботи. Після вибору **Переглянути відомості** для однієї з робіт завдання ви побачите додаткові відомості: час обробки, дата останньої обробки, а також усі помилки та попередження, пов'язані з завданням.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="export-segments"></a>Експорт сегментів
 
@@ -106,4 +110,5 @@ ms.locfileid: "7617467"
 >
 >Список — це попередній перегляд відповідних учасників сегмента. Він показує перші 100 записів вашого сегмента. Це дає змогу швидко оцінити його та за потреби переглянути його визначення. Щоб переглянути всі відповідні записи, потрібно [експортувати цей сегмент](export-destinations.md).
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)] 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,22 +1,21 @@
 ---
 title: Експортування даних Customer Insights до Constant Contact
 description: Дізнайтеся, як налаштувати підключення та експорт до Constant Contact.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3a9372cc4ffa4fb112a96b1286aee9dc35059a50
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
-ms.translationtype: HT
+ms.openlocfilehash: 8841945814397ffa70c56638a8bed25499c1a06f
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760661"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226428"
 ---
-# <a name="export-segment-lists-to-constant-contact-preview"></a>Експорт списків сегментів до Constant Contact (підготовча версія)
+# <a name="export-segments-to-constant-contact-preview"></a>Експорт сегментів до Constant Contact (підготовча версія)
 
 Експортуйте сегменти, що складаються з уніфікованих профілів клієнтів, до Constant Contact і використовуйте їх для маркетингової діяльності. 
 
@@ -28,10 +27,10 @@ ms.locfileid: "5760661"
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
-- У кожному експорті до Constant Contact можна експортувати до 1 мільйона профілів.
+- В межах одного експорту до Constant Contact можна експортувати до 1 мільйона профілів клієнтів.
 - Експортувати в Constant Contact можна тільки сегменти.
-- Експортування до 1 мільйона профілів до Constant Contact може тривати до 1 години. 
-- Кількість профілів, які можна експортувати до Constant Contact, визначається і обмежується сервісним договором з Constant Contact.
+- Експортування до 1 мільйона профілів клієнтів до Constant Contact може тривати до 1 години. 
+- Кількість профілів клієнтів, які можна експортувати в Constant Contact, визначається та обмежується умовами вашого сервісного договору з Constant Contact.
 
 ## <a name="set-up-connection-to-constant-contact"></a>Налаштуйте підключення до Constant Contact
 
@@ -47,7 +46,7 @@ ms.locfileid: "5760661"
 
 1. Виберіть **Підключити**, щоб ініціалізувати підключення до Constant Contact.
 
-1. Виберіть **Автентифікація за допомогою AdRoll** і введіть облікові дані адміністратора для Constant Contact. 
+1. Натисніть **Автентифікація за допомогою Constant Contact** і вкажіть свої облікові дані адміністратора для Constant Contact. 
 
 1. Виберіть **Додати себе як користувача експорту** та надайте облікові дані Customer Insights.
 
@@ -65,7 +64,7 @@ ms.locfileid: "5760661"
 
 1. Введіть свій [**ідентифікатор списку Constant Contact**](https://app.constantcontact.com/pages/contacts/ui#lists). Відкрийте список у Constant Contact, щоб знайти ідентифікатор списку в URL-адресі.
 
-1. У розділі **Зіставлення даних** в полі **Електронна пошті**, виберіть поле в уніфікованому профілі клієнта, в якому відображено адресу електронної пошти клієнта. Це необхідно для експорту сегментів до Constant Contact.
+1. У розділі **Зіставлення даних** у полі **Електронна пошта** виберіть поле, яке відповідає адресі електронної пошти клієнта. Це необхідно для експорту сегментів до Constant Contact.
 
 1. Додатково можна експортувати Ім'я та Прізвище у вигляді додаткових полів для створення додаткових персоналізованих електронних листів. Виберіть **Додати атрибут**, щоб зіставити ці поля.
 

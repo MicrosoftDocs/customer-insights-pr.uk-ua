@@ -1,21 +1,23 @@
 ---
 title: Створення середовищ у Customer Insights
 description: Кроки для створення середовища з ліцензованою передплатою на Dynamics 365 Customer Insights.
-ms.date: 12/06/2021
+ms.date: 02/24/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
-ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
-ms.translationtype: HT
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8088138"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354120"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Створення середовища в аналізі аудиторії
 
@@ -76,12 +78,14 @@ ms.locfileid: "8088138"
    
 На кроці **Microsoft Dataverse** ви можете підключити Customer Insights до свого середовища Dataverse.
 
-Щоб використовувати [готові прогнозні моделі](predictions-overview.md#out-of-box-models), налаштуйте спільний доступ до даних із Dataverse. Або ж ви можете дозволити отримання даних з локальних джерел даних, вказавши URL-адресу середовища Microsoft Dataverse, яке використовує ваша компанія. Виберіть **Увімкнути спільний доступ до даних**, щоб надати спільний доступ до вихідних даних Customer Insights, використовуючи службу керованого Dataverse озера даних.
+Надайте своє власне Microsoft Dataverse середовище для надання спільного доступу до даних (профілів і аналітичних даних) бізнес-застосункам на Dataverse основі програм, таких як Dynamics 365 Marketing або програми на основі моделі у програмі Power Apps. Залиште це поле порожнім, якщо у вас немає власного Dataverse середовища, і ми надамо його для вас.
+
+Підключення до Dataverse вашого середовища також дає змогу проковтнути [дані з локальний джерел даних за допомогою Power Platform потоків даних і шлюзів](data-sources.md#add-data-from-on-premises-data-sources). Ви також можете використовувати [нестандартні прогноз моделі](predictions-overview.md?tabs=b2c#out-of-box-models), підключившись до Dataverse середовища.
 
 > [!IMPORTANT]
 > Статистика клієнтів і Dataverse повинна бути в одному регіоні, щоб увімкнути спільний доступ до даних.
 
-:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Параметри конфігурації для ввімкнення спільного доступу до даних за допомогою Microsoft Dataverse.":::
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="спільний доступ до даних з Microsoft Dataverse автоматичним ввімкненням для нових екземплярів мережі.":::
 
 > [!NOTE]
 > Customer Insights не підтримує згадані нижче сценарії організації спільного доступу до даних.

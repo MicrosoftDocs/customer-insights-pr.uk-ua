@@ -1,24 +1,29 @@
 ---
-title: Знайдіть схожих клієнтів, використовуючи штучний інтелект
+title: Знайдіть схожих клієнтів за допомогою AI (містить відео)
 description: Знайдіть схожі сегменти клієнтів, використовуючи штучний інтелект.
 ms.date: 06/25/2020
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ee4d24ae0ae39c689956f70efe46c4226876484e6da6282dc874cec37bd287e2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+searchScope:
+- ci-segment-builder
+- ci-segment-insights
+- customerInsights
+ms.openlocfilehash: 5626b980ad8802aae9657052e3ca51a70c49baf9
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034569"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355270"
 ---
 # <a name="similar-customers-preview"></a>Схожі клієнти (підготовча версія)
 
 Ця функція дозволяє знаходити схожих клієнтів в базі клієнтів, використовуючи штучний інтелект. Щоб скористатися цією функцією, потрібно мати принаймні один сегмент. Встановлюючи більш загальні умови для наявного сегмента, ви зможете знайти клієнтів, які схожі на цей сегмент.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOFou]
 
 > [!NOTE]
 > *Пошук схожих клієнтів* використовує автоматизовані засоби для оцінки даних і прогнозування на основі цих даних, і, отже, має потенціал для використання в якості методу профілювання, у сенсі, якому цей термін визначається Генеральним регламентом із захисту персональних даних («GDPR»). Використання клієнтом цієї функції для оброблення даних може регулюватися положеннями GDPR або інших законів чи постанов. Ви несете відповідальність за те, що використання Dynamics 365 Customer Insights, включаючи прогнози, відповідає всім чинним законам і нормативним актам, зокрема законам, пов'язаним з конфіденційністю, персональними даними, біометричними даними, захистом даних і конфіденційністю комунікацій.

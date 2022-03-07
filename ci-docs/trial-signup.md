@@ -5,16 +5,15 @@ author: m-hartmann
 ms.author: mhart
 ms.date: 09/30/2021
 ms.topic: get-started
-ms.service: customer-insights
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: dc1ea94ad55886c605d27caea031e00964f6f7c8
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+ms.openlocfilehash: 1b50da077cb0584ca9f277b276d0e9ebb46b2c5d
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645516"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350248"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>Реєстрація для отримання безкоштовної ознайомлювальної версії Dynamics 365 Customer Insights
 
@@ -32,23 +31,12 @@ Customer Insights пропонує безкоштовну 30-денну озна
 
 Ваше ознайомлювальне середовище містить ті самі функції, що й платна версія. Наведені нижче посилання ознайомлять вас із деякими основними функціями.
 
-### <a name="audience-insights"></a>Аналіз аудиторії
-
 - [Швидкий початок для аналізу аудиторії.](audience-insights/get-started.md)
 - [Додайте інших користувачів і призначте дозволи.](audience-insights/permissions.md)
 - [Обробіть джерела даних](audience-insights/data-sources.md) і запустіть ї через [процес уніфікації даних](audience-insights/data-unification.md), щоб отримати [уніфіковані профілі клієнтів](audience-insights/customer-profiles.md).
 - [Збагатіть уніфіковані профілі клієнтів](audience-insights/enrichment-hub.md) або [запустіть прогнозні моделі](audience-insights/predictions-overview.md).
 - Створіть [сегменти](audience-insights/segments.md) для групування клієнтів і [показників](audience-insights/measures.md) для перегляду KPI.
 - Настройте [підключення](audience-insights/connections.md) та [експорти](audience-insights/export-destinations.md) для обробки вкладених наборів даних у інших програмах.
-
-### <a name="engagement-insights"></a>Аналітика взаємодії
-
-- [Швидкий початок для аналізу взаємодії.](engagement-insights/get-started.md)
-- [Створіть робочу область](engagement-insights/create-workspace.md) і додайте учасників.
-- [Додайте код до веб-сайту](engagement-insights/instrument-website.md) або [програми для мобільних пристроїв](engagement-insights/developer-resources.md#capture-events-from-mobile-apps).
-- Перегляд [звіту в режимі реального часу](engagement-insights/view-reports.md) або створення [настроюваних звітів](engagement-insights/custom-reports.md).
-- [Створіть уточнені події](engagement-insights/refined-events.md) для експорту.
-- [Експорт даних](engagement-insights/export-events.md) до Azure Data Lake Storage.
 
 ## <a name="additional-resources"></a>Додаткові ресурси
 

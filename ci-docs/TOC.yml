@@ -2,8 +2,30 @@
   href: index.yml
 - name: Огляд продукту
   href: overview.md
-- name: Створення ознайомлювальної версії
-  href: audience-insights/get-started-trial.md
+- name: Каталог навчальних матеріалів
+  items:
+    - name: Почати
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: Отримання даних
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: Створення уніфікованого профілю клієнта
+      href: /learn/modules/unified-customer-profile/
+    - name: Робота з статистикою аудиторії
+      href: /learn/modules/working-with-customer-insights/
+    - name: Збагачуйте дані та робіть прогнози
+      href: /learn/modules/enrich-data/
+    - name: Керування зовнішніми підключеннями
+      href: /learn/modules/configure-third-party-connections/
+    - name: Адмініструйте Customer Insights
+      href: /learn/modules/administer-customer-data-platform/
+- name: Безкоштовна ознайомлювальна версія
+  items:
+    - name: Реєстрація для отримання безкоштовної ознайомлювальної версії
+      href: trial-signup.md
+    - name: Запитання й відповіді про ознайомлювальну версію
+      href: trial-FAQ.md
+- name: Почніть із платної ліцензії
+  href: paid-license.md
 - name: Доступ до середовища
   href: 'https://home.ci.ai.dynamics.com/'
 - name: Аналіз аудиторії
@@ -19,29 +41,25 @@
         - name: Посібник зі швидкого початку роботи
           href: audience-insights/get-started.md
         - name: Створити нове середовище
-          href: audience-insights/get-started-paid.md
+          href: audience-insights/create-environment.md
         - name: Ознайомлення з аналізом аудиторії
           href: audience-insights/home.md
-    - name: Навчальні модулі
-      items:
-        - name: Отримання даних
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: Створення уніфікованого профілю клієнта
-          href: /learn/modules/unified-customer-profile/
-        - name: Робота з програмою
-          href: /learn/modules/working-with-customer-insights/
-        - name: Збагачення даних та прогнози
-          href: /learn/modules/enrich-data/
+    - name: Робота з бізнес-партнерами
+      href: audience-insights/work-with-business-accounts.md
     - name: Джерела даних
       items:
         - name: Огляд джерел даних
           href: audience-insights/data-sources.md
-        - name: Додавання джерел даних за допомогою з'єднувачів Power Query
+        - name: Додавання джерел даних за допомогою Power Query з'єднувачів
           href: audience-insights/connect-power-query.md
         - name: Додавання папки Common Data Model в якості джерела даних
           href: audience-insights/connect-common-data-model.md
         - name: Додавання керованого озера даних Dataverse
           href: audience-insights/connect-dataverse-managed-lake.md
+        - name: Додавання компонента Azure Synapse Analytics
+          href: audience-insights/connect-synapse.md
+        - name: Збагачення для джерел даних
+          href: audience-insights/data-sources-enrichment.md
         - name: Інкрементне оновлення джерел даних
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Приймання даних у режимі реального часу
@@ -66,22 +84,30 @@
           href: audience-insights/relationships.md
         - name: Створення списку справ клієнта
           href: audience-insights/activities.md
+        - name: Визначення семантичних зіставлень
+          href: audience-insights/semantic-mappings.md
     - name: Збагачення даних
       items:
         - name: Збагачуйте профілів клієнтів
           href: audience-insights/enrichment-hub.md
-        - name: Близькі бренди й інтереси
+        - name: Бренди та інтереси
           href: audience-insights/enrichment-microsoft.md
         - name: Розширені адреси
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Уточнені дані компанії
+          href: audience-insights/enrichment-enhanced-company-data.md
         - name: Збагачення за допомогою Azure Maps
           href: audience-insights/enrichment-azure-maps.md
         - name: Збагачення за допомогою HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: Збагачення за допомогою Leadspace
           href: audience-insights/enrichment-leadspace.md
+        - name: Збагачуйте живою міткою
+          href: audience-insights/enrichment-liveramp.md
         - name: Збагачувати Experian
           href: audience-insights/enrichment-experian.md
+        - name: Збагачувати Office 365 даними
+          href: audience-insights/enrichment-office.md
         - name: Збагачення за допомогою настроюваного імпорту SFTP
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: Сегменти
@@ -98,10 +124,14 @@
           href: audience-insights/segment-insights.md
         - name: Пошук подібних клієнтів
           href: audience-insights/find-similar-customer-segments.md
-    - name: Показники
+    - name: Вимірювання
       items:
-        - name: Визначення мір та ключових показників ефективності
+        - name: Огляд заходів
           href: audience-insights/measures.md
+        - name: Створення нового заходу
+          href: audience-insights/measure-builder.md
+        - name: Використання шаблону міри
+          href: audience-insights/measure-templates.md
     - name: Прогнози
       items:
         - name: Прогнозування даних за допомогою ШІ
@@ -114,8 +144,10 @@
               href: audience-insights/predict-product-recommendation.md
             - name: Прогнозування відмови від передплати
               href: audience-insights/predict-subscription-churn.md
-            - name: Прогнозування відтоку транзакцій
+            - name: Прогноз відтоку транзакцій
               href: audience-insights/predict-transactional-churn.md
+            - name: Аналіз настроїв у відгуках клієнтів
+              href: audience-insights/sentiment-analysis.md
             - name: Використання настроюваних моделей від машинного навчання Azure
               href: audience-insights/custom-models.md
             - name: Доповнення частково відсутніх даних
@@ -126,14 +158,12 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: Зразок вказівок для прогнозу відтоку передплат
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: Зразок вказівок для прогнозу відтоку транзакцій
+            - name: Приклад посібника з прогнозування відтоку транзакцій
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: Зразок вказівок для прогнозу рекомендації продуктів
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Експерименти з машинним навчанням Azure
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: Експерименти зі студією машинного навчання Azure
-              href: audience-insights/machine-learning-studio-experiments.md
         - name: Керування прогнозами
           href: audience-insights/manage-predictions.md
         - name: Створення сегментів на основі прогнозів
@@ -222,14 +252,16 @@
           href: audience-insights/connections.md
         - name: Керування кількома середовищами
           href: audience-insights/manage-environments.md
-        - name: Підключення до облікового запису сховища ADLS за допомогою принципала служби
-          href: audience-insights/connect-service-principal.md
-        - name: Підтримувані мови
-          href: audience-insights/supported-languages.md
+        - name: Безпека
+          items:
+            - name: Робота з власним сховищем ключів
+              href: audience-insights/use-azure-key-vault.md
+            - name: Підключення до облікового запису сховища ADLS за допомогою принципала служби
+              href: audience-insights/connect-service-principal.md
+            - name: Експорт журналів діагностики
+              href: audience-insights/diagnostics.md
     - name: Розширення
       items:
-        - name: Інтеграція веб-даних з аналітичних висновків щодо взаємодії
-          href: audience-insights/integrate-engagement-insights.md
         - name: Перегляд схем сутностей у Common Data Model
           href: audience-insights/entity-schemas.md
         - name: Дані Customer Insights у Dataverse
@@ -238,83 +270,45 @@
           href: audience-insights/apis.md
         - name: Посилання API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-- name: Engagement insights (підготовча версія)
+- name: Керування згодою (попередній перегляд)
   items:
     - name: Довідковий центр
-      href: engagement-insights/index.yml
-    - name: Відомості про Аналітику взаємодії
-      href: engagement-insights/overview.md
+      href: consent-management/index.yml
+    - name: Огляд наявних можливостей
+      href: consent-management/overview.md
     - name: Почати
       items:
-        - name: Посібник зі швидкого початку роботи
-          href: engagement-insights/get-started.md
-        - name: Створення робочої області
-          href: engagement-insights/create-workspace.md
-        - name: Записуйте події з веб-сайтів і програм для мобільних пристроїв
-          href: engagement-insights/developer-resources.md
+        - name: Почати
+          href: consent-management/get-started.md
         - name: Поняття та термінологія
-          href: engagement-insights/glossary.md
-    - name: Події
+          href: consent-management/glossary.md
+    - name: Імпортувати дані згоди
       items:
-        - name: Створення та змінення подій
-          href: engagement-insights/refined-events.md
-        - name: Визнання веб-подій від раніше автентифікованих відвідувачів
-          href: engagement-insights/unknown-to-known.md
-        - name: Експортувати події
-          href: engagement-insights/export-events.md
-    - name: Звіти
+        - name: Імпортувати дані згоди
+          href: consent-management/import-consent-data.md
+        - name: Установлення даних про згоду та застосування параметрів згоди
+          href: consent-management/set-consent-rules.md
+    - name: Керування даними про згоду
       items:
-        - name: Переглянути звіти
-          href: engagement-insights/view-reports.md
-        - name: Створення настроюваних звітів
-          href: engagement-insights/custom-reports.md
-        - name: Створення звітів щодо уніфікованих профілів
-          href: engagement-insights/profile-reports.md
-        - name: Перегляд і створення вимірів
-          href: engagement-insights/dimensions.md
-        - name: Перегляд і створення показників
-          href: engagement-insights/metrics.md
-        - name: Перегляд і створення сегментів
-          href: engagement-insights/segments.md
-    - name: Аналіз шляхів
+        - name: Як увімкнути правила згоди в аналітичних оглядах аудиторії
+          href: audience-insights/activate-consent.md
+        - name: Керування правилами згоди за умовчанням у сегментах статистики аудиторії
+          href: audience-insights/change-default-consent-rules.md
+    - name: Керування настройками та користувачами
       items:
-        - name: Створення звітів послідовностей і керування ними
-          href: engagement-insights/funnel-reports.md
-    - name: Ресурси для розробників
+        - name: Настроювання параметрів системи
+          href: consent-management/system-settings.md
+        - name: Керування користувачами та дозволами
+          href: consent-management/manage-users.md
+    - name: Використання даних про згоду
       items:
-        - name: Огляд ресурсів для розробників
-          href: engagement-insights/developer-resources.md
-        - name: Посібник із пакета SDK для вебу
-          href: engagement-insights/advanced-SDK-implementation.md
-        - name: Зразок Web SDK
-          href: engagement-insights/websdk-sample.md
-        - name: Посібник із SDK Android
-          href: engagement-insights/get-started-android.md
-        - name: Зразок SDK Android
-          href: engagement-insights/androidsdk-sample.md
-        - name: Посібник з iOS SDK
-          href: engagement-insights/get-started-ios.md
-        - name: Зразок iOS SDK
-          href: engagement-insights/iossdk-sample.md
-    - name: Адміністрування
-      items:
-        - name: Ролі й дозволи
-          href: engagement-insights/user-roles.md
-        - name: Керування середовищами та робочими областями
-          href: engagement-insights/manage-environments-workspaces.md
-        - name: Керування файлами cookie та згодою користувача
-          href: engagement-insights/user-consent-storage.md
-    - name: Регіональна доступність
-      href: engagement-insights/regional-availability.md
-- name: Спільне використання даних різними функціями
-  items:
-    - name: Зв’язування аналітичних оглядів аудиторії та взаємодії
-      href: engagement-insights/integrate-audience-insights-engagement-insights.md
-    - name: Використання сегментів аналітичних оглядів аудиторії в звітах аналітичних оглядів взаємодії
-      href: engagement-insights/integrate-audience-insights-segments.md
-    - name: Використання демографічних вимірів для розділення поведінкових даних
-      href: engagement-insights/curate-dimensions.md
+        - name: Створення прогнозів із даними згоди
+          href: consent-management/predictions-consent-data.md
+- name: Engagement insights (підготовча версія)
+  href: engagement-insights/overview.md
 - name: Обмеження послуг
   href: service-limits.md
 - name: Права та запити DSR
   href: dsr-rights-requests.md
+- name: Отримати підтримку
+  href: /power-platform/admin/get-help-support

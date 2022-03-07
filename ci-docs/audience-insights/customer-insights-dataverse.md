@@ -1,20 +1,22 @@
 ---
 title: Дані Customer Insights у Microsoft Dataverse
 description: Використовуйте сутності Customer Insights як таблиці у Microsoft Dataverse.
-ms.date: 10/14/2021
+ms.date: 11/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9855ff6908001dd18bc19a286fc56620d0a127e5
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+searchScope:
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 9f730f5856221592cddf34b714beeaca24c52130
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645243"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355454"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Робота із даними Customer Insights у Microsoft Dataverse
 
@@ -45,6 +47,7 @@ Customer Insights дозволяє зробити вихідні сутност�
 - [CustomerMeasure](#customermeasure)
 - [Збагачення](#enrichment)
 - [Прогноз](#prediction)
+- [Членство в сегменті](#segment-membership)
 
 
 ### <a name="customerprofile"></a>CustomerProfile
@@ -121,3 +124,16 @@ Customer Insights дозволяє зробити вихідні сутност�
 | Значення               | Рядок JSON | Список атрибутів, створених моделлю |
 | msdynci_predictionid | GUID        | Визначальний ідентифікатор GUID, створений на основі msdynci_identifier | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+
+### <a name="segment-membership"></a>Членство в сегменті
+
+Ця таблиця містить відомості про членство в сегменті профілів клієнтів.
+
+| Column        | Ввести | Опис                        |
+|--------------------|--------------|-----------------------------|
+| Ідентифікатор клієнта        | String       | Ідентифікатор профілю клієнта        |
+| SegmentProvider      | String       | Додаток, який публікує сегменти. За замовчуванням: статистика аудиторії         |
+| Тип сегмента | String       | Тип клієнта цей запис членства в сегменті. Підтримує кілька типів, наприклад Клієнт, Контактна особа або Бізнес-партнер. За замовчуванням: клієнт  |
+| Сегменти       | Рядок JSON  | Список унікальних сегментів, членом яких є профіль клієнта      |
+| msdynci_identifier  | String   | Унікальний ідентифікатор запису членства в сегменті. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| msdynci_segmentmembershipid | GUID      | Детермінований GUID, створений з`msdynci_identifier`          |

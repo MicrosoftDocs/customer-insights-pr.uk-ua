@@ -5,16 +5,15 @@ author: jusali
 ms.reviewer: mhart
 ms.author: jusali
 ms.date: 10/04/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 8ff04a6b2ffbd513a77f7f8a33358f3d8f559c7e
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: 1f82ff588c2ffbe82c3ee7df2498ac2cca2bad31
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673667"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8225472"
 ---
 # <a name="create-a-new-environment"></a>Створити нове середовище 
 
@@ -40,9 +39,9 @@ ms.locfileid: "7673667"
 
 1. Виберіть **Регіон** і натисніть кнопку **Далі** . 
 
-1. Введіть **ім'я робочої області**, яке дає змогу збирати дані для певних веб-сайтів або програм. Додаткові відомості: [Створення робочої області](create-workspace.md).
+1. **Введіть ім'я** робочої області, яке дає змогу збирати дані для певних веб-сайтів або програм. Додаткові відомості: [Створення робочої області](create-workspace.md).
 
-1. Виберіть **тип робочої області** (веб-або мобільний), який потрібно створити. 
+1. **Виберіть тип** робочої області (веб-або мобільний), який потрібно створити. 
 
 1. Виберіть **Показати додаткові параметри**, щоб увімкнути або вимкнути такі додаткові параметри:
 

@@ -3,19 +3,17 @@ title: Загальні відомості про аналіз аудиторі�
 description: Загальні відомості про аналіз аудиторії для Dynamics 365 Customer Insights.
 ms.date: 08/04/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: overview
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.custom: intro-internal
-ms.openlocfilehash: 925cb5c2ccb4279ae5db2eb927a356708d310360
-ms.sourcegitcommit: 048d65bded22abadcbbad1e22f15b05828bb977b
-ms.translationtype: HT
+ms.openlocfilehash: b0fd10ca6f79bfec35c8a238179ba7e26e4dad98
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/06/2021
-ms.locfileid: "7474082"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230761"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Загальні відомості про аналіз аудиторії для Dynamics 365 Customer Insights
 
