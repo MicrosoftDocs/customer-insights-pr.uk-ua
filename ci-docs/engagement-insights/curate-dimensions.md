@@ -2,17 +2,18 @@
 title: Використання демографічних вимірів для розділення поведінкових даних (відібрані виміри)
 description: Скористайтеся відібраними вимірами єдиних профілів, щоб увімкнути властивості клієнтських профілів аналітичних оглядів аудиторії.
 ms.date: 07/27/2021
+ms.service: customer-insights
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 95395e09bc0ba5ba93138957c62105f31c709e91
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: MT
+ms.openlocfilehash: 50bb800c9e097d03cc6f26f79819c741ab5e8baf
+ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8233073"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "7461128"
 ---
 # <a name="use-demographic-dimensions-for-splitting-behavioral-data"></a>Використання демографічних вимірів для розділення поведінкових даних
 
@@ -28,7 +29,7 @@ ms.locfileid: "8233073"
 - Середовище аналітичних оглядів взаємодії, в якому є дані профілю клієнта, зв'язані з середовищем аналітичних оглядів аудиторії, де створюються профілі клієнтів. Додаткові відомості: [Створення зв'язку між аналітичними оглядами аудиторії та аналітичними оглядами взаємодії](integrate-audience-insights-engagement-insights.md)
 
 > [!NOTE]
-> Після створення зв'язку між аналітичними оглядами аудиторії та середовищами аналітичних оглядів взаємодії, можливо вам будуть потрібні лише дані, що стосуються властивостей профілю клієнта, та можуть служити вимірами в аналітичних оглядах взаємодії. Для отримання додаткових відомостей, перейдіть до розділу [Увімкнення атрибутів та сегментів єдиних профілів аналітичних оглядів аудиторії](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).
+> Після створення зв'язку між аналітичними оглядами аудиторії та середовищами аналітичних оглядів взаємодії, можливо вам будуть потрібні лише дані, що стосуються властивостей профілю клієнта, та можуть служити вимірами в аналітичних оглядах взаємодії. Для отримання додаткових відомостей, перейдіть до розділу [Увімкнення атрибутів та сегментів єдиних профілів аналітичних оглядів аудиторії](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).<!--note from editor: Suggested. -->
 
 ## <a name="create-a-new-custom-report"></a>Створення нового настроюваного звіту
 

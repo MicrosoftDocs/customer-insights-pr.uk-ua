@@ -2,21 +2,19 @@
 title: Створення середовищ і керування ними
 description: Дізнайтесь, як зареєструватися на послугу та як керувати середовищами.
 ms.date: 12/06/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-searchScope:
-- ci-system-about
-- customerInsights
-ms.openlocfilehash: d9e0ee726dbbfcf330022c4d95747551d3114e7e
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 8251cac9f95455b61eb0300b6c72cd4ab2969591
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
 ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354304"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046358"
 ---
 # <a name="manage-environments"></a>Керування середовищами
 
@@ -46,12 +44,12 @@ ms.locfileid: "8354304"
    
 На кроці **Microsoft Dataverse** ви можете підключити Customer Insights до свого середовища Dataverse.
 
-Щоб використовувати [готові прогнозні моделі](predictions-overview.md#out-of-box-models), налаштуйте спільний доступ до даних із Dataverse. Або ж ви можете дозволити отримання даних з локальних джерел даних, вказавши URL-адресу середовища Microsoft Dataverse, яке використовує ваша компанія.
+Щоб використовувати [готові прогнозні моделі](predictions-overview.md#out-of-box-models), налаштуйте спільний доступ до даних із Dataverse. Або ж ви можете дозволити отримання даних з локальних джерел даних, вказавши URL-адресу середовища Microsoft Dataverse, яке використовує ваша компанія. Виберіть **Увімкнути спільний доступ до даних**, щоб надати спільний доступ до вихідних даних Customer Insights, використовуючи службу керованого Dataverse озера даних.
 
 > [!IMPORTANT]
 > Статистика клієнтів і Dataverse повинна бути в одному регіоні, щоб увімкнути спільний доступ до даних.
 
-:::image type="content" source="media/dataverse-provisioning.png" alt-text="Параметри конфігурації для ввімкнення спільного доступу до даних за допомогою Microsoft Dataverse.":::
+:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Параметри конфігурації для ввімкнення спільного доступу до даних за допомогою Microsoft Dataverse.":::
 
 > [!NOTE]
 > Customer Insights не підтримує згадані нижче сценарії організації спільного доступу до даних.

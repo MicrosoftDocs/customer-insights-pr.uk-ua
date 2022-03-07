@@ -5,15 +5,16 @@ author: mochimochi016
 ms.reviewer: mhart
 ms.author: jefhar
 ms.date: 11/05/2020
+ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 6690b016be4ad26faa797e5f87aba60caa48ddff
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: MT
+ms.openlocfilehash: eebe51d343f6afbed52a66c52ab6a60eb5cd410367fb2e4409eb8679f357c91e
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8233001"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7033932"
 ---
 # <a name="first-run-experience"></a>Перший запуск
 
@@ -25,7 +26,7 @@ ms.locfileid: "8233001"
 
 Ви повинні мати активний обліковий запис користувача Microsoft Azure Active Directory. 
 
-1. Відкрийте веб-сайт [аналітичних висновків щодо взаємодії](https://home.ci.ai.dynamics.com/app/engagement-insights). 
+1. Відкрийте веб-сайт [аналітичних висновків щодо взаємодії](https://pi.dynamics.com/). 
 
 1. Увійдіть у робочий або навчальний обліковий запис.
 

@@ -5,16 +5,17 @@ ms.reviewer: mhart
 ms.author: jefhar
 author: mochimochi016
 ms.date: 10/01/2021
+ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: c435810e712bbbf69f8f1cfb582fc0a971566de6
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: MT
+ms.openlocfilehash: 3505c15c4319c8cc8823bcd89d3b8adc944a87dd
+ms.sourcegitcommit: 565637f49cbdd05a82f42784f594c19cac299140
+ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225631"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "7623702"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-engagement-insights-capability-public-preview"></a>Початок роботи із засобом аналітичних висновків щодо взаємодії Dynamics 365 Customer Insights (підготовча версія)
 
