@@ -5,16 +5,15 @@ author: mochimochi016
 ms.reviewer: mhart
 ms.author: jefhar
 ms.date: 06/09/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: d43d3c49c81ab343db5623ee4f5ebeb100d3b2b7
-ms.sourcegitcommit: 302910e39153f4b5c850ed9b1a62cb867e4df358
-ms.translationtype: HT
+ms.openlocfilehash: 101888ecc3a741a1ab6eb87c20055644eb8022b2
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6218963"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8228086"
 ---
 # <a name="microsoft-dynamics-365-customer-insights--engagement-insights-preview"></a>MICROSOFT DYNAMICS 365 CUSTOMER INSIGHTS — Аналітичні висновки щодо взаємодії з клієнтами (підготовча версія) 
 

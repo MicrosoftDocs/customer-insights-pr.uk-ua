@@ -1,39 +1,38 @@
 ---
-title: Експортування даних Customer Insights до платформи Adobe Experience
-description: Дізнайтеся про те, як використовувати сегменти аналітичних оглядів аудиторії на платформі Adobe Experience.
+title: Експорт даних Customer Insights до Adobe Experience Platform
+description: Дізнайтесь, як використовувати сегменти аналітичних оглядів аудиторії у Adobe Experience Platform.
 ms.date: 03/29/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
-ms.translationtype: HT
+ms.openlocfilehash: 9010af3c42823ce0dd8685bf71c109aef8d3f635
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305549"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227749"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Використовуйте сегменти Customer Insights на платформі Adobe Experience (підготовча версія)
+# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Використання сегментів Customer Insights у Adobe Experience Platform (підготовча версія)
 
-Як користувач аналітичних оглядів аудиторії в Dynamics 365 Customer Insights, ви могли створювати сегменти для підвищення ефективності своїх маркетингових кампаній способом націлювання рекламного матеріалу на доречні аудиторії. Щоб використовувати сегмент з аналітики аудиторії на платформі Adobe Experience та в програмах, як-от Adobe Campaign Standard, потрібно виконати кілька кроків, наведених у цій статті.
+Як користувач аналітичних оглядів аудиторії в Dynamics 365 Customer Insights, ви могли створювати сегменти для підвищення ефективності своїх маркетингових кампаній способом націлювання рекламного матеріалу на доречні аудиторії. Щоб скористатися сегментом з аналітичних оглядів аудиторії в Adobe Experience Platform та програмах на кшталт Adobe Campaign Standard, слід виконати кілька кроків, описаних у цій статті.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Схема процесів кроків, описаних у цій статті.":::
 
 ## <a name="prerequisites"></a>Вимоги
 
 -   Ліцензія Dynamics 365 Customer Insights
--   Ліцензія платформи Adobe Experience
+-   Ліцензія Adobe Experience Platform
 -   Ліцензія Adobe Campaign Standard
 -   Обліковий запис сховища Azure Blob
 
 ## <a name="campaign-overview"></a>Огляд кампанії
 
-Щоб краще зрозуміти, як можна використовувати сегменти з аналітики аудиторії на платформі Adobe Experience, перегляньте вигадані приклади кампаній.
+Щоб краще зрозуміти, як можна використовувати сегменти з аналітичних оглядів аудиторії в Adobe Experience Platform, розгляньмо вигаданий приклад кампанії.
 
-Припустімо, що ваша компанія пропонує клієнтам щомісячну передплату на послуги в Сполучених Штатах Америки. Вам потрібно визначити клієнтів, передплати яких мають бути продовжені впродовж наступних 8 днів, але які ще не продовжили їх. Щоб зберегти цих клієнтів, ви хочете надіслати їм акційну пропозицію електронною поштою за допомогою платформи Adobe Experience.
+Припустімо, що ваша компанія пропонує клієнтам щомісячну передплату на послуги в Сполучених Штатах Америки. Вам потрібно визначити клієнтів, передплати яких мають бути продовжені впродовж наступних 8 днів, але які ще не продовжили їх. Щоб зберегти цих клієнтів, варто надіслати їм акційну пропозицію електронною поштою за допомогою Adobe Experience Platform.
 
 У цьому прикладі ми хочемо запустити рекламну кампанію електронною поштою один раз. У цій статті не розглядається варіант використання багатократного запуску кампанії.
 
@@ -93,7 +92,7 @@ ms.locfileid: "6305549"
 Тепер сегмент [можна експортувати неавтоматично](export-destinations.md#run-exports-on-demand). Експорт також запускатиметься під час кожного [запланованого оновлення](system.md).
 
 > [!NOTE]
-> Переконайтеся, що кількість записів у експортованому сегменті перебуває в межах дозволеного ліміту вашої ліцензії Adobe Campaign Standard.
+> Переконайтеся, що кількість записів у експортованому сегменті не перевищує граничне значення ліцензії Adobe Campaign Standard.
 
 Експортовані дані зберігаються в контейнері сховища BLOB-об'єктів Azure, який було налаштовано вище. У контейнері автоматично створюється такий перелік дій:
 
@@ -105,29 +104,29 @@ ms.locfileid: "6305549"
 
 Приклад: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo/model.json
 
-## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>Визначення моделі даних досвіду (XDM) на платформі Adobe Experience
+## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>Визначення моделі даних досвіду (XDM) у Adobe Experience Platform
 
-Перед тим, як експортовані дані з аналітичних оглядів аудиторії можна буде використовувати в межах платформи Adobe Experience, потрібно визначити схему моделі даних досвіду та [налаштувати дані для профілю користувача в реальному часі](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
+Перш ніж використати експортовані дані з аналітичних оглядів аудиторії в Adobe Experience Platform, потрібно визначити схему моделі даних досвіду та [налаштувати дані для Профілю клієнта в режимі реального часу](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
 
 Дізнайтеся, [що таке XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) і зрозумійте [основи створення схем](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema).
 
-## <a name="import-data-into-adobe-experience-platform"></a>Імпортування даних до платформи Adobe Experience
+## <a name="import-data-into-adobe-experience-platform"></a>Імпорт даних до Adobe Experience Platform
 
-Тепер, коли все готово, необхідно імпортувати підготовлені дані про аудиторію аналітичних оглядів аудиторії до платформи Adobe Experience.
+Тепер, коли все на місці, потрібно імпортувати підготовлені дані аудиторії з аналітичних висновків щодо аудиторії в Adobe Experience Platform.
 
 Спочатку [створіть підключення до джерела сховища Blob-об'єктів Azure](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).    
 
-Після визначення підключення до джерела [налаштуйте потік даних](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) для підключення до хмарного сховища для імпорту виводу сегменту з аналітичних оглядів до платформи Adobe Experience.
+Після визначення вихідного підключення [налаштуйте потік даних](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) для пакетного підключення до хмарного сховища, щоб імпортувати результати сегментів з аналітичних оглядів аудиторії до Adobe Experience Platform.
 
-## <a name="create-an-audience-in-adobe-campaign-standard"></a>Створення аудиторії у Adobe Campaign Standard
+## <a name="create-an-audience-in-adobe-campaign-standard"></a>Створення аудиторії в Adobe Campaign Standard
 
-Для надсилання повідомлення електронної пошти для цієї кампанії мі скористаємося засобом Adobe Campaign Standard. Після імпорту даних до платформи Adobe Experience потрібно [створити аудиторію](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) в Adobe Campaign Standard за допомогою даних на платформі Adobe Experience.
+Щоб надіслати повідомлення електронної пошти для цієї кампанії ми скористаємося Adobe Campaign Standard. Після імпорту даних до Adobe Experience Platform, необхідно [створити аудиторію](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) в Adobe Campaign Standard за допомогою даних в Adobe Experience Platform.
 
 
-Інформація про [використання конструктора сегменту](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) в Adobe Campaign Standard для визначення аудиторії на основі даних на платформі Adobe Experience Platform.
+Дізнайтесь, як [використовувати конструктор сегментів](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) у Adobe Campaign Standard для визначення аудиторії на основі даних у Adobe Experience Platform.
 
-## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Створення та надсилання електронної пошти за допомогою Adobe Campaign Standard
+## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Створення та надсилання повідомлення електронної пошти за допомогою Adobe Campaign Standard
 
 Створіть вміст електронної пошти, а потім [перевірте та надішліть](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) повідомлення електронної пошти.
 
-:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Зразок повідомлення електронної пошти із пропозицією оновлення за допомогою Adobe Campaign Standard.":::
+:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Зразок повідомлення електронної пошти з пропозицією поновлення від Adobe Campaign Standard.":::
