@@ -7,18 +7,18 @@ ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: c9517ed2b50ff37e361a27538dfb9f9ccbf3df8f
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
-ms.translationtype: HT
+ms.openlocfilehash: fa6ea6e96de3d382c1426b383a057c8ce4f67ccf
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350156"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8456023"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Початок роботи після придбання Customer Insights
 
 У цій статті пояснюється, як виконати перші кроки в Dynamics 365 Customer Insights після придбання передплати організацією. Якщо ви хочете придбати Customer Insights, наші контактні особи перелічені на [веб-сайті Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/). 
 
-Придбавши ліцензію на передплату для Customer Insights, глобальний адміністратор Microsoft 365 клієнта отримує електронний лист із запрошенням створити середовище. 
+Після придбання ліцензії на підписку для Customer Insights глобальний адміністратор Microsoft 365 клієнта отримує електронний лист із запрошенням створити середовище. 
 
 Customer Insights ліцензується на кожного клієнта і включає в собі багато можливостей. Можна придбати більше виробничої спроможності та ліцензій, щоб збільшити стандартну квоту. 
 - [Огляд визначення цін](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
@@ -39,7 +39,4 @@ Customer Insights ліцензується на кожного клієнта і
 
 ## <a name="create-your-own-environment"></a>Створіть власне середовище
 
-Після першого входу ви побачите середовище зі зразками даних. Ці дані можна використовувати для огляду функцій на ознайомлення з програмою. Щоб використовувати власні дані, потрібно [створити середовище](audience-insights/get-started-paid.md).
-
-
-
+Після першого входу ви побачите середовище зі зразками даних. Ці дані можна використовувати для огляду функцій на ознайомлення з програмою. Щоб використовувати власні дані, потрібно [створити середовище](/dynamics365/customer-insights/audience-insights/create-environment).

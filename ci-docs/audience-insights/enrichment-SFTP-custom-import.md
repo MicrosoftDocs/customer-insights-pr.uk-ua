@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: 042558af801a1d1fc365939d9aa42c09b98b2679
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229663"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376625"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Збагачення профілів клієнтів з настроюваними даними (попередній перегляд)
 
@@ -25,7 +25,7 @@ ms.locfileid: "8229663"
 
 - Для імпорту вузла SFTP у вас є ім’я та розташування (шлях) файлу.
 - Є файл *model.json* у якому є [схема Common Data Model](/common-data-model/) для даних, які підлягають імпортуванню. Цей файл має бути в тому самому каталозі, що й файл для імпорту.
-- Підключення SFTP вже налаштоване адміністратором *або* у вас є права [адміністратора](permissions.md#administrator). Для розташування SFTP, з якого потрібно імпортувати дані, вам буде потрібно отримати потрібні облікові дані користувача, URL-адресу й номер порту для розташування SFTP, із якого ви бажаєте імпортувати дані.
+- Підключення SFTP вже налаштоване адміністратором *або* у вас є права [адміністратора](permissions.md#admin). Для розташування SFTP, з якого потрібно імпортувати дані, вам буде потрібно отримати потрібні облікові дані користувача, URL-адресу й номер порту для розташування SFTP, із якого ви бажаєте імпортувати дані.
 
 
 ## <a name="configure-the-import"></a>Налаштуйте імпорт

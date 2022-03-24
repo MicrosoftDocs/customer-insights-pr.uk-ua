@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: cf680c21c55c71d99728be79fe68111dc89a79ec
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: 4c1b5eaa3568b5c73013024d2da7e65276142f72
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355054"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455887"
 ---
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>Використання сегментів у Dynamics 365 Sales (підготовча версія).
 
@@ -26,12 +26,12 @@ ms.locfileid: "8355054"
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
-- Експорт до Dynamics 365 Продажі обмежені 100'000 учасників на сегмент.
-- Експорт сегмента до Dynamics 365 Sales може тривати до 3 годин. 
+- Експорт до Dynamics 365 Продажі обмежені 100 000 членів на сегмент.
+- Експорт сегментів до Dynamics 365 Продажі можуть зайняти до 3 годин. 
 
 ## <a name="prerequisite-for-connection"></a>Попередня вимога для підключення
 
-1. Записи контактних осіб мають бути присутніми в Dynamics 365 Sales, щоб ви змогли експортувати сегмент з Customer Insights до Sales. Дізнайтеся більше про те, як прийняти контактних осіб у [Dynamics 365 Sales, використовуючи Microsoft Dataverse](connect-power-query.md).
+1. Записи контактних осіб мають бути присутніми в Dynamics 365 Sales, щоб ви змогли експортувати сегмент з Customer Insights до Sales. Дізнайтеся більше про те, як проковтнути контакти з [Dynamics 365 продажу за допомогою Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
    > [!NOTE]
    > Експортування сегментів з аналізу аудиторії до Sales не призведе до створення нових записів контактних осіб в інсталяціях Sales. Записи контактних осіб з Sales повинні бути прийняті в аналізі аудиторії та мають використовуватися, як джерело даних. Їх також потрібно включити в уніфіковану сутність «Клієнт», щоб зіставити ідентифікатори клієнтів із ідентифікаторами контактних осіб, перш ніж можна буде експортувати сегменти.

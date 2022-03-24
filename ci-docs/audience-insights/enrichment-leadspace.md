@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f89ef6842c21cf6b78154586f818beffbcdcffb9
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: 0db0c984f6bf9f7ded0704b6fa0caf39c7dace3a
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230659"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376809"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Збагачення профілів компанії за допомогою Leadspace (підготовча версія)
 
@@ -25,7 +25,7 @@ Leadspace — це компанія, що займається аналізом 
 
 - У вас є активна ліцензія на Leadspace.
 - Ви маєте [уніфіковані профілі клієнтів](customer-profiles.md), основані на бізнес-партнерах.
-- Підключення Leadspace вже налаштоване адміністратором, або у вас є права [адміністратора](permissions.md#administrator) та «постійний ключ» (який також називають **Маркером Leadspace**). Щоб отримати докладніші відомості про продукт [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/), звертайтеся безпосередньо до компанії Leadspace.
+- Підключення Leadspace вже налаштоване адміністратором, або у вас є права [адміністратора](permissions.md#admin) та «постійний ключ» (який також називають **Маркером Leadspace**). Щоб отримати докладніші відомості про продукт [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/), звертайтеся безпосередньо до компанії Leadspace.
 
 ## <a name="configure-the-enrichment"></a>Налаштуйте збагачення
 

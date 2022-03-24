@@ -1,7 +1,7 @@
 ---
 title: Керування дозволами користувача
 description: Докладніше про дозволи й ролі користувача.
-ms.date: 03/25/2021
+ms.date: 02/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: a3d21d55d86950953611967bb66712312eb42b4b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: 85e1f4f93ac0e99ce6634dfc8fceab0c9a14885e
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355962"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376763"
 ---
 # <a name="user-permissions"></a>Дозволи користувача
 
@@ -48,7 +48,7 @@ ms.locfileid: "8355962"
 - Керувати конфігурацією та збагачуйте профілі клієнтів на сторінці **Збагачення** (лише для власних збагачень).
 - Створюйте експорти та керуйте ними на основі підключень, до яких надано спільний доступ співавторам. [Дізнайтеся більше про те, як адміністратори дозволяють співавторам використовувати підключення для експортів](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-## <a name="administrator"></a>Адміністратор
+## <a name="admin"></a>Район
 
 - Усі дозволи, доступні для Співавтора.
 - Змінювати настройки на сторінці **Система**, зокрема робочу мову та розклади оновлення для системних процесів.
@@ -60,6 +60,12 @@ ms.locfileid: "8355962"
 - Інсталювати та використовувати **Надбудову «Картка клієнта»**.
 - Додавати та використовувати **з'єднувач Power Apps**.
 - Вмикати використання [Customer Insights APIs](apis.md).
+- [Призначте право власності на](manage-environments.md#change-the-owner-of-an-environment) навколишнє середовище іншому адміністратору.
+
+## <a name="admin-owner"></a>Адміністратор (власник)
+
+- Усі дозволи, доступні адміністратору.
+- [Скидання та видалення](manage-environments.md#reset-an-existing-environment) середовища.
 
 ## <a name="assign-roles-and-permissions"></a>Призначення ролей та дозволів
 

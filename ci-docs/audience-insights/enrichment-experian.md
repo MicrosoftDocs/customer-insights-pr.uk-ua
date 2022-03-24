@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: ad1023135516ca9c49818d19aa84df68d16b2e3c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: efa26fa82a950063e074a4ab930ed95383c55334
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229994"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376717"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Збагачуйте профілі клієнтів демографічними даними з Experian (підготовча версія)
 
@@ -25,7 +25,7 @@ Experian є глобальним лідером у сфері звітності
 
 - У вас є активна передплата Experian. Щоб оформити передплату, [звертайтеся безпосередньо до Experian](https://www.experian.com/marketing-services/contact). [Дізнайтеся більше про збагачення даних Experian](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 
-- Адміністратор вже налаштував підключення Experian *або* ви маєте права [адміністратора](permissions.md#administrator). Для створеного для вас Experian облікового запису безпечного транспортування (ST) з підтримкою протоколу SSH вам також знадобиться ідентифікатор користувача, ідентифікатор сторони й номер моделі.
+- Адміністратор вже налаштував підключення Experian *або* ви маєте права [адміністратора](permissions.md#admin). Для створеного для вас Experian облікового запису безпечного транспортування (ST) з підтримкою протоколу SSH вам також знадобиться ідентифікатор користувача, ідентифікатор сторони й номер моделі.
 
 ## <a name="supported-countriesregions"></a>Країни або регіони, що підтримуються
 
