@@ -1,7 +1,7 @@
 ---
 title: Підключення до таблиць у Microsoft Dataverse
 description: Імпорт даних із керованого озера даних Microsoft Dataverse.
-ms.date: 12/06/2021
+ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,25 +11,24 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 81412ea8259e690eb839676d82ab31847854a97e
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354167"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464131"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Підключення до даних в озері з керованим даними Microsoft Dataverse
 
-
-
-У цій статті наведено відомості про те, як Dataverse користувачі можуть швидко підключатися до аналітичних сутностей у керованому Microsoft Dataverse озері. 
+У цій статті наведено відомості про те, як Dataverse користувачі можуть швидко підключатися до аналітичних сутностей в керованому Microsoft Dataverse озері. 
 
 > [!NOTE]
 > Щоб продовжити та переглянути список сутностей, доступних у керованому озері, потрібно бути адміністратором Dataverse організації.
 
 ## <a name="important-considerations"></a>Важливі міркування
 
-Дані, що зберігаються в онлайнових службах, наприклад, Azure Data Lake Storage, можуть зберігатися в розташуванні, відмінному від того, в якому дані обробляються або зберігаються в Dynamics 365 Customer Insights.Імпортуючи або підключаючись до даних, що зберігаються в онлайнових службах, ви погоджуєтеся з тим, що дані можна передавати та зберігати за допомогою Dynamics 365 Customer Insights програми . [Дізнайтеся більше в Центрі безпеки та конфіденційності Microsoft](https://www.microsoft.com/trust-center).
+1. Дані, що зберігаються в онлайнових службах, наприклад, Azure Data Lake Storage, можуть зберігатися в розташуванні, відмінному від того, в якому дані обробляються або зберігаються в Dynamics 365 Customer Insights.Імпортуючи або підключаючись до даних, що зберігаються в онлайнових службах, ви погоджуєтеся з тим, що дані можуть передаватися та зберігатися за допомогою Dynamics 365 Customer Insights програми . [Докладніше про це можна дізнатися в Центрі безпеки та конфіденційності Microsoft](https://www.microsoft.com/trust-center).
+2. Відображаються лише Dataverse сутності з [увімкненим відстеженням](/power-platform/admin/enable-change-tracking-control-data-synchronization) змін. Ці сутності можна експортувати до керованого Dataverse озера даних і використовувати в Customer Insights. У нестандартних Dataverse таблицях за промовчанням увімкнуто відстеження змін. Для настроюваних таблиць потрібно ввімкнути відстеження змін. Щоб перевірити, чи ввімкнуто таблицю Dataverse для відстеження змін, перейдіть до розділу [Power Apps](https://make.powerapps.com) > **DataTables** > **·**. Знайдіть цікаву таблицю та виберіть її. Перейдіть до параметрів **SettingsAdvanced** > **і перегляньте** налаштування Відстеження змін **.**
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Підключення до керованого озера Dataverse
 

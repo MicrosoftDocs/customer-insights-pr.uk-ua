@@ -1,23 +1,23 @@
 ---
 title: Створення середовищ у Customer Insights
 description: Кроки для створення середовища з ліцензованою передплатою на Dynamics 365 Customer Insights.
-ms.date: 02/24/2022
+ms.date: 03/28/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: MichelleDevaney
-ms.author: midevane
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: a538237322615f69f0a5cb43d394275bf79af00b
+ms.sourcegitcommit: ae02ac950810242e2505d7d371b80210dc8a0777
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354120"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491943"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Створення середовища в аналізі аудиторії
 
@@ -30,7 +30,7 @@ ms.locfileid: "8354120"
 
 ## <a name="create-a-new-environment"></a>Створити нове середовище
 
-Придбавши ліцензію на передплату для Customer Insights, глобальний адміністратор Microsoft 365 клієнта отримує електронний лист із запрошенням створити середовище. Щоб почати, перейдіть до [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start). 
+Після придбання ліцензії на підписку для Customer Insights глобальний адміністратор Microsoft 365 клієнта отримує електронний лист із запрошенням створити середовище. Щоб почати, перейдіть до [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start). 
 
 Інтерфейс із підказками допоможе виконати кроки, необхідні для збирання усіх потрібних для нового середовища відомостей. Для створення середовищ та керування ними потрібні [дозволи адміністратора](permissions.md).
 
@@ -66,7 +66,7 @@ ms.locfileid: "8354120"
 > Наразі служба Customer Insights підтримує наведені нижче послуги.
 > - Сутності, отримані з циклів даних Power BI, що зберігаються в озері даних Data Lake, яке керується з Microsoft Dataverse.  
 > - Облікові записи Azure Data Lake Storage з того ж регіону Azure, який було вибрано під час створення середовища.
-> - Azure Data Lake Storage облікові записи, які є Gen2 і мають *ієрархічний простір імен* увімкнуто. Облікові записи сховища озера Даних Azure Gen1 не підтримуються.
+> - Azure Data Lake Storage облікових записів, які є Gen2 і мають *ієрархічний простір* імен увімкнуто. Azure Data Lake Gen1 онлайнове пул носіїв облікових записів не підтримуються.
 
 Автентифікацію для Azure Data Lake Storage можна вибирати з двох різних параметрів: параметра на основі ресурсу й параметра на основі передплати. Додаткові відомості див. в розділі [Підключення до облікового запису Azure Data Lake Storage за допомогою принципала служби Azure](connect-service-principal.md). Ім'я **Контейнера** буде `customerinsights`, і змінити його не можна.
 
@@ -78,19 +78,21 @@ ms.locfileid: "8354120"
    
 На кроці **Microsoft Dataverse** ви можете підключити Customer Insights до свого середовища Dataverse.
 
-Надайте своє власне Microsoft Dataverse середовище для надання спільного доступу до даних (профілів і аналітичних даних) бізнес-застосункам на Dataverse основі програм, таких як Dynamics 365 Marketing або програми на основі моделі у програмі Power Apps. Залиште це поле порожнім, якщо у вас немає власного Dataverse середовища, і ми надамо його для вас.
+Надайте своє власне Microsoft Dataverse середовище для обміну даними (профілями та статистикою) з бізнес-додатками на Dataverse основі, таких як Dynamics 365 Маркетинг або модельні програми в Power Apps. Залиште це поле порожнім, якщо у вас немає власного Dataverse середовища, і ми надамо його для вас.
 
-Підключення до Dataverse вашого середовища також дає змогу проковтнути [дані з локальний джерел даних за допомогою Power Platform потоків даних і шлюзів](data-sources.md#add-data-from-on-premises-data-sources). Ви також можете використовувати [нестандартні прогноз моделі](predictions-overview.md?tabs=b2c#out-of-box-models), підключившись до Dataverse середовища.
+Підключення до вашого Dataverse середовища також дозволяє отримувати [дані з локальний джерел даних за допомогою Power Platform потоків даних і шлюзів](data-sources.md#add-data-from-on-premises-data-sources). Ви також можете використовувати [нестандартні прогноз моделі](predictions-overview.md?tabs=b2c#out-of-box-models), підключившись до Dataverse середовища.
 
 > [!IMPORTANT]
-> Статистика клієнтів і Dataverse повинна бути в одному регіоні, щоб увімкнути спільний доступ до даних.
+> 1. Статистика клієнтів і Dataverse повинні бути в одному регіоні, щоб увімкнути обмін даними.
+> 1. Ви повинні мати глобальну роль адміністратора в навколишньому Dataverse середовищі. Перевірте, чи пов'язане це [Dataverse середовище з](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) певними групами безпеки, і переконайтеся, що ви додані до цих груп безпеки.
+> 1. Жодне існуюче середовище статистики клієнтів не пов'язане з цим Dataverse середовищем. Дізнайтеся, [як видалити наявне підключення до Dataverse середовища](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment).
 
-:::image type="content" source="media/dataverse-provisioning.png" alt-text="спільний доступ до даних з Microsoft Dataverse автоматичним ввімкненням для нових екземплярів мережі.":::
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="спільний доступ до даних із Microsoft Dataverse автоматичним увімкненням для чистих нових екземплярів.":::
 
-> [!NOTE]
-> Customer Insights не підтримує згадані нижче сценарії організації спільного доступу до даних.
-> - Якщо усі дані зберігаються у власному сховищі Azure Data Lake Storage, ви не зможете дозволити спільний доступ до даних, використовуючи службу керованого Dataverse озера даних.
-> - Якщо увімкнути спільний доступ до даних для Dataverse, ви не зможете [створювати прогнозовані або відсутні значення в сутності](predictions.md).
+Для отримання додаткових відомостей про ввімкнення спільного доступу до Microsoft Dataverse даних із власного Azure Data Lake Storage див [Microsoft Dataverse](manage-environments.md#connect-to-microsoft-dataverse).
+
+Customer Insights не підтримує згадані нижче сценарії організації спільного доступу до даних.
+- Якщо увімкнути спільний доступ до даних для Dataverse, ви не зможете [створювати прогнозовані або відсутні значення в сутності](predictions.md).
 
 ### <a name="step-4-finalize-the-settings"></a>Крок 4. Завершення налаштування
 

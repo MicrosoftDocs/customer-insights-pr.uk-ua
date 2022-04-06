@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec286bb6a90fb4d18e89caf9166aa659b29d668e
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: d56ed779c342bb0855ee84d949f8d3ca604b92c1
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8232016"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487561"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Експорт сегментів до Marketo (підготовча версія)
 
@@ -63,7 +63,7 @@ ms.locfileid: "8232016"
 
 1. Введіть **[ідентифікатор списку Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. Ідентифікатор списку — це тільки числове значення. Наприклад, якщо ваш ідентифікатор списку Marketo ST12345A7, видаліть символи до та після цифр і введіть `12345`. 
 
-1. У розділі **Зіставлення даних** у полі **Електронна пошта** виберіть поле, яке відповідає адресі електронної пошти клієнта. 
+1. **У розділі Зіставлення** даних виберіть принаймні одне поле, яке представляє адресу електронної пошти клієнта або ідентифікатор Marketo клієнта. 
 
 1. За бажанням ви можете експортувати **Ім'я**, **Прізвище**, **Місто**, **Штат** та **Країну/Регіон**, щоб створювати більш персоналізовані електронні листи. Виберіть **Додати атрибут**, щоб зіставити ці поля.
 

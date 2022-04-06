@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
-ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8376441"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523694"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Переадресація входу за Dynamics 365 Customer Insights допомогою azure monitor (попередній перегляд)
 
@@ -230,7 +230,7 @@ Dynamics 365 Customer Insights забезпечує пряму інтеграц�
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | Так      | Так  | Завжди `WorkflowEvent` позначати подію як подію робочого циклу.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | Так      | Так  | Ідентифікатор запуску робочого циклу. Усі події робочого циклу та завдань у виконанні робочого циклу мають однакові `workflowJobId` значення.                                                                                                                                   |
-| `properties.operationType`                   | Так      | Так  | Ідентифікатор операції див. в розділі [Типи операцій].(#operation-types)                                                                                                                                                                                       |
+| `properties.operationType`                   | Так      | Так  | Ідентифікатор операції [див](#operation-types).                                                                                                                                                                               |
 | `properties.tasksCount`                      | Так      | No   | Лише робочий цикл. Кількість завдань, які запускає робочий цикл.                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | Так      | No   | Необов'язково. Лише події робочого циклу. Ідентифікатор Azure Active Directory [об'єкта користувача](/azure/marketplace/find-tenant-object-id#find-user-object-id), який ініціював робочий цикл, див `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | Так      | No   | `full` або `incremental` оновити.                                                                                                                                                                                                                            |

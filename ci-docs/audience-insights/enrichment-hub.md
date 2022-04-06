@@ -1,7 +1,7 @@
 ---
 title: Збагачення уніфікованих профілів клієнта
 description: Скористайтеся можливостями для збагачення даних клієнтів.
-ms.date: 02/18/2022
+ms.date: 03/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
-ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
+ms.openlocfilehash: 510a20306e793a5ba522a6ac0d9c7194f03472d2
+ms.sourcegitcommit: ae02ac950810242e2505d7d371b80210dc8a0777
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8372744"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8492004"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Збагачення для профілів клієнтів (підготовча версія)
 
@@ -48,11 +48,11 @@ ms.locfileid: "8372744"
 
 - [Дані компанії](enrichment-leadspace.md) надаються Leadspace
 - [Удосконалені адреси](enrichment-enhanced-addresses.md), надані корпорацією Microsoft 
-- [Розширені дані](enrichment-enhanced-company-data.md) про компанію, надані корпорацією Майкрософт
+- [Розширені дані](enrichment-enhanced-company-data.md) компанії, надані корпорацією Майкрософт
 - [Дані про розташування ](enrichment-here.md), надані HERE Technologies 
 - [Настроювані дані](enrichment-SFTP-custom-import.md) через протокол Secure File Transfer Protocol (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) надаються Microsoft
-- [Дані про](enrichment-office.md) взаємодію з обліковим записом, надані корпорацією Майкрософт
+- [Дані про залучення облікових записів](enrichment-office.md), надані корпорацією Майкрософт
 
 ---
 
@@ -84,7 +84,7 @@ ms.locfileid: "8372744"
 
 ## <a name="enrich-data-sources-before-unification"></a>Збагачення джерел даних перед об'єднанням
 
-Ви можете збагатити дані клієнтів перед об'єднанням даних, щоб підвищити якість зіставлення даних. Для отримання додаткової інформації джерело даних [див](data-sources-enrichment.md).
+Ви можете збагатити дані клієнтів перед об'єднанням даних, щоб підвищити якість зіставлення даних. Для отримання додаткових відомостей джерело даних [див](data-sources-enrichment.md).
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>Перегляд перебігу процесу збагачення
 
@@ -97,5 +97,19 @@ ms.locfileid: "8372744"
 1. В області **Відомості про перебіг виконання** розгорніть розділ **Збагачення**. 
 1. У збагачені, перебіг якого потрібно відстежити, виберіть **Докладно**. 
 1. В області **Відомості про завдання** виберіть **Докладно** для перегляду процесів, пов'язаних із оновленням збагачення, та їх стану. 
+
+## <a name="enrichment-results"></a>Результати збагачення
+
+Після завершення забігу зі збагачення ви можете переглянути результати збагачення.
+
+1. Перейдіть до розділу **Дані** > **Збагачення**. 
+1. Виберіть збагачення, про яке потрібно отримати відомості.
+
+Усі збагачення показують основну інформацію, таку як кількість збагачених профілів, попередній перегляд створеного об'єкта збагачення та кількість збагачених профілів з плином часу. Якщо є, кількість клієнтів, **збагачених на полі**, забезпечує деталізацію покриття кожного збагаченого поля.
+
+:::image type="content" source="media/enrichments-results.png" alt-text="Сторінка результатів збагачення.":::
+
+Деякі збагачення також показують інформацію, специфічну для типу збагачення. Щоб отримати додаткові відомості, зверніться до документації для відповідного збагачення.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
