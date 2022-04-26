@@ -5,15 +5,15 @@ ms.date: 11/19/2020
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 93841358d110bd16c7b7f8beb079bed704b22260
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: d3465b7eaa17a24e2926b8ea432b33e705931b88
+ms.sourcegitcommit: 696ad9ab6e10046c00f1ac86a7e8fc37386e6fe7
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354626"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "8555384"
 ---
 # <a name="transactional-churn-prediction-sample-guide"></a>Зразок вказівок для прогнозу відтоку транзакцій
 
@@ -30,7 +30,7 @@ Contoso — компанія, яка випускає високоякісну 
 
 ## <a name="task-1---ingest-data"></a>Завдання 1 — прийом даних
 
-Перегляньте статті [про посягання](data-sources.md) даних та [імпорт джерел даних за допомогою Power Query сполучних роз'ємів](connect-power-query.md). Наведена нижче інформація передбачає, що ви загалом ознайомилися з прийомом даних. 
+Перегляньте статті [про потрапляння](data-sources.md) даних та [імпорт джерел даних за допомогою Power Query роз'ємів](connect-power-query.md) спеціально. Наведена нижче інформація передбачає, що ви загалом ознайомилися з прийомом даних. 
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>Прийом даних клієнта з платформи eCommerce
 
@@ -148,7 +148,7 @@ Contoso — компанія, яка випускає високоякісну 
 
 ## <a name="task-3---configure-transaction-churn-prediction"></a>Завдання 3 — настроювання прогнозу відтоку транзакцій
 
-Маючи уніфіковані профілі клієнтів, ми можемо запустити прогноз відтоку підписок. Докладні дії прогноз [див](predict-subscription-churn.md). 
+Маючи уніфіковані профілі клієнтів, ми можемо запустити прогноз відтоку підписок. Докладні кроки прогноз [див](predict-subscription-churn.md). 
 
 1. Перейдіть до розділу **Аналітика** > **Виявлення** та натисніть, щоб використати **Модель відтоку клієнтів**.
 

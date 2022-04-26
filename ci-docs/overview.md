@@ -6,12 +6,12 @@ ms.author: mhart
 ms.date: 07/30/2021
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: 82b335388002158885fa55b61562db6c8370dc9d
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: ff3d23d00a565bf9e5693e7cd5db644ddfe4887e
+ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350202"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8560458"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Огляд продукту для Dynamics 365 Customer Insights
 
@@ -19,7 +19,7 @@ ms.locfileid: "8350202"
 
 [Аналіз аудиторії](audience-insights/overview.md) допомагає перетворити компанію на організацію, орієнтовану на клієнта. Фахівці з маркетингу, збуту та обслуговування отримують необхідні для персоналізованого обслуговування аналітичні відомості. Підключіть дані з джерел транзакцій, поведінки та спостереження, щоб створити всеосяжне подання клієнтів. Див. результати швидше з CDP, створеним для надання аналітичних відомостей, з якими можна взаємодіяти. 
 
-[Статистика](engagement-insights/overview.md) взаємодії була можливістю попереднього перегляду в Customer Insights, яка фокусується на зборі веб-та мобільних подій для додаткових аналітичних оглядів Попередній перегляд завершився 15 лютого 2022 року.
+[Інформація про](engagement-insights/overview.md) залучення була можливістю попереднього перегляду в Customer Insights, яка зосереджена на зборі веб- та мобільних подій для отримання додаткової статистики. Попередній перегляд закінчився 15 лютого 2022 року.
  
 ## <a name="choose-a-capability"></a>Виберіть можливість
 

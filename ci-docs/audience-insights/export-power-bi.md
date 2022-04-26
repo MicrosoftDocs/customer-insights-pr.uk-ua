@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: dccc069a355725bae09c1fece9292b9aee374e6d
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: 06c5bed74b82f9ae2a764a2eb363348e0edab531
+ms.sourcegitcommit: 4b2ad63aa7a4d4f31b573870bccbc40befe5f8fd
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225586"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8552081"
 ---
 # <a name="connector-for-power-bi-preview"></a>З’єднувач для Power BI (підготовча версія)
 
@@ -72,6 +72,6 @@ ms.locfileid: "8225586"
 
 Під час завантаження сутностей, які містять поля з форматом дати, наприклад MM/DD/YYYY, можуть виникнути помилки через невідповідність локальним шаблонам. Ця невідповідність трапляється, якщо файл Power BI Desktop налаштовано на іншу мову, ніж англійська (Сполучені Штати), оскільки поля дат в оглядах аудиторії зберігаються у форматі США.
 
-Файл Power BI Desktop має один параметр локальності, який застосовується під час отримання даних. Для правильного тлумачення полів даних установіть локаль для файлу .BPI на англійську (Сполучені Штати). [Навчіться змінювати регіональні параметри файлу Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
+Файл Power BI Desktop має один параметр локальності, який застосовується під час отримання даних. Для правильного тлумачення полів даних установіть локаль для файлу .BPI на англійську (Сполучені Штати). [Навчіться змінювати регіональні параметри файлу Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

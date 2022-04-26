@@ -44,6 +44,8 @@
           href: audience-insights/create-environment.md
         - name: Ознайомлення з аналізом аудиторії
           href: audience-insights/home.md
+        - name: Робота з тегами та стовпцями
+          href: audience-insights/work-with-tags-columns.md
         - name: Робота з бізнес-партнерами
           href: audience-insights/work-with-business-accounts.md
     - name: Джерела даних

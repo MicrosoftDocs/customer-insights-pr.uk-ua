@@ -1,28 +1,28 @@
 ---
-title: Створення заходів із шаблонів
-description: Визначте заходи за допомогою шаблонів для загальних інцидентів використання.
-ms.date: 02/28/2022
+title: Створення мір із шаблонів
+description: Визначте заходи за допомогою шаблонів для випадків звичайного використання.
+ms.date: 03/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.author: wameng
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-measure-template
 - customerInsights
-ms.openlocfilehash: 0fe846691825b93732cbbe6d1c942a79e4a3934f
-ms.sourcegitcommit: cf6a0ed44915908a44c70889a2dd199a9d0d4798
-ms.translationtype: HT
+ms.openlocfilehash: eeabd889f7b694f8d809894169a3cdc068acc340
+ms.sourcegitcommit: 9ef2cf99b847e7bd8f890f83d84b3a4045aaf8cc
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/28/2022
-ms.locfileid: "8359975"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8529426"
 ---
 # <a name="use-a-template-to-build-a-measure"></a>Створення показника за допомогою шаблону
 
 Для їх створення можна використовувати попередньо визначені шаблони часто використовуваних [заходів](measures.md). Детальні описи шаблонів та підказки інтерфейсу допоможуть вам швидко та зручно створювати показники. Шаблони працюють, використовуючи зіставлені дані з сутності *Уніфікована справа*. Тому перед створенням показника з шаблону переконайтесь, що ви налаштували [справи клієнтів](activities.md).
 
-Щоб створити спеціальні заходи, перегляньте розділ [Використання конструктора мірок для створення заходів з нуля](measure-builder.md).
+Щоб створити настроювані заходи, див [...](measure-builder.md).
 
 # <a name="individual-consumers-b-to-c"></a>[Окремі споживачі (B-to-C)](#tab/b2c)
 
@@ -39,7 +39,7 @@ ms.locfileid: "8359975"
 - Тривалість участі в програмі лояльності
 - Час з останньої покупки
 
-## <a name="build-a-new-measure-using-a-template"></a>Створення нового заходу за допомогою шаблону
+## <a name="build-a-new-measure-using-a-template"></a>Створення нової міри за допомогою шаблону
 
 1. Перейдіть до **заходів**.
 
@@ -51,7 +51,9 @@ ms.locfileid: "8359975"
 
 1. Перегляньте потрібні дані та виберіть **Почати**, якщо всі дані присутні.
 
-1. В області **Редагування імені** встановіть ім'я показника та вихідну сутність. 
+1. Виберіть **редагувати відомості** поруч із пунктом Ім'я вимірювання. Укажіть назву для заходу. За бажанням додайте [теги](work-with-tags-columns.md#manage-tags) до міри.
+
+   :::image type="content" source="media/measures_edit_details.png" alt-text="Діалогове вікно Редагування відомостей.":::
 
 1. Виберіть **Готово**.
 

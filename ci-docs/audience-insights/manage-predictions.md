@@ -5,15 +5,15 @@ ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8c5d8b0395452c8da1631f09cffeddfc811e6d29
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: 8ff8d70ffb8489def072e5d8a6e43d062594141a
+ms.sourcegitcommit: 696ad9ab6e10046c00f1ac86a7e8fc37386e6fe7
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230817"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "8555338"
 ---
 # <a name="manage-predictions"></a>Керування прогнозами
 
@@ -49,10 +49,10 @@ ms.locfileid: "8230817"
 
 :::image type="content" source="media/input-data-usability-report.png" alt-text="Приклад звіту про зручність використання вхідних даних, де показано таблицю із помилками, попередженнями та рекомендаціями.":::
 
-- **Ім'я:** Описове ім'я помилки, попередження або рекомендації.
-- **Крок:** Фаза моделі, поїзд або оцінка, інформація посилається на.
-- **Стан:** Серйозність інформації (помилка, попередження, рекомендація).
-- **Ім'я стовпця:** стовпець у сутності, яку потрібно змінити, щоб підвищити продуктивність моделі.
+- **Ім'я:** описове ім'я помилки, попередження або рекомендація.
+- **Крок:** Етап моделі, поїзд або оцінка, інформація посилається на.
+- **Стан:** Тяжкість інформації (помилка, попередження, рекомендація).
+- **Ім'я стовпця:** Стовпець у сутності, яку потрібно змінити для підвищення продуктивності моделі.
 - **Ім'я сутності:** ім'я сутності, яку потрібно змінити для підвищення продуктивності моделі.
 - **Деталі:** Відомості про помилку, попередження або рекомендацію.
 
