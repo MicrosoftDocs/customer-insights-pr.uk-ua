@@ -7,12 +7,12 @@ ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: fa6ea6e96de3d382c1426b383a057c8ce4f67ccf
-ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
+ms.openlocfilehash: 8fcc1c97be87afe942aa3b5e23d1eb68008aa873
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8456023"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641879"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Початок роботи після придбання Customer Insights
 
@@ -34,9 +34,8 @@ Customer Insights ліцензується на кожного клієнта і
 
 1. Перейдіть за [URL-адресою програми Customer Insights](https://home.ci.ai.dynamics.com).
 1. Увійдіть у робочий або навчальний обліковий запис. 
-1. Погодьтеся з умовами надання послуг і встановіть параметри вмісту для своєї інсталяції Customer Insights.
-1. Виберіть, на якій функції слід сконцентруватись, доки ви не відкриєте початкову сторінку вибраної функції.
+1. Погодьтеся з умовами надання послуг і встановіть налаштування вмісту для вашого середовища Customer Insights.
 
 ## <a name="create-your-own-environment"></a>Створіть власне середовище
 
-Після першого входу ви побачите середовище зі зразками даних. Ці дані можна використовувати для огляду функцій на ознайомлення з програмою. Щоб використовувати власні дані, потрібно [створити середовище](/dynamics365/customer-insights/audience-insights/create-environment).
+Після першого входу ви побачите середовище зі зразками даних. Ці дані можна використовувати для огляду функцій на ознайомлення з програмою. Щоб використовувати власні дані, потрібно [створити середовище](create-environment.md).

@@ -1,9 +1,9 @@
 ---
-ms.openlocfilehash: 98c7bd1cec20481874681e98bda050846c760e45
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: f92dc5c662af39a5a4393f15ac48b50af81f8f4d
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7619364"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641495"
 ---
-Створюйте на основі збагачених даних клієнтів. Створюйте [сегменти](../audience-insights/segments.md) та [показники](../audience-insights/measures.md), вибираючи відповідні піктограми на панелі команд. Крім того, можна [експортувати дані](../audience-insights/export-destinations.md), щоб надавати клієнтам персоналізовані можливості.
+Створюйте на основі збагачених даних клієнтів. Створюйте [сегменти](../segments.md) та [показники](../measures.md), вибираючи відповідні піктограми на панелі команд. Крім того, можна [експортувати дані](../export-destinations.md), щоб надавати клієнтам персоналізовані можливості.
