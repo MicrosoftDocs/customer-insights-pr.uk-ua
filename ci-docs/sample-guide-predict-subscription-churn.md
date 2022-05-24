@@ -1,8 +1,8 @@
 ---
 title: Зразок вказівок для прогнозу відтоку передплат
 description: За допомогою зразку вказівок можна випробувати готову модель прогнозування відтоку передплат.
-ms.date: 11/19/2020
-ms.reviewer: mhart
+ms.date: 03/31/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-create-prediction
 - customerInsights
-ms.openlocfilehash: 2aea6c62421b308705899e4f8af64f64bfcb2d3d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5a8eeafecacef3d0bb4a798b698cf490423ca98d
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644100"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741436"
 ---
 # <a name="subscription-churn-prediction-sample-guide"></a>Зразок вказівок для прогнозу відтоку передплат
 
@@ -112,61 +112,7 @@ Contoso — компанія, яка випускає високоякісну 
 
 ## <a name="task-2---data-unification"></a>Завдання 2 — уніфікація даних
 
-Після прийому даних починається процес **Зіставлення, пошук відповідностей, злиття** для створення уніфікованого профілю клієнта. Для отримання додаткових відомостей див. розділ [Уніфікація даних](data-unification.md).
-
-### <a name="map"></a>Зіставлення
-
-1. Після отримання даних зіставте контакти з eCommerce і Loyalty з загальними типами даних. Перейдіть до меню **Дані** > **Уніфікувати** > **Зіставити**.
-
-1. Виберіть сутності, які відображають профіль клієнта — **ecomerecotactts** і **lolocustomer**. 
-
-   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="уніфікація джерел даних електронної комерції і лояльності.":::
-
-1. Виберіть **ContactId** як первинний ключ для **eCommerceContacts** і **LoyaltyID** як первинний ключ для **loyCustomers**.
-
-   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="Уніфікація LoyaltyId як первинного ключа.":::
-
-### <a name="match"></a>Збіг
-
-1. Перейдіть на вкладку **Пошук відповідностей** і натисніть **Встановлення порядку**.
-
-1. У розкривному списку **Основний** виберіть **eCommerceContacts : eCommerce** у якості основного джерела, й включіть до нього всі записи.
-
-1. У розкривному списку **Сутність 2** виберіть **loyCustomers : LoyaltyScheme** і включіть усі записи.
-
-   :::image type="content" source="media/unify-match-order.PNG" alt-text="Уніфікація пошуку відповідностей електронної комерції і лояльності.":::
-
-1. Виберіть **Створити нове правило**
-
-1. Додайте першу умову за допомогою FullName.
-
-   * У розкривному списку для сутності CommerceContacts виберіть значення **FullName**.
-   * У розкривному списку для сутності loyCustomers виберіть значення **FullName**.
-   * Виберіть розкривне меню **Нормалізувати** і виберіть **Тип (телефон, ім'я, адреса,...)**.
-   * Встановіть для параметру **Рівень точності** значення **Базовий** і для параметру **Значення** значення **Висока**.
-
-1. Введіть ім'я **FullName, адреса електронної пошти** для нового правила.
-
-   * Додайте другу умову для адреси електронної пошти, вибравши параметр **Додати умову**
-   * У розкривному списку для сутності eCommerceContacts виберіть значення **Ел. пошта**.
-   * У розкривному списку для сутності loyCustomers виберіть значення **Ел. пошта**. 
-   * Залиште поле Normalize пустим. 
-   * Встановіть для параметру **Рівень точності** значення **Базовий** і для параметру **Значення** значення **Висока**.
-
-   :::image type="content" source="media/unify-match-rule.PNG" alt-text="Уніфікація правила зіставлення для імені та електронної пошти.":::
-
-7. Натисніть **Зберегти** та **Запустити**.
-
-### <a name="merge"></a>Злиття
-
-1. Перейдіть до таблиці **Злиття**.
-
-1. У полі **ContactId** для сутності **loyCustomers** змініть коротке ім'я на **ContactIdLOYALTY**, щоб відрізняти від інших прийнятих ідентифікаторів.
-
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="перейменуйте contactid з ідентифікатора лояльності.":::
-
-1. Виберіть **Зберегти** та **Запустити**, щоб розпочати процес злиття.
-
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>Завдання 3 — настроювання прогнозу відтоку передплат
 

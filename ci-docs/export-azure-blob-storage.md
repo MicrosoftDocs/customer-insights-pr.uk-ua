@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 42095f369c47553e5ddf5fada54e559202c943a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644071"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757411"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Експортуйте список сегментів та інші дані до сховища BLOB-об'єктів Azure (підготовча версія)
 
@@ -44,7 +44,7 @@ ms.locfileid: "8644071"
 Ви можете налаштувати цей експорт, якщо у вас є доступ до підключень такого типу. Додаткові відомості: [Дозволи, необхідні для налаштування експорту](export-destinations.md#set-up-a-new-export).
 
 > [!IMPORTANT]
-> Якщо ввімкнути параметр видалення облікового запису сховища BLOB-об’єктів Azure, експорти завершаться помилкою. Щоб експортувати дані в BLOB-об'єктів, вимкніть видалення. Щоб отримати додаткові відомості, див. [Увімкнення видалення BLOB-об'єктів](/azure/storage/blobs/soft-delete-blob-enable.md)
+> Якщо ввімкнути параметр видалення облікового запису сховища BLOB-об’єктів Azure, експорти завершаться помилкою. Щоб експортувати дані в BLOB-об'єктів, вимкніть видалення. Щоб отримати додаткові відомості, див. [Увімкнення видалення BLOB-об'єктів](/azure/storage/blobs/soft-delete-blob-enable)
 
 1. Відкрийте **Дані** > **Експорти**.
 

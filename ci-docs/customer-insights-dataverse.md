@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 85995cbd7f797810bfb6ecdc8a24d56542f0b5a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 1e629cd218b104b115f74f59a53a14e9d60fcc8a
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643086"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741390"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Робота із даними Customer Insights у Microsoft Dataverse
 
@@ -54,7 +54,7 @@ Customer Insights дозволяє зробити вихідні сутност�
 
 ### <a name="customerprofile"></a>CustomerProfile
 
-Ця таблиця містить уніфікований профіль клієнта з Customer Insights. Схема уніфікованого профілю клієнта залежатиме від сутностей і атрибутів, застосованих в процесі злиття. Схема профілю клієнта зазвичай містить підмножину атрибутів із [визначення CustomerProfile в Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+Ця таблиця містить уніфікований профіль клієнта з Customer Insights. Схема для уніфікованого профілю клієнта залежить від сутностей і атрибутів, які використовуються в процесі об'єднання даних. Схема профілю клієнта зазвичай містить підмножину атрибутів із [визначення CustomerProfile в Common Data Model](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
 
 ### <a name="alternatekey"></a>AlternateKey
 

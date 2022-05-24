@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 56f6a8ad20224922f9968f0ad3b6a0e0a400214b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
-ms.translationtype: MT
+ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643047"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755711"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>Збагачення джерел даних (попередній перегляд)
 
@@ -23,10 +23,10 @@ ms.locfileid: "8643047"
 
 Ви повинні мати дозволи Постачальника або Адміністратора для створення або редагування збагачень. Додаткові відомості див. в розділі [Дозволи](permissions.md).  
 
-1. Перейдіть до **DataUnify** > **·**. Виберіть сутність, яку потрібно збагатити, і виберіть один атрибут як первинний ключ для сутності. Для отримання додаткових відомостей [див](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
+1. Перейдіть до **об'єднання даних** > **·**. Виберіть сутність, яку потрібно збагатити, і виберіть один атрибут як первинний ключ для сутності. Для отримання додаткових відомостей [див](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 
 1. Відкрийте **Дані** > **Джерела даних**.
- 
+
 1. Виділіть вертикальні три крапки поруч із джерело даних, які потрібно збагатити, і виберіть пункт **Збагатити**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Сторінка збагачення джерел даних.":::

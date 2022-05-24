@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e155f75ffbc2c1bb228bece1b3e34846df794543
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644056"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757457"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Схеми сутностей у Common Data Model
 
@@ -23,7 +23,7 @@ ms.locfileid: "8644056"
 
 Це спільна модель даних, яка дає змогу програмам та інтеграторами даних ефективніше співпрацювати, надаючи уніфіковане визначення даних. Common Data Model має багату систему метаданих зі стандартними сутностями, зв'язками, ієрархіями, рисами тощо. Вона походить з програм Dynamics 365 і має відкритий код на GitHub, а також включає понад 260 стандартних сутностей. Велика система внутрішніх і зовнішніх партнерів вносить специфічних для кожної галузі поняття в Common Data Model.
 
-Сьогодні Common Data Model запроваджено в багатьох системах і платформах, включно з потоками даних Power BI і службами даних Azure. Вона уже підтримується в Microsoft Dataverse, Dynamics 365, Power Apps, Power BI і майбутніх службах даних Azure, безпосередньо накопичуючи значення для [Open Data Initiative](https://www.microsoft.com/open-data-initiative).
+Сьогодні Common Data Model запроваджено в багатьох системах і платформах, включно з потоками даних Power BI і службами даних Azure. Вона уже підтримується в Microsoft Dataverse, Dynamics 365, Power Apps, Power BI і майбутніх службах даних Azure, безпосередньо накопичуючи значення для [Open Data Initiative](https://dynamics.microsoft.com/en-us/open-data-initiative/).
 
 ## <a name="customer-insights-entity-schemas"></a>Схеми сутностей Customer Insights
 

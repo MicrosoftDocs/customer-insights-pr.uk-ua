@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: bcc50c6fa8f8e2a66ef6164bfa9022e068c0e374
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 1fe8d6e8098831ecc8ff28e571340c56a654de6d
+ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643066"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739233"
 ---
 # <a name="data-sources-overview"></a>Огляд джерел даних
 
@@ -35,9 +35,6 @@ Dynamics 365 Customer Insights підключається до даних з ш�
 - [З папки Common Data Model](connect-common-data-model.md)
 - [З власного озера Microsoft Dataverse](connect-dataverse-managed-lake.md)
 - [Azure Synapse Analytics З бази даних](connect-synapse.md)
-
-> [!NOTE]
-> Якщо використовується ознайомлювальна версія, розділ методів імпорту містить **параметр бібліотеки** даних Customer Insights. Виберіть цей параметр, щоб вибрати зразок набору даних, доступний для різних галузей промисловості. Для отримання додаткових відомостей див [Dynamics 365 Customer Insights](trial-signup.md).
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Додавайте дані з локальних джерел даних
 

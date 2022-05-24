@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: ecc8bb3dbec1d4583c4bf2a58058145343945299
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
-ms.translationtype: MT
+ms.openlocfilehash: a460ec87ec85f0614f944d352588d4ca899f8120
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644035"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755475"
 ---
 # <a name="work-with-customer-insights-apis"></a>Робота з Customer Insights APIs
 
@@ -25,7 +25,7 @@ ms.locfileid: "8644035"
 > [!IMPORTANT]
 > Відомості про ці API наведено в [Довіднику Customer Insights API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Вони містять додаткові відомості про операції, параметри та відповіді.
 
-У цій статті описано API Customer Insights, створення реєстрації в програмі Azure та початок із використанням доступних клієнтських бібліотек.
+У цій статті описано, як отримати доступ до API статистики клієнтів, створити Azure app registration і почати роботу з клієнтськими бібліотеками.
 
 ## <a name="get-started-trying-the-customer-insights-apis"></a>Почати роботу з Customer Insights API
 
@@ -83,13 +83,13 @@ ms.locfileid: "8644035"
 
 Для отримання додаткових відомостей про MSAL див. [Огляд бібліотеки автентифікації Microsoft (MSAL)](/azure/active-directory/develop/msal-overview).
 
-Докладніше про реєстрацію програми в Azure див. у розділі [Реєстрація програми](/azure/active-directory/develop/quickstart-register-app.md#register-an-application).
+Докладніше про реєстрацію програми в Azure див. у розділі [Реєстрація програми](/graph/auth-register-app-v2).
 
 Відомості про використання API у клієнтських бібліотеках див. у розділі [«Клієнтські бібліотеки Customer Insights»](#customer-insights-client-libraries).
 
 ### <a name="server-to-server-application-permissions"></a>Міжсерверні дозволи програм
 
-У [розділі «Реєстрація програм»](#create-a-new-app-registration-in-the-azure-portal) описано, як зареєструвати програму, яка вимагає від користувача увійти до системи для автентифікації. Дізнайтесь, як створити реєстрацію програми, яка не потребує взаємодії з користувачем і може виконуватись на сервері.
+У [розділі «Реєстрація програм»](#create-a-new-app-registration-in-the-azure-portal) описано, як зареєструвати програму, яка вимагає від користувача увійти до системи для автентифікації. Дізнайтеся, як створити реєстрацію програми, яка не потребує взаємодії з користувачем і може бути запущена на сервері.
 
 1. У реєстрації програми на порталі Azure виберіть **Дозволи API**.
 
@@ -112,6 +112,10 @@ ms.locfileid: "8644035"
    Відкрийте Customer Insights, перейдіть до меню **Адміністратор** > **Дозволи** і натисніть **Додати користувача**.
 
 1. Знайдіть ім'я реєстрації програми, виберіть його в результатах пошуку, а потім натисніть **Зберегти**.
+
+## <a name="sample-queries"></a>Зразки запитів
+
+Ми склали короткий список зразків запитів OData для роботи з API: [приклади запитів OData](odata-examples.md).
 
 ## <a name="customer-insights-client-libraries"></a>Бібліотеки клієнтів Customer Insights
 
@@ -137,7 +141,7 @@ ms.locfileid: "8644035"
 
 1. Використовуйте [бібліотеку автентифікації Microsoft (MSAL)](/azure/active-directory/develop/msal-overview), щоб отримати `AccessToken` з використанням [реєстрації наявної програми Azure](#create-a-new-app-registration-in-the-azure-portal).
 
-1. Після успішної автентифікації та придбання токена створіть новий або використовуйте існуючий `HttpClient` з додатковими **defaultRequestHeaders "Авторизація"**, встановлений на **"Маркер доступу" на пред'явника "маркер доступу"** та **Ocp-Apim-Підписка-ключ**, встановлений на [**ключ** підписки з вашого середовища](#get-started-trying-the-customer-insights-apis) Customer Insights.   
+1. Після успішної автентифікації та придбання маркера, побудувати новий або використовувати існуючий `HttpClient` з **defaultRequestHeaders "Авторизація"**, встановлений на **Пред'явник "маркер доступу"** і **Ocp-Apim-підписка-ключ**, встановлений на [**ключ** підписки з вашого середовища](#get-started-trying-the-customer-insights-apis) Customer Insights.   
  
    У разі потреби можна скинути заголовок **Авторизація**. Наприклад, коли термін дії маркера минув.
 
@@ -147,7 +151,7 @@ ms.locfileid: "8644035"
 
 1. Наприклад, можна робити виклики клієнта в «методах розширення» – наприклад, `GetAllInstancesAsync`. Якщо перевага надається основному `Microsoft.Rest.HttpOperationResponse`, використовуйте «http message methods» – наприклад, `GetAllInstancesWithHttpMessagesAsync`.
 
-1. Ймовірно, відповідь буде типом `object`, оскільки метод може повертати кілька типів (наприклад, `IList<InstanceInfo>` і `ApiErrorResult`). Щоб перевірити тип повернення, можна спокійно перетворювати об'єкти до типів відповідей, указаних на [сторінці відомостей API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) для цієї операції.    
+1. Ймовірно, відповідь буде типом `object`, оскільки метод може повертати кілька типів (наприклад, `IList<InstanceInfo>` і `ApiErrorResult`). Щоб перевірити тип повернення, ви використовуєте об'єкти в типах відповідей, указаних [на сторінці](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) відомостей про API для цієї операції.    
    
    Якщо потрібно отримати більше інформації про запит, скористайтеся **методами http message** для доступу до об'єкта відповіді на запит.
 

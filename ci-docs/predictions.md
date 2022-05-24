@@ -12,12 +12,12 @@ searchScope:
 - ci-predictions
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: cca91f2bbe2fc64554199082a79c1b388a01ab52
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e2cace3547a0b584dbf26ae5eecf86f3b256649f
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644107"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740744"
 ---
 # <a name="complete-your-partial-data-with-predictions-deprecated"></a>Заповніть свої часткові дані прогнозами (застарілими)
 
@@ -37,13 +37,13 @@ ms.locfileid: "8644107"
 
 1. У вашій організації є екземпляр, [налаштований у Microsoft Dataverse](/ai-builder/build-model#prerequisites), і він розташований у тій самій організації, що й Customer Insights.
 
-2. Середовище аналізу аудиторії додається до вашого екземпляру Dataverse.
+2. Середовище Customer Insights підключено до інсталяції Dataverse.
 
 Для отримання додаткових відомостей див. розділ [Створення нового середовища](create-environment.md).
 
 ## <a name="create-a-prediction-in-the-customer-entity"></a>Створення прогнозу в сутності «Клієнт»
 
-1. Перейдіть до **данихentities** > **·**.
+1. Перейдіть до **сутності даних** > **·**.
 
 2. Виберіть сутність **Клієнт**.
 
@@ -91,7 +91,7 @@ ms.locfileid: "8644107"
 
 ## <a name="view-a-prediction"></a>Перегляд прогнозу
 
-1. Перейдіть до **intelligencePredictionsМі** > **·** > **прогнози**.
+1. Перейдіть до **розвідки** > **Прогнози** > **Мої прогнози**.
 
 2. Виберіть прогноз, який потрібно переглянути.
 
@@ -108,7 +108,7 @@ ms.locfileid: "8644107"
 
 ## <a name="update-a-prediction"></a>Оновлення прогнозу
 
-1. Перейдіть до **intelligencePredictionsМі** > **·** > **прогнози**.
+1. Перейдіть до **розвідки** > **Прогнози** > **Мої прогнози**.
 
 2. Виберіть прогноз, який потрібно оновити, і клацніть піктограму **Оновити**.
 
@@ -118,7 +118,7 @@ ms.locfileid: "8644107"
 
 Створивши прогноз, ви можете налаштувати модель, AI Builder щоб підвищити ефективність вашої моделі.  
 
-1. Перейдіть до **intelligencePredictionsМі** > **·** > **прогнози**.
+1. Перейдіть до **розвідки** > **Прогнози** > **Мої прогнози**.
 
 2. Виберіть прогноз, який потрібно змінити.
 
@@ -135,7 +135,7 @@ ms.locfileid: "8644107"
 
 ## <a name="remove-a-prediction"></a>Вилучення прогнозу
 
-1. Перейдіть до **intelligencePredictionsМі** > **·** > **прогнози**.
+1. Перейдіть до **розвідки** > **Прогнози** > **Мої прогнози**.
 
 2. Виберіть прогноз, який потрібно видалити.
 

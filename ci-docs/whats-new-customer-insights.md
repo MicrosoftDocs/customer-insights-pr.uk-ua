@@ -1,19 +1,19 @@
 ---
 title: Нові та заплановані функції
 description: Відомості про нові функції, вдосконалення та виправлення вад.
-ms.date: 04/05/2022
+ms.date: 05/03/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 25c6e2897d836854408871b2c74afa16ecba7435
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
-ms.translationtype: HT
+ms.openlocfilehash: 386198c838929a20e136288fffb1015707654d8d
+ms.sourcegitcommit: 9f256af5c4f7e99305bf09087f7ec05eebeae6a0
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644131"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8700962"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Нові можливості Dynamics 365 Customer Insights
 
@@ -24,6 +24,28 @@ ms.locfileid: "8644131"
 > [!TIP]
 > Щоб надіслати запит і проголосувати за запити функцій і пропозиції продуктів, перейдіть на [Портал ідей щодо програми Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+
+## <a name="april-2022-updates"></a>Оновлення за квітень 2022 р.
+
+Оновлення в квітні 2022 року включають нові функції, оновлення продуктивності та виправлення помилок.
+
+### <a name="dun--bradstreet-enrichment-preview"></a>Dun & Bradstreet збагачення (Попередній перегляд)
+
+Dun & Bradstreet надає комерційні дані, аналітику та статистику для бізнесу. Вона дає змогу клієнтам з уніфікованими профілями клієнтів для компаній збагачувати свої дані. Збагачення включає такі атрибути, як номер DUNS, розмір компанії, місце розташування, промисловість тощо.
+
+Для отримання додаткової інформації див [Збагачення профілів компаній за допомогою Dun & Bradstreet (Попередній перегляд)](enrichment-dnb.md).
+
+### <a name="define-the-measure-type-when-creating-a-new-measure"></a>Визначення типу міри під час створення нової міри
+
+Тепер ви можете розрізняти заходи для окремих профілів і заходи по всьому бізнесу. Хоча бізнес-заходи відображаються на домашній сторінці Статистики клієнтів, заходи клієнтів відображаються на детальних поданнях клієнтів.
+
+Для отримання додаткових відомостей [див](measure-builder.md).
+
+### <a name="consolidation-of-customer-insights-documentation"></a>Консолідація документації «Статистика клієнтів»
+
+Ми переглянули наші статті про документацію та видалили згадки про статистику залучення та можливості розуміння аудиторії. Рухаючись вперед, ми будемо послідовно посилатися на назву продукту Customer Insights, коли ми пишемо про основні особливості програми. Ця зміна також призводить до значної реструктуризації змісту, структури URL-адреси та шляхів файлів у базовому сховищі документації. Усі закладки або наявні посилання продовжують працювати та перенаправляються на оновлені URL-адреси.
+
+Якщо ви хочете повідомити нам, як ви сприймаєте цю зміну або помічаєте щось, що не працює належним чином, повідомте нам, надіславши [відгук на цю сторінку](https://github.com/MicrosoftDocs/customer-insights/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A%0A%E2%9A%A0%20*Do%20not%20edit%20this%20section.%20It%20is%20required%20for%20docs.microsoft.com%20%E2%9E%9F%20GitHub%20issue%20linking.*%0A%0A*%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Version%20Independent%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Content%3A%20%5BNew%20and%20upcoming%20features%20-%20Dynamics%20365%20Customer%20Insights%5D(https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Fcustomer-insights%2Fwhats-new-customer-insights)%0A*%20Content%20Source%3A%20%5Bci-docs%2Fwhats-new-customer-insights.md%5D(https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fcustomer-insights%2Fblob%2Fmain%2Fci-docs%2Fwhats-new-customer-insights.md)%0A*%20Service%3A%20**customer-insights**%0A*%20Sub-service%3A%20**audience-insights**%0A*%20GitHub%20Login%3A%20%40m-hartmann%0A*%20Microsoft%20Alias%3A%20**mhart**).
 
 ## <a name="march-2022-updates"></a>Оновлення за березень 2022 року
 
@@ -95,13 +117,13 @@ LiveRamp забезпечує роздільну здатність особис
 
 Хоча кілька користувачів можуть мати дозволи адміністратора в Customer Insights, лише один користувач є власником середовища. Покращений досвід дозволяє змінювати власників середовища та претендувати на право власності, якщо колишній власник покинув організацію. 
 
-Для отримання додаткових [відомостей див](manage-environments.md#change-the-owner-of-an-environment).
+Для отримання додаткових відомостей [див](manage-environments.md#change-the-owner-of-an-environment).
 
 ### <a name="data-preparation-process-lists-corruption-reason-for-corrupted-records"></a>Процес підготовки даних містить список причин пошкодження пошкоджених записів
 
 Підготовка даних тепер показує причину пошкодження для всіх полів із пошкодженими даними. Інформація надається на індивідуальному рівні запису для легкої ідентифікації. 
 
-Для отримання додаткових [відомостей див](entities.md#corrupted-data-sources).
+Для отримання додаткових відомостей [див](entities.md#corrupted-data-sources).
 
 ### <a name="end-of-preview-for-reporting-features-in-the-engagement-insights-capability"></a>Кінець попереднього перегляду для функцій звітування в можливості статистики залучення
 

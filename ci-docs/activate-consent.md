@@ -1,23 +1,22 @@
 ---
 title: Активація правил згоди для сегментів
 description: Виконайте наведені нижче дії, щоб зв'язати дані про згоду та активувати перевірку згоди в програмі Dynamics 365 Customer Insights. Адміністратор також може вимкнути перевірку згоди.
-ms.date: 11/12/2021
-ms.subservice: audience-insights
+ms.date: 04/27/2022
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: bfa03f4b7b56b300a74ebd04721cd64b893879f1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f82e3a4031fee8bcaa88575cbd68b37385a7fffb
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644000"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755195"
 ---
 # <a name="activate-consent-rules"></a>Активація правил згоди
 
-Центр [згоди (попередній перегляд)](consent-management/overview.md) допоможе вам гармонізувати дані згоди з різних джерел. Використовуйте єдину *сутність згоди* для застосування перевірок згоди за промовчанням. Після імпортування даних згоди до Центру згоди та настроювання правил для даних *сутність згоди* автоматично синхронізується з Dynamics 365 Customer Insights.
+Центр [згоди (попередній перегляд)](consent-management/overview.md) допоможе вам гармонізувати дані згоди з різних джерел. Використовуйте єдину *сутність згоди* для застосування перевірок згоди за промовчанням. Після імпортування даних згоди та настроювання правил *карти сутність Згоди* автоматично синхронізується з Dynamics 365 Customer Insights.
 
 ## <a name="enable-consent-checks"></a>Увімкнути перевірку згоди
 
