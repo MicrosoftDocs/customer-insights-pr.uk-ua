@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 5b39452d7a4612242739e8000e57217954c71289
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: af2583295627f98e980adbca4f216b9c34c3cad8
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641541"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808592"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Запити прав суб'єкта даних (DSR) відповідно до GDPR
 
@@ -39,9 +39,9 @@ ms.locfileid: "8641541"
 Адміністратор Customer Insights може виконати зазначені нижче кроки, щоб видалити дані про клієнта, що були видалені у джерелі даних.
 
 1. Увійти до Dynamics 365 Customer Insights.
-2. Перейти до **джерел dataData** > **·**
+2. Перейти до розділу **Джерела даних** > **·**
 3. Для кожного джерела даних у списку, що містить видалені дані про клієнта, виконайте зазначені нижче дії.
-   1. Виберіть (...), а потім виберіть **Оновити**.
+   1. Виберіть вертикальні три крапки (&vellip;) і натисніть кнопку **Оновити**.
    2. Перевірте стан джерела даних в області **Стан**. Галочка у полі означає, що оновлення пройшло успішно. Попереджувальний трикутник означає, що сталася помилка. Якщо відображається попереджувальний трикутник, зверніться за адресою D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
@@ -52,7 +52,7 @@ ms.locfileid: "8641541"
 Адміністратор Customer Insights може виконати ці кроки, щоб видалити дані користувача Customer Insights.
 
 1. Увійти до Dynamics 365 Customer Insights.
-2. Перейдіть до розділу **AdminPermissions** > **·**.
+2. Перейдіть до розділу **Дозволи** > **безпеки** > **адміністратора**.
 3. Установіть прапорець навпроти користувача, якого потрібно видалити.
 4. Натисніть **Видалити**.
 

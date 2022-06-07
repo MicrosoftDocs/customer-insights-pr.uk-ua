@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 386198c838929a20e136288fffb1015707654d8d
-ms.sourcegitcommit: 9f256af5c4f7e99305bf09087f7ec05eebeae6a0
-ms.translationtype: MT
+ms.openlocfilehash: af79c8369dd608e8ce1c14c50bb9aef3a79b9029
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8700962"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833655"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Нові можливості Dynamics 365 Customer Insights
 
@@ -58,6 +58,7 @@ LiveRamp забезпечує роздільну здатність особис
 Для отримання додаткових відомостей [див](enrichment-liveramp.md).
 
 ### <a name="organize-segments-and-measures-with-tags-and-filters"></a>Упорядкування сегментів і заходів за допомогою тегів і фільтрів
+
 Якщо ваша організація підтримує багато сегментів або заходів, пошук правильного іноді може здатися складним завданням. Ця нова функція дозволяє впорядковувати списки за допомогою тегів і стовпців. Це допомагає швидко та легко знаходити дані та налаштовувати подання.
 
 Для отримання додаткових відомостей [див](work-with-tags-columns.md).
@@ -65,9 +66,9 @@ LiveRamp забезпечує роздільну здатність особис
 ### <a name="enable-data-sharing-with-dataverse-when-using-your-own-storage-account"></a>Увімкнення спільного доступу до Dataverse даних під час використання власного облікового запису сховища
 
 Якщо ваше середовище використовує для Azure Data Lake Storage зберігання даних статистики клієнтів, спільний доступ до даних потребує Microsoft Dataverse додаткової конфігурації.
-Раніше ви могли ввімкнути обмін даними лише тоді Dataverse, коли ваші дані зберігалися в нашому керованому озері даних. 
+Раніше ви могли ввімкнути обмін даними лише тоді Dataverse, коли ваші дані зберігалися в нашому керованому озері даних.
 
-Для отримання додаткових відомостей див [Dataverse Azure Data Lake Storage](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
+Для отримання додаткових відомостей див [Dataverse Azure Data Lake Storage](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ### <a name="new-export-destinations-iterable-and-braze"></a>Нові експортні напрямки: Ітераційні та Braze
 
@@ -81,7 +82,6 @@ LiveRamp забезпечує роздільну здатність особис
 
 - Google Ads: Нова версія експортного роз'єму Google Ads спрощує роботу з автентифікацією та тепер дозволяє автоматично створювати нові аудиторії Google Ads. 
 - Marketo: Нова версія експортного роз'єму Marketo забезпечує підтримку Marketo ID, що дозволяє уникнути дублювання даних, оновити існуючі записи та створити нові записи на Marketo. 
-
 
 ## <a name="february-2022-updates"></a>Оновлення за лютий 2022 року
 
@@ -109,7 +109,7 @@ LiveRamp забезпечує роздільну здатність особис
 
 ### <a name="enrichment-for-data-sources-preview"></a>Збагачення джерел даних (Попередній перегляд)
 
-Використовуйте дані з таких джерел, як Корпорація Майкрософт та інші партнери, щоб збагатити дані клієнтів перед об'єднанням даних. джерело даних збагачення допомагають забезпечити більш високу повноту та якість даних, які можуть допомогти досягти кращих результатів, як тільки ви об'єднаєте свої дані.
+Використовуйте дані з таких джерел, як Корпорація Майкрософт та інші партнери, щоб збагатити дані клієнтів перед об'єднанням даних. джерело даних збагачення допомагають забезпечити більш високу повноту та якість даних, які можуть допомогти досягти кращих результатів, як тільки ви уніфікуєте свої дані.
 
 Для отримання додаткових відомостей [див](data-sources-enrichment.md).
 
@@ -117,7 +117,7 @@ LiveRamp забезпечує роздільну здатність особис
 
 Хоча кілька користувачів можуть мати дозволи адміністратора в Customer Insights, лише один користувач є власником середовища. Покращений досвід дозволяє змінювати власників середовища та претендувати на право власності, якщо колишній власник покинув організацію. 
 
-Для отримання додаткових відомостей [див](manage-environments.md#change-the-owner-of-an-environment).
+Для отримання додаткових [відомостей див](manage-environments.md#change-the-owner-of-an-environment).
 
 ### <a name="data-preparation-process-lists-corruption-reason-for-corrupted-records"></a>Процес підготовки даних містить список причин пошкодження пошкоджених записів
 

@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 9eb06a1190fe4e8012ecd3d6742b8b3f5f4d6349
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: d4f2d5ebc828053c40e22065f4915c4d0f84153f
+ms.sourcegitcommit: 6ec4626a185892dfb781d3c7af4384f9c13f3723
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653502"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "8763604"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>Робота з власним сховищем ключів Azure (підготовча версія)
 
@@ -37,11 +37,11 @@ ms.locfileid: "8653502"
 
 - Для сховища ключів має бути **вимкнуто** брандмауер сховища ключів.
 
-- Сховище ключів знаходиться в тому ж [розташуванні](https://azure.microsoft.com/global-infrastructure/geographies/#overview) Azure, що й середовище статистики клієнтів. Регіон середовища в Службі статистики клієнтів відображається в розділі **AdminSystemAboutRegion** > **·** > **·** > **·**.
+- Сховище ключів знаходиться в тому ж [розташуванні](https://azure.microsoft.com/global-infrastructure/geographies/#overview) Azure, що й середовище статистики клієнтів. Регіон середовища в "Статистика клієнтів" відображається в розділі **"Система** > **адміністрування** > **про** > **регіон"**.
 
 ### <a name="link-a-key-vault-to-the-environment"></a>Зв'язування сховища ключів із середовищем
 
-1. Перейдіть на сторінку **Безпека адміністратора** > **та** перейдіть на **вкладку Сховище ключів**.
+1. Перейдіть до **розділу Безпека** > **адміністратора** та перейдіть на **вкладку Сховище ключів**.
 1. На плитці **Сховище ключів** виберіть **«Настроювання»**.
 1. Виберіть **Передплата**.
 1. Виберіть сховище ключів у розкривному списку **«Сховище ключів»**. Якщо відображається забагато сховищ ключів, виберіть групу ресурсів, щоб обмежити результати пошуку.
@@ -89,9 +89,9 @@ ms.locfileid: "8653502"
 
 | Ввести        | Дозволи          |
 | ----------- | -------------------- |
-| Клавіша         | [Отримати ключі](/rest/api/keyvault/get-keys), [Отримати ключ](/rest/api/keyvault/get-key)                                 |
-| Секрет      | [Отримати секрети](/rest/api/keyvault/get-secrets), [Отримати секрет](/rest/api/keyvault/get-secret)                     |
-| Сертифікат | [Отримати сертифікати](/rest/api/keyvault/get-certificates), [Отримати сертифікат](/rest/api/keyvault/get-certificate) |
+| Клавіша         | [Отримати ключі](/rest/api/keyvault/keys/get-keys/get-keys), [Отримати ключ](/rest/api/keyvault/keys/get-key/get-key)                                 |
+| Секрет      | [Отримати секрети](/rest/api/keyvault/secrets/get-secrets/get-secrets), [Отримати секрет](/rest/api/keyvault/secrets/get-secret/get-secret)                     |
+| Сертифікат | [Отримати сертифікати](/rest/api/keyvault/certificates/get-certificates/get-certificates), [Отримати сертифікат](/rest/api/keyvault/certificates/get-certificate/get-certificate) |
 
 Попередні значення — це мінімальне значення для списку та читання під час виконання.
 

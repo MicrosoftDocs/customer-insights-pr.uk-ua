@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 15ae772617efa4c64cf79d0bac10a0c3cb28ca30
+ms.sourcegitcommit: a92bf5985263240fd07bad98d8e119b88cf2c9d9
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755287"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8807606"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Переадресація входу за Dynamics 365 Customer Insights допомогою azure monitor (попередній перегляд)
 
@@ -38,7 +38,7 @@ Dynamics 365 Customer Insights забезпечує пряму інтеграц�
 
 - У вас є активна [підписка](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) Azure.
 - У вас є [дозволи адміністратора](permissions.md#admin) в Службі статистики клієнтів.
-- У вас є **роль постачальника** та **адміністратора доступу користувача** на цільовий ресурс на Azure. Ресурс може бути azure онлайнове пул носіїв, Azure Event Hub, або Azure Log Analytics робочої області. Для отримання додаткових [відомостей див](/azure/role-based-access-control/role-assignments-portal).
+- У вас є **роль постачальника** та **адміністратора доступу користувача** на цільовий ресурс на Azure. Ресурс може бути обліковим записом Azure Data Lake Storage, центром подій Azure або робочою областю Azure Log Analytics. Для отримання додаткових [відомостей див](/azure/role-based-access-control/role-assignments-portal). Цей дозвіл необхідний під час налаштування параметрів діагностики в Customer Insights, його можна змінити після успішного налаштування.
 - [Вимоги до](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) призначення для Azure Storage, Azure Event Hub або Azure Log Analytics зустрілися.
 - У вас є принаймні **роль читача** в групі ресурсів ресурс належить до ресурсу.
 

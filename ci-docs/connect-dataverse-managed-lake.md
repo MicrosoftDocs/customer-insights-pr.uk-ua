@@ -11,12 +11,12 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: e8a294a4bad1581539b5905160cddcd625699d90
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 7140e9254108bc6f0d518b3ccf4b10fc33cde115
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8643999"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800204"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Підключення до даних в озері з керованим даними Microsoft Dataverse
 
@@ -27,8 +27,8 @@ ms.locfileid: "8643999"
 
 ## <a name="important-considerations"></a>Важливі міркування
 
-1. Дані, що зберігаються в онлайнових службах, наприклад, Azure Data Lake Storage, можуть зберігатися в розташуванні, відмінному від того, в якому дані обробляються або зберігаються в Dynamics 365 Customer Insights.Імпортуючи або підключаючись до даних, що зберігаються в онлайнових службах, ви погоджуєтеся з тим, що дані можуть передаватися та зберігатися за допомогою Dynamics 365 Customer Insights програми . [Докладніше про це можна дізнатися в Центрі безпеки та конфіденційності Microsoft](https://www.microsoft.com/trust-center).
-2. Відображаються лише Dataverse сутності з [увімкненим відстеженням](/power-platform/admin/enable-change-tracking-control-data-synchronization) змін. Ці сутності можна експортувати до керованого Dataverse озера даних і використовувати в Customer Insights. У нестандартних Dataverse таблицях за промовчанням увімкнуто відстеження змін. Для настроюваних таблиць потрібно ввімкнути відстеження змін. Щоб перевірити, чи ввімкнуто таблицю Dataverse для відстеження змін, перейдіть до розділу [Power Apps](https://make.powerapps.com) > **DataTables** > **·**. Знайдіть цікаву таблицю та виберіть її. Перейдіть до параметрів **SettingsAdvanced** > **і перегляньте** налаштування Відстеження змін **.**
+1. Дані, що зберігаються в онлайнових службах, наприклад, Azure Data Lake Storage, можуть зберігатися в розташуванні, відмінному від того, в якому дані обробляються або зберігаються в Dynamics 365 Customer Insights.Імпортуючи або підключаючись до даних, що зберігаються в онлайнових службах, ви погоджуєтеся з тим, що дані можуть передаватися та зберігатися за допомогою Dynamics 365 Customer Insights програми . [Докладніше про це можна дізнатися в Центрі](https://www.microsoft.com/trust-center) безпеки та конфіденційності Microsoft.
+2. Відображаються лише Dataverse сутності з [увімкненим відстеженням](/power-platform/admin/enable-change-tracking-control-data-synchronization) змін. Ці сутності можна експортувати до керованого Dataverse озера даних і використовувати в Customer Insights. У нестандартних Dataverse таблицях за промовчанням увімкнуто відстеження змін. Для настроюваних таблиць потрібно ввімкнути відстеження змін. Щоб перевірити, чи ввімкнуто таблицю Dataverse для відстеження змін, перейдіть до розділу [Power Apps](https://make.powerapps.com) > **Таблиці** > **даних**. Знайдіть цікаву таблицю та виберіть її. Перейдіть до розділу **Додаткові параметри настройок** > **і** перегляньте **параметр Відстеження змін**.
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Підключення до керованого озера Dataverse
 
@@ -62,7 +62,7 @@ ms.locfileid: "8643999"
 
 1. Відкрийте **Дані** > **Джерела даних**.
 
-2. Виберіть три крапки поряд із джерелом даних, яке ви бажаєте оновити.
+2. Поруч із джерело даних, які потрібно оновити, виберіть вертикальні три крапки (&vellip;).
 
 3. Виберіть зі списку параметр **Редагувати**.
 

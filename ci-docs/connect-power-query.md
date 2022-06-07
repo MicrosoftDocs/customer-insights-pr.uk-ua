@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 50258365c3134c588aa79ec72c66d0de329e0ff1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 4db97ec02eb96662d30a8536ea42372f81f318d2
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644055"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800214"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Підключення до Power Query джерело даних
 
@@ -76,7 +76,7 @@ Power Query пропонує широкий набір роз'ємів для п
 
 1. Відкрийте **Дані** > **Джерела даних**.
 
-2. Виберіть вертикальні три крапки поряд із джерелом даних, які ви бажаєте змінити, потім виберіть **Редагувати** з розкривного меню.
+2. Виберіть вертикальні три крапки () поруч&vellip; із джерело даних, які потрібно змінити, і виберіть у спадному меню пункт **Редагувати**.
 
    > [!div class="mx-imgBorder"]
    > ![Параметр редагування.](media/edit-option-data-sources.png "Параметр редагування")

@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 04ae4ffd303a47add15044f313c96a23e5efcd76
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c0d23a74b5ca68162ee21307705b1f781a7eb97e
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644128"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800584"
 ---
 # <a name="work-with-tags-and-columns"></a>Робота з тегами та стовпцями
 
@@ -37,7 +37,7 @@ ms.locfileid: "8644128"
 
 1. Виберіть елемент, теги якого потрібно керувати.
 
-1. Виберіть **Показати більше (...)** і виберіть **Тег**.
+1. Виділіть вертикальні три крапки (&vellip;) і виберіть **тег**.
 
    :::image type="content" source="media/segments_list_tag.png" alt-text="Вибраний сегмент із розкривним списком параметрів і доступними параметрами."lightbox="media/segments_list_tag.png":::
 
