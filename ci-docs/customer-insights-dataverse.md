@@ -11,18 +11,18 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 3848e143bc7cb2f345bc698a274b92148ef00669
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833701"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011582"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Робота із даними Customer Insights у Microsoft Dataverse
 
 Статистика клієнтів надає можливість зробити вихідні сутності доступними як [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Ця інтеграція дозволяє легко обмінюватися даними та індивідуальну розробку за допомогою низького підходу коду / без коду. Вихідні [сутності](#output-entities) доступні як таблиці в Dataverse середовищі. Дані можна використовувати для будь-якої іншої програми на Dataverse основі таблиць. У цих таблицях містяться такі сценарії, як автоматичні робочі цикли або Power Automate створення програм за допомогою програми за допомогою програми Power Apps.
 
-Підключення до вашого Dataverse середовища також дозволяє отримувати [дані з локальний джерел даних за допомогою Power Platform потоків даних і шлюзів](data-sources.md#add-data-from-on-premises-data-sources).
+Підключення до вашого Dataverse середовища також дозволяє отримувати [дані з локальний джерел даних за допомогою Power Platform потоків даних і шлюзів](connect-power-query.md#add-data-from-on-premises-data-sources).
 
 ## <a name="prerequisites"></a>вимоги
 
@@ -57,7 +57,7 @@ ms.locfileid: "8833701"
 Існує два обмеження при використанні Dataverse з власним Azure Data Lake Storage обліковим записом:
 
 - Між організацією та обліковим записом Dataverse відбувається зіставлення один на Azure Data Lake Storage один. Dataverse Після підключення організації до облікового запису сховища не вдається підключитися до іншого облікового запису сховища. Це обмеження запобігає тому, що A Dataverse не заповнює кілька облікових записів онлайнове пул носіїв.
-- Спільний доступ до даних не працюватиме, якщо для доступу до облікового запису сховища Azure Data Lake потрібна настройка Azure Data Lake, оскільки вона стоїть за брандмауером. Dataverse наразі не підтримує підключення до приватних кінцевих точок через приватне посилання.
+- Спільний доступ до даних не працюватиме, якщо для доступу до облікового Azure Data Lake Storage запису потрібна настройка Azure Private Link, оскільки вона стоїть за брандмауером. Dataverse наразі не підтримує підключення до приватних кінцевих точок через приватне посилання.
 
 ### <a name="set-up-powershell"></a>Настроювання оболонки PowerShell
 

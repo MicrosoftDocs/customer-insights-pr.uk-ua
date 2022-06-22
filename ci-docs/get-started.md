@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 68c26eb0ad0da787a9f594b4aebe679588b0d6bf
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 1c925110f40319df77940d1c32f24a99504d6ec6
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833600"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012004"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights"></a>Початок роботи з Dynamics 365 Customer Insights
 
@@ -39,7 +39,7 @@ ms.locfileid: "8833600"
 
 Уніфіковані профілі — це основа, на якій ґрунтується отримання аналітичних висновків щодо даних та усі подальші дії із даними. Зберіть дані з різноманітних джерел й виконайте процес уніфікації, щоб сформувати уніфіковані профілі. Укажіть зв'язки між проковтнутими сутностями та використовуйте функції збагачення, щоб додати інформацію до профілів.
 
-1. Отримуйте дані, створюючи джерела даних, обираючи із багатьох варіантів. Виберіть між [Power Query сполучними лініями](connect-power-query.md), спільною папкою [моделі](connect-common-data-model.md) даних або [Microsoft Dataverse](connect-dataverse-managed-lake.md).
+1. Отримуйте дані, створюючи джерела даних, обираючи із багатьох варіантів. Виберіть між [Azure Data Lake Storage, зокрема загальною моделлю](connect-common-data-model.md)[Azure Synapse Analytics](connect-synapse.md) даних, [Microsoft Dataverse](connect-dataverse-managed-lake.md) або [Power Query сполучними лініями](connect-power-query.md).
 
 1. [Запустіть процес](data-unification.md) об'єднання даних, визначивши [вихідні поля](map-entities.md), видаливши [дублікати](remove-duplicates.md), [умови](match-entities.md) зіставлення та [об'єднавши поля](merge-entities.md).
 

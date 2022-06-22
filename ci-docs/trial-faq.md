@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833793"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011912"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Запитання й відповіді щодо ознайомлювальної версії Dynamics 365 Customer Insights
 
@@ -66,9 +66,9 @@ ms.locfileid: "8833793"
 
 Після першого входу до платного екземпляра Customer Insights вам буде запропоновано створити нове середовище. У цьому процесі можна копіювати конфігурацію з наявного середовища та перенести більшість настройок. Якщо ви маєте дозволи, зазначені вище, ознайомлювальне середовище відображатиметься в цьому списку. Для отримання додаткових відомостей див. розділ [Копіювання конфігурації середовища](create-environment.md#copy-the-environment-configuration).
 
-### <a name="what-are-the-trial-limits-and-quotas"></a>Які обмеження та квоти має ознайомлювальна версія?
+### <a name="what-are-the-trial-limits-and-quotas"></a>Які обмеження та квоти застосовуються до ознайомлювальної версії?
 
-- Ви не можете використовувати свій власний обліковий запис А комп'ютера сховища Azure Data Lake для зберігання вихідних даних під час ознайомлювальної версії Customer Insights. Проте можна передавати дані з облікового запису Data Lake storage.
+- Ви не можете використовувати свій власний Azure Data Lake Storage обліковий запис для зберігання вихідних даних під час ознайомлювальної версії Customer Insights. Однак ви можете отримати дані з облікового запису сховища data lake.
 - Ви можете зберігати до 3 ГБ даних у середовищі Dataverse, підготовка якого виконується автоматично, коли ви починаєте використовувати ознайомлювальну версію Customer Insights.
 
 ## <a name="customer-insights-specific-questions"></a>Запитання щодо Customer Insights
@@ -83,7 +83,7 @@ ms.locfileid: "8833793"
 
 Такі функції **недоступні**:
 
-- Не можна створювати нові середовища, які використовують власний обліковий запис сховища Azure Data Lake storage.
+- Не можна створювати нові середовища, які використовують ваш власний Azure Data Lake Storage обліковий запис.
 - Не можна видалити ознайомлювальне середовище.
 
 ### <a name="how-long-does-the-trial-last"></a>Скільки триває ознайомлювальний період?

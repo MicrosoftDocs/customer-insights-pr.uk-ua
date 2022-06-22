@@ -48,14 +48,14 @@
   items:
     - name: Огляд джерел даних
       href: data-sources.md
+    - name: Підключення до даних у Azure Data Lake Storage
+      href: connect-common-data-model.md
+    - name: Підключення до Azure Synapse Analytics
+      href: connect-synapse.md
+    - name: Підключення до даних в озері з керованим даними Microsoft Dataverse
+      href: connect-dataverse-managed-lake.md
     - name: Додавання джерел даних за допомогою Power Query сполучних ліній
       href: connect-power-query.md
-    - name: Додавання папки Common Data Model в якості джерела даних
-      href: connect-common-data-model.md
-    - name: Додавання керованого озера даних Dataverse
-      href: connect-dataverse-managed-lake.md
-    - name: Додавання компонента Azure Synapse Analytics
-      href: connect-synapse.md
     - name: Збагачення джерел даних
       href: data-sources-enrichment.md
     - name: Інкрементне оновлення джерел даних
@@ -82,27 +82,27 @@
   items:
     - name: Збагачуйте профілів клієнтів
       href: enrichment-hub.md
+    - name: Облікові записи з Office 365 даних
+      href: enrichment-office.md
     - name: Бренди та інтереси
       href: enrichment-microsoft.md
+    - name: Дані компанії з Dun & Bradstreet
+      href: enrichment-dnb.md
+    - name: Дані компанії від Leadspace
+      href: enrichment-leadspace.md
+    - name: Демографія з Experian
+      href: enrichment-experian.md
     - name: Розширені адреси
       href: enrichment-enhanced-addresses.md
     - name: Уточнені дані компанії
       href: enrichment-enhanced-company-data.md
-    - name: Збагачення за допомогою Azure Maps
-      href: enrichment-azure-maps.md
-    - name: Збагатитися з Dun & Bradstreet
-      href: enrichment-dnb.md
-    - name: Збагачення за допомогою HERE Technologies
-      href: enrichment-here.md
-    - name: Збагачення за допомогою Leadspace
-      href: enrichment-leadspace.md
-    - name: Збагачуйте за допомогою LiveRamp
+    - name: Ідентичність з LiveRamp
       href: enrichment-liveramp.md
-    - name: Збагачувати Experian
-      href: enrichment-experian.md
-    - name: Office 365 Збагачуйте даними
-      href: enrichment-office.md
-    - name: Збагачення за допомогою настроюваного імпорту SFTP
+    - name: Розташування з Azure Maps
+      href: enrichment-azure-maps.md
+    - name: Розташування від HERE Technologies
+      href: enrichment-here.md
+    - name: Настроюваний імпорт SFTP
       href: enrichment-SFTP-custom-import.md
 - name: Об’єднані профілі
   items:
@@ -112,6 +112,8 @@
       href: search-filter-index.md
     - name: Визначення діяльності клієнтів
       href: activities.md
+    - name: Керування згодою для статистики клієнтів
+      href: consent-management.md
 - name: Сегменти
   items:
     - name: Огляд сегментів
@@ -294,40 +296,6 @@
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
     - name: Зразки запитів OData
       href: odata-examples.md
-- name: Керування згодою (попередній перегляд)
-  items:
-    - name: Довідковий центр
-      href: consent-management/index.yml
-    - name: Огляд наявних можливостей
-      href: consent-management/overview.md
-    - name: Почати
-      items:
-        - name: Почати
-          href: consent-management/get-started.md
-        - name: Поняття та термінологія
-          href: consent-management/glossary.md
-    - name: Імпортувати дані згоди
-      items:
-        - name: Імпортувати дані згоди
-          href: consent-management/import-consent-data.md
-        - name: Установлення даних про згоду та застосування параметрів згоди
-          href: consent-management/set-consent-rules.md
-    - name: Керування даними про згоду
-      items:
-        - name: Як увімкнути правила згоди в інсайтах клієнтів
-          href: activate-consent.md
-        - name: Керування правилами згоди за промовчанням у сегментах статистики клієнтів
-          href: change-default-consent-rules.md
-    - name: Керування настройками та користувачами
-      items:
-        - name: Настроювання параметрів системи
-          href: consent-management/system-settings.md
-        - name: Керування користувачами та дозволами
-          href: consent-management/manage-users.md
-    - name: Використання даних про згоду
-      items:
-        - name: Створюйте прогнози з даними згоди
-          href: consent-management/predictions-consent-data.md
 - name: Обмеження послуг
   href: service-limits.md
 - name: Права та запити DSR

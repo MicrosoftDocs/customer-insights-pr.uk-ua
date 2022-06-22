@@ -1,19 +1,19 @@
 ---
 title: Експорт даних Customer Insights до сховища BLOB-об'єктів Azure
 description: Дізнайтеся, як налаштувати підключення та експорт до сховища BLOB-об'єктів Azure.
-ms.date: 10/06/2021
+ms.date: 06/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
-ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
+ms.openlocfilehash: 623926bf520b19ee4156b7a05e953241cd819e9e
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 05/15/2022
-ms.locfileid: "8757411"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947163"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Експортуйте список сегментів та інші дані до сховища BLOB-об'єктів Azure (підготовча версія)
 
@@ -58,16 +58,19 @@ ms.locfileid: "8757411"
 
 При збереженні експорт не запуститься негайно.
 
-Експорт виконується під час кожного [запланованого оновлення](system.md#schedule-tab).     
+Експорт виконується під час кожного [запланованого оновлення](system.md#schedule-tab).
 
-Також можна [експортувати дані неавтоматично](export-destinations.md#run-exports-on-demand). 
+Також можна [експортувати дані неавтоматично](export-destinations.md#run-exports-on-demand).
 
 Експортовані дані зберігаються в контейнері сховища BLOB-об'єктів, який ви налаштували. У контейнері автоматично створюються наведені далі шляхи папок.
 
 - Для сутностей джерел і сутностей, згенерованих у системі:   
   `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`  
   - Приклад: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
- 
+  
+  > [!TIP]
+  > Експорт сутностей, які містять великий обсяг даних, може призвести до кількох файлів CSV в одній папці для кожного експорту. Розділення експорту відбувається з причин продуктивності, щоб звести до мінімуму час, необхідний для завершення експорту.
+
 - Файл model.json для експортованих сутностей буде на рівні %ExportDestinationName%.  
   - Приклад: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 

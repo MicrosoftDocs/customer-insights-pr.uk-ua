@@ -1,30 +1,33 @@
 ---
-title: Параметри безпеки в Dynamics 365 Customer Insights
+title: Параметри безпеки в "Інформації про клієнтів"
 description: Відомості про параметри безпеки у програмі Dynamics 365 Customer Insights.
-ms.date: 04/28/2022
+ms.date: 06/08/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5d73bacccadc9193d76d8dfafd0365dabc911e00
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 163deb9bed4f82d742c46cace27dd128f0aca18b
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653808"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947440"
 ---
-# <a name="security-overview-page"></a>Сторінка огляду безпеки
+# <a name="security-settings-in-customer-insights"></a>Параметри безпеки в "Інформації про клієнтів"
 
-На **сторінці Безпека** перелічено параметри настроювання дозволів і функцій користувачів, які допомагають зробити Dynamics 365 Customer Insights безпечнішими. Доступ до цієї сторінки можуть отримати лише адміністратори. 
+На **сторінці Безпека** перелічено параметри настроювання дозволів і функцій користувачів, які допомагають зробити Dynamics 365 Customer Insights безпечнішими. Доступ до цієї сторінки можуть отримати лише адміністратори.
 
 Перейдіть до розділу **Безпека** > **адміністратора**, щоб настроїти параметри.
 
 Сторінка **Безпека** містить такі вкладки:
+
 - [Користувачі](#users-tab)
 - [API](#apis-tab)
+- [Приватні посилання](#private-links-tab)
 - [Сховище ключів](#key-vault-tab)
+- [Безпечний доступ до даних клієнтів за допомогою customer Lockbox (Попередній перегляд)](#securely-access-customer-data-with-customer-lockbox-preview)
 
 ## <a name="users-tab"></a>Вкладка «Користувачі»
 
@@ -38,6 +41,22 @@ ms.locfileid: "8653808"
 
 Щоб заблокувати доступ API до навколишнього середовища, виберіть **Вимкнути**. Якщо API вимкнено, можна вибрати пункт **Увімкнути**, щоб надати доступ ще раз.
 
+## <a name="private-links-tab"></a>Вкладка "Приватні зв'язки"
+
+[Azure Private Link](/azure/private-link/private-link-overview) давайте клієнт insights підключитися до вашого Azure Data Lake Storage облікового запису через приватну кінцеву точку у вашій віртуальній мережі. Для даних у обліковому записі сховища, який не піддається впливу загальнодоступного Інтернету, Private Link вмикає підключення до цієї обмеженої мережі.
+
+> [!IMPORTANT]
+> Мінімальна вимога до ролі для настроювання підключення до приватного посилання:
+>
+> - Статистика клієнтів: Адміністратор
+> - Вбудована роль Azure: [учасник облікового запису сховища](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
+> - Дозволи для настроюваної ролі Azure: [Microsoft.Storage/storageAccounts/read and Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
+>
+
+Налаштування приватного посилання в «Інформації про клієнтів» – це двоетапний процес. По-перше, ви ініціюєте створення приватного посилання з **особистих посилань** > **безпеки** > **адміністратора** в інсайтах клієнтів. В області Додати **приватне посилання** перелічено облікові записи сховища від клієнта, які ви маєте дозволи на перегляд. Виберіть обліковий запис сховища та надайте згоду на створення Приватного посилання.
+
+Далі вам потрібно затвердити приватне посилання на стороні облікового запису Data Lake Storage. Відкрийте посилання, представлене на екрані, щоб затвердити нове приватне посилання.
+
 ## <a name="key-vault-tab"></a>Вкладка "Сховище ключів"
 
 Вкладка **Key Vault** дає змогу зв'язати та керувати власним [сховищем](/azure/key-vault/general/basic-concepts) ключів Azure з навколишнім середовищем.
@@ -45,5 +64,13 @@ ms.locfileid: "8653808"
 
 Додаткові відомості див. в розділі [Робота з власним сховищем ключів Azure](use-azure-key-vault.md).
 
+## <a name="securely-access-customer-data-with-customer-lockbox-preview"></a>Безпечний доступ до даних клієнтів за допомогою customer Lockbox (Попередній перегляд)
+
+Статистика клієнтів використовує Power Platform можливість блокування клієнта. Customer Lockbox надає інтерфейс для перегляду та затвердження (або відхилення) запитів на доступ до даних. Ці запити виникають, коли доступ до даних до даних клієнта необхідний для вирішення випадку підтримки. Щоб скористатися цією функцією, статистика клієнтів повинна мати наявне підключення до Microsoft Dataverse середовища у вашому клієнті.
+
+Для отримання додаткових відомостей про блокування клієнта [див](/power-platform/admin/about-lockbox#summary).Power Platform У статті також описано [робочий процес](/power-platform/admin/about-lockbox#workflow) і необхідну [настройку](/power-platform/admin/about-lockbox#enable-the-lockbox-policy) для ввімкнення блокування клієнта.
+
+> [!IMPORTANT]
+> Глобальні адміністратори Power Platform або Power Platform адміністратори можуть схвалювати запити customer lockbox, видані для статистики клієнтів.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

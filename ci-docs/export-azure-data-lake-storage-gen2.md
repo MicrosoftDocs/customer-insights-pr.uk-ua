@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 8b14992f8312d333d8a12501e8a28496c8434779
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644031"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947255"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Експортування списку сегментів та інших даних до Azure Data Lake Storage Gen2 (підготовча версія)
 
@@ -21,11 +21,9 @@ ms.locfileid: "8644031"
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
-1. Для Azure Data Lake Storage Gen2 під час створення облікового запису сховища для зберігання даних можна обрати між [рівнями ефективності «Стандартна продуктивність» і «Преміум-продуктивність»](/azure/storage/blobs/create-data-lake-storage-account). Якщо вибрано рівень «Преміум-продуктивність», виберіть в якості типу облікового запису blob-об'єкти із преміум-блоками. 
+1. Для Azure Data Lake Storage Gen2 під час створення облікового запису сховища для зберігання даних можна обрати між [рівнями ефективності «Стандартна продуктивність» і «Преміум-продуктивність»](/azure/storage/blobs/create-data-lake-storage-account). Якщо вибрано рівень «Преміум-продуктивність», виберіть в якості типу облікового запису blob-об'єкти із преміум-блоками.
 
-
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Налаштування підключення до Azure Data Lake Storage Gen2 
-
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Налаштування підключення до Azure Data Lake Storage Gen2
 
 1. Відкрийте **Адміністрування** > **Підключення**.
 
@@ -39,7 +37,7 @@ ms.locfileid: "8644031"
     - Щоб дізнатися, як створити обліковий запис сховища для використання з Azure Data Lake Storage Gen2, див. [Створення облікового запису сховища](/azure/storage/blobs/create-data-lake-storage-account). 
     - Щоб отримати докладніші відомості про те, як знайти ім’я облікового запису сховища Azure Data Lake Gen2, див. розділ [Керуйте налаштуваннями облікового запису сховища на порталі Azure](/azure/storage/common/storage-account-manage).
 
-1. Щоб завершити створення підключення, виберіть **Зберегти**. 
+1. Щоб завершити створення підключення, виберіть **Зберегти**.
 
 ## <a name="configure-an-export"></a>Налаштування експорту
 
@@ -57,8 +55,12 @@ ms.locfileid: "8644031"
 
 При збереженні експорт не запуститься негайно.
 
-Експорт виконується під час кожного [запланованого оновлення](system.md#schedule-tab). Також можна [експортувати дані неавтоматично](export-destinations.md#run-exports-on-demand). 
+Експорт виконується під час кожного [запланованого оновлення](system.md#schedule-tab).
+Також можна [експортувати дані неавтоматично](export-destinations.md#run-exports-on-demand).
 
-Експортовані дані зберігаються в контейнері сховища Azure Data Lake Gen 2, який ви налаштували. 
+Експортовані дані зберігаються в контейнері сховища Azure Data Lake Gen 2, який ви налаштували.
+
+> [!TIP]
+> Експорт сутностей, які містять великий обсяг даних, може призвести до кількох файлів CSV в одній папці для кожного експорту. Розділення експорту відбувається з причин продуктивності, щоб звести до мінімуму час, необхідний для завершення експорту.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

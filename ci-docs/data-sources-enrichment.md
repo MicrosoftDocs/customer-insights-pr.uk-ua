@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: b34b83d7a73dbdf21984f626174524188f0f1dc1
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800306"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011498"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>Збагачення джерел даних (попередній перегляд)
 
@@ -29,9 +29,11 @@ ms.locfileid: "8800306"
 
 1. Виберіть вертикальні три крапки () поруч&vellip; із джерело даних, які потрібно збагатити, і виберіть **Збагатити**.
 
-   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Сторінка збагачення джерел даних.":::
+   :::image type="content" source="media/data_sources_enrich.png" alt-text="Сторінка джерел даних із виділеним елементом &quot;Збагачення&quot;":::
 
    На **вкладці Discover** відображаються підтримувані [параметри](#supported-data-source-enrichments) збагачення джерело даних.
+
+   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Сторінка збагачення джерел даних.":::
 
 1. Виберіть Збагатити **мої дані**, щоб налаштувати збагачення джерело даних. Ім'я вихідної сутності заповнюється автоматично.
 
