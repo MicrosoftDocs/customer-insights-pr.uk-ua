@@ -6,7 +6,7 @@
   href: whats-new-customer-insights.md
 - name: Каталог навчальних матеріалів
   items:
-    - name: Сертифікувати як спеціаліста платформи даних клієнтів Microsoft
+    - name: Сертифікація як спеціаліста платформи даних клієнта Microsoft
       href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
     - name: Початок роботи з Customer Insights
       href: /learn/modules/get-started-customer-data-platform/
@@ -14,11 +14,11 @@
       href: /learn/modules/ingest-data-customer-insights/
     - name: Створення уніфікованого профілю клієнта
       href: /learn/modules/unified-customer-profile/
-    - name: Робота зі статистикою клієнтів
+    - name: Робота з інсайтами клієнтів
       href: /learn/modules/working-with-customer-insights/
     - name: Збагачуйте дані та робіть прогнози
       href: /learn/modules/enrich-data/
-    - name: Керування зовнішніми підключеннями
+    - name: Керування зовнішніми з'єднаннями
       href: /learn/modules/configure-third-party-connections/
     - name: Адмініструйте Customer Insights
       href: /learn/modules/administer-customer-data-platform/
@@ -36,13 +36,13 @@
       href: get-started.md
     - name: Почніть із платної ліцензії
       href: paid-license.md
-    - name: Ознайомтеся з статистикою клієнтів
+    - name: Ознайомтеся з аналітикою клієнтів
       href: home.md
     - name: Робота з тегами та стовпцями
       href: work-with-tags-columns.md
     - name: Робота з бізнес-партнерами
       href: work-with-business-accounts.md
-    - name: Інтеграція з динамікою 365 Маркетинг
+    - name: Інтеграція з маркетингом Dynamics 365
       href: marketing-get-started.md
 - name: Джерела даних
   items:
@@ -54,9 +54,9 @@
       href: connect-synapse.md
     - name: Підключення до даних в озері з керованим даними Microsoft Dataverse
       href: connect-dataverse-managed-lake.md
-    - name: Додавання джерел даних за допомогою Power Query сполучних ліній
+    - name: Додавання джерел даних за допомогою Power Query сполучників
       href: connect-power-query.md
-    - name: Збагачення джерел даних
+    - name: Збагачення для джерел даних
       href: data-sources-enrichment.md
     - name: Інкрементне оновлення джерел даних
       href: incremental-refresh-data-sources.md
@@ -72,21 +72,21 @@
       href: remove-duplicates.md
     - name: Умови матчу
       href: match-entities.md
-    - name: Уніфікувати поля клієнтів
+    - name: Уніфікація полів клієнта
       href: merge-entities.md
-    - name: Перегляд об'єднання даних
+    - name: Перегляд уніфікації даних
       href: review-unification.md
-    - name: Оновлення параметрів уніфікації
+    - name: Оновлення параметрів об'єднання
       href: data-unification-update.md
 - name: Збагачення даних
   items:
-    - name: Збагачуйте профілів клієнтів
+    - name: Огляд збагачення даних
       href: enrichment-hub.md
-    - name: Облікові записи з Office 365 даних
+    - name: Рахунки з Office 365 даних
       href: enrichment-office.md
     - name: Бренди та інтереси
       href: enrichment-microsoft.md
-    - name: Дані компанії з Dun & Bradstreet
+    - name: Дані компанії від Dun &brudstreet
       href: enrichment-dnb.md
     - name: Дані компанії від Leadspace
       href: enrichment-leadspace.md
@@ -98,11 +98,11 @@
       href: enrichment-enhanced-company-data.md
     - name: Ідентичність з LiveRamp
       href: enrichment-liveramp.md
-    - name: Розташування з Azure Maps
+    - name: Розташування з карт Azure
       href: enrichment-azure-maps.md
     - name: Розташування від HERE Technologies
       href: enrichment-here.md
-    - name: Настроюваний імпорт SFTP
+    - name: SFTP індивідуальний імпорт
       href: enrichment-SFTP-custom-import.md
 - name: Об’єднані профілі
   items:
@@ -110,9 +110,9 @@
       href: customer-profiles.md
     - name: Фільтрація уніфікованих профілів клієнтів
       href: search-filter-index.md
-    - name: Визначення діяльності клієнтів
+    - name: Визначте діяльність клієнтів
       href: activities.md
-    - name: Керування згодою для статистики клієнтів
+    - name: Керування згодою використання
       href: consent-management.md
 - name: Сегменти
   items:
@@ -132,7 +132,7 @@
   items:
     - name: Огляд заходів
       href: measures.md
-    - name: Створення нової міри
+    - name: Створення нового заходу
       href: measure-builder.md
     - name: Використання шаблону міри
       href: measure-templates.md
@@ -150,7 +150,7 @@
           href: predict-subscription-churn.md
         - name: Прогноз відтоку транзакцій
           href: predict-transactional-churn.md
-        - name: Аналіз настроїв у відгуках клієнтів
+        - name: Аналізуйте настрої у відгуках клієнтів
           href: sentiment-analysis.md
         - name: Використання настроюваних моделей від машинного навчання Azure
           href: custom-models.md
@@ -194,7 +194,7 @@
           href: export-adobe-campaign-standard.md
         - name: Adobe Experience Platform
           href: export-adobe-experience-platform.md
-        - name: Braze
+        - name: Паяння
           href: export-braze.md
         - name: Campaign Monitor
           href: export-campaign-monitor.md
@@ -212,7 +212,9 @@
           href: export-facebook.md
         - name: Google Ads
           href: export-google-ads.md
-        - name: Ітераційний
+        - name: ІнМобі
+          href: export-inmobi.md
+        - name: Істерний
           href: export-iterable.md
         - name: Klaviyo
           href: export-klaviyo.md
@@ -272,7 +274,7 @@
       href: own-data-lake-storage.md
     - name: Керування параметрами середовища
       href: manage-environments.md
-    - name: Підключення до облікового запису сховища за допомогою принципала служби
+    - name: Підключення до облікового запису сховища за допомогою Принципала служби
       href: connect-service-principal.md
 - name: Адміністрування
   items:

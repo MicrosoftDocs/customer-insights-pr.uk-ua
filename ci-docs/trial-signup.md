@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 2f27dd4fd9df679696d72f2eccde262de3e4afc4
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 73f12745f76ef65afcc565ffb972e755073a2834
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641741"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082502"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>Реєстрація для отримання безкоштовної ознайомлювальної версії Dynamics 365 Customer Insights
 
@@ -21,7 +21,7 @@ Customer Insights пропонує безкоштовну 30-денну озна
 
 **Щоб зареєструватися для отримання ознайомлювальної версії, виконайте наведені нижче дії**:
 
-1. Перейдіть на сторінку [пробного](https://dynamics.microsoft.com/ai/customer-insights/) огляду та виберіть **Спробувати статистику клієнтів безкоштовно**.
+1. Перейдіть на сторінку [огляду](https://dynamics.microsoft.com/ai/customer-insights/) пробної версії та виберіть Спробувати **Customer Insights безкоштовно**.
 1. Дотримуйтеся вказівок на екрані, щоб ввести [адресу електронної пошти, пов’язану з вашим обліковим записом Microsoft,](https://support.microsoft.com/windows/what-is-a-microsoft-account-4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa) і свою контактну інформацію.
 1. Зробіть вибір і виберіть потрібний параметр, доки не буде вибрано початкову сторінку.
 
@@ -31,7 +31,7 @@ Customer Insights пропонує безкоштовну 30-денну озна
 
 Ваше ознайомлювальне середовище містить ті самі функції, що й платна версія. Наведені нижче посилання ознайомлять вас із деякими основними функціями.
 
-- [Почніть з статистики клієнтів.](get-started.md)
+- [Почніть роботу з статистикою клієнтів.](get-started.md)
 - [Додайте інших користувачів і призначте дозволи.](permissions.md)
 - [Обробіть джерела даних](data-sources.md) і запустіть ї через [процес уніфікації даних](data-unification.md), щоб отримати [уніфіковані профілі клієнтів](customer-profiles.md).
 - [Збагатіть уніфіковані профілі клієнтів](enrichment-hub.md) або [запустіть прогнозні моделі](predictions-overview.md).

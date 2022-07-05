@@ -1,5 +1,5 @@
 ---
-title: Експорт даних Customer Insights до Marketo
+title: Експорт сегментів до Marketo (підготовча версія)
 description: Дізнайтеся, як налаштувати підключення та експорт до Marketo.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 7354b0aeafbe95e60d172b16c26d83c5dc25fb96
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 8cd24cf436bd5fdfd4ec3834d35baa1495e37ca4
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644176"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9053230"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Експорт сегментів до Marketo (підготовча версія)
 
@@ -63,7 +63,7 @@ ms.locfileid: "8644176"
 
 1. Введіть **[ідентифікатор списку Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. Ідентифікатор списку — це тільки числове значення. Наприклад, якщо ваш ідентифікатор списку Marketo ST12345A7, видаліть символи до та після цифр і введіть `12345`. 
 
-1. **У розділі Зіставлення** даних виберіть принаймні одне поле, яке представляє адресу електронної пошти клієнта або ідентифікатор Marketo клієнта. 
+1. **У розділі Зіставлення** даних виберіть принаймні одне поле, яке відображає адресу електронної пошти клієнта або ідентифікатор Marketo клієнта. 
 
 1. За бажанням ви можете експортувати **Ім'я**, **Прізвище**, **Місто**, **Штат** та **Країну/Регіон**, щоб створювати більш персоналізовані електронні листи. Виберіть **Додати атрибут**, щоб зіставити ці поля.
 

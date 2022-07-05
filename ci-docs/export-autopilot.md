@@ -1,5 +1,5 @@
 ---
-title: Експорт даних Customer Insights до Autopilot
+title: Експорт сегментів до Autopilot (підготовча версія)
 description: Дізнайтеся, як налаштувати підключення та експорт до Autopilot.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01fb04cd1f0acfee1fcc9243269f967942580891
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e3af3d03e70c4ce9d229c84c582ec4f302be8c9f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644072"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082544"
 ---
 # <a name="export-segments-to-autopilot-preview"></a>Експорт сегментів до Autopilot (підготовча версія)
 
@@ -22,7 +22,7 @@ ms.locfileid: "8644072"
 ## <a name="prerequisites-for-a-connection"></a>Попередні вимоги для підключення
 
 -   Ви маєте [обліковий запис Autopilot](https://www.autopilothq.com/) і відповідні облікові дані адміністратора.
--   Ви налаштували [сегменти](segments.md) в Службі статистики клієнтів.
+-   Ви налаштували [сегменти](segments.md) в Customer Insights.
 -   Уніфіковані профілі клієнтів у експортованих сегментах містять поле, що представляє адресу електронної пошти.
 
 ## <a name="known-limitations"></a>Відомі обмеження

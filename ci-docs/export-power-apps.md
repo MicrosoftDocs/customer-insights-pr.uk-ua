@@ -1,5 +1,5 @@
 ---
-title: З’єднувач Power Apps
+title: З’єднувач Power Apps (підготовча версія)
 description: Підключення до Power Apps і Power Automate.
 ms.date: 10/01/2021
 ms.reviewer: mhart
@@ -8,16 +8,16 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: e99d7d4f231eb2ade67f27c9e52c61af3a21b99d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 0b71f723d1e491d422d24b1be6616d2f33c95d40
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644175"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055285"
 ---
-# <a name="microsoft-power-apps-connector-preview"></a>З’єднувач Microsoft Power Apps (підготовча версія)
+# <a name="power-apps-connector-preview"></a>З’єднувач Power Apps (підготовча версія)
 
-Додавайте уніфіковані профілі клієнтів до персоналізованих програм за допомогою Power Apps.
+Додавайте уніфіковані профілі клієнтів до персоналізованих програм за допомогою Microsoft Power Apps.
 
 ## <a name="connect-power-apps-and-dynamics-365-customer-insights"></a>Підключення до Power Apps і Dynamics 365 Customer Insights
 
@@ -31,15 +31,15 @@ Customer Insights – це одне із багатьох [доступних д
 
 - **Клієнт**: для використання даних з [уніфікованого профілю клієнта](customer-profiles.md).
 - **UnifiedActivity**: для відображення [часової шкали справи](activities.md) в програмі.
-- **ContactProfile**: для відображення контактних осіб клієнта. Ця сутність доступна лише в середовищах статистики клієнтів для бізнес-облікових записів.
+- **ContactProfile**: для відображення контактних осіб клієнта. Ця організація доступна лише в середовищах Customer Insights для бізнес-облікових записів.
 
 ## <a name="limitations"></a>Обмеження
 
 ### <a name="retrievable-entities"></a>Сутності, які можна отримувати
 
-За допомогою з'єднувача Power Apps можна отримувати лише сутності **Клієнт**, **UnifiedActivity** (уніфікована справа), **Сегменти** і **ContactProfile** (профіль клієнта) ContactProfile доступний лише в екземплярі "Статистика клієнтів" для бізнес-облікових записів. Інші сутності відображаються, оскільки з’єднувач, що лежить в основі, підтримує їх за допомогою тригерів у Power Automate.
+За допомогою з'єднувача Power Apps можна отримувати лише сутності **Клієнт**, **UnifiedActivity** (уніфікована справа), **Сегменти** і **ContactProfile** (профіль клієнта) Функція ContactProfile доступна лише у екземплярі Customer Insights для бізнес-облікових записів. Інші сутності відображаються, оскільки з’єднувач, що лежить в основі, підтримує їх за допомогою тригерів у Power Automate.
 
-Ви можете робити максимум 100 дзвінків за 60 секунд. Ви можете викликати кінцеву точку API кілька разів за допомогою параметра $skip. [Докладніше про параметр $skip](/connectors/customerinsights/#get-items-from-an-entity).
+Ви можете зробити максимум 100 дзвінків за 60 секунд. Ви можете викликати кінцеву точку API кілька разів, використовуючи параметр $skip. [Дізнайтеся більше про параметр $skip](/connectors/customerinsights/#get-items-from-an-entity).
 
 ### <a name="delegation"></a>Делегування
 
@@ -47,7 +47,7 @@ Customer Insights – це одне із багатьох [доступних д
 
 - Делегування сутності **Клієнт**: щоб використати делегування для цієї сутності, поля потрібно проіндексувати в розділі [Покажчик фільтра & пошуку](search-filter-index.md).  
 - Делегування для **UnifiedActivity**: делегування для цієї сутності працює лише для полів **ActivityId** і **CustomerId**.  
-- Делегування для **ContactProfile**: делегування для цієї сутності працює лише для полів **ContactId** і **CustomerId**. ContactProfile доступний лише в середовищах статистики клієнтів для бізнес-облікових записів.
+- Делегування для **ContactProfile**: делегування для цієї сутності працює лише для полів **ContactId** і **CustomerId**. ContactProfile доступний лише в середовищах Customer Insights для бізнес-облікових записів.
 
 Для отримання додаткових відомостей про делегування див. [Функції та операції Power Apps, які можна делегувати](/powerapps/maker/canvas-apps/delegation-overview). 
 

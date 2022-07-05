@@ -1,5 +1,5 @@
 ---
-title: Експорт даних Customer Insights до Microsoft Advertising
+title: Експорт сегментів до Microsoft Advertising (підготовча версія)
 description: Дізнайтеся, як налаштувати підключення та експорт до Microsoft Advertising.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 14479e915dd6ae76e018b59bee5980a600bb222d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: ca37159ec6473ad5c331a0ce1aa8424d277529ff
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644168"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082817"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>Експорт сегментів до Microsoft Advertising (підготовча версія)
 
@@ -23,7 +23,7 @@ ms.locfileid: "8644168"
 
 -   [Обліковий запис Microsoft Advertising](https://ads.microsoft.com/) і відповідні облікові дані адміністратора.
 -   Ви прийняли умови використання Customer Match. 
--   [Налаштовані сегменти](segments.md) в "Інсайті клієнтів".
+-   [Налаштовані сегменти](segments.md) в Customer Insights.
 -   Уніфіковані профілі клієнтів в експортованих сегментах містять поле з адресою електронної пошти.
 
 ## <a name="known-limitations"></a>Відомі обмеження

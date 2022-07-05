@@ -1,5 +1,5 @@
 ---
-title: Робота з API
+title: Робота з Customer Insights APIs
 description: Використання API пояснення обмежень.
 ms.date: 05/10/2021
 ms.reviewer: wimohabb
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 9a04276f7326533cd389cba6554f468123463bac
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: 8e8bd590d3bba9dc7b1644b6ff42b9fc53237ca9
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808552"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054089"
 ---
 # <a name="work-with-customer-insights-apis"></a>Робота з Customer Insights APIs
 
@@ -25,17 +25,17 @@ ms.locfileid: "8808552"
 > [!IMPORTANT]
 > Відомості про ці API наведено в [Довіднику Customer Insights API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Вони містять додаткові відомості про операції, параметри та відповіді.
 
-У цій статті описано, як отримати доступ до API статистики клієнтів, створити Azure app registration і почати роботу з клієнтськими бібліотеками.
+У цій статті описано, як отримати доступ до API Customer Insights, створити реєстрацію додатків Azure і почати роботу з бібліотеками клієнтів.
 
 ## <a name="get-started-trying-the-customer-insights-apis"></a>Почати роботу з Customer Insights API
 
 1. [Увійдіть](https://home.ci.ai.dynamics.com) до Customer Insights. Якщо ще немає передплати, [підпишіться на ознайомлювальну версію Customer Insights](https://aka.ms/tryci).
 
-1. Щоб увімкнути API в середовищі статистики клієнтів, перейдіть до розділу **Безпека адміністратора** > **·**. Для цього потрібно мати дозвіл адміністратора.
+1. Щоб увімкнути API в середовищі Customer Insights, перейдіть до **розділу Безпека адміністратора** > **·**. Для цього потрібно мати дозвіл адміністратора.
 
 1. Перейдіть на вкладку **API** та натисніть кнопку **Ввімкнути**.    
  
-   Ввімкнення API створює первинний та вторинний ключ передплати для вашої інсталяції, які буд використано у запитах API. Ви можете відновити ключі, вибравши **відновити первинний** або **відновити вторинний** на **API** > **безпеки** > **адміністратора**.
+   Ввімкнення API створює первинний та вторинний ключ передплати для вашої інсталяції, які буд використано у запитах API. Ви можете повторно створити ключі, вибравши **первинний** регенерувати або **повторно створити додаткове** в **API-інтерфейсах** > **безпеки** > **адміністратора**.
 
 <!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
@@ -67,7 +67,7 @@ ms.locfileid: "8808552"
 
 1. У новій реєстрації програми виберіть **дозволи API**.
 
-1. Виберіть **Додати дозвіл** і виберіть **Dynamics 365 AI для статистики** клієнтів на бічній панелі.
+1. Виберіть елемент **Додати дозвіл** і в області збоку виберіть елемент **Dynamics 365 AI for Customer Insights (Dynamics 365 AI for Customer Insights**).
 
 1. Для параметра **Тип дозволу** виберіть **Делеговані дозволи**, потім виберіть дозвіл **user_impersonation**.
 
@@ -107,13 +107,13 @@ ms.locfileid: "8808552"
 
 1. Щоб завершити, необхідно додати назву реєстрації програми як користувача в Customer Insights.  
    
-   Відкрийте сторінку Статистика клієнтів, перейдіть до розділу **Безпека** > **адміністратора** та виберіть **Додати користувача**.
+   Відкрийте статистику клієнтів, перейдіть до **розділу Безпека** > **адміністратора** та виберіть Додати **користувача**.
 
 1. Знайдіть ім'я реєстрації програми, виберіть його в результатах пошуку, а потім натисніть **Зберегти**.
 
 ## <a name="sample-queries"></a>Зразки запитів
 
-Ми склали короткий список зразків запитів OData для роботи з API: [приклади запитів](odata-examples.md) OData.
+Ми зібрали короткий список вибіркових запитів OData для роботи з API: [приклади запитів](odata-examples.md) OData.
 
 ## <a name="customer-insights-client-libraries"></a>Бібліотеки клієнтів Customer Insights
 
@@ -139,7 +139,7 @@ ms.locfileid: "8808552"
 
 1. Використовуйте [бібліотеку автентифікації Microsoft (MSAL)](/azure/active-directory/develop/msal-overview), щоб отримати `AccessToken` з використанням [реєстрації наявної програми Azure](#create-a-new-app-registration-in-the-azure-portal).
 
-1. Після успішної автентифікації та придбання маркера, побудувати новий або використовувати існуючий `HttpClient` з **defaultRequestHeaders "Авторизація"**, встановлений на **Пред'явник "маркер доступу"** і **Ocp-Apim-підписка-ключ**, встановлений на [**ключ** підписки з вашого середовища](#get-started-trying-the-customer-insights-apis) Customer Insights.   
+1. Після успішної аутентифікації та придбання токена створіть новий або використовуйте існуючий `HttpClient` з параметром **DefaultRequestHeaders "Авторизація", встановленим на**"Токен доступу"**Bearer** та **Ocp-Apim-Subscription-Key**, встановленим для [**ключа** підписки з вашого середовища](#get-started-trying-the-customer-insights-apis) Customer Insights.   
  
    У разі потреби можна скинути заголовок **Авторизація**. Наприклад, коли термін дії маркера минув.
 

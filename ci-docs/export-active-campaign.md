@@ -1,5 +1,5 @@
 ---
-title: Експортуйте дані Customer Insights до ActiveCampaign
+title: Експортуйте сегменти в ActiveCampaign
 description: Дізнайтеся про те, як налаштувати підключення та експортувати дані до ActiveCampaign.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5d15b9bf7383d06070ac92d7a729fc6e6e00c9d7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: eb6f2bb69bb30c319e17390562b3f33512f33ff1
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644067"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054733"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>Експортуйте сегменти до ActiveCampaign (підготовча версія)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8644067"
 
 ## <a name="prerequisites"></a>Вимоги
 
--   У вас є [обліковий запис ActiveCampaign](https://www.activecampaign.com/) і відповідні облікові дані адміністратора.
--   Ви налаштували [сегменти](segments.md) в Службі статистики клієнтів.
--   Уніфіковані профілі клієнтів в експортованих сегментах містять поле з адресою електронної пошти.
+- У вас є [обліковий запис ActiveCampaign](https://www.activecampaign.com/) і відповідні облікові дані адміністратора.
+- Ви налаштували [сегменти](segments.md) в Customer Insights.
+- Уніфіковані профілі клієнтів в експортованих сегментах містять поле з адресою електронної пошти.
 
 ## <a name="known-limitations"></a>Відомі обмеження
 

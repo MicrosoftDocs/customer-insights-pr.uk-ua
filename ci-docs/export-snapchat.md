@@ -1,5 +1,5 @@
 ---
-title: Експортування даних Customer Insights до Snapchat
+title: Експорт сегментів до Snapchat (підготовча версія)
 description: Дізнайтеся, як налаштувати підключення та експорт до Snapchat.
 ms.date: 06/08/2022
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d64b482c322af8632e29ec41d6e34c390c5e646c
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: abe04cd1464c3f7df969da3c769329382d603d7e
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947301"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051938"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>Експорт сегментів до Snapchat (підготовча версія)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8947301"
 
 ## <a name="prerequisites-for-a-connection"></a>Попередні вимоги для підключення
 
--   У вас є [корпоративний обліковий запис Snapchat](https://business.snapchat.com/), [обліковий запис рекламодавця Snapchat](https://ads.snapchat.com/) і відповідні облікові дані адміністратора. Ви повинні принаймні бути членом облікового запису організації та менеджером даних певного облікового запису оголошення. 
+-   У вас є [корпоративний обліковий запис Snapchat](https://business.snapchat.com/), [обліковий запис рекламодавця Snapchat](https://ads.snapchat.com/) і відповідні облікові дані адміністратора. Ви повинні принаймні бути учасником облікового запису організації та менеджером даних певного рекламного облікового запису. 
 -   У вас є принаймні одна аудиторія в менеджері аудиторії Snapchat типу SAM (Snap Audience Match). 
--   Ви налаштували [сегменти](segments.md) в Службі статистики клієнтів.
+-   Ви налаштували [сегменти](segments.md) в Customer Insights.
 -   Уніфіковані профілі клієнтів у експортованих сегментах містять поле, що представляє адресу електронної пошти.
 
 ## <a name="known-limitations"></a>Відомі обмеження
@@ -61,7 +61,7 @@ ms.locfileid: "8947301"
 
 1. У полі **Підключення для експорту** виберіть підключення з розділу Snapchat. Якщо ім'я цього розділу не відображається, це означає, що для вас немає жодного доступного підключення цього типу.
 
-1. [**Введіть сегмент Snapchat/ідентифікатор аудиторії**](https://businesshelp.snapchat.com/s/article/custom-audiences). Ідентифікатор аудиторії можна знайти в URL-адресі після вибору аудиторії в Менеджері аудиторії Snapchat. 
+1. Введіть ідентифікатор сегмента [**/аудиторії Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences). Ідентифікатор аудиторії можна знайти в URL-адресі після вибору аудиторії в Диспетчері аудиторії Snapchat. 
 
 1. У розділі **Зіставлення даних** у полі **Електронна пошта** виберіть поле, яке відповідає адресі електронної пошти клієнта. Це необхідно для експорту сегментів до Snapchat.
 

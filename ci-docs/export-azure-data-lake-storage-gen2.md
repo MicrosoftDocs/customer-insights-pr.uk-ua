@@ -1,5 +1,5 @@
 ---
-title: Експорт даних Customer Insights до Azure Data Lake Storage Gen2
+title: Експорт даних у Azure Data Lake Storage gen2 (попередній перегляд)
 description: Дізнайтесь, як налаштувати підключення до Azure Data Lake Storage Gen2.
 ms.date: 10/06/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: c2446fba425203d2910b82134b73543a73c7ecf8
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947255"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082670"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Експортування списку сегментів та інших даних до Azure Data Lake Storage Gen2 (підготовча версія)
+# <a name="export-data-to-azure-data-lake-storage-gen2-preview"></a>Експорт даних у Azure Data Lake Storage gen2 (попередній перегляд)
 
 Зберігайте дані Customer Insights в обліковому записі сховища Azure Data Lake Storage Gen2 або використовуйте його для передавання даних в інші програми.
 
@@ -61,6 +61,6 @@ ms.locfileid: "8947255"
 Експортовані дані зберігаються в контейнері сховища Azure Data Lake Gen 2, який ви налаштували.
 
 > [!TIP]
-> Експорт сутностей, які містять великий обсяг даних, може призвести до кількох файлів CSV в одній папці для кожного експорту. Розділення експорту відбувається з причин продуктивності, щоб звести до мінімуму час, необхідний для завершення експорту.
+> Експорт сутностей, які містять велику кількість даних, може призвести до кількох файлів CSV в одній папці для кожного експорту. Розділення експорту відбувається з міркувань продуктивності, щоб мінімізувати час, необхідний для завершення експорту.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

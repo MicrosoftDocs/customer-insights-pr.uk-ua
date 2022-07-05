@@ -1,5 +1,5 @@
 ---
-title: Експерименти машинного навчання Azure
+title: Використання моделей на основі машинного навчання Azure
 description: Використання моделей на основі машинного навчання Azure у Dynamics 365 Customer Insights.
 ms.date: 12/02/2021
 ms.subservice: audience-insights
@@ -8,12 +8,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cefd037a021b669e827f0593d63b938d452963f7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a1efad2887a02a92ee2960b07b066edc331f3665
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644032"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082292"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Використання моделей на основі машинного навчання Azure
 
@@ -34,7 +34,7 @@ ms.locfileid: "8644032"
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Робота з конструктором машинного навчання Azure
 
-Дизайнер Azure машинне навчання надає візуальне полотно, де можна перетягнути набори та модулі даних. Пакетна воронка продажів, створена в конструкторі, може бути інтегрована у Customer Insights у разі відповідного налаштування. 
+Azure машинне навчання дизайнер надає візуальне полотно, куди можна перетягувати набори даних і модулі. Пакетна воронка продажів, створена в конструкторі, може бути інтегрована у Customer Insights у разі відповідного налаштування. 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Робота з SDK машинного навчання Azure
 

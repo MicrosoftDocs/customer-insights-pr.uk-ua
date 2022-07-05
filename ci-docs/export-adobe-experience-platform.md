@@ -1,6 +1,6 @@
 ---
-title: Експорт даних Customer Insights до Adobe Experience Platform
-description: Дізнайтеся, як використовувати сегменти статистики клієнтів у програмі Adobe Experience Platform.
+title: Експорт сегментів у Adobe Experience Platform (попередній перегляд)
+description: Дізнайтеся, як використовувати сегменти Customer Insights у Adobe Experience Platform.
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.subservice: audience-insights
@@ -8,16 +8,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 42a4e0c6bce67a63b449a541299620ef2f4a3259
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c29b8264019669ffd954a298ce3a633c852477fa
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644132"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052536"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Використання сегментів Customer Insights у Adobe Experience Platform (підготовча версія)
+# <a name="export-segments-to-adobe-experience-platform-preview"></a>Експорт сегментів у Adobe Experience Platform (попередній перегляд)
 
-Можливо, як користувач Dynamics 365 Customer Insights програми, ви створили сегменти, щоб зробити свої маркетингові кампанії більш ефективними, націлюючи відповідні аудиторії. Щоб використовувати сегмент зі статистики Adobe Experience Platform клієнтів і таких програм, як Adobe Стандарт кампанії, потрібно виконати кілька кроків, описаних у цій статті.
+Як користувач Dynamics 365 Customer Insights, ви, можливо, створили сегменти, щоб зробити свої маркетингові кампанії більш ефективними, націлюючись на відповідні аудиторії. Щоб використовувати сегмент із Customer Insights у Adobe Experience Platform та таких програмах, як Adobe Campaign Standard, вам потрібно виконати кілька кроків, описаних у цій статті.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Схема процесів кроків, описаних у цій статті.":::
 
@@ -30,7 +30,7 @@ ms.locfileid: "8644132"
 
 ## <a name="campaign-overview"></a>Огляд кампанії
 
-Щоб краще зрозуміти, як ви можете використовувати сегменти з Customer Insights в Adobe Experience Platform, давайте подивимося на фіктивний зразок кампанії.
+Щоб краще зрозуміти, як ви можете використовувати сегменти від Customer Insights in Adobe Experience Platform, давайте розглянемо фіктивну вибіркову кампанію.
 
 Припустімо, що ваша компанія пропонує клієнтам щомісячну передплату на послуги в Сполучених Штатах Америки. Вам потрібно визначити клієнтів, передплати яких мають бути продовжені впродовж наступних 8 днів, але які ще не продовжили їх. Щоб зберегти цих клієнтів, варто надіслати їм акційну пропозицію електронною поштою за допомогою Adobe Experience Platform.
 
@@ -38,9 +38,9 @@ ms.locfileid: "8644132"
 
 ## <a name="identify-your-target-audience"></a>Визначте цільову аудиторію
 
-У нашому сценарії ми припускаємо, що адреси електронної пошти клієнтів доступні в Customer Insights, а їх рекламні уподобання були проаналізовані для ідентифікації членів сегмента.
+У нашому сценарії ми припускаємо, що адреси електронної пошти клієнтів доступні в Customer Insights, а їх рекламні переваги були проаналізовані для ідентифікації учасників сегмента.
 
-Сегмент [, який ви визначили в Customer Insights](segments.md), називається **ChurnProneCustomers**, і ви плануєте надіслати цим клієнтам рекламну кампанію електронною поштою.
+Сегмент [, який ви визначили в Customer Insights](segments.md), називається **ChurnProneCustomers**, і ви плануєте надіслати цим клієнтам рекламне просування електронною поштою.
 
 :::image type="content" source="media/churn-prone-customers-segment.png" alt-text="Знімок екрана: сторінка сегментів зі створеним сегментом ChurnProneCustomers.":::
 
@@ -48,7 +48,7 @@ ms.locfileid: "8644132"
 
 ## <a name="export-your-target-audience"></a>Експортуйте цільову аудиторію
 
-Визначивши нашу цільову аудиторію, ми можемо налаштувати експорт зі статистики клієнтів до облікового запису Azure Blob Storage.
+За допомогою нашої цільової аудиторії ми можемо налаштувати експорт із Customer Insights до облікового запису Azure Blob Storage.
 
 ### <a name="configure-a-connection"></a>Налаштуйте підключення
 
@@ -106,7 +106,7 @@ ms.locfileid: "8644132"
 
 ## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>Визначення моделі даних досвіду (XDM) у Adobe Experience Platform
 
-Перш ніж експортувати дані з Customer Insights можна буде використовувати в межах Adobe Experience Platform, нам потрібно визначити схему моделі даних experience і [налаштувати дані для профілю клієнта в режимі реального часу](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
+Перш ніж експортувати дані з Customer Insights можна буде використовувати всередині Adobe Experience Platform, нам потрібно визначити схему моделі даних Experience і [налаштувати дані для профілю](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials) клієнта в режимі реального часу.
 
 Дізнайтеся, [що таке XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) і зрозумійте [основи створення схем](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema).
 
@@ -116,7 +116,7 @@ ms.locfileid: "8644132"
 
 Спочатку [створіть підключення до джерела сховища Blob-об'єктів Azure](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).    
 
-Після визначення вихідного підключення налаштуйте потік [даних для пакетного підключення хмарного сховища,](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) щоб імпортувати вихід сегмента зі статистики клієнтів у Adobe Experience Platform.
+Після визначення вихідного з'єднання налаштуйте потік [даних для пакетного підключення хмарного сховища,](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) щоб імпортувати вихід сегмента з Customer Insights в Adobe Experience Platform.
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>Створення аудиторії в Adobe Campaign Standard
 

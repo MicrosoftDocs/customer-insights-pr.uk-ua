@@ -1,5 +1,5 @@
 ---
-title: Експорт даних Customer Insights до сховища BLOB-об'єктів Azure
+title: Експорт даних до сховища ляпів Azure (попередній перегляд)
 description: Дізнайтеся, як налаштувати підключення та експорт до сховища BLOB-об'єктів Azure.
 ms.date: 06/09/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 623926bf520b19ee4156b7a05e953241cd819e9e
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: 059c8364ca0f3740bc0e4ffeeeba94246c9e5696
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947163"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055515"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Експортуйте список сегментів та інші дані до сховища BLOB-об'єктів Azure (підготовча версія)
+# <a name="export-data-to-an-azure-blob-storage-preview"></a>Експорт даних до сховища ляпів Azure (попередній перегляд)
 
 Зберігайте дані Customer Insights у сховищі BLOB-об’єктів Azure або використовуйте його для передавання даних до інших програм.
 
@@ -69,7 +69,7 @@ ms.locfileid: "8947163"
   - Приклад: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
   
   > [!TIP]
-  > Експорт сутностей, які містять великий обсяг даних, може призвести до кількох файлів CSV в одній папці для кожного експорту. Розділення експорту відбувається з причин продуктивності, щоб звести до мінімуму час, необхідний для завершення експорту.
+  > Експорт сутностей, які містять велику кількість даних, може призвести до кількох файлів CSV в одній папці для кожного експорту. Розділення експорту відбувається з міркувань продуктивності, щоб мінімізувати час, необхідний для завершення експорту.
 
 - Файл model.json для експортованих сутностей буде на рівні %ExportDestinationName%.  
   - Приклад: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`

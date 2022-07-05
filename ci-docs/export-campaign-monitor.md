@@ -1,5 +1,5 @@
 ---
-title: Експортування даних Customer Insights до Campaign Monitor
+title: Експорт сегментів до Campaign Monitor (підготовча версія)
 description: Дізнайтеся, як налаштувати підключення та експорт до Campaign Monitor.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b351e491ee830b6360d4efe33d32a726c2e553ba
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: ea7431d4df5143724b5ecf2a2d747ed164fe2c29
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644007"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082901"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>Експорт сегментів до Campaign Monitor (підготовча версія)
 
@@ -22,7 +22,7 @@ ms.locfileid: "8644007"
 ## <a name="prerequisites"></a>Вимоги
 
 -   У вас є [обліковий запис Campaign Monitor](https://www.campaignmonitor.com/) і відповідні облікові дані адміністратора.
--   Ви налаштували [сегменти](segments.md) в Службі статистики клієнтів.
+-   Ви налаштували [сегменти](segments.md) в Customer Insights.
 -   Уніфіковані профілі клієнтів у експортованих сегментах містять поле, що представляє адресу електронної пошти.
 
 ## <a name="known-limitations"></a>Відомі обмеження

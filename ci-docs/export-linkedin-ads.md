@@ -1,5 +1,5 @@
 ---
-title: Експортування даних Customer Insights до LinkedIn Ads
+title: Експорт сегментів до LinkedIn Ads (підготовча версія)
 description: Дізнайтеся, як налаштувати підключення та експорт до LinkedIn Ads.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bf1d12ffbd7a4cfd7d268fea8a1f90cc37589e00
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e6ad3901f7b8dc1ae8edc54c0b09a99b01be34cd
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644171"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9050881"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>Експорт сегментів до LinkedIn Ads (підготовча версія)
 
@@ -22,12 +22,12 @@ ms.locfileid: "8644171"
 ## <a name="prerequisites"></a>Вимоги
 
 -   У вас є [обліковий запис LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) і відповідні облікові дані адміністратора.
--   Ви налаштували [сегменти](segments.md) в Службі статистики клієнтів.
+-   Ви налаштували [сегменти](segments.md) в Customer Insights.
 -   Профілі клієнтів в експортованих сегментах містять поле з адресою електронної пошти.
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
-- Ваш сегмент в "Інсайті клієнтів" повинен містити не менше 300 унікальних профілів. 
+- Ваш сегмент в Customer Insights повинен містити не менше 300 унікальних профілів. 
 - В межах одного експорту до LinkedIn Ads можна експортувати до 100K профілів клієнтів.
 - Експортувати в LinkedIn Ads можна тільки сегменти.
 - Експортування до 100K профілів клієнтів до LinkedIn Ads може тривати до 10 хвилин. 

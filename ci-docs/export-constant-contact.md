@@ -1,5 +1,5 @@
 ---
-title: Експортування даних Customer Insights до Constant Contact
+title: Експорт сегментів до Constant Contact (підготовча версія)
 description: Дізнайтеся, як налаштувати підключення та експорт до Constant Contact.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 310de0355f71829346f0e35508487e5962d6e912
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: fe9706a7cd0755412ee18c4b974684bb9aa3f8d3
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644144"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082313"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>Експорт сегментів до Constant Contact (підготовча версія)
 
@@ -22,7 +22,7 @@ ms.locfileid: "8644144"
 ## <a name="prerequisites-for-a-connection"></a>Попередні вимоги для підключення
 
 -   У вас є [обліковий запис Constant Contact](https://www.constantcontact.com/account-home) і відповідні облікові дані адміністратора.
--   Ви налаштували [сегменти](segments.md) в Службі статистики клієнтів.
+-   Ви налаштували [сегменти](segments.md) в Customer Insights.
 -   Уніфіковані профілі клієнтів у експортованих сегментах містять поле, що представляє адресу електронної пошти.
 
 ## <a name="known-limitations"></a>Відомі обмеження

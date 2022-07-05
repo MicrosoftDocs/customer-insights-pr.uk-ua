@@ -1,5 +1,5 @@
 ---
-title: Бот для Microsoft Teams
+title: Бот команди для Dynamics 365 Customer Insights (попередній перегляд)
 description: Пошук уніфікованих профілів клієнтів за допомогою Microsoft Teams з допомогою бота.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 89a293d5b6f9f5452b2ccba495d2475002806019
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 62a0216de848b5a3a81fdd6ac078feb551fcfec6
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644167"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082607"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>Бот команди для Dynamics 365 Customer Insights (попередній перегляд)
 
@@ -37,7 +37,7 @@ ms.locfileid: "8644167"
 
 ## <a name="configure-the-bot"></a>Настроювання бота
 
-1. Перейдіть до **пункту Призначення адмінекспорту** > **·**.
+1. Перейдіть до **розділу Призначення експорту адміністраторів** > **·**.
 1. На плитці Microsoft Teams виберіть елемент **Налаштувати**.
 1. Вас буде переспрямовано до області **Програми** в Teams. Також можна відкрити Teams і вибрати **Програми** в нижньому лівому куті або [отримати програму безпосередньо з AppSource](https://go.microsoft.com/fwlink/?linkid=2124104).
 1. Знайдіть **Customer Insights** та виберіть програму.

@@ -1,5 +1,5 @@
 ---
-title: З’єднувач Power Automate | Microsoft Docs
+title: Power Automate сполучна лінія (попередній перегляд) | Документи Microsoft
 description: Створення циклів у Microsoft Power Automate з Dynamics 365 Customer Insights.
 ms.date: 06/24/2021
 ms.reviewer: mhart
@@ -8,20 +8,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d22c4c785695b23a257a89f1ffa519fdc18b443e
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 29a861dad926072f6f849d738d868f0f3b9306be
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741204"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082460"
 ---
 # <a name="power-automate-connector-preview"></a>З’єднувач Power Automate (підготовча версія)
 
-Ініціюйте автоматичний запуск певних подій під час змінення даних і керуйте складнішими потоками безпосередньо в [Power Automate](https://flow.microsoft.com/).
+Ініціюйте автоматичний запуск певних подій під час змінення даних і керуйте складнішими потоками безпосередньо в [Microsoft Power Automate](https://flow.microsoft.com/).
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
-- Ви можете робити максимум 100 дзвінків за 60 секунд. Ви можете викликати кінцеву точку API кілька разів за допомогою параметра $skip. [Докладніше про параметр $skip](/connectors/customerinsights/#get-items-from-an-entity).
+- Ви можете зробити максимум 100 дзвінків за 60 секунд. Ви можете викликати кінцеву точку API кілька разів, використовуючи параметр $skip. [Дізнайтеся більше про параметр $skip](/connectors/customerinsights/#get-items-from-an-entity).
 
 ## <a name="power-automate-triggers"></a>Тригери Power Automate
 
@@ -32,7 +32,7 @@ ms.locfileid: "8741204"
 - Тригер на перетин межі для граничного значення для сегмента. Тригер спрацьовує лише при перевищенні обмеження.
 - Тригер на перетин межі для граничного значення для бізнес-показника. Підтримуються лише бізнес-показники без вимірів. Тригер спрацьовує лише при перевищенні обмеження.
 - Тригер після завершення повного оновлення (джерела даних, сегменти, показники, ...).
-- Тригер після завершення оновлення процесу об'єднання.
+- Спрацьовують, коли оновлення процесу об'єднання завершено.
 
 [Налаштуйте свої тригери в Power Automate.](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 

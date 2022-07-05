@@ -1,5 +1,5 @@
 ---
-title: Аналітичні огляди сегментів для наявних сегментів
+title: Аналітичні висновки для сегментів (підготовча версія)
 description: Отримуйте аналітичні висновки щодо наявних сегментів, щоб побачити відмінності та схожість.
 ms.date: 06/10/2020
 ms.subservice: audience-insights
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-segment-insights
 - customerInsights
-ms.openlocfilehash: 526b593ba9b038de3d3c27f6a7683ca76b3f2319
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e90bdc523c3f8857c150ccba9d81f055d39f9feb
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644023"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051616"
 ---
 # <a name="segment-insights-preview"></a>Аналітичні висновки для сегментів (підготовча версія)
 

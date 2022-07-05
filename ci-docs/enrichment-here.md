@@ -1,5 +1,5 @@
 ---
-title: Збагачення за допомогою стороннього постачальника послуг збагачення HERE Technologies
+title: Збагачення профілів клієнтів за допомогою ТЕХНОЛОГІЙ HERE (попередній перегляд)
 description: Загальні відомості про стороннє збагачення HERE Technologies.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,30 +8,30 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 171ead92427924083a13e2a3d52e7a7da417c801
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: d88085b6be156dd1c895e9e5b38cc9d77acbdb95
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953698"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052076"
 ---
-# <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Збагачення профілів клієнтів за допомогою HERE Technologies (попередній перегляд)
+# <a name="enrich-customer-profiles-with-here-technologies-preview"></a>Збагачення профілів клієнтів за допомогою ТЕХНОЛОГІЙ HERE (попередній перегляд)
 
-HERE Technologies — це компанія платформи визначення місцеположення, що надає дані та послуги, орієнтовані на місцеположення. Послуги зі збагачення даних HERE Technologies покращують точність інформації про місцезнаходження ваших клієнтів. Він забезпечує нормалізацію адреси, видобуток широти та довготи тощо.
+HERE Technologies — це компанія платформи визначення місцеположення, що надає дані та послуги, орієнтовані на місцеположення. Сервіси зі збагачення даних HERE Technologies покращують точність інформації про місцезнаходження ваших клієнтів. Він забезпечує адресну нормалізацію, вилучення широти і довготи тощо.
 
 ## <a name="prerequisites"></a>вимоги
 
-- Активна підписка HERE Technologies. Щоб отримати підписку, [зареєструйтеся тут](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) або [зв'яжіться безпосередньо з HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you). [Дізнайтесь більше про збагачення даних про розташування HERE Technologies.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
+- Активна підписка here Technologies. Щоб отримати підписку, [зареєструйтеся тут](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) або [зв'яжіться безпосередньо з HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you). [Дізнайтесь більше про збагачення даних про розташування HERE Technologies.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- Підключення [HERE](connections.md) налаштовано [адміністратором](#configure-the-connection-for-here-technologies).
+- Підключення [HERE](connections.md) настроєно [адміністратором](#configure-the-connection-for-here-technologies).
 
 ## <a name="configure-the-connection-for-here-technologies"></a>Налаштуйте підключення для HERE Technologies
 
-Ви повинні бути адміністратором [в](permissions.md#admin) Customer Insights і мати активний ключ API HERE Technologies.
+Ви повинні бути адміністратором [Customer](permissions.md#admin) Insights і мати активний ключ HERE Technologies API.
 
-1. Виберіть додати **підключення** під час настроювання збагачення або перейдіть до розділу **Підключення** > **адміністратора** та виберіть **налаштувати** на плитці HERE Technologies.
+1. Виберіть елемент **Додати підключення** під час настроювання збагачення або перейдіть до **розділу Підключення** > **адміністратора** та виберіть Настроїти **на** плитці HERE Technologies.
 
-1. Введіть ім'я підключення та дійсний ключ API HERE Technologies.
+1. Введіть ім'я для з'єднання та дійсний ключ API HERE Technologies.
 
 1. Перегляньте документ [Конфіденційність і відповідність даних](#data-privacy-and-compliance) і надайте згоду з його вмістом способом вибору пункту **Погоджуюся**.
 
@@ -48,7 +48,7 @@ HERE Technologies — це компанія платформи визначен
 
 1. Перейдіть в меню **Дані** > **Збагачення** і виберіть вкладку **Виявлення**.
 
-1. Виберіть Збагатити **мої дані** на **місцезнаходження** з плитки HERE Technologies.
+1. Виберіть "**Збагатити мої дані** про розташування **"** з плитки "Технології HERE".
 
    :::image type="content" source="media/HERE-tile.png" alt-text="Плитка HERE Technologies.":::
 
@@ -58,25 +58,25 @@ HERE Technologies — це компанія платформи визначен
 
 1. Виберіть **Далі**.
 
-1. **Виберіть набір** даних Клієнта та виберіть профіль або сегмент, який ви хочете збагатити даними з HERE Technologies. Організація *Клієнта* збагачує всі ваші профілі клієнтів, тоді як сегмент збагачує лише профілі клієнтів, що містяться в цьому сегменті.
+1. **Виберіть набір** даних клієнта та виберіть профіль або сегмент, який ви хочете збагатити даними з HERE Technologies. Компанія *Клієнта* збагачує всі ваші профілі клієнтів, тоді як сегмент збагачує лише профілі клієнтів, що містяться в цьому сегменті.
 
-1. Визначте, який тип полів з об'єднаних профілів використовувати для зіставлення: основна та/або додаткова адреса. Ви можете зазначити зіставлення полів для обох адрес і окремо збагачувати профілі для обох адрес. Наприклад, для домашньої адреси та адреси компанії. Виберіть **Далі**.
+1. Визначте, який тип полів з ваших уніфікованих профілів використовувати для зіставлення: основну та/або вторинну адресу. Ви можете зазначити зіставлення полів для обох адрес і окремо збагачувати профілі для обох адрес. Наприклад, для домашньої адреси та адреси компанії. Виберіть **Далі**.
 
-1. Зіставте свої поля з даними з HERE Technologies. Поля **Вулиця 1** і **Поштовий індекс** необхідні для вибраних основної та додаткової адрес. Для більш високої точності відповідності додайте більше полів.
+1. Зіставте свої поля з даними з HERE Technologies. Поля **Вулиця 1** і **Поштовий індекс** необхідні для вибраних основної та додаткової адрес. Для підвищення точності збігу додайте більше полів.
 
 1. Виберіть **Далі**, щоб завершити зіставлення полів.
 
-1. Укажіть ім'я **для** збагачення та ім'я **вихідної** сутності.
+1. **Надайте назву** для збагачення та назву **організації виводу**.
 
 1. Виберіть пункт **Зберегти збагачення** після того, як переглянете доступні вам варіанти вибору.
 
-1. Натисніть кнопку **Виконати,** щоб розпочати процес збагачення, або близько, щоб повернутися до **сторінки "Збагачення** ".
+1. Натисніть кнопку **Виконати**, щоб розпочати процес збагачення, або закрити, щоб повернутися на сторінку **Збагачення**.
 
-## <a name="enrichment-results"></a>Результати збагачення
+## <a name="view-enrichment-results"></a>Переглянути результати збагачення
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
-Кількість **клієнтів, збагачених полем**, забезпечує деталізацію в покритті кожного збагаченого поля.
+Кількість **клієнтів, збагачених родовищами**, забезпечує деталізацію покриття кожного збагаченого родовища.
 
 ## <a name="next-steps"></a>Наступні кроки
 

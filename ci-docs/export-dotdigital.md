@@ -1,5 +1,5 @@
 ---
-title: Експорт даних Customer Insights до DotDigital
+title: Експорт сегментів до DotDigital (підготовча версія)
 description: Дізнайтеся, як налаштувати підключення та експорт до DotDigital.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f63a0f5f5f93e96681a88fd758381c012a404f43
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: af0cce4edb9d47247c79ae08491366349da98b1c
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642967"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082943"
 ---
 # <a name="export-segments-to-dotdigital-preview"></a>Експорт сегментів до DotDigital (підготовча версія)
 
@@ -23,7 +23,7 @@ ms.locfileid: "8642967"
 
 -   У вас є [обліковий запис DotDigital](https://dotdigital.com/) і створено [користувача API](https://support.dotdigital.com/hc/articles/115001718730-How-do-I-create-an-API-user). Щоб створити підключення, необхідно використовувати облікові дані користувача API
 -   Наявні адресні книги в DotDigital і відповідні ідентифікатори. ІДЕНТИФІКАТОР можна знайти в URL-адресі, якщо вибрати та відкрити адресну книгу. Для отримання додаткових відомостей див. [адресні книги DotDigital](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
--   Ви налаштували [сегменти](segments.md) в Службі статистики клієнтів.
+-   Ви налаштували [сегменти](segments.md) в Customer Insights.
 -   Уніфіковані профілі клієнтів у експортованих сегментах містять поле, що представляє адресу електронної пошти.
 
 ## <a name="known-limitations"></a>Відомі обмеження

@@ -1,5 +1,5 @@
 ---
-title: Експорт даних Customer Insights до AdRoll
+title: Експорт сегментів до AdRoll (підготовча версія)
 description: Дізнайтеся, як налаштувати підключення та експорт до AdRoll.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec7d2d4d137f2f0e3e1ff2ec0d09bff8ac4f28ea
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 13c7dd3b8556ad807fba6c537525b463480e860b
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644015"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082838"
 ---
 # <a name="export-segments-to-adroll-preview"></a>Експорт сегментів до AdRoll (підготовча версія)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8644015"
 
 ## <a name="prerequisites-for-a-connection"></a>Попередні вимоги для підключення
 
--   Ви маєте [обліковий запис AdRoll](https://www.adroll.com/) і відповідні облікові дані адміністратора.
--   Ви налаштували [сегменти](segments.md) в Службі статистики клієнтів.
--   Уніфіковані профілі клієнтів у експортованих сегментах містять поле, що представляє адресу електронної пошти.
+- Ви маєте [обліковий запис AdRoll](https://www.adroll.com/) і відповідні облікові дані адміністратора.
+- Ви налаштували [сегменти](segments.md) в Customer Insights.
+- Уніфіковані профілі клієнтів у експортованих сегментах містять поле, що представляє адресу електронної пошти.
 
 ## <a name="known-limitations"></a>Відомі обмеження
 

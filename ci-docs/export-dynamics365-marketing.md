@@ -1,5 +1,5 @@
 ---
-title: Експорт даних Customer Insights до Dynamics 365 Marketing
+title: Експорт сегментів у Dynamics 365 Marketing (попередній перегляд)
 description: Дізнайтеся, як налаштувати підключення та експорт до Dynamics 365 Marketing.
 ms.date: 08/24/2021
 ms.reviewer: mhart
@@ -11,27 +11,25 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: 7227f3f9e7699a9b5ad546789de5e568b56da579
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: fed4ae1b017cca2b6060c4dda155859cd77e0daf
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642966"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054641"
 ---
-# <a name="use-segments-in-dynamics-365-marketing-preview"></a>Використання сегментів у Dynamics 365 Marketing (підготовча версія)
-
-
+# <a name="export-segments-to-dynamics-365-marketing-preview"></a>Експорт сегментів у Dynamics 365 Marketing (попередній перегляд)
 
 Використовуйте [сегменти](segments.md), щоб формувати кампанії та специфічні групи клієнтів за допомогою Dynamics 365 Marketing. Для отримання додаткових відомостей див. [Використання сегментів з Dynamics 365 Customer Insights у Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments).
 
-Якщо ви використовуєте нові можливості Dynamics 365 Marketing для оркестрації шляху клієнта в реальному часі в організації Dataverse, то створювати стандартний експорт до Dynamics 365 Marketing не потрібно. Контакти та сегменти з Customer Insights доступні безпосередньо в Dynamics 365 Marketing після підключення маркетингу та статистики клієнтів. Перш ніж видалити наявний експорт, перегляньте документацію про [підключення статистики клієнтів і динаміки 365 маркетингу шлях клієнта оркестровки](/dynamics365/marketing/real-time-marketing-ci-profile).
+Якщо ви використовуєте нові можливості Dynamics 365 Marketing для оркестрації шляху клієнта в реальному часі в організації Dataverse, то створювати стандартний експорт до Dynamics 365 Marketing не потрібно. Контакти та сегменти з Customer Insights доступні безпосередньо в Dynamics 365 Marketing після підключення marketing та Customer Insights. Перш ніж видаляти наявні експорти, перегляньте документацію про [те, як підключити Customer Insights і Dynamics 365 Marketing шлях клієнта оркестровку](/dynamics365/marketing/real-time-marketing-ci-profile).
 
 ## <a name="prerequisite-for-a-connection"></a>Попередня вимога для підключення
 
 - Записи контактних осіб мають бути присутніми в Dynamics 365 Marketing, щоб ви змогли експортувати сегмент з Customer Insights до Marketing. Дізнайтеся більше про те, як прийняти контактних осіб у [Dynamics 365 Marketing, використовуючи Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
   > [!NOTE]
-  > Експорт сегментів зі статистики клієнтів до маркетингу не призведе до створення нових записів контактів у екземплярах маркетингу. Контактні записи з маркетингу повинні потрапляти в статистику клієнтів і використовуватися як джерело даних. Їх також потрібно включити в уніфіковану сутність «Клієнт», щоб зіставити ідентифікатори клієнтів із ідентифікаторами контактних осіб, перш ніж можна буде експортувати сегменти.
+  > Експорт сегментів із Customer Insights до Marketing не створить нових записів контактів у маркетингових інстанціях. Записи контактів із відділу маркетингу повинні надходити в Customer Insights і використовуватися як джерело даних. Їх також потрібно включити в уніфіковану сутність «Клієнт», щоб зіставити ідентифікатори клієнтів із ідентифікаторами контактних осіб, перш ніж можна буде експортувати сегменти.
 
 ## <a name="set-up-connection-to-marketing"></a>Налаштування підключення до Marketing
 
@@ -47,7 +45,7 @@ ms.locfileid: "8642966"
 
 1. У розділі **Обліковий запис адміністратора сервера** виберіть **Увійти** і оберіть обліковий запис Dynamics 365 Marketing.
 
-1. Зіставте поле Ідентифікатор контакту в сутності клієнта з ідентифікатором контакту Dynamics 365.
+1. Зіставте поле «Ідентифікатор контакту» в організації клієнта з ідентифікатором контакту Dynamics 365.
 
 1. Щоб завершити створення підключення, виберіть **Зберегти**. 
 
