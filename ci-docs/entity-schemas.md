@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 92d37fc0950fefcb5c2a5d26214a469d3693980d
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: cc65314f1b083694b60ac0a2625bea906be7272b
+ms.sourcegitcommit: ad74ace653db9a25fce4343adef7db1c9b0d8904
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054779"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183518"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Схеми сутностей у Common Data Model
 
@@ -39,9 +39,8 @@ ms.locfileid: "9054779"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>Перегляд сутностей за допомогою засобу переходу між сутностями Common Data Model
 
-Сутності можна переглянути в [Навігаторі сутності Common Data Model](https://microsoft.github.io/CDM/). Виберіть сутність у розділі Insights "Програма", щоб отримати список сутностей Customer Insights та їх визначення.
-> [!div class="mx-imgBorder"]
-> ![Засіб переходу між сутностями CDM, у якому відображається сутність CustomerActivity.](media/CDM-entity-navigator.png "Засіб переходу між сутностями CDM, у якому відображається сутність CustomerActivity")
+Перегляд сутностей у навігаторі [сутності загальної моделі даних](https://microsoft.github.io/CDM/). Виберіть сутність у розділі Insights "Програма", щоб отримати список сутностей Customer Insights та їх визначення.
 
+:::image type="content" source="media/CDM-entity-navigator.png" alt-text="Засіб переходу між сутностями CDM, у якому відображається сутність CustomerActivity.":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
