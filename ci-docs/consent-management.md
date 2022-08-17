@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 99fe24cb47a8c20f629182d9a1c6adfd36a1eaf7
-ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
+ms.openlocfilehash: 6c951219410b55adc34691f677158b574cea1e01
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9188073"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245720"
 ---
 # <a name="use-customer-consent"></a>Використання згоди клієнта
 
@@ -33,7 +33,7 @@ Dynamics 365 Customer Insights допомагає вам виконувати з
 - альтернативний ключ зіставити інформацію про згоду з профілями користувачів у Customer Insights. Наприклад, адреса електронної пошти або номер телефону.
 - Значення згоди для визначення статусу згоди замовника.
 
-Ви можете додати таку *необов'язкову* інформацію:
+Ви можете додати таку *необов’язкову* інформацію:
 
 - Первинний ключ для оновлення стану згоди, якщо клієнт запитує зміни.
 - Тип згоди, якщо існує кілька способів обробки інформації про клієнта.
@@ -70,6 +70,6 @@ Dynamics 365 Customer Insights допомагає вам виконувати з
 
 Іншими словами, переконайтеся, що вихідні дані, які імпортуються до Customer Insights, завжди мають найсвіжішу інформацію.
 
-Щоб отримати додаткові відомості, перегляньте статтю [Оновлення сегментів вручну](segments.md#refresh-segments) або [настроювання запланованого оновлення](system.md#schedule-tab).
+Щоб отримати додаткові відомості, перегляньте статтю [Оновлення сегментів вручну](segments.md#refresh-segments) або [настроювання запланованого оновлення](schedule-refresh.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

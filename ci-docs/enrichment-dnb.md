@@ -1,7 +1,7 @@
 ---
 title: Збагачуйте профілі компаній за допомогою Dun & Bradstreet (попередній перегляд)
 description: Загальна інформація про стороннє збагачення Dun & Bradstreet.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 71b35e4295e19c13edadc6548ac79715555e8183
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: e89b64774dcb519a071dd3d403473807a50e7f33
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196051"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237929"
 ---
 # <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>Збагачуйте профілі компаній за допомогою Dun & Bradstreet (попередній перегляд)
 
@@ -25,7 +25,7 @@ Dun & Bradstreet надає комерційні дані, аналітику т
 - Активна [ліцензія Dun & Bradstreet](https://www.dnb.com/marketing/media/give-your-data-a-boost.html?source=microsoft_audience_insights).
 - [Уніфіковані профілі](customer-profiles.md) клієнтів для компаній.
 - Створено проект [Dun & Bradstreet](#set-up-your-dun--bradstreet-project).
-- З'єднання [Dun & Bradstreet](connections.md) налаштовується [адміністратором](#configure-a-connection-for-dun--bradstreet).
+- З’єднання [Dun & Bradstreet](connections.md) налаштовується [адміністратором](#configure-a-connection-for-dun--bradstreet).
 
 ## <a name="set-up-your-dun--bradstreet-project"></a>Налаштуйте свій проект Dun & Bradstreet
 
@@ -41,30 +41,25 @@ Dun & Bradstreet надає комерційні дані, аналітику т
 
    :::image type="content" source="media/enrichment-dnb-dots.png" alt-text="Знімок екрана: крапки в проекті Dun & Bradstreet.":::
 
-1. Виберіть елемент **Отримати відомості про** S3. Зберігайте цю інформацію в надійному місці. Він знадобиться вам, щоб [налаштувати з'єднання для збагачення](#configure-a-connection-for-dun--bradstreet) в Customer Insights.
+1. Виберіть елемент **Отримати відомості про** S3. Зберігайте цю інформацію в надійному місці. Він знадобиться вам, щоб [налаштувати з’єднання для збагачення](#configure-a-connection-for-dun--bradstreet) в Customer Insights.
 
    :::image type="content" source="media/enrichment-dnb-s3info.png" alt-text="Знімок екрана: вибір інформації s3 у проекті Dun & Bradstreet.":::
 
-## <a name="configure-a-connection-for-dun--bradstreet"></a>Налаштування з'єднання для Dun & Bradstreet
+## <a name="configure-a-connection-for-dun--bradstreet"></a>Налаштування з’єднання для Dun & Bradstreet
 
 Ви повинні бути адміністратором [Customer](permissions.md#admin) Insights і мати облікові дані від Dun & Bradstreet Connect.
 
-1. Виберіть Додати з'єднання **під час налаштування збагачення або перейдіть до** Підключення **адміністратора** > **та виберіть** Налаштувати **на плитці Dun & Bradstreet.**
+1. Виберіть Додати з’єднання **під час налаштування збагачення або перейдіть до** Підключення **адміністратора** > **та виберіть** Налаштувати **на плитці Dun & Bradstreet.**
 
-1. Введіть ім'я підключення.
+1. Введіть ім’я підключення.
 
-1. Надайте дійсні облікові дані Dun & Bradstreet та деталі *проекту Dun & Bradstreet регіон, шлях до папки та ім'я* папки Drop. Цю [інформацію](#set-up-your-dun--bradstreet-project) ви отримуєте від проекту Dun & Bradstreet.
+1. Надайте дійсні облікові дані Dun & Bradstreet та деталі *проекту Dun & Bradstreet регіон, шлях до папки та ім’я* папки Drop. Цю [інформацію](#set-up-your-dun--bradstreet-project) ви отримуєте від проекту Dun & Bradstreet.
 
-1. Перегляньте документ [Конфіденційність і відповідність даних](#data-privacy-and-compliance) і надайте згоду з його вмістом способом вибору пункту **Погоджуюся**.
+1. Перегляньте конфіденційність [і відповідність](connections.md#data-privacy-and-compliance) даних і виберіть пункт **Я погоджуюся**.
 
 1. Натисніть кнопку **Перевірити**, щоб перевірити конфігурацію, а потім натисніть кнопку **Зберегти**.
 
-   :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Сторінка конфігурації з'єднання Dun & Bradstreet.":::
-
-### <a name="data-privacy-and-compliance"></a>Конфіденційність і відповідність даних
-
-Коли ви дозволяєте Dynamics 365 Customer Insights передавати дані в Dun & Bradstreet, ви дозволяєте передавати дані за межі відповідності для Dynamics 365 Customer Insights, включаючи потенційно конфіденційні дані, такі як Персональні дані. Корпорація Майкрософт передаватиме такі дані за вашою вказівкою, але ви несете відповідальність за те, щоб Dun & Bradstreet виконували будь-які зобов'язання щодо конфіденційності та безпеки, які ви можете мати. Для отримання додаткових відомостей див. розділ [Декларація про конфіденційність Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Адміністратор Dynamics 365 Customer Insights може видалити це збагачення в будь-який момент, щоб припинити використання цієї функції.
+   :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Сторінка конфігурації з’єднання Dun & Bradstreet.":::
 
 ## <a name="supported-countries-or-regions"></a>Підтримувані країни або регіони
 
@@ -96,7 +91,7 @@ Dun & Bradstreet надає комерційні дані, аналітику т
 
 1. Виберіть **Далі**, щоб завершити зіставлення полів.
 
-1. Вкажіть ім'я **для** збагачення та ім'я **сутності виводу**.
+1. Вкажіть ім’я **для** збагачення та ім’я **сутності виводу**.
 
 1. Виберіть пункт **Зберегти збагачення** після того, як переглянете доступні вам варіанти вибору.
 

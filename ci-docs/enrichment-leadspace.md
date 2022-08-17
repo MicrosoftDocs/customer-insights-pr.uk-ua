@@ -1,19 +1,19 @@
 ---
 title: Збагачення профілів компаній за допомогою Leadspace (попередній перегляд)
 description: Загальні відомості про стороннє збагачення Leadspace.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 3f23fe7177f931db3e3179970915d0cd3c736f87
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: f45fabc036775e11fc439f69513678d0607729d0
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196235"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237975"
 ---
 # <a name="enrich-company-profiles-with-leadspace-preview"></a>Збагачення профілів компаній за допомогою Leadspace (попередній перегляд)
 
@@ -23,7 +23,7 @@ Leadspace — це компанія, що займається аналізом 
 
 - Активна ліцензія Leadspace.
 - [Уніфіковані профілі](customer-profiles.md) клієнтів на основі облікових записів.
-- З'єднання [Leadspace](connections.md) настроюється [адміністратором](#configure-the-connection-for-leadspace). Щоб отримати докладніші відомості про продукт [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/), звертайтеся безпосередньо до компанії Leadspace.
+- З’єднання [Leadspace](connections.md) настроюється [адміністратором](#configure-the-connection-for-leadspace). Щоб отримати докладніші відомості про продукт [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/), звертайтеся безпосередньо до компанії Leadspace.
 
 ## <a name="configure-the-connection-for-leadspace"></a>Налаштуйте підключення для Leadspace
 
@@ -33,16 +33,11 @@ Leadspace — це компанія, що займається аналізом 
 
    :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="Сторінка налаштування підключення Leadspace.":::
 
-1. Введіть ім'я з'єднання та дійсний токен Leadspace.
+1. Введіть ім’я з’єднання та дійсний токен Leadspace.
 
-1. Перегляньте документ [Конфіденційність і відповідність даних](#data-privacy-and-compliance) і надайте згоду з його вмістом способом вибору пункту **Погоджуюся**.
+1. Перегляньте конфіденційність [і відповідність](connections.md#data-privacy-and-compliance) даних і виберіть пункт **Я погоджуюся**.
 
 1. Натисніть кнопку **Перевірити**, щоб перевірити конфігурацію, а потім натисніть кнопку **Зберегти**.
-
-### <a name="data-privacy-and-compliance"></a>Конфіденційність і відповідність даних
-
-Під час увімкнення Dynamics 365 Customer Insights для передавання даних до Leadspace можна перенести дані за межі нормативного регіону до Dynamics 365 Customer Insights, включно з потенційно конфіденційними даними, наприклад особистими даними. Корпорація Microsoft передаватиме ці дані відповідно до ваших указівок, але всю відповідальність за те, щоб компанія Leadspace відповідала будь-яким вашим вимогам щодо конфіденційності або безпеки, покладено на вас. Для отримання додаткових відомостей див. розділ [Декларація про конфіденційність Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Адміністратор Dynamics 365 Customer Insights може видалити це збагачення в будь-який момент, щоб припинити використання цієї функції.
 
 ## <a name="configure-the-enrichment"></a>Налаштуйте збагачення
 
@@ -76,7 +71,7 @@ Leadspace — це компанія, що займається аналізом 
 
 1. Виберіть **Далі**.
 
-1. Вкажіть ім'я **для** збагачення та ім'я **сутності виводу**.
+1. Вкажіть ім’я **для** збагачення та ім’я **сутності виводу**.
 
 1. Виберіть пункт **Зберегти збагачення** після того, як переглянете доступні вам варіанти вибору.
 
