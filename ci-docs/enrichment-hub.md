@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 0c2a900190b4ab6e93098d05a2fd66bcd2b847fd
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
-ms.translationtype: HT
+ms.openlocfilehash: fb747f7adc7d87f30f66c5d0ed20bbe238558fde
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245904"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304544"
 ---
 # <a name="data-enrichment-preview-overview"></a>Огляд збагачення (попереднього перегляду) даних
 
@@ -95,7 +95,7 @@ ms.locfileid: "9245904"
 
 ### <a name="see-the-progress-of-the-enrichment-process"></a>Перегляд перебігу процесу збагачення
 
-Ви можете знайти докладнішу інформацію про обробку збагачення пакета, зокрема його стан і можливі проблеми в процесі оновлення або після завершення оновлення. З'ясуйте, які процеси беруть участь у оновленні збагачень і скільки триває виконання цих процесів. Стан збагачення підтримується для Experian, Leadspace, HERE Technologies, SFTP-імпорту та Azure Maps.
+Ви можете знайти подробиці про обробку збагачення, включаючи його статус і потенційні проблеми під час оновлення або після завершення оновлення. З'ясуйте, які процеси беруть участь у оновленні збагачень і скільки триває виконання цих процесів. Стан збагачення підтримується для Experian, Leadspace, HERE Technologies, SFTP-імпорту та Azure Maps.
 
 1. Перейдіть до розділу **Дані** > **Збагачення**.
 1. На вкладці **Моє збагачення** виберіть стан збагачення, щоб відкрити бічну область.

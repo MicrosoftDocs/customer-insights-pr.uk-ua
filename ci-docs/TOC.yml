@@ -76,6 +76,8 @@
       href: merge-entities.md
     - name: Уніфікація даних огляду
       href: review-unification.md
+    - name: Створення уніфікованого профілю контакту
+      href: data-unification-contacts.md
     - name: Оновлення параметрів уніфікації
       href: data-unification-update.md
 - name: Збагачення даних
