@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: c573c46fda895d36d29712e75fe28b261c9b399a
+ms.sourcegitcommit: 0b5bfe0145dbd325fa518df4561d6a0a9a352264
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245950"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "9352826"
 ---
 # <a name="export-diagnostic-logs-preview"></a>Експорт діагностичних журналів (попередній перегляд)
 
@@ -36,8 +36,8 @@ Customer Insights надсилає такі журнали подій:
 
 - Активна [підписка Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - [Дозволи адміністратора](permissions.md#admin) в Розділі "Статистика клієнтів".
+- Дійсний ресурс у Azure, який відповідає [вимогам](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) до призначення для Azure Storage, Azure Event Hub або Azure Log Analytics.
 - [Роль](/azure/role-based-access-control/role-assignments-portal) постачальника та адміністратора доступу користувачів на цільовому ресурсі в Azure. Ресурс може бути обліковим записом Azure Data Lake Storage, центром подій Azure або робочою областю Azure Log Analytics. Цей дозвіл необхідний під час настроювання параметрів діагностики в Customer Insights, але його можна змінити після успішного настроювання.
-- [Цільові вимоги для](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) Сховища Azure, Центру подій Azure або Azure Log Analytics виконуються.
 - Принаймні роль Читача **в** групі ресурсів, до якої належить ресурс.
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>Настроювання діагностики за допомогою монітора Azure
@@ -87,14 +87,14 @@ Customer Insights надсилає такі журнали подій:
 
 ## <a name="remove-a-diagnostics-destination"></a>Видалення призначення діагностики
 
-1. Перейдіть до **адміністративної** > **системи** та виберіть вкладку **Діагностика**.
+1. Перейдіть до **адміністративної** > **системи** та виберіть вкладку **Діагностика** .
 
 1. Виберіть місце призначення діагностики в списку.
 
    > [!TIP]
    > Видалення пункту призначення зупиняє переадресацію журналу, але не видаляє ресурс за передплатою Azure. Щоб видалити ресурс в Azure, виберіть посилання в **стовпці Дії**, щоб відкрити портал Azure для обраного ресурсу і видаліть його там. Потім видаліть призначення діагностики.
 
-1. У стовпці **Дії** виберіть піктограму **Видалити**.
+1. У стовпці **Дії** виберіть піктограму **Видалити** .
 
 1. Підтвердіть видалення, щоб видалити пункт призначення, і припиніть пересилання журналу.
 
@@ -116,24 +116,24 @@ Customer Insights містить дві категорії:
 
 ### <a name="api-event-schema"></a>Схема подій API
 
-| Поле             | Тип даних  | Обов’язково/Необов’язково | Опис       | Приклад        |
+| Поле             | Тип даних  | Обов'язково/Необов'язково | Опис       | Приклад        |
 | ----------------- | --------- | ----------------- | --------------------- | ------------------------ |
 | `time`            | Позначка часу | Обов'язковий          | Позначка часу події (UTC)       | `2020-09-08T09:48:14.8050869Z`         |
 | `resourceId`      | String    | Обов'язковий          | ResourceId екземпляра, який випустив подію         | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX`  |
 | `operationName`   | String    | Обов'язковий          | Назва операції, представленої даним заходом.                                                                                                                | `Workflows.GetWorkFlowStatusAsync`                                                                                                                                       |
-| `category`        | String    | Обов'язковий          | Категорія журналу події. Або `Operational` або `Audit`. Усі запити HTTP POST/PUT/PATCH/DELETE позначені тегами `Audit`, все інше з`Operational` | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
+| `category`        | String    | Обов'язковий          | Категорія журналу події. Або `Operational` або `Audit`. Усі запити HTTP POST/PUT/PATCH/DELETE позначені тегами `Audit`, все інше з `Operational` | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resultType`      | String    | Обов'язковий          | Статус заходу. `Success`, `ClientError`, `Failure`                                                                                                        |                                                                                                                                                                          |
 | `resultSignature` | String    | Необов'язково          | Підсумковий статус заходу. Якщо операція відповідає виклику REST API, це код стану HTTP.        | `200`             |
 | `durationMs`      | Довге значення      | Необов'язково          | Тривалість операції в мілісекундах.     | `133`     |
 | `callerIpAddress` | String    | Необов'язково          | IP-адреса абонента, якщо операція відповідає виклику API, який надходить із загальнодоступної IP-адреси.                                                 | `144.318.99.233`         |
-| `identity`        | String    | Необов'язково          | Об’єкт JSON, що описує особу користувача або програми, яка виконувала операцію.       | Дивіться [розділ "Ідентичність"](#identity-schema).     |  
-| `properties`      | String    | Необов'язково          | Об’єкт JSON з більшою кількістю властивостей до певної категорії подій.      | Дивіться [розділ Властивості](#api-properties-schema).    |
+| `identity`        | String    | Необов'язково          | Об'єкт JSON, що описує особу користувача або програми, яка виконувала операцію.       | Дивіться [розділ "Ідентичність"](#identity-schema)  .     |  
+| `properties`      | String    | Необов'язково          | Об'єкт JSON з більшою кількістю властивостей до певної категорії подій.      | Дивіться [розділ Властивості](#api-properties-schema) .    |
 | `level`           | String    | Обов'язковий          | Рівень тяжкості заходу.    | `Informational`, `Warning`, `Error`, або `Critical`.           |
 | `uri`             | String    | Необов'язково          | Абсолютний запит URI.    |               |
 
 #### <a name="identity-schema"></a>Схема ідентичності
 
-Об’єкт `identity` JSON має наступну структуру
+Об'єкт `identity` JSON має наступну структуру
 
 ```json
 {
@@ -155,7 +155,7 @@ Customer Insights містить дві категорії:
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `Authorization.UserRole`      | Призначена роль для користувача або програми. Щоб отримати додаткові відомості, перегляньте [розділ Дозволи](permissions.md) користувачів.                                     |
 | `Authorization.RequiredRoles` | Необхідні ролі для виконання операції. `Admin` роль дозволяється виконувати всі операції.                                                    |
-| `Claims`                      | Претензії користувача або веб-токена JSON (JWT). Властивості претензій залежать від організації та конфігурації Azure Active Directory. |
+| `Claims`                      | Претензії користувача або веб-токена JSON (JWT). Властивості претензій залежать від організації та конфігурації Azure Active Directory . |
 
 #### <a name="api-properties-schema"></a>Схема властивостей API
 
@@ -165,14 +165,14 @@ Customer Insights містить дві категорії:
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | `properties.eventType`       | Завжди `ApiEvent`, позначаючи подію журналу як подію API.                                                                 |
 | `properties.userAgent`       | Браузерний агент, що відправляє запит або `unknown`.                                                                        |
-| `properties.method`          | Метод HTTP:`GET/POST/PUT/PATCH/HEAD`.                                                                                |
+| `properties.method`          | Метод HTTP: `GET/POST/PUT/PATCH/HEAD`.                                                                                |
 | `properties.path`            | Відносний шлях запиту.                                                                                          |
 | `properties.origin`          | URI, що вказує, звідки береться отримання або `unknown`.                                                                  |
 | `properties.operationStatus` | `Success` для коду стану HTTP < 400 <br> `ClientError` для коду стану HTTP < 500 <br> `Error` для > стану HTTP= 500 |
 | `properties.tenantId`        | Ідентифікатор організації                                                                                                        |
 | `properties.tenantName`      | Назва організації.                                                                                              |
-| `properties.callerObjectId`  | Azure Active Directory Об’єкт Ід того, хто телефонує.                                                                         |
-| `properties.instanceId`      | Інсайти клієнтів`instanceId`                                                                                         |
+| `properties.callerObjectId`  | Azure Active Directory Об'єкт Ід того, хто телефонує.                                                                         |
+| `properties.instanceId`      | Інсайти клієнтів `instanceId`                                                                                         |
 
 ### <a name="workflow-event-schema"></a>Схема події робочого циклу
 
@@ -212,7 +212,7 @@ Customer Insights містить дві категорії:
 | `category`      | String    | Обов'язковий          | Категорія журналу події. Завжди `Operational` для подій робочого циклу                                                                                           | `Operational`                                                                                                                                                            |
 | `resultType`    | String    | Обов'язковий          | Статус заходу. `Running`, `Skipped`, `Successful`, `Failure`                                                                                            |                                                                                                                                                                          |
 | `durationMs`    | Довге значення      | Необов'язково          | Тривалість операції в мілісекундах.                                                                                                                    | `133`                                                                                                                                                                    |
-| `properties`    | String    | Необов'язково          | Об’єкт JSON з більшою кількістю властивостей до певної категорії подій.                                                                                        | Перегляньте підрозділ Властивості [робочого циклу](#workflow-properties-schema)                                                                                                       |
+| `properties`    | String    | Необов'язково          | Об'єкт JSON з більшою кількістю властивостей до певної категорії подій.                                                                                        | Перегляньте підрозділ Властивості [робочого циклу](#workflow-properties-schema)                                                                                                       |
 | `level`         | String    | Обов'язковий          | Рівень тяжкості заходу.                                                                                                                                  | `Informational`, `Warning` або `Error`                                                                                                                                   |
 
 #### <a name="workflow-properties-schema"></a>Схема властивостей робочого циклу

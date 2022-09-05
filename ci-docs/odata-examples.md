@@ -1,27 +1,27 @@
 ---
 title: Приклади запитів OData для API Customer Insights
 description: Зазвичай використовуються приклади протоколу відкритих даних (OData) для запиту API Customer Insights для перегляду даних.
-ms.date: 05/25/2022
+ms.date: 08/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
-ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
+ms.openlocfilehash: 26e56a3bab01ba55284a52e72efbcbfbaadaad6f
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9121587"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387227"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>Приклади запитів OData для API Customer Insights
 
 Протокол відкритих даних (OData) - це протокол доступу до даних, побудований на основних протоколах, таких як HTTP. Він використовує загальноприйняті методології, такі як REST для Інтернету. Існують різного роду бібліотеки та інструменти, які можна використовувати для споживання служб OData.
 
-У цій статті наведено кілька часто запитаних прикладів, які допоможуть вам створити власні реалізації на [основі API Customer Insights](apis.md).
+Щоб допомогти вам створити власні реалізації на [основі API](apis.md) Customer Insights, перегляньте кілька часто запитаних прикладів.
 
-Потрібно змінити зразки запитів, щоб вони працювали в цільових середовищах: 
+Змініть зразки запитів, щоб вони працювали в цільових середовищах.
 
 - {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` де {instanceId} – ідентифікатор середовища Customer Insights, до якого потрібно надіслати запит. Операція [ListAllInstances](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) дозволяє знайти доступ {InstanceId} до нього.
 - {CID}: GUID єдиного запису клієнта. Приклад:`ce759201f786d590bf2134bff576c369`
@@ -31,7 +31,7 @@ ms.locfileid: "9121587"
 
 ## <a name="customer"></a>клієнте
 
-У таблиці нижче наведено набір зразків запитів для юридичної *особи клієнта*.
+Зразки запитів для *організації Замовника*.
 
 |Тип запиту |Приклад  | Нотатка  |
 |---------|---------|---------|
@@ -46,7 +46,7 @@ ms.locfileid: "9121587"
 
 ## <a name="unified-activity"></a>Єдина діяльність
 
-У таблиці нижче наведено набір зразків запитів для *сутності UnifiedActivity*.
+Зразки запитів для об’єкта *уніфікованоїактивності*.
 
 |Тип запиту |Приклад  | Нотатка  |
 |---------|---------|---------|
@@ -59,7 +59,7 @@ ms.locfileid: "9121587"
 
 ## <a name="other-examples"></a>Нижче наведено інші приклади
 
-У таблиці нижче наведено набір зразків запитів для інших сутностей.
+Зразки запитів для інших суб’єктів.
 
 |Тип запиту |Приклад  | Нотатка  |
 |---------|---------|---------|
