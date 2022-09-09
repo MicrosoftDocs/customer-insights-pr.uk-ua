@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2652e0868f5cc514ab6df9c150a9183cf95ae589
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: dd433b57e8695891a08d6f7fdb8c87befd2e1cfa
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246133"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396098"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Обробка даних у режимі реального часу (попередній перегляд)
 
@@ -82,10 +82,5 @@ API в режимі реального часу може інтегрувати 
 Опублікувати справу можна у форматі вихідної системи або у форматі UnifiedActivity. Створення формату шляхом виклику API до /api/instances/{instanceId}/manage/entities/UnifiedActivity.
 
 Відомості про цей API, у тому числі параметри та відповіді, можна знайти в розділі **Дані сутності** у [довіднику API Customer Insights](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Для отримання додаткових відомостей див. розділ [Робота з Customer Insights API](apis.md).
-
-## <a name="understand-your-real-time-usage-with-telemetry"></a>Ознайомтеся із навантаженням у режимі реального часу, використовуючи телеметрію.
-
-Отримайте огляд обсягу запитів до API в режимі реального часу та інформацію про проблеми, які можуть виникнути в системі. Ви можете [бачити дані телеметрії в режимі реального часу](system.md#view-api-usage). 
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

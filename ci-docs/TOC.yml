@@ -160,8 +160,6 @@
           href: sentiment-analysis.md
         - name: Використання настроюваних моделей від машинного навчання Azure
           href: custom-models.md
-        - name: Доповнення частково відсутніх даних
-          href: predictions.md
     - name: Зразки посібників
       items:
         - name: Зразок посібника для прогнозування CLV
