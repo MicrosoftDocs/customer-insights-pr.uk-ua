@@ -8,12 +8,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7f38b7d9985368fc38107f1f360f0603a7fcc8e6
-ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
+ms.openlocfilehash: c3863b1a72fd92ddc87755699feda11371ec9214
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9411810"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463244"
 ---
 # <a name="service-limits-in-customer-insights"></a>Обмеження на обслуговування в Customer Insights
 
@@ -25,6 +25,7 @@ ms.locfileid: "9411810"
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | Сегменти, міри та прогнози | 300  | Загальна кількість [сегментів](segments.md), [мір](measures.md) і [прогнозів разом узятих](predictions-overview.md) не може перевищувати 300.  |
 | Зв'язки | 20 рівнів глибини зв'язків у шляхах сутностей. | Під час створення [сегментів](segments.md) або [вимірювань](measures.md) за допомогою інтерфейсу конструктора шляхи сутності можуть мати до 20 зав'язків між початковою сутністю та кінцевою.  |
+|Приймання даних| Одночасні оцінки джерел Power Query даних обмежені. | Customer Insights має такі ж [обмеження оновлення, як і Потоки даних у PowerBI.com](/power-query/power-query-online-limits#refresh-limits). |
 
 ## <a name="fair-scheduling-of-jobs"></a>Чесне планування робочих місць
 
