@@ -7,21 +7,21 @@
 - name: Каталог навчальних матеріалів
   items:
     - name: Сертифікація на посаді спеціаліста платформи даних клієнта Майкрософт
-      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+      href: /certifications/exams/mb-260?tab=tab-instructor-led
     - name: Початок роботи з Customer Insights
-      href: /learn/modules/get-started-customer-data-platform/
+      href: /training/modules/get-started-customer-data-platform/
     - name: Отримання даних
-      href: /learn/modules/ingest-data-customer-insights/
+      href: /training/modules/ingest-data-customer-insights/
     - name: Створення уніфікованого профілю клієнта
-      href: /learn/modules/unified-customer-profile/
+      href: /training/modules/unified-customer-profile/
     - name: Робота з інсайтами клієнтів
-      href: /learn/modules/working-with-customer-insights/
+      href: /training/modules/working-with-customer-insights/
     - name: Збагачуйте дані і робіть прогнози
-      href: /learn/modules/enrich-data/
+      href: /training/modules/enrich-data/
     - name: Керування зовнішніми підключеннями
-      href: /learn/modules/configure-third-party-connections/
+      href: /training/modules/configure-third-party-connections/
     - name: Адмініструйте Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
+      href: /training/modules/administer-customer-data-platform/
 - name: Безкоштовна ознайомлювальна версія
   items:
     - name: Реєстрація для отримання безкоштовної ознайомлювальної версії
@@ -118,6 +118,8 @@
       href: consent-management.md
     - name: Використання веб-даних для персоналізації
       href: unknown-to-known.md
+    - name: Керування невідомими профілями клієнтів
+      href: manage-unknown-profiles.md
 - name: Сегменти
   items:
     - name: Огляд сегментів
