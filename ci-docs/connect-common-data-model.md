@@ -1,7 +1,7 @@
 ---
 title: Підключіться до папки Common Data Model, використовуючи обліковий запис Azure Data Lake
 description: Робота з даними Common Data Model за допомогою Azure Data Lake Storage.
-ms.date: 07/27/2022
+ms.date: 09/29/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: c12603b9ed8a814356a0f8d0137e97afc749b87c
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9396116"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609973"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>Підключення до даних у Azure Data Lake Storage
 
@@ -43,6 +43,10 @@ ms.locfileid: "9396116"
 - Користувачу, який настроює підключення джерело даних, потрібні найменші дозволи постачальника даних BLOB-сховища для облікового запису сховища.
 
 - Дані у вашому сховищі Data Lake Storage повинні відповідати стандарту Common Data Model для зберігання ваших даних і мати загальний маніфест моделі даних, що представляє схему файлів даних (*.csv або *.parquet). Маніфест повинен містити деталі сутностей, таких як стовпці сутностей та типи даних, а також розташування файлу даних та тип файлу. Для отримання додаткових відомостей перегляньте [маніфест](/common-data-model/sdk/manifest) Загальної моделі даних. Якщо маніфесту немає, користувачі-адміністратори з доступом до даних BLOB-сервера сховища або постачальник даних BLOB-сховища можуть визначити схему під час прийому даних.
+
+## <a name="recommendations"></a>Рекомендації
+
+Для оптимальної продуктивності Customer Insights рекомендує розмір розділу 1 ГБ або менше, а кількість файлів розділів у папці не повинна перевищувати 1000.
 
 ## <a name="connect-to-azure-data-lake-storage"></a>Підключитися до Azure Data Lake Storage
 
@@ -188,7 +192,7 @@ ms.locfileid: "9396116"
       > [!IMPORTANT]
       > Якщо існують залежності від наявного файлу model.json або manifest.json і набору сутностей, ви побачите повідомлення про помилку та не зможете вибрати інший файл model.json або manifest.json. Усуньте ці залежності перед тим, як змінювати файл model.json або manifest.json, або ж створіть нове джерело даних з файлом model.json або manifest.json, який потрібно використовувати, щоб уникнути усунення залежностей.
    - Щоб змінити розташування файлу даних або первинного ключа, натисніть кнопку **Редагувати**.
-   - Щоб змінити інкрементні дані про прийом всередину, перегляньте статтю [Настроювання інкрементного оновлення для джерел даних Azure Data Lake](incremental-refresh-data-sources.md).
+   - Щоб змінити інкрементні дані про прийом всередину, перегляньте статтю [Настроювання інкрементного оновлення для джерел](incremental-refresh-data-sources.md) даних Azure Data Lake.
    - Змініть ім’я сутності лише так, щоб воно відповідало імені сутності у файлі .json.
 
      > [!NOTE]
@@ -199,5 +203,101 @@ ms.locfileid: "9396116"
 1. Натисніть кнопку **Зберегти**, щоб застосувати зміни та повернутися на сторінку **Джерела** даних.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupt-data"></a>Поширені причини помилок при попаданні або пошкодження даних
+
+Під час прийому даних деякі з найпоширеніших причин, через які запис може вважатися пошкодженим, включають:
+
+- Типи даних і значення полів не збігаються між вихідним файлом і схемою
+- Кількість стовпців у вихідному файлі не відповідає схемі
+- Поля містять символи, які призводять до нахилу стовпців порівняно з очікуваною схемою. Наприклад: неправильно відформатовані лапки, неутеплені лапки, символи нового рядка або символи табуляції.
+- Файли розділів відсутні
+- Якщо є стовпці datetime/date/datetimeoffset, їх формат потрібно вказати у схемі, якщо вона не відповідає стандартному формату.
+
+### <a name="schema-or-data-type-mismatch"></a>Невідповідність схеми або типу даних
+
+Якщо дані не відповідають схемі, процес прийому завершується помилками. Виправте вихідні дані або схему та повторно проковтніть дані.
+
+### <a name="partition-files-are-missing"></a>Файли розділів відсутні
+
+- Якщо прийом всередину пройшов успішно без пошкоджених записів, але ви не бачите жодних даних, відредагуйте файл model.json або manifest.json, щоб переконатися, що розділи вказані. [Потім оновіть джерело даних](data-sources.md#refresh-data-sources).
+
+- Якщо прийом даних відбувається одночасно з оновленням джерел даних під час автоматичного оновлення розкладу, файли розділів можуть бути порожніми або недоступними для обробки Customer Insights. Щоб узгодити графік оновлення за верхнім потоком, змініть [графік](schedule-refresh.md) оновлення системи або графік оновлення для джерело даних. Вирівняйте час, щоб оновлення не відбувалося одночасно, і надайте останні дані, які потрібно обробити в Customer Insights.
+
+### <a name="datetime-fields-in-the-wrong-format"></a>Поля datetime у неправильному форматі
+
+Поля datetime в сутності відсутні у форматах ISO 8601 або en-US. Формат дати за замовчуванням у Customer Insights – це формат en-US. Усі поля datetime в сутності мають бути в однаковому форматі. Customer Insights підтримує інші формати за умови, що анотації або риси зроблені на рівні джерела або сутності в моделі або manifest.json. Наприклад:
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  У manifest.json формат datetime може бути вказаний на рівні сутності або на рівні атрибута. На рівні сутності використовуйте "exhibitsTraits" в сутності в *.manifest.cdm.json для визначення формату datetime. На рівні атрибута використовуйте "appliedTraits" в атрибуті в назві сутності.cdm.json.
+
+**Manifest.json на рівні сутності**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**Entity.json на рівні атрибутів**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Планування оновлення системи
 description: Заплануйте час, коли система повинна оновитися
-ms.date: 08/09/2022
+ms.date: 09/27/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
@@ -11,19 +11,19 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: 949ea071ca41127b0c45488d5d7af3f6aa4e1c35
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: 4aac02b570357d2086f7a9d7340b0e4837157a0b
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9395981"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9610353"
 ---
 # <a name="schedule-system-refresh"></a>Планування оновлення системи
 
 Заплануйте автоматичне оновлення всіх проковтнутих [джерел даних](data-sources.md). Автоматичні оновлення допомагають гарантувати, що оновлення з джерел даних відображатимуться в уніфікованих профілях клієнтів.
 
 > [!NOTE]
-> Power Query керовані вами джерела даних оновлюються за власним розкладом. Щоб запланувати оновлення цих Power Query джерел даних, настройте параметри оновлення на цьому конкретному джерело даних зі сторінки **Джерела даних**.
+> Power Query керовані вами джерела даних оновлюються за власним розкладом. Щоб запланувати оновлення цих Power Query джерел даних, настройте параметри оновлення на цьому конкретному джерело даних зі сторінки **Джерела даних**. Узгодьте час із графіком оновлення даних, щоб оновлення не відбувалося одночасно.
 > :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform Параметри оновлення потоку даних.":::
 
 ## <a name="set-system-refresh-schedule"></a>Установлення графіка оновлення системи

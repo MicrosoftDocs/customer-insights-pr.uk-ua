@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: acba06cba5fb5cbf0bca5aeb30b603003555fc32
-ms.sourcegitcommit: 3ab8f1c0ba5874095a19f0b6367b9a4432f72ed1
-ms.translationtype: MT
+ms.openlocfilehash: 2a386d65a5e285d471e9cafc45f247e7b4ae23bb
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
+ms.translationtype: HT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "9409382"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609617"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Нові можливості Dynamics 365 Customer Insights
 
@@ -228,9 +228,9 @@ LiveRamp забезпечує роздільну здатність іденти
 
 ### <a name="data-preparation-process-lists-corruption-reason-for-corrupted-records"></a>Процес підготовки даних перераховує причину пошкодження записів
 
-Підготовка даних тепер показує причину корупції для всіх полів з пошкодженими даними. Інформація надається на індивідуальному рекордному рівні для легкої ідентифікації. 
+Підготовка даних тепер показує причину корупції для всіх полів з пошкодженими даними. Інформація надається на індивідуальному рекордному рівні для легкої ідентифікації.
 
-Щоб отримати додаткові відомості, перегляньте статтю [Пошкоджені джерела даних](entities.md#corrupted-data-sources).
+Для отримання додаткової інформації дивіться [Корумповані джерела даних](data-sources.md#corrupt-data-sources).
 
 ### <a name="end-of-preview-for-reporting-features-in-the-engagement-insights-capability"></a>Кінець попереднього перегляду функцій звітування в можливості аналізу залучення
 
