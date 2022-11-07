@@ -1,5 +1,5 @@
 ---
-title: Експорт сегментів у Klaviyo (попередній перегляд)
+title: Експортні сегменти в Klaviyo (попередній перегляд)
 description: Дізнайтеся про те, як налаштувати підключення та експортувати дані до Klaviyo.
 ms.date: 07/25/2022
 ms.reviewer: mhart
@@ -8,29 +8,30 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6e45ca5827afa29d97a746bd1a474c2346cc32d2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 075e6758f2c6992a1185756f9beecf852fdd0a96
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: uk-UA
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196787"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724658"
 ---
-# <a name="export-segments-to-klaviyo-preview"></a>Експорт сегментів у Klaviyo (попередній перегляд)
+# <a name="export-segments-to-klaviyo-preview"></a>Експортні сегменти в Klaviyo (попередній перегляд)
 
 Експортуйте сегменти єдиних профілів клієнтів до Klaviyo і використовуйте їх для маркетингової діяльності.
 
 ## <a name="prerequisites"></a>вимоги
 
 - Обліковий [запис](https://www.klaviyo.com/) Klaviyo та відповідні облікові дані адміністратора.
-- [Ключ API Клавійо](https://help.klaviyo.com/hc/articles/115005062267-How-to-Manage-Your-Account-s-API-Keys).
-- [Ідентифікатор списку Клавійо](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID).
+- Ключ [API Klaviyo](https://help.klaviyo.com/hc/articles/115005062267-How-to-Manage-Your-Account-s-API-Keys).
+- Ідентифікатор [списку Клавійо](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID).
 - [Налаштовані сегменти](segments.md) в Customer Insights.
 - Уніфіковані профілі клієнтів у експортованих сегментах містять поле, що представляє адресу електронної пошти.
 
 ## <a name="known-limitations"></a>Відомі обмеження
 
+- Приватне посилання в поєднанні з функцією Принесіть власне сховище (BYOS) не підтримується.
 - До 1 мільйона профілів клієнтів на експорт до Klaviyo, що може зайняти до 20 хвилин. Кількість профілів клієнтів, які ви можете експортувати в Klaviyo, залежить від вашого контракту з Klaviyo.
-- Тільки сегменти.
+- Лише сегменти.
 
 ## <a name="set-up-connection-to-klaviyo"></a>Налаштування підключення до Klaviyo
 
@@ -46,7 +47,7 @@ ms.locfileid: "9196787"
 
 1. Надайте ключ API Klaviyo щоб продовжити вхід в систему.
 
-1. Перегляньте конфіденційність [і відповідність](connections.md#data-privacy-and-compliance) даних і виберіть пункт **Я погоджуюся**.
+1. Перегляньте [конфіденційність і відповідність даних і виберіть](connections.md#data-privacy-and-compliance) пункт **Я згоден**.
 
 1. Натисніть кнопку **Підключитися**, щоб ініціалізувати підключення.
 
@@ -62,13 +63,13 @@ ms.locfileid: "9196787"
 
 1. Відкрийте **Дані** > **Експорти**.
 
-1. Виберіть Додати **експорт**.
+1. Виберіть **Додати експорт**.
 
 1. У полі **Підключення для експорту** виберіть підключення з розділу Klaviyo. Якщо жодне підключення недоступне, зверніться до адміністратора.
 
-1. Введіть ім'я експорту.
+1. Введіть ім’я експорту.
 
-1. Введіть ідентифікатор **списку** Клавійо.
+1. Введіть ідентифікатор списку **Klaviyo**.
 
 1. У розділі **Зіставлення даних** у полі **Електронна пошта** виберіть поле, яке відповідає адресі електронної пошти клієнта.
 
